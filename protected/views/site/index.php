@@ -119,6 +119,7 @@
             <div class="m2">
                 <h1>Projects</h1>
                 <div class="projects-case">
+                    <?php if (count($projects) > 0) : ?>
                     <?php $firstPrj = reset($projects); ?>
                     <section class="case-info">
                         <h1><?php echo $firstPrj->title; ?></h1>
@@ -140,6 +141,7 @@
                         <img src="<?php echo Yii::app()->baseUrl . $image->url; ?>" alt="">
                         <?php endforeach; ?>
                     </div>
+                    <?php endif;?>
                 </div>
             </div>
         </div>
