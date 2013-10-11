@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" name="Default" comment="" />
+    <ignored path="chi.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/main.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381409185741" ignored="false" />
+    <file path="/SiteController.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381414449996" ignored="false" />
+    <file path="/index.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381413387736" ignored="false" />
+    <file path="/AdminModule.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381157091464" ignored="false" />
+    <file path="/Controller.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380290750795" ignored="false" />
+    <file path="/a.dummy" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381326074002" ignored="false" />
+    <file path="/TechController.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380803410225" ignored="false" />
+    <file path="/error.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380610980638" ignored="false" />
+    <file path="/add.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381324646431" ignored="false" />
+    <file path="/edit.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381324786381" ignored="false" />
+    <file path="/ProjectsController.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381324836925" ignored="false" />
+    <file path="/Projects.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380630982415" ignored="false" />
+    <file path="/Tech.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380630834079" ignored="false" />
+    <file path="/TechList.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380630862463" ignored="false" />
+    <file path="/ProjectsPics.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380630939247" ignored="false" />
+    <file path="/JobsController.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381158382260" ignored="false" />
+    <file path="/AdminController.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380716833497" ignored="false" />
+    <file path="/DefaultController.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380727026661" ignored="false" />
+    <file path="/UserIdentity.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380726616166" ignored="false" />
+    <file path="/dummy.xml" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380718767046" ignored="false" />
+    <file path="/DT_bootstrap.css" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381150459355" ignored="false" />
+    <file path="/login.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380726393583" ignored="false" />
+    <file path="/User.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380721746961" ignored="false" />
+    <file path="/sign.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380726258520" ignored="false" />
+    <file path="/CActiveFinder.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380809120069" ignored="false" />
+    <file path="/Dummy.txt" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381477268198" ignored="false" />
+    <file path="/scripts.js" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381324533934" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/3f5cc17b/DT_bootstrap.css" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381150430563" ignored="false" />
+    <file path="$PROJECT_DIR$/../pomogy/public/js/features.js" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381150934089" ignored="false" />
+    <file path="/jquery.main.js" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381413934934" ignored="false" />
+    <file path="/all.css" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381414042355" ignored="false" />
+    <file path="/PorjectImage.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381247274477" ignored="false" />
+    <file path="/styles.css" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381245202248" ignored="false" />
+    <file path="/ProjectImage.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381324943335" ignored="false" />
+    <file path="/FormatText.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381329944540" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="chi" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="179" column="35" selection-start="10802" selection-end="10802" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SiteController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="31" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YiiMailer.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/extensions/YiiMailer/YiiMailer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="513" column="28" selection-start="12063" selection-end="12063" vertical-scroll-proportion="0.022619048">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class.phpmailer.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/extensions/YiiMailer/PHPMailer/class.phpmailer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1002" column="21" selection-start="31408" selection-end="31408" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class.smtp.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/extensions/YiiMailer/PHPMailer/class.smtp.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="all.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/all.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="685" column="16" selection-start="18576" selection-end="18576" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/jquery.main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="266" column="30" selection-start="8400" selection-end="8400" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/protected/components/PorjectImage.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/assets/styles.css" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/projects/add.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/assets/scripts.js" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/projects/edit.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/ProjectsController.php" />
+        <option value="$PROJECT_DIR$/protected/components/ProjectImage.php" />
+        <option value="$PROJECT_DIR$/protected/components/FormatText.php" />
+        <option value="$PROJECT_DIR$/protected/components/Text.php" />
+        <option value="$PROJECT_DIR$/css/colorbox.css" />
+        <option value="$PROJECT_DIR$/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
+        <option value="$PROJECT_DIR$/js/jquery.main.js" />
+        <option value="$PROJECT_DIR$/css/all.css" />
+        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
+    <option name="width" value="1922" />
+    <option name="height" value="1053" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="212" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="237" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="224" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="243" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1152" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1148" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="239" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="233" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="1b73730e-9b3e-49b9-866c-6011f81a5323">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="fcb9ed2d-31e8-4f92-a6a7-35c409c858ca">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/protected/config" />
+      <recent name="$PROJECT_DIR$/protected/extensions" />
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/protected/extensions/YiiMailer" />
+      <recent name="$PROJECT_DIR$/protected/modules/admin/views/tech" />
+      <recent name="$PROJECT_DIR$/protected/modules/admin/views/default" />
+      <recent name="$PROJECT_DIR$/protected/views/site" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task id="Default" summary="Default task">
+      <changelist id="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" name="Default" comment="" />
+      <created>1380273365286</created>
+      <updated>1380718663486</updated>
+    </task>
+    <task active="true" id="LOCAL-00001" summary="wewe">
+      <created>1380718657849</created>
+      <updated>1380718663551</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First commit">
+      <created>1381417142736</created>
+      <updated>1381417142736</updated>
+    </task>
+    <task id="LOCAL-00003" summary="First commit">
+      <created>1381417436997</created>
+      <updated>1381417436997</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="0" width="1922" height="1053" extended-state="1" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.291889" sideWeight="0.67180616" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819384" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18832599" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="First commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/css/colorbox.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="63" selection-start="2479" selection-end="2479" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/framework/zii/widgets/CListView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="325" column="0" selection-start="12514" selection-end="12514" vertical-scroll-proportion="-26.464285" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Projects.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="25" selection-start="1373" selection-end="1385" vertical-scroll-proportion="-0.6785714" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/ProjectImage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="73" selection-start="902" selection-end="902" vertical-scroll-proportion="-16.964285" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="33" selection-start="544" selection-end="544" vertical-scroll-proportion="-7.285714" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/YiiMailer/PHPMailer/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="54" selection-start="2511" selection-end="2511" vertical-scroll-proportion="-22.214285" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.colorbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="44" selection-start="317" selection-end="317" vertical-scroll-proportion="-6.107143" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="266" column="30" selection-start="8400" selection-end="8400" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="685" column="16" selection-start="18576" selection-end="18576" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="179" column="35" selection-start="10802" selection-end="10802" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="31" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/YiiMailer/PHPMailer/class.smtp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/YiiMailer/PHPMailer/class.phpmailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1002" column="21" selection-start="31408" selection-end="31408" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/extensions/YiiMailer/YiiMailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="513" column="28" selection-start="12063" selection-end="12063" vertical-scroll-proportion="0.022619048">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
