@@ -710,3 +710,15 @@ h2.technology-header{
     height: 100%;
     border: 1px solid #888888;
 }
+.send-cv .alert {
+    color: red;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+}
+.send-cv .success {
+    color: green;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+}

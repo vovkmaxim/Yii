@@ -180,6 +180,15 @@
     <input type="hidden" name="job_id" value="<?php echo $jobcv->id; ?>" />
     <input type="hidden" name="title" value="<?php echo $title; ?>" />
     <input type="hidden" name="message" value="<?php echo $message; ?>" />
+    <?php if (isset($errors['subject'])) : ?>
+        <input type="hidden" name="error_subject" value="<?php echo $errors['subject']; ?>" />
+    <?php endif; ?>
+    <?php if (isset($errors['cv'])) : ?>
+       <input type="hidden" name="error_cv" value="<?php echo $errors['cv']; ?>" />
+    <?php endif; ?>
+    <?php if (isset($success)) : ?>
+        <input type="hidden" name="success" value="<?php echo $success; ?>" />
+    <?php endif; ?>
 
 <?php else: ?>
     <input type="hidden" name="open" value="0" />

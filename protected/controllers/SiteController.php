@@ -33,12 +33,47 @@ class SiteController extends Controller
         $vacancies = Jobs::model()->findAll(array('order' => 'position'));
         if ($request->isPostRequest) {
             $jobId = $request->getPost('jobid');
-            $title = $request->getPost('title');
-            $message = $request->getPost('message');
+            $title = trim($request->getPost('title'));
+            $message = trim($request->getPost('message'));
             $job = Jobs::model()->findByPk($jobId);
-            $cv = (empty($_FILES['cv']) ? array() : $_FILES['cv'];
-            $mailer = new YiiMailer();
+            $cv = (empty($_FILES['cv'])) ? array() : $_FILES['cv'];
+            $errors = array();
+            if ($title == '') {
+                $errors['subject'] = 'empty_subject';
+            }
+            if (empty($cv['name'])) {
+                $errors['cv'] = 'empty_cv';
+            }
+            if (count($errors) > 0) {
+                $this->render('index', array(
+                    'open' => true,
+                    'title' => $title,
+                    'message' => $message,
+                    'tech' => $techList,
+                    'projects' => $projects,
+                    'jobcv' => $job,
+                    'errors' => $errors,
+                    'jobs' => Text::divideByThree($vacancies)
+                ));
+                Yii::app()->end();
+            }
+            $attach = 'cv' . DIRECTORY_SEPARATOR . $cv['name'];
+            move_uploaded_file($cv['tmp_name'], $attach);
 
+            $mailer = new YiiMailer();
+            $mailer->setFrom('chisw@rambler.ru', 'CHI Software');
+            $mailer->setSubject($title . ' (' . $job->title . ')');
+            $mailer->setAttachment($attach);
+            $mailer->setView('cv');
+            $mailer->setData(array('msg' => Text::formatText($message)));
+            $mailer->render();
+            $mailer->IsSMTP();
+            $mailer->setTo('dmlyashko@gmail.com');
+            $mailer->SMTPAuth = true;
+            $mailer->Host = 'smtp.rambler.ru';
+            $mailer->Username = 'chisw';
+            $mailer->Password = '73chisw2354kjlg';
+            $mailer->send();
 
             $this->render('index', array(
                 'open' => true,
@@ -47,6 +82,7 @@ class SiteController extends Controller
                 'tech' => $techList,
                 'projects' => $projects,
                 'jobcv' => $job,
+                'success' => true,
                 'jobs' => Text::divideByThree($vacancies)
             ));
 

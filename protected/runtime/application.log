@@ -8155,3 +8155,77 @@ REQUEST_URI=/
 in /var/www/chi/protected/views/site/index.php (179)
 in /var/www/chi/protected/controllers/SiteController.php (48)
 in /var/www/chi/index.php (13)
+2013/10/11 11:54:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/11 11:54:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/11 12:39:39 [error] [php] Undefined variable: attach (/var/www/chi/protected/controllers/SiteController.php:47)
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CController.php(286): SiteController->runAction()
+#1 /var/www/chi/protected/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /var/www/chi/protected/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/chi/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /var/www/chi/protected/controllers/SiteController.php (47)
+in /var/www/chi/index.php (13)
+2013/10/11 12:40:18 [error] [php] move_uploaded_file(cv/CV_Dmitry_Lyashko.doc) [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: failed to open stream: Permission denied (/var/www/chi/protected/controllers/SiteController.php:42)
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/chi/protected/framework/web/CController.php(286): SiteController->runAction()
+#2 /var/www/chi/protected/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#3 /var/www/chi/protected/framework/web/CWebApplication.php(282): SiteController->run()
+#4 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/chi/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /var/www/chi/protected/controllers/SiteController.php (42)
+in /var/www/chi/index.php (13)
+2013/10/11 16:23:05 [error] [php] Trying to get property of non-object (/var/www/chi/protected/controllers/SiteController.php:65)
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CController.php(286): SiteController->runAction()
+#1 /var/www/chi/protected/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /var/www/chi/protected/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/chi/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /var/www/chi/protected/controllers/SiteController.php (65)
+in /var/www/chi/index.php (13)
+2013/10/11 16:23:23 [error] [php] Trying to get property of non-object (/var/www/chi/protected/controllers/SiteController.php:65)
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CController.php(286): SiteController->runAction()
+#1 /var/www/chi/protected/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /var/www/chi/protected/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/chi/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /var/www/chi/protected/controllers/SiteController.php (65)
+in /var/www/chi/index.php (13)
+2013/10/11 16:28:18 [error] [php] Trying to get property of non-object (/var/www/chi/protected/controllers/SiteController.php:65)
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CController.php(286): SiteController->runAction()
+#1 /var/www/chi/protected/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /var/www/chi/protected/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/chi/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /var/www/chi/protected/controllers/SiteController.php (65)
+in /var/www/chi/index.php (13)

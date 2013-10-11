@@ -48,6 +48,8 @@
     <div id="inline-content">
          <form class="send-cv" action="" method="post" enctype="multipart/form-data">
              <h1>Отправка резюме по вакансии <span class="job-title"> </span></span></h1>
+             <div class="alert" style="display:none;"></div>
+             <div class="success" style="display:none;"></div>
              <div class="form-row">
                  <label>Тема письма</label>
                  <span><input type="text" name="title" /></span>
