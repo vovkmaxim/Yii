@@ -2,9 +2,6 @@
 
 class DefaultController extends AdminController
 {
-    public function init() {
-        $this->active = 'tech';
-    }
 
 	public function actionIndex() {
 		$this->render('index');

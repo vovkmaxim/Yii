@@ -54,10 +54,11 @@ return array(
 		// uncomment the following to use a MySQL database
 
 		'db'=>array(
-			'connectionString' => 'mysql:host=chdev.com.ua;dbname=chisw',
+			'connectionString' => 'mysql:host=localhost;dbname=chi',
+            'class' => 'CDbConnection',
 			'emulatePrepare' => true,
-			'username' => 'chisw',
-			'password' => 't%f{.PdrUFn\rud',
+			'username' => 'root',
+			'password' => '21091989',
 			'charset' => 'utf8',
             'schemaCachingDuration' => 10
 		),
