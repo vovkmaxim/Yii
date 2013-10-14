@@ -16,7 +16,9 @@
                         <p>We tailor the process using a smart mix of methodologies to create a zero-fat productive development process and to produce high quality software. By introducing transparency into our development process, delivering potentially shippable product every iteration, inspecting results, and adopting features according to customer's feedback, we work without loss of the time and money.</p>
                     </div>
                 </div>
-                <a href="#" class="banner"><img src="images/banner1.jpg" alt=""></a>
+                <?php if ($profile != '') : ?>
+                <a href="/profile/profile.pdf" class="banner"><img src="images/banner1.jpg" alt=""></a>
+                <?php endif; ?>
                 <h2>Work Conditions</h2>
                 <p>CHI Software is flexible to follow different business models and leverage optimal measures to ensure more profitability for the Client.</p>
                 <div class="four-columns">
