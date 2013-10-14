@@ -85,7 +85,6 @@ class SiteController extends Controller
                 'jobcv' => $job,
                 'success' => true,
                 'jobs' => Text::divideByThree($vacancies),
-                'profile' => $profile
             ));
 
         }
@@ -93,7 +92,8 @@ class SiteController extends Controller
         $this->render('index', array(
                                 'tech' => $techList,
                                 'projects' => $projects,
-                                'jobs' => Text::divideByThree($vacancies)
+                                'jobs' => Text::divideByThree($vacancies),
+                                'profile' => $profile
                                )
         );
 	}
