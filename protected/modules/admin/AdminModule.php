@@ -27,6 +27,8 @@ class AdminModule extends CWebModule
         $this->publishJsFile('admin.assets', '/scripts.js');
         $this->publishJsFile('admin.assets', '/DT_bootstrap.js');
         Yii::app()->errorHandler->errorAction = '/admin/default/error';
+
+
 	}
 
     public function publishCssFile($scope, $path) {
@@ -46,8 +48,12 @@ class AdminModule extends CWebModule
 	{
 		if(parent::beforeControllerAction($controller, $action))
 		{
-			// this method is called before any module controller action is performed
-			// you may place customized code here
+            if (isset(AuthUser::$denies[get_class($controller)])) {
+                if (in_array(Yii::app()->user->getModel()->role, AuthUser::$denies[get_class($controller)])) {
+                    $controller->redirect(Yii::app()->getBaseUrl() . '/admin');
+                }
+            }
+
 			return true;
 		}
 		else

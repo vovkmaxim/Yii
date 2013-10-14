@@ -30,16 +30,28 @@
                         </ul>
                     </li>
                 </ul>
+                <?php $role = Yii::app()->user->model->role; ?>
                 <ul class="nav">
+                    <?php if (!in_array($role, AuthUser::$denies['TechController'])) : ?>
                     <li <?php echo ($this->active == 'tech') ? 'class="active"' : ''; ?>>
                         <a href="/admin/tech">Технологии</a>
                     </li>
+                    <?php endif; ?>
+                    <?php if (!in_array($role, AuthUser::$denies['ProjectsController'])) : ?>
                     <li <?php echo ($this->active == 'projects') ? 'class="active"' : ''; ?>>
                         <a href="/admin/projects">Проекты</a>
                     </li>
+                    <?php endif; ?>
+                    <?php if (!in_array($role, AuthUser::$denies['JobsController'])) : ?>
                     <li <?php echo ($this->active == 'jobs') ? 'class="active"' : ''; ?>>
                         <a href="/admin/jobs">Вакансии</a>
                     </li>
+                    <?php endif; ?>
+                    <?php if (!in_array($role, AuthUser::$denies['ProfileController'])) : ?>
+                        <li <?php echo ($this->active == 'profile') ? 'class="active"' : ''; ?>>
+                            <a href="/admin/profile">Загрузить профиль</a>
+                        </li>
+                    <?php endif; ?>
                 </ul>
             </div>
             <!--/.nav-collapse -->

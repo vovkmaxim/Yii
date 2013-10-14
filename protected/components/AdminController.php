@@ -2,6 +2,8 @@
 
 class AdminController extends Controller
 {
+
+
     public $active;
 
     public function filters()

@@ -8229,3 +8229,1128 @@ Stack trace:
 REQUEST_URI=/
 in /var/www/chi/protected/controllers/SiteController.php (65)
 in /var/www/chi/index.php (13)
+2013/10/14 15:24:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "da".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('da')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/da
+---
+2013/10/14 15:25:18 [error] [php] include(CDBConnection.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/chi/protected/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/chi/protected/framework/YiiBase.php(196): import()
+#1 /var/www/chi/protected/framework/base/CModule.php(386): createComponent()
+#2 /var/www/chi/protected/framework/base/CApplication.php(450): CWebApplication->getComponent()
+#3 /var/www/chi/protected/framework/db/ar/CActiveRecord.php(634): CWebApplication->getDb()
+#4 /var/www/chi/protected/framework/db/ar/CActiveRecord.php(1428): Users->getDbConnection()
+#5 /var/www/chi/protected/framework/db/ar/CActiveRecord.php(1517): Users->getTableAlias()
+#6 /var/www/chi/protected/components/UserIdentity.php(14): Users->findByAttributes()
+#7 /var/www/chi/protected/modules/admin/controllers/DefaultController.php(21): UserIdentity->authenticate()
+#8 /var/www/chi/protected/framework/web/actions/CInlineAction.php(49): DefaultController->actionLogin()
+#9 /var/www/chi/protected/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /var/www/chi/protected/framework/web/filters/CFilterChain.php(133): DefaultController->runAction()
+#11 /var/www/chi/protected/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/chi/protected/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#13 /var/www/chi/protected/framework/web/filters/CInlineFilter.php(58): DefaultController->filterAccessControl()
+#14 /var/www/chi/protected/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#15 /var/www/chi/protected/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/chi/protected/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#17 /var/www/chi/protected/framework/web/CWebApplication.php(282): DefaultController->run()
+#18 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /var/www/chi/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admin/default/login
+in /var/www/chi/protected/components/UserIdentity.php (14)
+in /var/www/chi/protected/modules/admin/controllers/DefaultController.php (21)
+in /var/www/chi/index.php (13)
+2013/10/14 15:25:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 15:25:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 15:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 15:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 15:25:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 15:25:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 15:25:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 15:25:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 15:25:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 15:25:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 15:27:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'192.168.2.109' (using password: YES)' in /var/www/chi/protected/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/chi/protected/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/chi/protected/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/chi/protected/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/chi/protected/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /var/www/chi/protected/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /var/www/chi/protected/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /var/www/chi/protected/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Projects))
+#7 /var/www/chi/protected/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 /var/www/chi/protected/modules/admin/controllers/ProjectsController.php(10): CActiveRecord->__construct()
+#9 /var/www/chi/protected/framework/web/actions/CInlineAction.php(49): ProjectsController->actionIndex()
+#10 /var/www/chi/protected/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/chi/protected/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /var/www/chi/protected/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/chi/protected/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /var/www/chi/protected/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /var/www/chi/protected/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /var/www/chi/protected/framework/web/CController.php(291): CFilterChain->run()
+#17 /var/www/chi/protected/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/chi/protected/framework/web/CWebApplication.php(282): CController->run('')
+#19 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/projects')
+#20 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/chi/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/admin/projects
+---
+2013/10/14 15:27:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'chisw'' in /var/www/chi/protected/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/chi/protected/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/chi/protected/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/chi/protected/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/chi/protected/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /var/www/chi/protected/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /var/www/chi/protected/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /var/www/chi/protected/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Projects))
+#7 /var/www/chi/protected/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 /var/www/chi/protected/modules/admin/controllers/ProjectsController.php(10): CActiveRecord->__construct()
+#9 /var/www/chi/protected/framework/web/actions/CInlineAction.php(49): ProjectsController->actionIndex()
+#10 /var/www/chi/protected/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/chi/protected/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /var/www/chi/protected/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/chi/protected/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /var/www/chi/protected/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /var/www/chi/protected/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /var/www/chi/protected/framework/web/CController.php(291): CFilterChain->run()
+#17 /var/www/chi/protected/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/chi/protected/framework/web/CWebApplication.php(282): CController->run('')
+#19 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/projects')
+#20 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/chi/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/admin/projects
+---
+2013/10/14 15:27:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 15:27:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 15:27:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 15:27:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 15:47:45 [error] [php] Object of class TechController could not be converted to string (/var/www/chi/protected/modules/admin/AdminModule.php:51)
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/tech
+in /var/www/chi/protected/modules/admin/AdminModule.php (51)
+in /var/www/chi/index.php (13)
+2013/10/14 15:48:08 [error] [exception.CException] exception 'CException' with message 'TechController and its behaviors do not have a method or closure named "getName".' in /var/www/chi/protected/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/chi/protected/modules/admin/AdminModule.php(51): CComponent->__call('getName', Array)
+#1 /var/www/chi/protected/modules/admin/AdminModule.php(51): TechController->getName()
+#2 /var/www/chi/protected/framework/web/CController.php(263): AdminModule->beforeControllerAction(Object(TechController), Object(CInlineAction))
+#3 /var/www/chi/protected/framework/web/CWebApplication.php(282): CController->run('')
+#4 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/tech')
+#5 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/chi/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin/tech
+HTTP_REFERER=http://chi.my/admin/jobs
+---
+2013/10/14 15:48:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 15:48:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 15:49:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 15:49:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 16:30:40 [error] [exception.CException] exception 'CException' with message 'TechController and its behaviors do not have a method or closure named "__contruct".' in /var/www/chi/protected/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/chi/protected/components/AdminController.php(7): CComponent->__call('__contruct', Array)
+#1 /var/www/chi/protected/components/AdminController.php(7): Controller->__contruct()
+#2 /var/www/chi/protected/framework/web/CWebApplication.php(359): AdminController->__construct('tech', Object(AdminModule))
+#3 /var/www/chi/protected/framework/web/CWebApplication.php(338): CWebApplication->createController('tech/', Object(AdminModule))
+#4 /var/www/chi/protected/framework/web/CWebApplication.php(276): CWebApplication->createController('admin/tech')
+#5 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/tech')
+#6 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/chi/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/admin/tech
+HTTP_REFERER=http://chi.my/admin/jobs
+---
+2013/10/14 16:30:58 [error] [exception.CException] exception 'CException' with message 'TechController cannot find the requested view "index".' in /var/www/chi/protected/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#1 /var/www/chi/protected/modules/admin/controllers/TechController.php(11): CController->render('index', Array)
+#2 /var/www/chi/protected/framework/web/actions/CInlineAction.php(49): TechController->actionIndex()
+#3 /var/www/chi/protected/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/chi/protected/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/chi/protected/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/chi/protected/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/chi/protected/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/chi/protected/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/chi/protected/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/chi/protected/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/chi/protected/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/tech')
+#13 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/chi/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/tech
+HTTP_REFERER=http://chi.my/admin/jobs
+---
+2013/10/14 16:32:01 [error] [exception.CException] exception 'CException' with message 'AuthUser and its behaviors do not have a method or closure named "getmodel".' in /var/www/chi/protected/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/chi/protected/framework/base/CComponent.php(111): CComponent->__call('getmodel', Array)
+#1 /var/www/chi/protected/framework/base/CComponent.php(111): AuthUser->getmodel()
+#2 /var/www/chi/protected/framework/web/auth/CWebUser.php(146): CComponent->__get('model')
+#3 /var/www/chi/protected/modules/admin/AdminModule.php(57): CWebUser->__get('model')
+#4 /var/www/chi/protected/framework/web/CController.php(263): AdminModule->beforeControllerAction(Object(TechController), Object(CInlineAction))
+#5 /var/www/chi/protected/framework/web/CWebApplication.php(282): CController->run('')
+#6 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/tech')
+#7 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/chi/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/admin/tech
+HTTP_REFERER=http://chi.my/admin/jobs
+---
+2013/10/14 16:32:25 [error] [exception.CException] exception 'CException' with message 'AuthUser and its behaviors do not have a method or closure named "getModel".' in /var/www/chi/protected/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/chi/protected/modules/admin/AdminModule.php(57): CComponent->__call('getModel', Array)
+#1 /var/www/chi/protected/modules/admin/AdminModule.php(57): AuthUser->getModel()
+#2 /var/www/chi/protected/framework/web/CController.php(263): AdminModule->beforeControllerAction(Object(TechController), Object(CInlineAction))
+#3 /var/www/chi/protected/framework/web/CWebApplication.php(282): CController->run('')
+#4 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/tech')
+#5 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/chi/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin/tech
+HTTP_REFERER=http://chi.my/admin/jobs
+---
+2013/10/14 16:43:13 [error] [exception.CException] exception 'CException' with message 'AuthUser and its behaviors do not have a method or closure named "getModel".' in /var/www/chi/protected/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/chi/protected/modules/admin/AdminModule.php(57): CComponent->__call('getModel', Array)
+#1 /var/www/chi/protected/modules/admin/AdminModule.php(57): AuthUser->getModel()
+#2 /var/www/chi/protected/framework/web/CController.php(263): AdminModule->beforeControllerAction(Object(TechController), Object(CInlineAction))
+#3 /var/www/chi/protected/framework/web/CWebApplication.php(282): CController->run('')
+#4 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/tech')
+#5 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/chi/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin/tech
+HTTP_REFERER=http://chi.my/admin/jobs
+---
+2013/10/14 16:43:15 [error] [exception.CException] exception 'CException' with message 'AuthUser and its behaviors do not have a method or closure named "getModel".' in /var/www/chi/protected/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/chi/protected/modules/admin/AdminModule.php(57): CComponent->__call('getModel', Array)
+#1 /var/www/chi/protected/modules/admin/AdminModule.php(57): AuthUser->getModel()
+#2 /var/www/chi/protected/framework/web/CController.php(263): AdminModule->beforeControllerAction(Object(TechController), Object(CInlineAction))
+#3 /var/www/chi/protected/framework/web/CWebApplication.php(282): CController->run('')
+#4 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/tech')
+#5 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/chi/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin/tech
+---
+2013/10/14 16:45:08 [error] [exception.CException] exception 'CException' with message 'AuthUser and its behaviors do not have a method or closure named "getModel".' in /var/www/chi/protected/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/chi/protected/modules/admin/AdminModule.php(57): CComponent->__call('getModel', Array)
+#1 /var/www/chi/protected/modules/admin/AdminModule.php(57): AuthUser->getModel()
+#2 /var/www/chi/protected/framework/web/CController.php(263): AdminModule->beforeControllerAction(Object(TechController), Object(CInlineAction))
+#3 /var/www/chi/protected/framework/web/CWebApplication.php(282): CController->run('')
+#4 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/tech')
+#5 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/chi/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin/tech
+---
+2013/10/14 16:45:31 [error] [exception.CException] exception 'CException' with message 'Property "AuthUser.role" is not defined.' in /var/www/chi/protected/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/chi/protected/framework/web/auth/CWebUser.php(146): CComponent->__get('role')
+#1 /var/www/chi/protected/modules/admin/AdminModule.php(57): CWebUser->__get('role')
+#2 /var/www/chi/protected/framework/web/CController.php(263): AdminModule->beforeControllerAction(Object(TechController), Object(CInlineAction))
+#3 /var/www/chi/protected/framework/web/CWebApplication.php(282): CController->run('')
+#4 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/tech')
+#5 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/chi/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin/tech
+---
+2013/10/14 16:46:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 16:46:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 16:50:20 [error] [exception.CException] exception 'CException' with message 'AuthUser and its behaviors do not have a method or closure named "getUniqueId".' in /var/www/chi/protected/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/chi/protected/modules/admin/AdminModule.php(57): CComponent->__call('getUniqueId', Array)
+#1 /var/www/chi/protected/modules/admin/AdminModule.php(57): AuthUser->getUniqueId()
+#2 /var/www/chi/protected/framework/web/CController.php(263): AdminModule->beforeControllerAction(Object(TechController), Object(CInlineAction))
+#3 /var/www/chi/protected/framework/web/CWebApplication.php(282): CController->run('')
+#4 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/tech')
+#5 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/chi/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin/tech
+---
+2013/10/14 16:50:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 16:50:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 16:57:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 16:57:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 16:58:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 16:58:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 16:58:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 16:58:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 16:58:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 16:58:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 16:58:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 16:58:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 16:59:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 16:59:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:00:37 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/chi/protected/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/chi/protected/components/AuthUser.php(15): spl_autoload_call()
+#1 /var/www/chi/protected/framework/base/CComponent.php(111): AuthUser->getModel()
+#2 /var/www/chi/protected/framework/web/auth/CWebUser.php(146): AuthUser->__get()
+#3 /var/www/chi/protected/modules/admin/AdminModule.php(57): AuthUser->__get()
+#4 /var/www/chi/protected/framework/web/CController.php(263): AdminModule->beforeControllerAction()
+#5 /var/www/chi/protected/framework/web/CWebApplication.php(282): TechController->run()
+#6 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/chi/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/tech
+in /var/www/chi/protected/components/AuthUser.php (15)
+in /var/www/chi/protected/modules/admin/AdminModule.php (57)
+in /var/www/chi/index.php (13)
+2013/10/14 17:01:30 [error] [php] Trying to get property of non-object (/var/www/chi/protected/modules/admin/AdminModule.php:57)
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/tech
+in /var/www/chi/protected/modules/admin/AdminModule.php (57)
+in /var/www/chi/index.php (13)
+2013/10/14 17:01:58 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.model" is not defined.' in /var/www/chi/protected/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/chi/protected/framework/base/CModule.php(105): CComponent->__get('model')
+#1 /var/www/chi/protected/modules/admin/AdminModule.php(57): CModule->__get('model')
+#2 /var/www/chi/protected/framework/web/CController.php(263): AdminModule->beforeControllerAction(Object(TechController), Object(CInlineAction))
+#3 /var/www/chi/protected/framework/web/CWebApplication.php(282): CController->run('')
+#4 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/tech')
+#5 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/chi/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin/tech
+---
+2013/10/14 17:02:07 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "getModel".' in /var/www/chi/protected/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/chi/protected/modules/admin/AdminModule.php(57): CComponent->__call('getModel', Array)
+#1 /var/www/chi/protected/modules/admin/AdminModule.php(57): CWebApplication->getModel()
+#2 /var/www/chi/protected/framework/web/CController.php(263): AdminModule->beforeControllerAction(Object(TechController), Object(CInlineAction))
+#3 /var/www/chi/protected/framework/web/CWebApplication.php(282): CController->run('')
+#4 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/tech')
+#5 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/chi/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin/tech
+---
+2013/10/14 17:02:19 [error] [php] Trying to get property of non-object (/var/www/chi/protected/modules/admin/AdminModule.php:58)
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/tech
+in /var/www/chi/protected/modules/admin/AdminModule.php (58)
+in /var/www/chi/index.php (13)
+2013/10/14 17:02:34 [error] [php] Trying to get property of non-object (/var/www/chi/protected/modules/admin/AdminModule.php:58)
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/tech
+in /var/www/chi/protected/modules/admin/AdminModule.php (58)
+in /var/www/chi/index.php (13)
+2013/10/14 17:02:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:02:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:05:50 [error] [exception.CException] exception 'CException' with message 'Property "Users.role" is not defined.' in /var/www/chi/protected/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/chi/protected/framework/db/ar/CActiveRecord.php(145): CComponent->__get('role')
+#1 /var/www/chi/protected/modules/admin/AdminModule.php(57): CActiveRecord->__get('role')
+#2 /var/www/chi/protected/framework/web/CController.php(263): AdminModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#3 /var/www/chi/protected/framework/web/CWebApplication.php(282): CController->run('')
+#4 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#5 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/chi/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin
+HTTP_REFERER=http://chi.my/index.php/admin/default/login
+---
+2013/10/14 17:08:51 [error] [php] Undefined index: DefaultController (/var/www/chi/protected/modules/admin/AdminModule.php:57)
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin
+in /var/www/chi/protected/modules/admin/AdminModule.php (57)
+in /var/www/chi/index.php (13)
+2013/10/14 17:09:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:09:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:09:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:09:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:10:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:10:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:10:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:10:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:10:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:10:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:10:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:10:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:23:30 [error] [exception.CException] exception 'CException' with message 'Property "AdminModule.denies" is not defined.' in /var/www/chi/protected/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/chi/protected/framework/base/CModule.php(105): CComponent->__get('denies')
+#1 /var/www/chi/protected/modules/admin/AdminModule.php(51): CModule->__get('denies')
+#2 /var/www/chi/protected/framework/web/CController.php(263): AdminModule->beforeControllerAction(Object(JobsController), Object(CInlineAction))
+#3 /var/www/chi/protected/framework/web/CWebApplication.php(282): CController->run('')
+#4 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/jobs')
+#5 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/chi/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin/jobs
+HTTP_REFERER=http://chi.my/admin
+---
+2013/10/14 17:27:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:27:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:27:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:27:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:27:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:27:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:27:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:27:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:27:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:27:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:27:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:27:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:27:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:27:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:28:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:28:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:38:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:38:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:38:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:38:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:38:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:38:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:41:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:41:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:41:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:41:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:41:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:41:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:41:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:41:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:42:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:42:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 17:44:28 [error] [exception.CException] exception 'CException' with message 'CHttpRequest and its behaviors do not have a method or closure named "isPostRequest".' in /var/www/chi/protected/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/chi/protected/modules/admin/controllers/ProfileController.php(11): CComponent->__call('isPostRequest', Array)
+#1 /var/www/chi/protected/modules/admin/controllers/ProfileController.php(11): CHttpRequest->isPostRequest()
+#2 /var/www/chi/protected/framework/web/actions/CInlineAction.php(49): ProfileController->actionIndex()
+#3 /var/www/chi/protected/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/chi/protected/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/chi/protected/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/chi/protected/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/chi/protected/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/chi/protected/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/chi/protected/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/chi/protected/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/chi/protected/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/profile')
+#13 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/chi/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/profile
+HTTP_REFERER=http://chi.my/admin/profile
+---
+2013/10/14 17:58:43 [error] [php] move_uploaded_file(profile/profile.pdf) [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: failed to open stream: Permission denied (/var/www/chi/protected/modules/admin/controllers/ProfileController.php:23)
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/chi/protected/framework/web/filters/CFilterChain.php(133): ProfileController->runAction()
+#2 /var/www/chi/protected/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/chi/protected/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/chi/protected/framework/web/filters/CInlineFilter.php(58): ProfileController->filterAccessControl()
+#5 /var/www/chi/protected/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/chi/protected/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/chi/protected/framework/web/CController.php(265): ProfileController->runActionWithFilters()
+#8 /var/www/chi/protected/framework/web/CWebApplication.php(282): ProfileController->run()
+#9 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/chi/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/profile
+in /var/www/chi/protected/modules/admin/controllers/ProfileController.php (23)
+in /var/www/chi/index.php (13)
+2013/10/14 18:00:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 18:00:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 18:00:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
+2013/10/14 18:00:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /var/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
+---
