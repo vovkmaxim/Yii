@@ -8229,3 +8229,679 @@ Stack trace:
 REQUEST_URI=/
 in /var/www/chi/protected/controllers/SiteController.php (65)
 in /var/www/chi/index.php (13)
+2013/10/11 17:58:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /webroot/vhosts/cityhall/chisw/protected/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /webroot/vhosts/cityhall/chisw/protected/framework/base/CModule.php(387): CDbConnection->init()
+#3 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /webroot/vhosts/cityhall/chisw/protected/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /webroot/vhosts/cityhall/chisw/protected/framework/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /webroot/vhosts/cityhall/chisw/protected/framework/db/ar/CActiveRecord.php(1469): CActiveRecord->getCommandBuilder()
+#7 /webroot/vhosts/cityhall/chisw/protected/controllers/SiteController.php(31): CActiveRecord->findAll()
+#8 /webroot/vhosts/cityhall/chisw/protected/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(282): CController->run('')
+#13 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/
+---
+2013/10/11 17:58:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'chisw.tech' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tech`.
+in /webroot/vhosts/cityhall/chisw/protected/controllers/SiteController.php (31)
+in /webroot/vhosts/cityhall/chisw/index.php (13)
+2013/10/11 17:58:39 [error] [exception.CDbException] exception 'CDbException' with message 'The table "tech" for active record class "Tech" cannot be found in the database.' in /webroot/vhosts/cityhall/chisw/protected/framework/db/ar/CActiveRecord.php:2362
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Tech))
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/db/ar/CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 /webroot/vhosts/cityhall/chisw/protected/framework/db/ar/CActiveFinder.php(389): CActiveRecord->getTableSchema()
+#3 /webroot/vhosts/cityhall/chisw/protected/framework/db/ar/CActiveFinder.php(47): CJoinElement->__construct(Object(CActiveFinder), Object(Tech))
+#4 /webroot/vhosts/cityhall/chisw/protected/framework/db/ar/CActiveRecord.php(909): CActiveFinder->__construct(Object(Tech), Array)
+#5 /webroot/vhosts/cityhall/chisw/protected/framework/db/ar/CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#6 /webroot/vhosts/cityhall/chisw/protected/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#7 /webroot/vhosts/cityhall/chisw/protected/controllers/SiteController.php(31): CActiveRecord->findAll()
+#8 /webroot/vhosts/cityhall/chisw/protected/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(282): CController->run('')
+#13 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/
+---
+2013/10/11 18:06:37 [error] [php] Trying to get property of non-object (/webroot/vhosts/cityhall/chisw/protected/views/site/index.php:124)
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(869): SiteController->renderFile()
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /webroot/vhosts/cityhall/chisw/protected/controllers/SiteController.php(96): SiteController->render()
+#3 /webroot/vhosts/cityhall/chisw/protected/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(286): SiteController->runAction()
+#6 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /webroot/vhosts/cityhall/chisw/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /webroot/vhosts/cityhall/chisw/protected/views/site/index.php (124)
+in /webroot/vhosts/cityhall/chisw/protected/controllers/SiteController.php (96)
+in /webroot/vhosts/cityhall/chisw/index.php (13)
+2013/10/11 18:08:51 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/webroot/vhosts/cityhall/chisw/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/webroot/vhosts...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /webroot/vhosts/cityhall/chisw/protected/framework/web/helpers/CHtml.php(1295): CAssetManager->publish('/webroot/vhosts...', false)
+#3 /webroot/vhosts/cityhall/chisw/protected/modules/admin/AdminModule.php(36): CHtml::asset('/webroot/vhosts...')
+#4 /webroot/vhosts/cityhall/chisw/protected/modules/admin/AdminModule.php(17): AdminModule->publishCssFile('admin.assets', '/bootstrap/css/...')
+#5 /webroot/vhosts/cityhall/chisw/protected/framework/base/CModule.php(90): AdminModule->init()
+#6 /webroot/vhosts/cityhall/chisw/protected/framework/YiiBase.php(206): CModule->__construct('admin', NULL, Array)
+#7 /webroot/vhosts/cityhall/chisw/protected/framework/base/CModule.php(282): YiiBase::createComponent('admin.AdminModu...', 'admin', NULL, Array)
+#8 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(337): CModule->getModule('admin')
+#9 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(276): CWebApplication->createController('admin')
+#10 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#11 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/admin
+---
+2013/10/11 18:11:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:11:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:11:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:11:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:11:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:11:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:11:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:11:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:11:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:11:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:11:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:11:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:12:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:12:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:12:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:12:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:15:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:15:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:15:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:15:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:16:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:16:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:16:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:16:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:17:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:17:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/11 18:19:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/11 18:20:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/11 18:21:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/11 18:21:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/11 18:22:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/11 18:22:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/11 18:23:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/11 18:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/14 14:10:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/14 14:11:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/admin/projects
+---
+2013/10/14 14:11:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/admin/projects
+---
+2013/10/14 14:31:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/admin/projects
+---
+2013/10/14 14:31:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/admin/projects
+---
+2013/10/14 14:32:14 [error] [php] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Permission denied (/webroot/vhosts/cityhall/chisw/protected/components/ProjectImage.php:44)
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/modules/admin/controllers/ProjectsController.php(59): ProjectImage->loadImages()
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/web/actions/CInlineAction.php(49): ProjectsController->actionAdd()
+#2 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /webroot/vhosts/cityhall/chisw/protected/framework/web/filters/CFilterChain.php(133): ProjectsController->runAction()
+#4 /webroot/vhosts/cityhall/chisw/protected/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /webroot/vhosts/cityhall/chisw/protected/framework/web/filters/CInlineFilter.php(58): ProjectsController->filterAccessControl()
+#7 /webroot/vhosts/cityhall/chisw/protected/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(291): CFilterChain->run()
+#9 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(265): ProjectsController->runActionWithFilters()
+#10 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(282): ProjectsController->run()
+#11 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /webroot/vhosts/cityhall/chisw/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/add
+in /webroot/vhosts/cityhall/chisw/protected/components/ProjectImage.php (44)
+in /webroot/vhosts/cityhall/chisw/protected/components/ProjectImage.php (56)
+in /webroot/vhosts/cityhall/chisw/protected/modules/admin/controllers/ProjectsController.php (59)
+2013/10/14 14:38:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/14 14:38:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/14 14:38:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/14 14:38:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/14 14:38:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/14 14:38:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/14 14:39:19 [error] [php] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Permission denied (/webroot/vhosts/cityhall/chisw/protected/components/ProjectImage.php:44)
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/modules/admin/controllers/ProjectsController.php(120): ProjectImage->loadImages()
+#1 unknown(0): ProjectsController->actionEdit()
+#2 /webroot/vhosts/cityhall/chisw/protected/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#3 /webroot/vhosts/cityhall/chisw/protected/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /webroot/vhosts/cityhall/chisw/protected/framework/web/filters/CFilterChain.php(133): ProjectsController->runAction()
+#6 /webroot/vhosts/cityhall/chisw/protected/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /webroot/vhosts/cityhall/chisw/protected/framework/web/filters/CInlineFilter.php(58): ProjectsController->filterAccessControl()
+#9 /webroot/vhosts/cityhall/chisw/protected/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(291): CFilterChain->run()
+#11 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(265): ProjectsController->runActionWithFilters()
+#12 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(282): ProjectsController->run()
+#13 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /webroot/vhosts/cityhall/chisw/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/edit?id=18
+in /webroot/vhosts/cityhall/chisw/protected/components/ProjectImage.php (44)
+in /webroot/vhosts/cityhall/chisw/protected/components/ProjectImage.php (56)
+in /webroot/vhosts/cityhall/chisw/protected/modules/admin/controllers/ProjectsController.php (120)
+2013/10/14 14:40:14 [error] [php] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Permission denied (/webroot/vhosts/cityhall/chisw/protected/components/ProjectImage.php:44)
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/modules/admin/controllers/ProjectsController.php(120): ProjectImage->loadImages()
+#1 unknown(0): ProjectsController->actionEdit()
+#2 /webroot/vhosts/cityhall/chisw/protected/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#3 /webroot/vhosts/cityhall/chisw/protected/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /webroot/vhosts/cityhall/chisw/protected/framework/web/filters/CFilterChain.php(133): ProjectsController->runAction()
+#6 /webroot/vhosts/cityhall/chisw/protected/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /webroot/vhosts/cityhall/chisw/protected/framework/web/filters/CInlineFilter.php(58): ProjectsController->filterAccessControl()
+#9 /webroot/vhosts/cityhall/chisw/protected/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(291): CFilterChain->run()
+#11 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(265): ProjectsController->runActionWithFilters()
+#12 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(282): ProjectsController->run()
+#13 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /webroot/vhosts/cityhall/chisw/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/edit?id=18
+in /webroot/vhosts/cityhall/chisw/protected/components/ProjectImage.php (44)
+in /webroot/vhosts/cityhall/chisw/protected/components/ProjectImage.php (56)
+in /webroot/vhosts/cityhall/chisw/protected/modules/admin/controllers/ProjectsController.php (120)
+2013/10/14 14:41:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/14 14:41:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/14 14:41:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/14 14:41:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/14 14:43:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/14 14:43:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/14 14:44:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/14 14:44:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/14 14:48:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /webroot/vhosts/cityhall/chisw/protected/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(282): CController->run('')
+#2 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/gii
+---
+2013/10/14 14:59:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/14 14:59:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/assets/759e780b/DT_bootstrap.css
+---
+2013/10/14 15:29:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.chdev.com.ua/admin/projects
+---
+2013/10/14 15:29:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /webroot/vhosts/cityhall/chisw/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /webroot/vhosts/cityhall/chisw/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /webroot/vhosts/cityhall/chisw/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.chdev.com.ua/admin/projects
+---
