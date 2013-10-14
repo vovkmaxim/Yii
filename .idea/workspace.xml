@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/ProfileController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/views/profile/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/AdminController.php" afterPath="$PROJECT_DIR$/protected/components/AdminController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/AdminModule.php" afterPath="$PROJECT_DIR$/protected/modules/admin/AdminModule.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/AuthUser.php" afterPath="$PROJECT_DIR$/protected/components/AuthUser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chi.iws" />
@@ -41,7 +32,7 @@
     <file path="/User.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380721746961" ignored="false" />
     <file path="/sign.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380726258520" ignored="false" />
     <file path="/CActiveFinder.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380809120069" ignored="false" />
-    <file path="/Dummy.txt" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381747875605" ignored="false" />
+    <file path="/Dummy.txt" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381762885997" ignored="false" />
     <file path="/scripts.js" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381324533934" ignored="false" />
     <file path="$PROJECT_DIR$/assets/3f5cc17b/DT_bootstrap.css" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381150430563" ignored="false" />
     <file path="$PROJECT_DIR$/../pomogy/public/js/features.js" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381150934089" ignored="false" />
@@ -107,10 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ProfileController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/ProfileController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="69" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.55006033">
+            <state line="24" column="69" selection-start="1022" selection-end="1022" vertical-scroll-proportion="-16.285715">
               <folding />
             </state>
           </provider>
@@ -134,19 +125,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/jobs/add.php">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/profile/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="904" vertical-scroll-proportion="-0.0">
+            <state line="10" column="20" selection-start="390" selection-end="390" vertical-scroll-proportion="-6.785714">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/profile/index.php">
+      <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/config/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="20" selection-start="390" selection-end="390" vertical-scroll-proportion="-6.785714">
+            <state line="60" column="42" selection-start="1713" selection-end="1713" vertical-scroll-proportion="0.5729795">
               <folding />
             </state>
           </provider>
@@ -195,7 +186,6 @@
         <option value="$PROJECT_DIR$/protected/views/site/index.php" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/protected/components/AuthManager.php" />
-        <option value="$PROJECT_DIR$/protected/config/main.php" />
         <option value="$PROJECT_DIR$/protected/framework/base/CApplication.php" />
         <option value="$PROJECT_DIR$/protected/components/AdminController.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php" />
@@ -204,6 +194,7 @@
         <option value="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/profile/index.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/ProfileController.php" />
+        <option value="$PROJECT_DIR$/protected/config/main.php" />
       </list>
     </option>
   </component>
@@ -450,6 +441,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -579,7 +588,11 @@
       <created>1381747880525</created>
       <updated>1381747880525</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="User roles">
+      <created>1381762891537</created>
+      <updated>1381762891537</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -650,7 +663,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="User roles" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -665,6 +678,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="First commit" />
+    <MESSAGE value="User roles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -694,13 +708,6 @@
     <entry file="file://$PROJECT_DIR$/protected/components/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="-3.392857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="35" selection-start="983" selection-end="983" vertical-scroll-proportion="-24.428572">
           <folding />
         </state>
       </provider>
@@ -777,7 +784,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/ProfileController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="69" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.55006033">
+        <state line="24" column="69" selection-start="1022" selection-end="1022" vertical-scroll-proportion="-16.285715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="42" selection-start="1713" selection-end="1713" vertical-scroll-proportion="0.5729795">
           <folding />
         </state>
       </provider>
