@@ -9354,3 +9354,48 @@ Stack trace:
 REQUEST_URI=/assets/datatables/images/sort_both.png
 HTTP_REFERER=http://chi.my/assets/6b7615ce/DT_bootstrap.css
 ---
+2013/10/14 18:24:35 [error] [php] Trying to get property of non-object (/var/www/chi/protected/modules/admin/AdminModule.php:52)
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/profile
+in /var/www/chi/protected/modules/admin/AdminModule.php (52)
+in /var/www/chi/index.php (13)
+2013/10/14 18:24:43 [error] [php] Trying to get property of non-object (/var/www/chi/protected/modules/admin/AdminModule.php:52)
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/profile
+in /var/www/chi/protected/modules/admin/AdminModule.php (52)
+in /var/www/chi/index.php (13)
+2013/10/14 18:24:45 [error] [php] Trying to get property of non-object (/var/www/chi/protected/modules/admin/AdminModule.php:52)
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/chi/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/profile
+in /var/www/chi/protected/modules/admin/AdminModule.php (52)
+in /var/www/chi/index.php (13)
+2013/10/14 18:24:53 [error] [php] Trying to get property of non-object (/var/www/chi/protected/modules/admin/views/layouts/main.php:33)
+Stack trace:
+#0 /var/www/chi/protected/framework/web/CController.php(784): DefaultController->renderFile()
+#1 /var/www/chi/protected/modules/admin/controllers/DefaultController.php(7): DefaultController->render()
+#2 /var/www/chi/protected/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/chi/protected/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/chi/protected/framework/web/filters/CFilterChain.php(133): DefaultController->runAction()
+#5 /var/www/chi/protected/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/chi/protected/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /var/www/chi/protected/framework/web/filters/CInlineFilter.php(58): DefaultController->filterAccessControl()
+#8 /var/www/chi/protected/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /var/www/chi/protected/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/chi/protected/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#11 /var/www/chi/protected/framework/web/CWebApplication.php(282): DefaultController->run()
+#12 /var/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/chi/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/
+in /var/www/chi/protected/modules/admin/views/layouts/main.php (33)
+in /var/www/chi/protected/modules/admin/controllers/DefaultController.php (7)
+in /var/www/chi/index.php (13)

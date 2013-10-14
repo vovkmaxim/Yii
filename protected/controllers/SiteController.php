@@ -31,6 +31,7 @@ class SiteController extends Controller
         $techList = Tech::model()->with('techLists')->findAll();
         $projects = Projects::model()->with('projectsPics')->findAll();
         $vacancies = Jobs::model()->findAll(array('order' => 'position'));
+        $profile = (is_readable('profile/profile.pdf')) ? 'profile/profile.pdf' : '';
         if ($request->isPostRequest) {
             $jobId = $request->getPost('jobid');
             $title = trim($request->getPost('title'));
@@ -83,7 +84,8 @@ class SiteController extends Controller
                 'projects' => $projects,
                 'jobcv' => $job,
                 'success' => true,
-                'jobs' => Text::divideByThree($vacancies)
+                'jobs' => Text::divideByThree($vacancies),
+                'profile' => $profile
             ));
 
         }
