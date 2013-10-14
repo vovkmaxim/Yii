@@ -57,7 +57,7 @@ return array(
 			'connectionString' => 'mysql:host=chdev.com.ua;dbname=chisw',
             'class' => 'CDbConnection',
 			'emulatePrepare' => true,
-			'username' => 'root',
+			'username' => 'chisw',
 			'password' => 't%f{.PdrUFn\rud',
 			'charset' => 'utf8',
             'schemaCachingDuration' => 10
