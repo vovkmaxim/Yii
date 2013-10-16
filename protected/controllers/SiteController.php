@@ -54,7 +54,8 @@ class SiteController extends Controller
                     'projects' => $projects,
                     'jobcv' => $job,
                     'errors' => $errors,
-                    'jobs' => Text::divideByThree($vacancies)
+                    'jobs' => Text::divideByThree($vacancies),
+                    'profile' => $profile
                 ));
                 Yii::app()->end();
             }
@@ -85,6 +86,7 @@ class SiteController extends Controller
                 'jobcv' => $job,
                 'success' => true,
                 'jobs' => Text::divideByThree($vacancies),
+                'profile' => $profile
             ));
 
         }
