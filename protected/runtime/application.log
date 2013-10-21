@@ -9399,3 +9399,358 @@ REQUEST_URI=/admin/
 in /var/www/chi/protected/modules/admin/views/layouts/main.php (33)
 in /var/www/chi/protected/modules/admin/controllers/DefaultController.php (7)
 in /var/www/chi/index.php (13)
+2013/10/21 16:56:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 16:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 16:57:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 16:57:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.my/admin/projects
+---
+2013/10/21 16:57:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.my/admin/projects
+---
+2013/10/21 16:57:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 17:01:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 17:01:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 17:27:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 17:27:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 17:28:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 17:29:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/6a6b96cf/themes/modern/theme.min.js".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/6a6b96cf...')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/6a6b96cf/themes/modern/theme.min.js
+HTTP_REFERER=http://chisw.my/admin/projects/add
+---
+2013/10/21 17:29:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 17:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/6a6b96cf/themes/modern/theme.min.js".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/6a6b96cf...')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/6a6b96cf/themes/modern/theme.min.js
+HTTP_REFERER=http://chisw.my/admin/projects/add
+---
+2013/10/21 17:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 17:31:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/6a6b96cf/themes/modern/theme.min.js".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/6a6b96cf...')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/6a6b96cf/themes/modern/theme.min.js
+HTTP_REFERER=http://chisw.my/admin/projects/add
+---
+2013/10/21 17:31:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 17:31:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/6a6b96cf/themes/modern/theme.min.js".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/6a6b96cf...')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/6a6b96cf/themes/modern/theme.min.js
+HTTP_REFERER=http://chisw.my/admin/projects/add
+---
+2013/10/21 17:31:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 17:36:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/6a6b96cf/themes/modern/theme.min.js".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/6a6b96cf...')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/6a6b96cf/themes/modern/theme.min.js
+HTTP_REFERER=http://chisw.my/admin/projects/add
+---
+2013/10/21 17:36:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 17:40:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/6a6b96cf/themes/modern/theme.min.js".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/6a6b96cf...')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/6a6b96cf/themes/modern/theme.min.js
+HTTP_REFERER=http://chisw.my/admin/projects/add
+---
+2013/10/21 17:40:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 17:40:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e204228e/jquery.min.map".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e204228e...')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/e204228e/jquery.min.map
+---
+2013/10/21 17:43:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e204228e/jquery.min.map".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e204228e...')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/e204228e/jquery.min.map
+---
+2013/10/21 17:43:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/6a6b96cf/skins/lightgray/skin.min.css".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/6a6b96cf...')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/6a6b96cf/skins/lightgray/skin.min.css
+HTTP_REFERER=http://chisw.my/admin/projects/add
+---
+2013/10/21 17:43:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/6a6b96cf/skins/lightgray/content.min.css".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/6a6b96cf...')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/6a6b96cf/skins/lightgray/content.min.css
+---
+2013/10/21 17:43:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 17:43:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 17:46:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e204228e/jquery.min.map".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/e204228e...')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/e204228e/jquery.min.map
+---
+2013/10/21 17:46:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 17:46:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 17:48:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_both.png".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_both.png
+HTTP_REFERER=http://chisw.my/admin/projects
+---
+2013/10/21 17:48:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/datatables/images/sort_asc.png".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/datatabl...')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/datatables/images/sort_asc.png
+HTTP_REFERER=http://chisw.my/admin/projects
+---
+2013/10/21 17:48:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 17:48:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 17:48:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 18:15:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 18:15:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 18:15:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 18:15:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 18:15:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/10/21 18:15:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/php-1/www/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php-1/www/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/php-1/www/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php-1/www/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
