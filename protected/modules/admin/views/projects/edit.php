@@ -37,7 +37,7 @@
         <label>Описание</label>
 
         <div class="controls">
-            <textarea class="input-xxlarge" name="description"><?php echo $description; ?></textarea>
+            <textarea cols="40" rows="20" class="content-block" name="description"><?php echo $description; ?></textarea>
         </div>
     </div>
     <div class="control-group">
