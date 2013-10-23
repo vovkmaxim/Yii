@@ -7,12 +7,11 @@
  * @property integer $id
  * @property string $title
  * @property string $description
- * @property string $skills
- * @property integer $tech_id
+ * @property int $position
  *
  * The followings are the available model relations:
- * @property Tech $tech
  * @property ProjectsPics[] $projectsPics
+ * @property Tech[] $tech
  */
 class Projects extends CActiveRecord
 {
@@ -32,11 +31,10 @@ class Projects extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, description, skills, tech_id', 'required'),
-			array('tech_id', 'numerical', 'integerOnly'=>true),
+			array('title', 'required'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, description, skills, tech_id', 'safe', 'on'=>'search'),
+			array('id, title, description, position', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -48,8 +46,8 @@ class Projects extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'tech' => array(self::BELONGS_TO, 'Tech', 'tech_id'),
 			'projectsPics' => array(self::HAS_MANY, 'ProjectsPics', 'project_id'),
+            'tech' => array(self::MANY_MANY, 'Tech', 'tech_project(project_id, tech_id)')
 		);
 	}
 
@@ -62,8 +60,7 @@ class Projects extends CActiveRecord
 			'id' => 'ID',
 			'title' => 'Title',
 			'description' => 'Description',
-			'skills' => 'Skills',
-			'tech_id' => 'Tech',
+            'position' => 'Position'
 		);
 	}
 
@@ -88,8 +85,6 @@ class Projects extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('description',$this->description,true);
-		$criteria->compare('skills',$this->skills,true);
-		$criteria->compare('tech_id',$this->tech_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -106,4 +101,9 @@ class Projects extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public function behaviors(){
+        return array('EAdvancedArBehavior' =>
+        array('class' => 'application.components.EAdvancedArBehavior'));
+    }
 }

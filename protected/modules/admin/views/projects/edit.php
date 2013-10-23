@@ -13,13 +13,18 @@
     <?php endif; ?>
     <div class="control-group">
         <label>Технология*</label>
-        <select name="tech">
-            <option value="0"></option>
-            <?php foreach ($techList as $tech) : ?>
-                <option
-                    value="<?php echo $tech->id; ?>" <?php echo ($tech->id == $techId) ? 'selected="selected"' : ''; ?>><?php echo $tech->title; ?></option>
-            <?php endforeach; ?>
-        </select>
+        <div class="select-multiple">
+            <select name="tech[]" <?php if(count($tech) > 1) echo 'multiple="multiple"';?>>
+                <?php foreach ($techList as $item) : ?>
+                    <option <?php if (in_array($item->id, $tech)) echo 'selected="selected"'; ?>
+                        value="<?php echo $item->id; ?>"><?php echo $item->title; ?></option>
+                <?php endforeach; ?>
+            </select>
+            <a href="#" class="multi-switch">
+                <img src="/images/bullet_toggle_plus.png" style="vertical-align: bottom;" />
+            </a>
+        </div>
+
     </div>
 <?php if (isset($errors['title'])) : ?>
     <div class="alert alert-error">
@@ -41,13 +46,6 @@
         </div>
     </div>
     <div class="control-group">
-        <label>Требуемые навыки</label>
-
-        <div class="controls">
-            <input type="text" class="input-xxlarge" name="desired_skills" value="<?php echo $desiredSkills; ?>"/>
-        </div>
-    </div>
-        <div class="control-group">
             <label>Загрузка картинок</label>
             <?php if (!empty($pics)) : ?>
                 <div class="previews">

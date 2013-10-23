@@ -7,9 +7,11 @@
  * @property integer $id
  * @property string $title
  * @property string $description
+ * @property string $url
  *
  * The followings are the available model relations:
  * @property TechList[] $techLists
+ * @property TechProject[] $techProjects
  */
 class Tech extends CActiveRecord
 {
@@ -29,7 +31,7 @@ class Tech extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, description', 'required'),
+			array('title', 'required'),
 			array('title', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -46,6 +48,7 @@ class Tech extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'techLists' => array(self::HAS_MANY, 'TechList', 'tech_id'),
+			'projects' => array(self::MANY_MANY, 'Projects', 'tech_project(tech_id, project_id)')
 		);
 	}
 
@@ -58,6 +61,7 @@ class Tech extends CActiveRecord
 			'id' => 'ID',
 			'title' => 'Title',
 			'description' => 'Description',
+            'url' => 'Url'
 		);
 	}
 
@@ -98,4 +102,9 @@ class Tech extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public function behaviors(){
+        return array('EAdvancedArBehavior' =>
+        array('class' => 'application.components.EAdvancedArBehavior'));
+    }
 }

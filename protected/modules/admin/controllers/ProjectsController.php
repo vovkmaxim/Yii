@@ -13,20 +13,20 @@ class ProjectsController extends AdminController
                         'tech' => array(
                             'select' => array('title')
                         )
-                    ))->findAll();
+                    ))->findAll(array('order' => 'position'));
         $this->render('index', array('projectsList' => $projectsList));
     }
 
     public function actionAdd() {
         $request = Yii::app()->request;
         $techList = Tech::model()->findAll();
-        $viewVars = array('description' => '', 'desiredSkills' => '', 'techList' => $techList, 'techId' => 0);
+        $viewVars = array('description' => '', 'desiredSkills' => '', 'techList' => $techList, 'tech' => array());
         if ($request->isPostRequest) {
 
             $title = trim($request->getPost('title'));
             $description = trim($request->getPost('description'));
             $desiredSkills = trim($request->getPost('desired_skills'));
-            $tech = $request->getPost('tech');
+            $tech = (array)$request->getPost('tech');
             $errors = array();
             $img = new ProjectImage();
             if ($title == '') {
@@ -46,15 +46,14 @@ class ProjectsController extends AdminController
                 }
                 $viewVars['description'] = $description;
                 $viewVars['desiredSkills'] = $desiredSkills;
-                $viewVars['techId'] = $tech;
+                $viewVars['tech'] = $tech;
                 $viewVars['errors'] = $errors;
             } else {
                 $project = new Projects();
                 $project->title = $title;
                 $project->description = $description;
-                $project->skills = $desiredSkills;
-                $project->tech_id = $tech;
-                $project->insert();
+                $project->tech = Tech::model()->findAllByPk($tech);
+                $project->save();
                 $images = empty($_FILES['img']) ? array() : $_FILES['img'];
                 $img->loadImages($images, $project->id);
 
@@ -73,34 +72,39 @@ class ProjectsController extends AdminController
         }
         $request = Yii::app()->request;
         $project = Projects::model()->findByPk($id);
+        if (!$project) {
+            throw new CHttpException(404, 'Неправильный запрос');
+        }
         $techList = Tech::model()->findAll();
-        $projectPics = ProjectsPics::model()->findAllByAttributes(array('project_id' => $id));
+        $projectPics = $project->projectsPics;
         $img = new ProjectImage();
+        $techs = $project->tech;
+        $tech = self::getPrimaryKeys($techs);
+
         $viewVars = array(
                     'title' => $project->title,
                     'description' => $project->description,
-                    'desiredSkills' => $project->skills,
                     'techList' => $techList,
-                    'techId' => $project->tech_id,
+                    'tech' => $tech,
                     'pics' => $projectPics);
         if ($request->isPostRequest) {
             $title = trim($request->getPost('title'));
             $description = trim($request->getPost('description'));
-            $desiredSkills = trim($request->getPost('desired_skills'));
-            $tech = $request->getPost('tech');
+            $tech = (array)$request->getPost('tech');
+
+
             $errors = array();
             if ($title == '') {
                 $errors['title'] = 'Введите название';
             }
-            if ($tech == 0) {
+            if (count($tech) == 0) {
                 $errors['tech'] = 'Выберите технологию';
             }
             if (count($errors) > 0) {
                 $viewVars['errors'] = $errors;
                 $viewVars['title'] = $title;
                 $viewVars['description'] = $description;
-                $viewVars['desiredSkills'] = $desiredSkills;
-                $viewVars['techId'] = $tech;
+                $viewVars['tech'] = $tech;
                 if (!empty($_FILES['img'])) {
                     $images = $_FILES['img'];
                     $img->makePreview($images);
@@ -113,9 +117,8 @@ class ProjectsController extends AdminController
             } else {
                 $project->title = $title;
                 $project->description = $description;
-                $project->skills = $desiredSkills;
-                $project->tech_id = $tech;
-                $project->update();
+                $project->tech = Tech::model()->findAllByPk($tech);
+                $project->save();
                 $images = empty($_FILES['img']) ? array() : $_FILES['img'];
                 $img->loadImages($images, $project->id);
                 $viewVars['result'] = 'Проект успешно изменен';
@@ -177,6 +180,22 @@ class ProjectsController extends AdminController
         $project = Projects::model()->findByPk($id);
         $project->delete();
         header('Location:' . Yii::app()->getBaseUrl(true) . '/admin/projects');
+    }
+
+    public function actionSaveOrder() {
+        $request = Yii::app()->request;
+        if ($request->isAjaxRequest) {
+            $order = $request->getQuery('id');
+            fb($order);
+            foreach ($order as $id => $item) {
+                Yii::app()->db->createCommand()->update('projects', array('position' => $id), 'id = ' . $item);
+            }
+            echo CJavaScript::jsonEncode(array('order' => $order));
+            Yii::app()->end();
+        } else {
+            throw new CHttpException(404, 'Неправильный запрос');
+        }
+
     }
 
 

@@ -47,6 +47,9 @@ class JobsController extends AdminController
         }
         $request = Yii::app()->request;
         $job = Jobs::model()->findByPk($id);
+        if (!$job) {
+            throw new CHttpException(404,'Неправильный запрос');
+        }
         $viewVars = array('title' => $job->title,   'description' => $job->description);
         if ($request->isPostRequest) {
             $title = trim($request->getPost('title'));

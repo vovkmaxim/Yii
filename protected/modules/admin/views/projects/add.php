@@ -13,10 +13,9 @@
     <?php endif; ?>
     <div class="control-group">
         <label>Технология*</label>
-        <select name="tech">
-            <option value="0"></option>
-            <?php foreach ($techList as $tech) : ?>
-                <option value="<?php echo $tech->id; ?>" <?php echo ($tech->id == $techId) ? 'selected="selected"' : ''; ?>><?php echo $tech->title; ?></option>
+        <select name="tech[]" <?php if(count($tech) > 1) echo 'multiple="multiple"';?>>
+            <?php foreach ($techList as $item) : ?>
+                <option value="<?php echo $item->id; ?>" <?php if (in_array($item->id, $tech)) echo 'selected="selected"'; ?>><?php echo $item->title; ?></option>
             <?php endforeach; ?>
         </select>
     </div>
@@ -37,12 +36,7 @@
             <textarea class="input-xxlarge" name="description"><?php echo $description; ?></textarea>
         </div>
     </div>
-    <div class="control-group">
-        <label>Требуемые навыки</label>
-        <div class="controls">
-            <input type="text" class="input-xxlarge" name="desired_skills" <?php echo $desiredSkills; ?> />
-        </div>
-    </div>
+
     <div class="control-group">
         <label>Загрузка картинок</label>
         <?php if (isset($previews)) : ?>
