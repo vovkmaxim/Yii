@@ -1,4 +1,8 @@
 $(function () {
+
+    tinyMCE.init({
+        selector: "textarea.content-block"
+    });
     // Side Bar Toggle
     $('.hide-sidebar').click(function () {
         $('#sidebar').hide('fast', function () {
