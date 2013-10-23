@@ -27,6 +27,7 @@ class TechController extends AdminController
                 $tech = new Tech();
                 $tech->title = $title;
                 $tech->description = $description;
+                $tech->url = self::str2url($tech->title);
                 $tech->insert();
                 if (is_array($list)) {
                     foreach ($list as $id => $element) {
@@ -55,6 +56,9 @@ class TechController extends AdminController
         }
         $request = Yii::app()->request;
         $tech = Tech::model()->findByPk($id);
+        if (!$tech) {
+            throw new CHttpException(404,'Неправильный запрос');
+        }
         $techList = TechList::model()->findAllByAttributes(array('tech_id' => $tech->id));
         $list = array();
         foreach ($techList as $el) {
@@ -75,6 +79,7 @@ class TechController extends AdminController
             } else {
                 $tech->title = $title;
                 $tech->description = $description;
+                $tech->url = self::str2url($tech->title);
                 $tech->save();
                 TechList::model()->deleteAllByAttributes(array('tech_id' => $id));
                 if (is_array($list)) {

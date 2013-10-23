@@ -10,7 +10,7 @@
                         <thead>
                         <tr>
                             <th>Название</th>
-                            <th>Действия</th>
+                            <th style="text-align: right;">Действия</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -19,8 +19,8 @@
                                 <td><?php echo $job->title; ?></td>
                                 <td>
                                     <div style="float:right;">
-                                        <a title="Редактировать" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/jobs/edit?id=<?php echo $job->id;?>" class="icon-edit"></a>
-                                        <a title="Удалить" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/jobs/delete?id=<?php echo $job->id;?>" class="icon-remove"></a>
+                                        <a title="Редактировать" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/jobs/edit/id/<?php echo $job->id;?>" class="icon-edit"></a>
+                                        <a title="Удалить" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/jobs/delete/id/<?php echo $job->id;?>" class="icon-remove"></a>
                                     </div>
                                 </td>
                             </tr>

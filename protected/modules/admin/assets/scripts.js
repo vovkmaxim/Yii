@@ -41,6 +41,19 @@ $(function () {
         }
     }).disableSelection();
 
+    $(".projects tbody").sortable({
+        helper: fixHelper,
+        update: function (event, ui) {
+            var order = $(this).sortable("serialize");
+            $.ajax({
+                url: '/admin/projects/saveorder?' + order,
+                data: {order: order},
+                success: function (result) {
+                }
+            })
+        }
+    }).disableSelection();
+
 
     $('body').on('click', '.add-pic', function (e) {
         e.preventDefault();
@@ -76,5 +89,15 @@ $(function () {
         })
         return false;
     })
+    $('body').on('click', '.multi-switch', function(e) {
+        e.preventDefault();
+        var select = $(this).parent().find('select');
+        if (select.attr('multiple') !== undefined) {
+            select.removeAttr('multiple');
+        } else {
+            select.attr('multiple', 'multiple');
+        }
 
+        return false;
+    })
 });

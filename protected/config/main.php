@@ -63,6 +63,16 @@ return array(
             'schemaCachingDuration' => 10
 		),
 
+//        'db'=>array(
+//            'connectionString' => 'mysql:host=localhost;dbname=old_chi',
+//            'class' => 'CDbConnection',
+//            'emulatePrepare' => true,
+//            'username' => 'root',
+//            'password' => '21091989',
+//            'charset' => 'utf8',
+//            'schemaCachingDuration' => 10
+//        ),
+
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',

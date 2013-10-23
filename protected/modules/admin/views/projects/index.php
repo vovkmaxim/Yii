@@ -6,23 +6,31 @@
             </div>
             <div class="block-content collapse in">
                 <div class="span12">
-                    <table class="table table-striped table-bordered table-condensed data" id="example">
+                    <table class="table table-striped table-bordered table-condensed projects" id="example">
                         <thead>
                         <tr>
                             <th>Название</th>
-                            <th>Технология</th>
-                            <th>Действия</th>
+                            <th>Технологии</th>
+                            <th style="text-align: right;">Действия</th>
                         </tr>
                         </thead>
                         <tbody>
                         <?php foreach ($projectsList as $project) : ?>
-                            <tr>
+                            <tr id="id-<?php echo $project->id; ?>">
                                 <td><?php echo $project->title; ?></td>
-                                <td><?php echo $project->tech->title; ?></td>
+                                <td>
+                                    <?php $str = '';
+                                        foreach ($project->tech as $tech) {
+                                            $str .= ' ' . $tech->title . ',';
+                                        }
+                                        $str = rtrim($str, ',');
+                                        echo $str;
+                                    ?>
+                                </td>
                                 <td>
                                     <div style="float:right;">
-                                        <a title="Редактировать" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/projects/edit?id=<?php echo $project->id;?>" class="icon-edit"></a>
-                                        <a title="Удалить" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/projects/delete?id=<?php echo $project->id;?>" class="icon-remove"></a>
+                                        <a title="Редактировать" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/projects/edit/id/<?php echo $project->id;?>" class="icon-edit"></a>
+                                        <a title="Удалить" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/projects/delete/id/<?php echo $project->id;?>" class="icon-remove"></a>
                                     </div>
                                 </td>
                             </tr>
