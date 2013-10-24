@@ -164,8 +164,8 @@
                 </div>
                 <div class="three-columns">
                     <?php foreach ($jobGroup as $job) : ?>
-                    <div class="frame">
                     <div class="col">
+                    <div class="frame">
                         <h2 class="col-heading"><?php echo $job->title; ?></h2>
                         <p><?php echo $job->description; ?></p>
                         <a href="#inline-content" id="<?php echo $job->id; ?>" class="btn-square inline">Oh, I'm exactly that Guy</a>
