@@ -548,7 +548,7 @@ h2.technology-header{
 	color: #fff;
 }
 .technology-section .item header .btn{
-	margin: 88px 0 0;
+	/*margin: 88px 0 0;*/
 	border: 2px solid #fff;
 	color: #fff;
 	text-transform: uppercase;
@@ -556,6 +556,14 @@ h2.technology-header{
 	vertical-align: top;
 	padding: 2px 13px;
 	opacity:0;
+}
+.technology-section .item:hover header .btn{
+	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	-ms-transition: opacity 0.3s;
+	-o-transition: opacity 0.3s;
+	transition: opacity 0.3s;
 }
 .technology-section .item header .btn:hover{
 	text-decoration: none;
@@ -751,7 +759,7 @@ h2.technology-header{
 }
 /* NiceScroll positioning*/
 #ascrail2001-hr.nicescroll-rails{
-	margin: -290px 0 0;
+	margin: -244px 0 0;
 }
 /* popup styles */
 #colorbox, #cboxOverlay{

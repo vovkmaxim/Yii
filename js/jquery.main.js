@@ -1,13 +1,13 @@
 $(window).load(function(){
+    initNiceScroll();
     initPopup();
     initBackgroundResize();
     initFirstPageHeight();
-    initNiceScroll();
     initWaypoints();
     initScrollTo();
     initSameHeight();
     initTechnologyWidth();
-    initCaseFixed();
+    // initCaseFixed();
     initCustomFileInput();
 });
 
@@ -66,7 +66,7 @@ function initNiceScroll() {
         autohidemode: false,
         touchbehavior: true,
         enablemousewheel: false
-    });  
+    });
 }
 
 function initScrollTo() {
@@ -138,18 +138,18 @@ function initTechnologyWidth() {
     //     }
     // });
 
-    $('.technology-section').on('mouseenter', '.item', function(){
-        $(this).find('.btn').animate({
-            opacity: 1
-        }, 300);
+    // $('.technology-section').on('mouseenter', '.item', function(){
+    //     $(this).find('.btn').animate({
+    //         opacity: 1
+    //     }, 300);
 
-    });
+    // });
 
-    $('.technology-section').on('mouseleave', '.item', function(){
-        $(this).find('.btn').animate({
-            opacity: 0
-        }, 300);
-    });
+    // $('.technology-section').on('mouseleave', '.item', function(){
+    //     $(this).find('.btn').animate({
+    //         opacity: 0
+    //     }, 300);
+    // });
 
 }
 
