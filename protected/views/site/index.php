@@ -129,7 +129,7 @@
                             <?php echo Text::formatText($firstPrj->description); ?>
                             <?php if ($firstPrj->skills != '') : ?>
                             <strong class="title">Desired Skills</strong>
-                            <p><?php echo $firstPrj->skills; ?></p>
+                            <p> </p>
                             <?php endif; ?>
                         </div>
                         <div class="case-navigate">
@@ -139,6 +139,7 @@
                         </div>
                     </section>
                     <div class="case-images">
+                         &nbsp;
                         <?php foreach($firstPrj->projectsPics as $image): ?>
                         <img src="<?php echo Yii::app()->baseUrl . $image->url; ?>" alt="">
                         <?php endforeach; ?>
