@@ -1,4 +1,5 @@
 $(window).load(function(){
+    initPopup();
     initBackgroundResize();
     initFirstPageHeight();
     initNiceScroll();
@@ -6,9 +7,23 @@ $(window).load(function(){
     initScrollTo();
     initSameHeight();
     initTechnologyWidth();
-    // initCaseFixed();
-    initPopup();
+    initCaseFixed();
+    initCustomFileInput();
 });
+
+
+function initCustomFileInput() {
+    $('.custom-file').on('change', function() {
+        $('.custom-file').each(function() {
+            var name = this.value;
+            reWin = /.*\\(.*)/;
+            var fileTitle = name.replace(reWin, "$1");
+            reUnix = /.*\/(.*)/;
+            fileTitle = fileTitle.replace(reUnix, "$1");
+            $(this).closest('.add-resume').addClass('uploaded').find('.name').html(fileTitle).after('<span class="remove"></span>');
+        });
+    });
+}
 
 // background stretching
 function initBackgroundResize() {
@@ -270,7 +285,6 @@ function initPopup() {
     $('.inline').colorbox({
         open: open,
         inline: true,
-        width: "50%",
         onOpen: function() {
             var errorSubject = ($('input[name=error_subject]').length > 0);
             var errorCv = ($('input[name=error_cv]').length > 0);
