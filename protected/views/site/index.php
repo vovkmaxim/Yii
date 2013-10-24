@@ -119,33 +119,7 @@
     <section class="main">
         <div class="m1">
             <div class="m2">
-                <h1>Projects</h1>
-                <div class="projects-case">
-                    <?php if (count($projects) > 0) : ?>
-                    <?php $firstPrj = reset($projects); ?>
-                    <section class="case-info">
-                        <h1><?php echo $firstPrj->title; ?></h1>
-                        <div class="case-description">
-                            <?php echo Text::formatText($firstPrj->description); ?>
-                            <?php if ($firstPrj->skills != '') : ?>
-                            <strong class="title">Desired Skills</strong>
-                            <p> </p>
-                            <?php endif; ?>
-                        </div>
-                        <div class="case-navigate">
-                            <a href="#" class="prev">Previous</a>
-                            <a href="#" class="next">Next</a>
-                            <a href="#" class="close">Close</a>
-                        </div>
-                    </section>
-                    <div class="case-images">
-                         &nbsp;
-                        <?php foreach($firstPrj->projectsPics as $image): ?>
-                        <img src="<?php echo Yii::app()->baseUrl . $image->url; ?>" alt="">
-                        <?php endforeach; ?>
-                    </div>
-                    <?php endif;?>
-                </div>
+                <h1><a href="/projects">Projects</a></h1>
             </div>
         </div>
     </section>
