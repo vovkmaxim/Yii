@@ -23,6 +23,12 @@ function initCustomFileInput() {
             $(this).closest('.add-resume').addClass('uploaded').find('.name').html(fileTitle).after('<span class="remove"></span>');
         });
     });
+
+    $('.add-resume').on('click', '.remove', function () {
+        $(this).closest('.add-resume').removeClass('uploaded').find('.name').html('');
+        $(this).closest('.add-resume').find('.custom-file').val("");
+        $(this).remove();
+    });
 }
 
 // background stretching
