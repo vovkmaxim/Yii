@@ -31,7 +31,7 @@
                         </ul>
                     </li>
                 </ul>
-                <?php $role = Yii::app()->user->model->role; ?>
+                <?php $role = (isset(Yii::app()->user->model->role)) ? Yii::app()->user->model->role : 0; ?>
                 <ul class="nav">
                     <?php if (!in_array($role, AuthUser::$denies['TechController'])) : ?>
                     <li <?php echo ($this->active == 'tech') ? 'class="active"' : ''; ?>>
