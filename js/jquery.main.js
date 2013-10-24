@@ -6,7 +6,7 @@ $(window).load(function(){
     initScrollTo();
     initSameHeight();
     initTechnologyWidth();
-    initCaseFixed();
+    // initCaseFixed();
     initPopup();
 });
 
@@ -235,9 +235,9 @@ function initCaseFixed() {
             });
         }
         
-//        if(selector.height() > $(window).height()){
-//            selector.removeAttr("style");
-//        }
+       // if(selector.height() > $(window).height()){
+       //     selector.removeAttr("style");
+       // }
     });
 }
 

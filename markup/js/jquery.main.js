@@ -1,4 +1,4 @@
-jQuery(function(){
+$(window).load(function(){
     initBackgroundResize();
     initFirstPageHeight();
     initNiceScroll();
