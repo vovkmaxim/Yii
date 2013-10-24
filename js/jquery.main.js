@@ -244,7 +244,7 @@ function initCaseFixed() {
 
     $(document).scroll(function () {
         var y = $(this).scrollTop();
-        if ((offsetOriginal.top < y && y < deltaOffset)) {
+        if (offsetOriginal.top < y && y < deltaOffset) {
             selector.css({
                 'position': 'fixed',
                 'left' : offsetReset.left,
@@ -264,9 +264,9 @@ function initCaseFixed() {
             });
         }
         
-       // if(selector.height() > $(window).height()){
-       //     selector.removeAttr("style");
-       // }
+       if(selector.height() > $(window).height()){
+           selector.removeAttr("style");
+       }
     });
 }
 
