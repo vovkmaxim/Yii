@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8" />
     <meta name="description" content="">
@@ -14,23 +15,7 @@
     <script src="js/jquery.main.js"></script>
 </head>
 <body>
-<div id="wrapper">
-<header id="header">
-    <div class="header-frame">
-        <strong class="logo"><a href="#">CHI software</a></strong>
-        <nav id="nav">
-            <ul>
-                <li><a href="#pageId1">Company</a></li>
-                <li><a href="#pageId2">TECHNOLOGIES</a></li>
-                <li class="add"><a href="#pageId3">PROJECTS</a></li>
-                <li><a href="#pageId4">Vacancies</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
 <?php echo $content; ?>
-</div>
-<div id="bg"><img src="images/bg-body.jpg" alt="" /></div>
 <div style="display:none;">
     <div id="inline-content">
          <form class="send-cv" action="" method="post" enctype="multipart/form-data">

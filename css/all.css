@@ -669,7 +669,7 @@ h2.technology-header{
     display: inline-block;
     vertical-align: top;
     border: 2px solid #000;
-    padding: 7px 9px;
+    padding: 8px 9px 6px;
     text-transform: uppercase;
     font:18px/21px 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif;
     color: #000;
@@ -712,10 +712,14 @@ h2.technology-header{
     width: 25%;
     position: relative;
 }
-.portfolio .item>img{
+.portfolio .item>img, .portfolio .item > .blank{
     display: block;
     width: 100%;
     height: auto;
+}
+.portfolio .item > .blank {
+    border: 0 none;
+    vertical-align: top;
 }
 .portfolio .item:hover .holder{opacity: 1;}
 .portfolio .item .holder{
