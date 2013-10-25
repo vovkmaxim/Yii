@@ -3,7 +3,6 @@ $(function(){
     initPopup();
     initBackgroundResize();
     initFirstPageHeight();
-    initWaypoints();
     initScrollTo();
     initSameHeight();
     initCustomFileInput();
@@ -12,6 +11,7 @@ $(function(){
 $(window).load(function(){
     initTechnologyWidth();
     initCaseFixed();
+    initWaypoints();
 });
 
 
