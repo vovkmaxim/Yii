@@ -715,6 +715,7 @@ h2.technology-header{
 .portfolio .item>img, .portfolio .item > .blank{
     display: block;
     width: 100%;
+    max-width: 100%;
     height: auto;
 }
 .portfolio .item > .blank {
