@@ -8,10 +8,7 @@
         <li><a href="#" class="linkedin">linkedin</a></li>
     </ul>
 </div>
-
-
-
-
+<div class="pages-holder">
 <div class="page">
     <section class="main">
         <div class="m1">
@@ -186,7 +183,7 @@
 <?php else: ?>
     <input type="hidden" name="open" value="0" />
 <?php endif; ?>
-
+</div>
 
 
 
