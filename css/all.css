@@ -712,10 +712,15 @@ h2.technology-header{
     width: 25%;
     position: relative;
 }
-.portfolio .item>img{
+.portfolio .item>img, .portfolio .item > .blank{
     display: block;
     width: 100%;
+    max-width: 100%;
     height: auto;
+}
+.portfolio .item > .blank {
+    border: 0 none;
+    vertical-align: top;
 }
 .portfolio .item:hover .holder{opacity: 1;}
 .portfolio .item .holder{
