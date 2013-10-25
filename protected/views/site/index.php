@@ -1,3 +1,17 @@
+<div class="first-page">
+    <section class="main">
+        <h1 class="slogan">DESIGN. CODE. CLOUDIFY. <strong>FROM IDEA TO THE PRODUCT.</strong></h1>
+    </section>
+    <ul class="social-networks">
+        <li><a href="#" class="facebook">facebook</a></li>
+        <li><a href="#" class="twitter">twitter</a></li>
+        <li><a href="#" class="linkedin">linkedin</a></li>
+    </ul>
+</div>
+
+
+
+
 <div class="page">
     <section class="main">
         <div class="m1">
