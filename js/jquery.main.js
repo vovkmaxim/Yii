@@ -15,6 +15,7 @@ $(window).load(function(){
 function initCustomFileInput() {
     $('.custom-file').on('change', function() {
         $('.custom-file').each(function() {
+            $('.add-resume').find('.remove').remove();
             var name = this.value;
             reWin = /.*\\(.*)/;
             var fileTitle = name.replace(reWin, "$1");
@@ -22,6 +23,12 @@ function initCustomFileInput() {
             fileTitle = fileTitle.replace(reUnix, "$1");
             $(this).closest('.add-resume').addClass('uploaded').find('.name').html(fileTitle).after('<span class="remove"></span>');
         });
+    });
+
+    $('.add-resume').on('click', '.remove', function () {
+        $(this).closest('.add-resume').removeClass('uploaded').find('.name').html('');
+        $(this).closest('.add-resume').find('.custom-file').val("");
+        $(this).remove();
     });
 }
 
@@ -62,10 +69,12 @@ function initNiceScroll() {
         cursorborder: 'none',
         cursoropacitymin: 0.76,
         cursoropacitymax: 0.76,
-        mousescrollstep: 15,
         autohidemode: false,
         touchbehavior: true,
-        enablemousewheel: false
+        railvalign: 'top',
+        enablemousewheel: false,
+        preservenativescrolling: false,
+        cursordragspeed:0.1
     });
 }
 
@@ -94,23 +103,29 @@ function initTechnologyWidth() {
         }
     });
 
-    setTimeout(function() {
-        $.each(items.find('h2.technology-header'), function() {
-            $(this).css({'opacity': 0});
-            var originalOffset = $(this).offset();
-            $(this).clone().appendTo('#wrapper').css({'opacity': 1, 'position':'absolute'}).offset(originalOffset);
-        });
-    }, 100);
+    (function () {
+        var frame = $('.technology-section').find('.frame');
+        var frameOffset = $('.technology-section').offset();
+        var frameWidth = frame.width();
+        items.find('.technology-header').css({'opacity': 0});
+        $('#wrapper').append('<div class="heading-box"></div>');
+        items.clone().appendTo($('.heading-box'));
+        $('.heading-box').find('.info').remove();
+        $('.heading-box').find('.btn').remove();
+        $('.heading-box').find('.technology-header').css({'opacity': 1});
+        $('.heading-box').css({'position':'absolute', 'top':frameOffset.top+100, 'left':frameOffset.left}).width(frameWidth);
+    })();
     
     $('.technology-section').on('scroll', function(){
-        $('#wrapper > h2.technology-header').remove();
-        $.each(items.find('h2.technology-header'), function() {
-            originalOffset = $(this).offset();
-            $(this).clone().appendTo('#wrapper').css({'opacity': 1, 'position':'absolute'}).offset(originalOffset);
-        });
+        // $('#wrapper > h2.technology-header').remove();
+        // $.each(items.find('h2.technology-header'), function() {
+        //     originalOffset = $(this).offset();
+        //     $(this).clone().appendTo('#wrapper><div class="heading-box ></div>').css({'opacity': 1, 'position':'absolute'}).offset(originalOffset);
+        // });
 
         var leftScroll = $(this).scrollLeft();
         var bgp = ((leftScroll * 100)/newWidth).toFixed(3);
+        $('.heading-box').css({'margin-left': -leftScroll})
         $('.technology-page').find('.m2').css({'background-position' :  bgp + '% 148px'});
 
         $.each(items, function() {
@@ -230,7 +245,7 @@ function initCaseFixed() {
 
     $(document).scroll(function () {
         var y = $(this).scrollTop();
-        if ((offsetOriginal.top < y && y < deltaOffset)) {
+        if (offsetOriginal.top < y && y < deltaOffset) {
             selector.css({
                 'position': 'fixed',
                 'left' : offsetReset.left,
@@ -250,9 +265,9 @@ function initCaseFixed() {
             });
         }
         
-       // if(selector.height() > $(window).height()){
-       //     selector.removeAttr("style");
-       // }
+       if(selector.height() > $(window).height()){
+           selector.removeAttr("style");
+       }
     });
 }
 

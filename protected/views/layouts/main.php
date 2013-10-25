@@ -9,7 +9,6 @@
     <script src="js/libs/jquery-1.9.0.min.js"></script>
     <script src="js/libs/modernizr-2.6.2.min.js"></script>
     <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.mousewheel.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/jquery.colorbox.js"></script>
     <script src="js/jquery.main.js"></script>

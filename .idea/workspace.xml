@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/index.php" afterPath="$PROJECT_DIR$/protected/views/site/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/markup/css/colorbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/markup/css/ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/markup/js/jquery.colorbox.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery.mousewheel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/js/jquery.mousewheel.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/all.css" afterPath="$PROJECT_DIR$/css/all.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/css/all.css" afterPath="$PROJECT_DIR$/markup/css/all.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/index.html" afterPath="$PROJECT_DIR$/markup/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.main.js" afterPath="$PROJECT_DIR$/js/jquery.main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/js/jquery.main.js" afterPath="$PROJECT_DIR$/markup/js/jquery.main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="9889d9c3-1b8f-4311-9f2c-c92dcea42098" name="New changelist" comment="New changelist" />
     <ignored path="chi.iws" />
@@ -115,7 +123,7 @@
       <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="1198" selection-end="1588" vertical-scroll-proportion="0.0">
+            <state line="29" column="0" selection-start="1146" selection-end="1536" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -683,7 +691,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/all.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" />
+        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/markup/portfolio.html">
@@ -693,7 +703,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1198" selection-end="1588" vertical-scroll-proportion="0.0">
+        <state line="29" column="0" selection-start="1146" selection-end="1536" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
