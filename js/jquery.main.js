@@ -6,13 +6,14 @@ $(function(){
     initWaypoints();
     initScrollTo();
     initSameHeight();
-    initTechnologyWidth();
+    
     initCustomFileInput();
 });
 
 $(window).load(function(){
-    
+    initTechnologyWidth();
     initCaseFixed();
+
 });
 
 
@@ -109,7 +110,6 @@ function initTechnologyWidth() {
 
     $('.technology-section').scrollLeft(0);
 
-    setTimeout(function() {
         var frame = $('.technology-section').find('.frame');
         var frameOffset = $('.technology-section').offset();
         items.find('.technology-header').css({'opacity': 0});
@@ -119,7 +119,6 @@ function initTechnologyWidth() {
         $('.heading-box').find('.btn').remove();
         $('.heading-box').find('.technology-header').css({'opacity': 1});
         $('.heading-box').css({'position':'absolute', 'top':frameOffset.top+100, 'left':frameOffset.left}).width(9999);
-    }, 1000);
     
     $('.technology-section').on('scroll', function(){
 
