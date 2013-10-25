@@ -15,6 +15,7 @@ $(window).load(function(){
 function initCustomFileInput() {
     $('.custom-file').on('change', function() {
         $('.custom-file').each(function() {
+            $('.add-resume').find('.remove').remove();
             var name = this.value;
             reWin = /.*\\(.*)/;
             var fileTitle = name.replace(reWin, "$1");
