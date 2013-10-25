@@ -302,6 +302,8 @@ function initPopup() {
         inline: true,
         // transition: 'none',
         initialWidth: 433,
+        initialHeight: 300,
+        speed: 400,
         onOpen: function() {
             var errorSubject = ($('input[name=error_subject]').length > 0);
             var errorCv = ($('input[name=error_cv]').length > 0);

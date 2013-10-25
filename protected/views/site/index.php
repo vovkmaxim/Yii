@@ -1,3 +1,17 @@
+<div id="wrapper">
+<header id="header">
+    <div class="header-frame">
+        <strong class="logo"><a href="#">CHI software</a></strong>
+        <nav id="nav">
+            <ul>
+                <li><a href="#pageId1">Company</a></li>
+                <li><a href="#pageId2">TECHNOLOGIES</a></li>
+                <li class="add"><a href="#pageId3">PROJECTS</a></li>
+                <li><a href="#pageId4">Vacancies</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 <div class="first-page">
     <section class="main">
         <h1 class="slogan">DESIGN. CODE. CLOUDIFY. <strong>FROM IDEA TO THE PRODUCT.</strong></h1>
@@ -184,6 +198,8 @@
     <input type="hidden" name="open" value="0" />
 <?php endif; ?>
 </div>
+</div>
+<div id="bg"><img src="images/bg-body.jpg" alt="" /></div>
 
 
 
