@@ -10,7 +10,7 @@ $(function(){
 
 $(window).load(function(){
     initTechnologyWidth();
-    initCaseFixed();
+    // initCaseFixed();
     initWaypoints();
 });
 
