@@ -43,7 +43,7 @@
 </div>
 </div>
 <div id="bg"><img src="images/bg-body.jpg" alt="" /></div>
-<div style="display:none">
+<div style="display:none;">
     <div id="inline-content">
          <form class="send-cv" action="" method="post" enctype="multipart/form-data">
              <h1>vacancy request</h1>

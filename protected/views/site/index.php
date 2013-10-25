@@ -1,3 +1,17 @@
+<div class="first-page">
+    <section class="main">
+        <h1 class="slogan">DESIGN. CODE. CLOUDIFY. <strong>FROM IDEA TO THE PRODUCT.</strong></h1>
+    </section>
+    <ul class="social-networks">
+        <li><a href="#" class="facebook">facebook</a></li>
+        <li><a href="#" class="twitter">twitter</a></li>
+        <li><a href="#" class="linkedin">linkedin</a></li>
+    </ul>
+</div>
+
+
+
+
 <div class="page">
     <section class="main">
         <div class="m1">
@@ -119,33 +133,7 @@
     <section class="main">
         <div class="m1">
             <div class="m2">
-                <h1>Projects</h1>
-                <div class="projects-case">
-                    <?php if (count($projects) > 0) : ?>
-                    <?php $firstPrj = reset($projects); ?>
-                    <section class="case-info">
-                        <h1><?php echo $firstPrj->title; ?></h1>
-                        <div class="case-description">
-                            <?php echo Text::formatText($firstPrj->description); ?>
-                            <?php if ($firstPrj->skills != '') : ?>
-                            <strong class="title">Desired Skills</strong>
-                            <p> </p>
-                            <?php endif; ?>
-                        </div>
-                        <div class="case-navigate">
-                            <a href="#" class="prev">Previous</a>
-                            <a href="#" class="next">Next</a>
-                            <a href="#" class="close">Close</a>
-                        </div>
-                    </section>
-                    <div class="case-images">
-                         &nbsp;
-                        <?php foreach($firstPrj->projectsPics as $image): ?>
-                        <img src="<?php echo Yii::app()->baseUrl . $image->url; ?>" alt="">
-                        <?php endforeach; ?>
-                    </div>
-                    <?php endif;?>
-                </div>
+                <h1><a href="/projects">Projects</a></h1>
             </div>
         </div>
     </section>
