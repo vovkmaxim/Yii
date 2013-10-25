@@ -6,14 +6,12 @@ $(function(){
     initWaypoints();
     initScrollTo();
     initSameHeight();
-    
     initCustomFileInput();
 });
 
 $(window).load(function(){
     initTechnologyWidth();
     initCaseFixed();
-
 });
 
 
@@ -93,12 +91,16 @@ function initScrollTo() {
 }
 
 function initTechnologyWidth() {
-    var items = $('.technology-section').find('.item');
+    var section = $('.technology-section');
+    var items = section.find('.item');
     var newWidth = 0;
+    var selector = section.find('.frame');
+    var frameOffsetTop = section.offset().top + 100;
+    var frameOffsetLeft = section.offset().left;
     $.each(items, function() {
         newWidth+= $(this).outerWidth();
     });
-    var selector = $('.technology-section').find('.frame');
+    
     selector.width(newWidth + 120);
     selector.height(selector.height());
 
@@ -108,23 +110,20 @@ function initTechnologyWidth() {
         }
     });
 
-    $('.technology-section').scrollLeft(0);
-
-        var frame = $('.technology-section').find('.frame');
-        var frameOffset = $('.technology-section').offset();
-        items.find('.technology-header').css({'opacity': 0});
-        $('#wrapper').append('<div class="heading-box"></div>');
-        items.clone().appendTo($('.heading-box'));
-        $('.heading-box').find('.info').remove();
-        $('.heading-box').find('.btn').remove();
-        $('.heading-box').find('.technology-header').css({'opacity': 1});
-        $('.heading-box').css({'position':'absolute', 'top':frameOffset.top+100, 'left':frameOffset.left}).width(9999);
+    section.scrollLeft(0);
+    items.find('.technology-header').css({'opacity': 0});
+    $('#wrapper').append('<div class="heading-box"></div>');
+    var headingBox = $('.heading-box');
+    items.clone().appendTo($('.heading-box'));
+    headingBox.find('.info').remove();
+    headingBox.find('.btn').remove();
+    headingBox.find('.technology-header').css({'opacity': 1});
+    headingBox.css({'position':'absolute', 'top':frameOffsetTop, 'left':frameOffsetLeft}).width(9999);
     
-    $('.technology-section').on('scroll', function(){
-
+    section.on('scroll', function(){
         var leftScroll = $(this).scrollLeft();
         var bgp = ((leftScroll * 100)/newWidth).toFixed(3);
-        $('.heading-box').css({'margin-left': -leftScroll})
+        headingBox.css({'margin-left': -leftScroll})
         $('.technology-page').find('.m2').css({'background-position' :  bgp + '% 148px'});
 
         $.each(items, function() {
