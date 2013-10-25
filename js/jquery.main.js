@@ -300,6 +300,8 @@ function initPopup() {
     $('.inline').colorbox({
         open: open,
         inline: true,
+        // transition: 'none',
+        initialWidth: 455,
         onOpen: function() {
             var errorSubject = ($('input[name=error_subject]').length > 0);
             var errorCv = ($('input[name=error_cv]').length > 0);
