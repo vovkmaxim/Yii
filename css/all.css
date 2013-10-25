@@ -533,7 +533,8 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
 	position: relative;
 	z-index: 10000;
 }
-.technology-section .item{
+.technology-section .item,
+.heading-box .item{
 	float: left;
 	width: 312px;
 	margin: 0 0 0 20px; 
@@ -542,7 +543,8 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
 	margin: 0 0 20px;
 	min-height: 171px;
 }
-.technology-section .item:first-child{margin: 0;}
+.technology-section .item:first-child,
+.heading-box .item:first-child{margin: 0;}
 h2.technology-header{
 	font:60px/60px 'politicaregular', Tahoma, Geneva, Arial, Helvetica, sans-serif;
 	color: #fff;
@@ -664,6 +666,8 @@ h2.technology-header{
 	margin: 0 0 0 2%;
 }
 .three-columns .col:first-child{margin: 0;}
+.three-columns .col .frame{padding: 20px 0 0;}
+.three-columns .col .frame:first-child{padding: 0;}
 .btn-square{
 	display: inline-block;
 	vertical-align: top;
@@ -759,7 +763,7 @@ h2.technology-header{
 }
 /* NiceScroll positioning*/
 #ascrail2001-hr.nicescroll-rails{
-	margin: -244px 0 0;
+	margin: 263px 0 0;
 }
 /* popup styles */
 #colorbox, #cboxOverlay{
