@@ -951,3 +951,8 @@ h2.technology-header{
     color: #000;
     background: #fff;
 }
+
+.main h1 a, .main h1 a:hover {
+    color: black;
+    text-decoration: none;
+}
