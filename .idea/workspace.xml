@@ -5,24 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/markup/css/colorbox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/markup/css/ie.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/markup/js/jquery.colorbox.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery.mousewheel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/js/jquery.mousewheel.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/all.css" afterPath="$PROJECT_DIR$/css/all.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/css/all.css" afterPath="$PROJECT_DIR$/markup/css/all.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/index.html" afterPath="$PROJECT_DIR$/markup/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.main.js" afterPath="$PROJECT_DIR$/js/jquery.main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/js/jquery.main.js" afterPath="$PROJECT_DIR$/markup/js/jquery.main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="9889d9c3-1b8f-4311-9f2c-c92dcea42098" name="New changelist" comment="New changelist" />
     <ignored path="chi.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/main.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1382624344990" ignored="false" />
     <file path="/SiteController.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381763976481" ignored="false" />
-    <file path="/index.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1382624712215" ignored="false" />
+    <file path="/index.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1382688636635" ignored="false" />
     <file path="/AdminModule.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1382623977575" ignored="false" />
     <file path="/Controller.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1382521320864" ignored="false" />
     <file path="/a.dummy" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1382435040305" ignored="false" />
@@ -45,12 +36,12 @@
     <file path="/User.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380721746961" ignored="false" />
     <file path="/sign.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380726258520" ignored="false" />
     <file path="/CActiveFinder.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380809120069" ignored="false" />
-    <file path="/Dummy.txt" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1382685617271" ignored="false" />
+    <file path="/Dummy.txt" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1382688752583" ignored="false" />
     <file path="/scripts.js" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1382518927373" ignored="false" />
     <file path="$PROJECT_DIR$/assets/3f5cc17b/DT_bootstrap.css" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381150430563" ignored="false" />
     <file path="$PROJECT_DIR$/../pomogy/public/js/features.js" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381150934089" ignored="false" />
     <file path="/jquery.main.js" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381831174485" ignored="false" />
-    <file path="/all.css" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1382623399997" ignored="false" />
+    <file path="/all.css" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1382688836303" ignored="false" />
     <file path="/PorjectImage.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381247274477" ignored="false" />
     <file path="/styles.css" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381245202248" ignored="false" />
     <file path="/ProjectImage.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381324943335" ignored="false" />
@@ -102,11 +93,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="24" selection-start="465" selection-end="465" vertical-scroll-proportion="0.3627685">
+            <state line="9" column="6" selection-start="390" selection-end="390" vertical-scroll-proportion="-6.107143">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="all.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/all.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="956" column="25" selection-start="28688" selection-end="28688" vertical-scroll-proportion="0.9561201">
+              <folding>
+                <element signature="e#22043#23678#1" expanded="true" />
+                <element signature="e#26442#27845#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,8 +126,10 @@
       <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="1146" selection-end="1536" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="30" column="23" selection-start="1169" selection-end="1169" vertical-scroll-proportion="-16.321428">
+              <folding>
+                <element signature="n#style#0;n#div#2;n#body#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,13 +161,13 @@
         <option value="$PROJECT_DIR$/protected/modules/admin/views/jobs/index.php" />
         <option value="$PROJECT_DIR$/protected/components/Controller.php" />
         <option value="$PROJECT_DIR$/protected/config/main.php" />
-        <option value="$PROJECT_DIR$/css/all.css" />
         <option value="$PROJECT_DIR$/protected/controllers/ProjectsController.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/AdminModule.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/protected/views/projects/index.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/protected/views/site/index.php" />
+        <option value="$PROJECT_DIR$/css/all.css" />
       </list>
     </option>
   </component>
@@ -365,15 +370,15 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel-learn-test-suite" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="243" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1152" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1148" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1152" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="239" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="233" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -542,7 +547,11 @@
       <created>1382624382516</created>
       <updated>1382624382516</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="User roles">
+      <created>1382688758375</created>
+      <updated>1382688758375</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -550,22 +559,22 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18836713" sideWeight="0.6721854" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1905016" sideWeight="0.6721854" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18832599" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -689,23 +698,9 @@
         <state line="33" column="105" selection-start="1433" selection-end="1433" vertical-scroll-proportion="-18.964285" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/all.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/markup/portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="24" selection-start="679" selection-end="679" vertical-scroll-proportion="0.3572268" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="1146" selection-end="1536" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/projects/index.php">
@@ -715,10 +710,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="23" selection-start="1169" selection-end="1169" vertical-scroll-proportion="-16.321428">
+          <folding>
+            <element signature="n#style#0;n#div#2;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="24" selection-start="465" selection-end="465" vertical-scroll-proportion="0.3627685">
+        <state line="9" column="6" selection-start="390" selection-end="390" vertical-scroll-proportion="-6.107143">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="956" column="25" selection-start="28688" selection-end="28688" vertical-scroll-proportion="0.9561201">
+          <folding>
+            <element signature="e#22043#23678#1" expanded="true" />
+            <element signature="e#26442#27845#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
