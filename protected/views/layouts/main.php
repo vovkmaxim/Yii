@@ -9,7 +9,6 @@
     <script src="js/libs/jquery-1.9.0.min.js"></script>
     <script src="js/libs/modernizr-2.6.2.min.js"></script>
     <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.mousewheel.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/jquery.colorbox.js"></script>
     <script src="js/jquery.main.js"></script>
@@ -44,7 +43,7 @@
 </div>
 </div>
 <div id="bg"><img src="images/bg-body.jpg" alt="" /></div>
-<div style="display:none">
+<div style="display:none;">
     <div id="inline-content">
          <form class="send-cv" action="" method="post" enctype="multipart/form-data">
              <h1>vacancy request</h1>
