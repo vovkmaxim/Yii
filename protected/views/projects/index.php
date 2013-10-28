@@ -2,6 +2,7 @@
     <?php if ($tech) : ?>
     <?php foreach ($tech as $techBlock) : ?>
         <div class="portfolio-holder">
+            <a name="<?php echo Controller::str2url($techBlock->title)?>"></a>
             <div class="header-section">
                 <h1><?php echo $techBlock->title; ?> Projects</h1>
             </div>

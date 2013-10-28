@@ -26,11 +26,11 @@
              <div class="row-holder">
                  <div class="form-row">
                      <label>your name</label>
-                     <input type="text" name="title" />
+                     <input type="text" name="name" />
                  </div>
                  <div class="form-row">
                      <label>e-mail</label>
-                     <input type="email" />
+                     <input type="email" name="email" />
                  </div>
                  <div class="form-row msg">
                      <label>comments</label>
