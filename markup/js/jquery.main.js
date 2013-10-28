@@ -1,20 +1,24 @@
-$(window).load(function(){
+$(function(){
     initNiceScroll();
     initPopup();
     initBackgroundResize();
     initFirstPageHeight();
-    initWaypoints();
     initScrollTo();
     initSameHeight();
+    initCustomFileInput();
+});
+
+$(window).load(function(){
     initTechnologyWidth();
     initCaseFixed();
-    initCustomFileInput();
+    initWaypoints();
 });
 
 
 function initCustomFileInput() {
     $('.custom-file').on('change', function() {
         $('.custom-file').each(function() {
+            $('.add-resume').find('.remove').remove();
             var name = this.value;
             reWin = /.*\\(.*)/;
             var fileTitle = name.replace(reWin, "$1");
@@ -87,12 +91,16 @@ function initScrollTo() {
 }
 
 function initTechnologyWidth() {
-    var items = $('.technology-section').find('.item');
+    var section = $('.technology-section');
+    var items = section.find('.item');
     var newWidth = 0;
+    var selector = section.find('.frame');
+    var frameOffsetTop = section.offset().top + 100;
+    var frameOffsetLeft = section.offset().left;
     $.each(items, function() {
         newWidth+= $(this).outerWidth();
     });
-    var selector = $('.technology-section').find('.frame');
+    
     selector.width(newWidth + 120);
     selector.height(selector.height());
 
@@ -102,29 +110,20 @@ function initTechnologyWidth() {
         }
     });
 
-    (function () {
-        var frame = $('.technology-section').find('.frame');
-        var frameOffset = $('.technology-section').offset();
-        var frameWidth = frame.width();
-        items.find('.technology-header').css({'opacity': 0});
-        $('#wrapper').append('<div class="heading-box"></div>');
-        items.clone().appendTo($('.heading-box'));
-        $('.heading-box').find('.info').remove();
-        $('.heading-box').find('.btn').remove();
-        $('.heading-box').find('.technology-header').css({'opacity': 1});
-        $('.heading-box').css({'position':'absolute', 'top':frameOffset.top+100, 'left':frameOffset.left}).width(frameWidth);
-    })();
+    section.scrollLeft(0);
+    items.find('.technology-header').css({'opacity': 0});
+    $('#wrapper').append('<div class="heading-box"></div>');
+    var headingBox = $('.heading-box');
+    items.clone().appendTo($('.heading-box'));
+    headingBox.find('.info').remove();
+    headingBox.find('.btn').remove();
+    headingBox.find('.technology-header').css({'opacity': 1});
+    headingBox.css({'position':'absolute', 'top':frameOffsetTop, 'left':frameOffsetLeft}).width(9999);
     
-    $('.technology-section').on('scroll', function(){
-        // $('#wrapper > h2.technology-header').remove();
-        // $.each(items.find('h2.technology-header'), function() {
-        //     originalOffset = $(this).offset();
-        //     $(this).clone().appendTo('#wrapper><div class="heading-box ></div>').css({'opacity': 1, 'position':'absolute'}).offset(originalOffset);
-        // });
-
+    section.on('scroll', function(){
         var leftScroll = $(this).scrollLeft();
         var bgp = ((leftScroll * 100)/newWidth).toFixed(3);
-        $('.heading-box').css({'margin-left': -leftScroll})
+        headingBox.css({'margin-left': -leftScroll})
         $('.technology-page').find('.m2').css({'background-position' :  bgp + '% 148px'});
 
         $.each(items, function() {
@@ -140,30 +139,6 @@ function initTechnologyWidth() {
         });
 
     });
-
-    // $('.technology-section').on('scroll mousewheel', function(e, event, delta, deltaX, deltaY) {
-    //     var rightSide = $('.technology-page').find('.frame').width()-$('.technology-section').width();
-    //     if ($(this).scrollLeft() == rightSide && delta <= -1 ) {
-    //         $(this).getNiceScroll().toggle();
-    //         $('html, body').scrollTop($('html, body').scrollTop() + (-(delta)*40));
-    //     }
-    //     else if ($(this).scrollLeft() == 0 && delta >= 1) {
-    //         $('html, body').scrollTop($('html, body').scrollTop() - (delta*40));
-    //     }
-    // });
-
-    // $('.technology-section').on('mouseenter', '.item', function(){
-    //     $(this).find('.btn').animate({
-    //         opacity: 1
-    //     }, 300);
-
-    // });
-
-    // $('.technology-section').on('mouseleave', '.item', function(){
-    //     $(this).find('.btn').animate({
-    //         opacity: 0
-    //     }, 300);
-    // });
 
 }
 
@@ -299,6 +274,10 @@ function initPopup() {
     $('.inline').colorbox({
         open: open,
         inline: true,
+        // transition: 'none',
+        initialWidth: 433,
+        initialHeight: 300,
+        speed: 400,
         onOpen: function() {
             var errorSubject = ($('input[name=error_subject]').length > 0);
             var errorCv = ($('input[name=error_cv]').length > 0);

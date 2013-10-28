@@ -543,7 +543,8 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     margin: 0 0 20px;
     min-height: 171px;
 }
-.technology-section .item:first-child{margin: 0;}
+.technology-section .item:first-child,
+.heading-box .item:first-child{margin: 0;}
 h2.technology-header{
     font:60px/60px 'politicaregular', Tahoma, Geneva, Arial, Helvetica, sans-serif;
     color: #fff;
@@ -768,6 +769,11 @@ h2.technology-header{
     margin: 263px 0 0;
 }
 /* popup styles */
+.popup-hide{
+    height: 0;
+    display: none;
+    overflow: hidden;
+}
 #colorbox, #cboxOverlay{
     z-index:10002;
     overflow: visible;

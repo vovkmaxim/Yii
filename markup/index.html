@@ -9,7 +9,6 @@
 	<script src="js/libs/jquery-1.9.0.min.js"></script>
 	<script src="js/libs/modernizr-2.6.2.min.js"></script>
 	<script src="js/waypoints.min.js"></script>
-	<script src="js/jquery.mousewheel.js"></script>
 	<script src="js/jquery.nicescroll.min.js"></script>
 	<script src="js/jquery.colorbox.js"></script>
 	<script src="js/jquery.main.js"></script>
@@ -305,17 +304,17 @@
 								<div class="col">
 									<h2 class="col-heading">PHP Developer for Social Media Unit</h2>
 									<p>CHI Software provides customers with technical experts, thoroughly selected, based on each customer's project needs. Our customers choose and have full control over our technical experts, treating them as employees of their own company.</p>
-									<a href="#" class="btn-square">Oh, I'm exactly that Guy</a>
+									<a href="#inline-content" class="btn-square inline cboxElement">Oh, I'm exactly that Guy</a>
 								</div>
 								<div class="col">
 									<h2 class="col-heading">Senior Front-end Engineer</h2>
 									<p>CHI Software provides customers with technical experts, thoroughly selected, based on each customer's project needs. Our customers choose and have full control over our technical experts, treating them as employees of their own company.</p>
-									<a href="#" class="btn-square">Oh, I'm exactly that Guy</a>
+									<a href="#inline-content" class="btn-square inline cboxElement">Oh, I'm exactly that Guy</a>
 								</div>
 								<div class="col">
 									<h2 class="col-heading">Java Mobile Applications Developer</h2>
 									<p>CHI Software provides customers with technical experts, thoroughly selected, based on each customer's project needs. Our customers choose and have full control over our technical experts, treating them as employees of their own company.</p>
-									<a href="#" class="btn-square">Oh, I'm exactly that Guy</a>
+									<a href="#inline-content" class="btn-square inline cboxElement">Oh, I'm exactly that Guy</a>
 								</div>
 							</div>
 						</div>
@@ -325,5 +324,40 @@
 		</div>
 	</div>
 	<div id="bg"><img src="images/bg-body.jpg" alt="" /></div>
+	<div class="popup-hide">
+		<div id="inline-content">
+         <form action="#" class="send-cv">
+             <h1>vacancy request</h1>
+             <div class="alert"></div>
+             <div class="success"></div>
+             <div class="row-holder">
+                 <div class="form-row">
+                     <label>your name</label>
+                     <input type="text" name="title">
+                 </div>
+                 <div class="form-row">
+                     <label>e-mail</label>
+                     <input type="email">
+                 </div>
+                 <div class="form-row msg">
+                     <label>comments</label>
+                     <textarea name="message"></textarea>
+                 </div>
+                 <div class="form-row">
+                     <div class="add-resume">
+                         <div class="button">
+                             <span>add resume</span>
+                             <input type="file" class="custom-file" name="cv">
+                         </div>
+                         <span class="name"></span>
+                     </div>
+                 </div>
+             </div>
+             <div class="submit-holder">
+                 <input type="submit" value="Send">
+             </div>
+         </form>
+    </div>
+	</div>
 </body>
 </html>
