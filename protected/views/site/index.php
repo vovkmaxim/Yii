@@ -6,7 +6,7 @@
             <ul>
                 <li><a href="#pageId1">Company</a></li>
                 <li><a href="#pageId2">TECHNOLOGIES</a></li>
-                <li class="add"><a href="#pageId3">PROJECTS</a></li>
+                <li class="add"><a href="/projects">PROJECTS</a></li>
                 <li><a href="#pageId4">Vacancies</a></li>
             </ul>
         </nav>
@@ -120,7 +120,7 @@
                         <article class="item">
                             <header>
                                 <h2 class="technology-header"><?php echo $technology->title; ?></h2>
-                                <a href="#" class="btn">get a glimpse of</a>
+                                <a href="/projects#<?php echo Controller::str2url($technology->title); ?>" class="btn">get a glimpse of</a>
                             </header>
                             <div class="info">
                                 <div class="description">
@@ -140,15 +140,7 @@
         </div>
     </section>
 </div>
-<div class="page">
-    <section class="main">
-        <div class="m1">
-            <div class="m2">
-                <h1><a href="/projects">Projects</a></h1>
-            </div>
-        </div>
-    </section>
-</div>
+
 <div class="page">
     <section class="main">
         <div class="m1">
@@ -182,10 +174,14 @@
     <input type="hidden" name="open" value="1" />
     <input type="hidden" name="job-title" value="<?php echo $jobcv->title; ?>" />
     <input type="hidden" name="job_id" value="<?php echo $jobcv->id; ?>" />
-    <input type="hidden" name="title" value="<?php echo $title; ?>" />
+    <input type="hidden" name="name" value="<?php echo $name; ?>" />
+    <input type="hidden" name="email" value="<?php echo $email; ?>" />
     <input type="hidden" name="message" value="<?php echo $message; ?>" />
-    <?php if (isset($errors['subject'])) : ?>
-        <input type="hidden" name="error_subject" value="<?php echo $errors['subject']; ?>" />
+    <?php if (isset($errors['name'])) : ?>
+        <input type="hidden" name="error_name" value="<?php echo $errors['name']; ?>" />
+    <?php endif; ?>
+    <?php if (isset($errors['email'])) : ?>
+        <input type="hidden" name="error_email" value="<?php echo $errors['email']; ?>" />
     <?php endif; ?>
     <?php if (isset($errors['cv'])) : ?>
        <input type="hidden" name="error_cv" value="<?php echo $errors['cv']; ?>" />

@@ -34,13 +34,17 @@ class SiteController extends Controller
         $profile = (is_readable('profile/profile.pdf')) ? 'profile/profile.pdf' : '';
         if ($request->isPostRequest) {
             $jobId = $request->getPost('jobid');
-            $title = trim($request->getPost('title'));
+            $name = trim($request->getPost('name'));
+            $email = trim($request->getPost('email'));
             $message = trim($request->getPost('message'));
             $job = Jobs::model()->findByPk($jobId);
             $cv = (empty($_FILES['cv'])) ? array() : $_FILES['cv'];
             $errors = array();
-            if ($title == '') {
-                $errors['subject'] = 'empty_subject';
+            if ($name == '') {
+                $errors['name'] = 'empty_name';
+            }
+            if ($email == '') {
+                $errors['email'] = 'empty_email';
             }
             if (empty($cv['name'])) {
                 $errors['cv'] = 'empty_cv';
@@ -48,7 +52,8 @@ class SiteController extends Controller
             if (count($errors) > 0) {
                 $this->render('index', array(
                     'open' => true,
-                    'title' => $title,
+                    'name' => $name,
+                    'email' => $email,
                     'message' => $message,
                     'tech' => $techList,
                     'projects' => $projects,
@@ -79,7 +84,7 @@ class SiteController extends Controller
 
             $this->render('index', array(
                 'open' => true,
-                'title' => $title,
+                'name' => $name,
                 'message' => $message,
                 'tech' => $techList,
                 'projects' => $projects,
