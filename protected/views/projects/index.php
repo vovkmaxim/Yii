@@ -53,7 +53,7 @@
             var destination = $(anchor).offset().top - 50;
             var scroll = $(document).scrollTop();
             if (destination != scroll) {
-                $('html, body').animate({scrollTop: destination + "px"}, 1000);
+                $('html, body').animate({scrollTop: destination + "px"}, 10);
             }
             return false;
         }
