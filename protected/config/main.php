@@ -53,25 +53,25 @@ return array(
 //		),
 		// uncomment the following to use a MySQL database
 
-		'db'=>array(
-			'connectionString' => 'mysql:host=chdev.com.ua;dbname=chisw',
-            'class' => 'CDbConnection',
-			'emulatePrepare' => true,
-			'username' => 'chisw',
-			'password' => 't%f{.PdrUFn\rud',
-			'charset' => 'utf8',
-            'schemaCachingDuration' => 10
-		),
-
-//        'db'=>array(
-//            'connectionString' => 'mysql:host=localhost;dbname=old_chi',
+//		'db'=>array(
+//			'connectionString' => 'mysql:host=chdev.com.ua;dbname=chisw',
 //            'class' => 'CDbConnection',
-//            'emulatePrepare' => true,
-//            'username' => 'root',
-//            'password' => '21091989',
-//            'charset' => 'utf8',
+//			'emulatePrepare' => true,
+//			'username' => 'chisw',
+//			'password' => 't%f{.PdrUFn\rud',
+//			'charset' => 'utf8',
 //            'schemaCachingDuration' => 10
-//        ),
+//		),
+
+        'db'=>array(
+            'connectionString' => 'mysql:host=localhost;dbname=chi',
+            'class' => 'CDbConnection',
+            'emulatePrepare' => true,
+            'username' => 'root',
+            'password' => '21091989',
+            'charset' => 'utf8',
+            'schemaCachingDuration' => 10
+        ),
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors

@@ -81,6 +81,9 @@ class SiteController extends Controller
             $mailer->Username = 'chisw';
             $mailer->Password = '73chisw2354kjlg';
             $mailer->send();
+            if (is_file($attach)) {
+                unlink($attach);
+            }
 
             $this->render('index', array(
                 'open' => true,
