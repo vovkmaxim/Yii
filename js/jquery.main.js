@@ -92,6 +92,9 @@ function initScrollTo() {
 
 function initTechnologyWidth() {
     var section = $('.technology-section');
+    if (section.length == 0) {
+        return false;
+    }
     var items = section.find('.item');
     var newWidth = 0;
     var selector = section.find('.frame');

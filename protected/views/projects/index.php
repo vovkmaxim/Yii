@@ -44,3 +44,18 @@
         <?php endif; ?>
     </div>
 </div>
+<script type="text/javascript">
+    $(window).load(function() {
+        var reg = /#[a-zA-Z0-9_-]*/;
+        var test = reg.exec(location.href);
+        if (test) {
+            var anchor = test[0];
+            var destination = $(anchor).offset().top - 50;
+            var scroll = $(document).scrollTop();
+            if (destination != scroll) {
+                $('html, body').animate({scrollTop: destination + "px"}, 1000);
+            }
+            return false;
+        }
+    })
+</script>
