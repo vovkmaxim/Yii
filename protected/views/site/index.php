@@ -141,12 +141,11 @@
     </section>
 </div>
 
-<div class="page" id="vacancies">
+<div class="page">
     <section class="main">
         <div class="m1">
             <div class="m2">
                 <h1>Vacancies</h1>
-                <?php foreach ($jobs as $jobGroup) : ?>
                 <div class="vacancy-image">
                     <div class="holder">
                         <div class="frame">
@@ -154,22 +153,46 @@
                         </div>
                     </div>
                 </div>
-                <div class="three-columns">
-                    <?php foreach ($jobGroup as $job) : ?>
+                <h3>CHI Software offers you:</h3>
+                <div class="two-columns vacancy-columns">
                     <div class="col">
-                    <div class="frame">
-                        <h2 class="col-heading"><?php echo $job->title; ?></h2>
+                        <ul>
+                            <li>Competitive salary.</li>
+                            <li>Regular evaluation and salary rise. </li>
+                            <li>Convenient location of the office (2 minutes from Sumskaya street).</li>
+                            <li>Cozy modern office with equipped kitchen, places for rest and X-Box. </li>
+                            <li>Career and professional growth. </li>
+                            <li>20 working-days paid vacation.</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li>Paid sickness leave.</li>
+                            <li>Flexible working schedule with the opportunity to work from home.</li>
+                            <li>Free English courses twice a week. </li>
+                            <li>Free bicycles parking. </li>
+                            <li>Friendly team.</li>
+                            <li>Democratic managment. </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vacancy-holder">
+                    <?php foreach ($jobs as $job) : ?>
+                    <article class="vacancy-item">
+                        <header>
+                            <h2 class="col-heading"><?php echo $job->title; ?></h2>
+                            <a href="#inline-content" id="<?php echo $job->id; ?>" class="btn-square inline cboxElement">Oh, I'm exactly that Guy</a>
+                        </header>
                         <p><?php echo $job->description; ?></p>
-                        <a href="#inline-content" id="<?php echo $job->id; ?>" class="btn-square inline">Oh, I'm exactly that Guy</a>
-                    </div>
-                    </div>
+                    </article>
                     <?php endforeach; ?>
                 </div>
-                <?php endforeach; ?>
             </div>
         </div>
     </section>
 </div>
+
+
 <?php if (isset($open)) : ?>
     <input type="hidden" name="open" value="1" />
     <input type="hidden" name="job-title" value="<?php echo $jobcv->title; ?>" />

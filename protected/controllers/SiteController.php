@@ -59,7 +59,7 @@ class SiteController extends Controller
                     'projects' => $projects,
                     'jobcv' => $job,
                     'errors' => $errors,
-                    'jobs' => Text::divideByThree($vacancies),
+                    'jobs' => $vacancies,
                     'profile' => $profile
                 ));
                 Yii::app()->end();
@@ -94,7 +94,7 @@ class SiteController extends Controller
                 'projects' => $projects,
                 'jobcv' => $job,
                 'success' => true,
-                'jobs' => Text::divideByThree($vacancies),
+                'jobs' => $vacancies,
                 'profile' => $profile
             ));
 
@@ -103,7 +103,7 @@ class SiteController extends Controller
         $this->render('index', array(
                                 'tech' => $techList,
                                 'projects' => $projects,
-                                'jobs' => Text::divideByThree($vacancies),
+                                'jobs' => $vacancies,
                                 'profile' => $profile
                                )
         );

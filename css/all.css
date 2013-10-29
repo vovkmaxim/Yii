@@ -686,6 +686,7 @@ h2.technology-header{
     width: 100%;
     position: relative;
     overflow: hidden;
+    margin: 0 0 30px;
 }
 .vacancy-image .holder,
 .vacancy-image .frame{
@@ -697,6 +698,34 @@ h2.technology-header{
     left: 50%;
     margin: 0 -70px;
 }
+.two-columns.vacancy-columns ul{margin: 0;}
+.two-columns.vacancy-columns ul li:before{
+    content: '•';
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 0 4px 0 0;
+}
+.vacancy-item{
+    margin: 20px 0 0;
+    border: 1px dashed #ccc;
+    padding: 20px;
+}
+.vacancy-item:first-child{margin: 0;}
+.vacancy-item p{margin: 0;}
+.vacancy-item header{
+    width: 100%;
+    padding: 0 0 20px;
+}
+.vacancy-item header:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.vacancy-item header h2{
+    float: left;
+    margin: 0;
+}
+.vacancy-item header .btn-square{float: right;}
 /* portfolio page */
 .portfolio-container{padding: 0 0 50px;}
 .portfolio-holder{padding: 50px 0 0;}
@@ -713,15 +742,11 @@ h2.technology-header{
     width: 25%;
     position: relative;
 }
-.portfolio .item>img, .portfolio .item > .blank{
+.portfolio .item>img{
     display: block;
     width: 100%;
     max-width: 100%;
     height: auto;
-}
-.portfolio .item > .blank {
-    border: 0 none;
-    vertical-align: top;
 }
 .portfolio .item:hover .holder{opacity: 1;}
 .portfolio .item .holder{
