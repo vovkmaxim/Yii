@@ -265,13 +265,15 @@ function initSameHeight() {
 function initPopup() {
     var open = ($('input[name=open]').val() == 1) ? true : false;
     var name = '';
+    var email = '';
     var message = '';
     if (open) {
         var postedJobTitle = $('input[name=job-title]').val();
         name = $('input[type=hidden][name=name]').val();
-
+        email = $('input[type=hidden][name=email]').val();
         message = $('input[name=message]').val();
     }
+
     $('.inline').colorbox({
         open: open,
         inline: true,
@@ -297,6 +299,7 @@ function initPopup() {
             $('#inline-content .job-title').text(jobTitle);
             if (errorName | errorEmail | errorCv) {
                 $('#inline-content .form-row input[name=name]').val(name);
+                $('#inline-content .form-row input[name=email]').val(email);
                 $('#inline-content textarea').val(message);
 
                 var errorMessage = '';

@@ -30,7 +30,7 @@
                  </div>
                  <div class="form-row">
                      <label>e-mail</label>
-                     <input type="email" name="email" />
+                     <input type="text" name="email" />
                  </div>
                  <div class="form-row msg">
                      <label>comments</label>
