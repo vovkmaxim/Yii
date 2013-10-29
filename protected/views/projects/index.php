@@ -6,7 +6,7 @@
                 <ul>
                     <li class="nav"><a href="/#company">Company</a></li>
                     <li class="nav"><a href="/#tech">TECHNOLOGIES</a></li>
-                    <li class="add"><a href="/projects">PROJECTS</a></li>
+                    <li class="add active"><a href="/projects">PROJECTS</a></li>
                     <li class="nav"><a href="/#vacancies">Vacancies</a></li>
                 </ul>
             </nav>
