@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/ProjectsController.php" afterPath="$PROJECT_DIR$/protected/controllers/ProjectsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/projects/index.php" afterPath="$PROJECT_DIR$/protected/views/projects/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.main.js" afterPath="$PROJECT_DIR$/js/jquery.main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="9889d9c3-1b8f-4311-9f2c-c92dcea42098" name="New changelist" comment="New changelist" />
@@ -14,7 +14,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/main.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1383043790959" ignored="false" />
     <file path="/SiteController.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1383039426298" ignored="false" />
-    <file path="/index.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1383056258080" ignored="false" />
+    <file path="/index.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1383060995557" ignored="false" />
     <file path="/AdminModule.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1382623977575" ignored="false" />
     <file path="/Controller.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1382521320864" ignored="false" />
     <file path="/a.dummy" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1382435040305" ignored="false" />
@@ -22,7 +22,7 @@
     <file path="/error.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380610980638" ignored="false" />
     <file path="/add.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1382519085123" ignored="false" />
     <file path="/edit.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1382519188208" ignored="false" />
-    <file path="/ProjectsController.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1383046277531" ignored="false" />
+    <file path="/ProjectsController.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1383061090742" ignored="false" />
     <file path="/Projects.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380630982415" ignored="false" />
     <file path="/Tech.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1382364411141" ignored="false" />
     <file path="/TechList.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380630862463" ignored="false" />
@@ -37,7 +37,7 @@
     <file path="/User.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380721746961" ignored="false" />
     <file path="/sign.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380726258520" ignored="false" />
     <file path="/CActiveFinder.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380809120069" ignored="false" />
-    <file path="/Dummy.txt" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1383054553756" ignored="false" />
+    <file path="/Dummy.txt" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1383056590435" ignored="false" />
     <file path="/scripts.js" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1382518927373" ignored="false" />
     <file path="$PROJECT_DIR$/assets/3f5cc17b/DT_bootstrap.css" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381150430563" ignored="false" />
     <file path="$PROJECT_DIR$/../pomogy/public/js/features.js" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381150934089" ignored="false" />
@@ -118,10 +118,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectsController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ProjectsController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/controllers/ProjectsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="89" selection-end="89" vertical-scroll-proportion="-2.7142856">
+            <state line="21" column="145" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.48897058">
               <folding />
             </state>
           </provider>
@@ -136,19 +136,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="portfolio.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/markup/portfolio.html">
+      <file leaf-file-name="jquery.main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/jquery.main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="17" selection-start="708" selection-end="1098" vertical-scroll-proportion="-14.25">
+            <state line="86" column="50" selection-start="2624" selection-end="2624" vertical-scroll-proportion="-13.2">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/jquery.main.js">
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/config/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="223" column="36" selection-start="7076" selection-end="7096" vertical-scroll-proportion="-24.4">
+            <state line="60" column="27" selection-start="1693" selection-end="1708" vertical-scroll-proportion="-4.821429">
               <folding />
             </state>
           </provider>
@@ -174,10 +174,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/projects/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="64" selection-start="2723" selection-end="2723" vertical-scroll-proportion="1.2605549">
+            <state line="32" column="164" selection-start="1876" selection-end="1876" vertical-scroll-proportion="-18.071428">
               <folding />
             </state>
           </provider>
@@ -186,7 +186,7 @@
       <file leaf-file-name="view.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/projects/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="51" selection-start="418" selection-end="418" vertical-scroll-proportion="-5.428571">
+            <state line="44" column="78" selection-start="2307" selection-end="2307" vertical-scroll-proportion="-17.642857">
               <folding />
             </state>
           </provider>
@@ -220,12 +220,12 @@
         <option value="$PROJECT_DIR$/css/all.css" />
         <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/protected/config/main.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/ProjectsController.php" />
         <option value="$PROJECT_DIR$/protected/views/site/index.php" />
         <option value="$PROJECT_DIR$/protected/views/projects/view.php" />
         <option value="$PROJECT_DIR$/js/jquery.main.js" />
+        <option value="$PROJECT_DIR$/protected/config/main.php" />
         <option value="$PROJECT_DIR$/protected/views/projects/index.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/ProjectsController.php" />
       </list>
     </option>
   </component>
@@ -310,10 +310,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -332,6 +328,10 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -347,35 +347,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="markup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -646,7 +618,15 @@
       <created>1383054556067</created>
       <updated>1383054556067</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Popup fix">
+      <created>1383056385739</created>
+      <updated>1383056385739</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Popup fix">
+      <created>1383056592650</created>
+      <updated>1383056592650</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -775,13 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="27" selection-start="1693" selection-end="1708" vertical-scroll-proportion="-13.571428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/markup/portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="17" selection-start="708" selection-end="1098" vertical-scroll-proportion="-14.25">
@@ -796,23 +769,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/ProjectsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="89" selection-end="89" vertical-scroll-proportion="-2.7142856">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/waypoints.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/projects/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="51" selection-start="418" selection-end="418" vertical-scroll-proportion="-5.428571">
           <folding />
         </state>
       </provider>
@@ -833,6 +792,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="50" selection-start="2624" selection-end="2624" vertical-scroll-proportion="-13.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="27" selection-start="1693" selection-end="1708" vertical-scroll-proportion="-4.821429">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Tech.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="14.25">
@@ -840,16 +813,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.main.js">
+    <entry file="file://$PROJECT_DIR$/protected/views/projects/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="223" column="36" selection-start="7076" selection-end="7096" vertical-scroll-proportion="-24.4">
+        <state line="32" column="164" selection-start="1876" selection-end="1876" vertical-scroll-proportion="-18.071428">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/projects/index.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/projects/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="64" selection-start="2723" selection-end="2723" vertical-scroll-proportion="1.2605549">
+        <state line="44" column="78" selection-start="2307" selection-end="2307" vertical-scroll-proportion="-17.642857">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ProjectsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="145" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.48897058">
           <folding />
         </state>
       </provider>
