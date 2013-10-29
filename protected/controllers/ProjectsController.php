@@ -2,13 +2,6 @@
 
 class ProjectsController extends Controller {
     public function actionIndex() {
-//        echo '<pre>';
-//        $tech = Tech::model()->with('projects')->findAll();
-//        $tech = reset($tech);
-//        CVarDumper::dump($tech->projects[0]->projectsPics[0]);
-//        echo '<pre>';
-//        die;
-
         $this->render('index', array('tech' => Tech::model()->with('projects')->findAll()));
     }
     public function actionView($project, $tech) {
@@ -42,7 +35,9 @@ class ProjectsController extends Controller {
     }
 
     protected  function findRecord($record, $array) {
+
         foreach ($array as $id => $row) {
+            var_dump($row->id);
             if ($row->id == $record->id) {
                 return $id;
             }

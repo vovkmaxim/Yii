@@ -4,10 +4,10 @@
         <strong class="logo"><a href="#">CHI software</a></strong>
         <nav id="nav">
             <ul>
-                <li><a href="#pageId1">Company</a></li>
-                <li><a href="#pageId2">TECHNOLOGIES</a></li>
+                <li class="nav"><a href="#company">Company</a></li>
+                <li class="nav"><a href="#tech">TECHNOLOGIES</a></li>
                 <li class="add"><a href="/projects">PROJECTS</a></li>
-                <li><a href="#pageId4">Vacancies</a></li>
+                <li class="nav"><a href="#vacancies">Vacancies</a></li>
             </ul>
         </nav>
     </div>
@@ -23,7 +23,7 @@
     </ul>
 </div>
 <div class="pages-holder">
-<div class="page">
+<div class="page" id="company">
     <section class="main">
         <div class="m1">
             <div class="m2">
@@ -109,7 +109,7 @@
         </div>
     </section>
 </div>
-<div class="page technology-page">
+<div class="page technology-page" id="tech">
     <section class="main">
         <div class="m1">
             <div class="m2">
@@ -141,7 +141,7 @@
     </section>
 </div>
 
-<div class="page">
+<div class="page" id="vacancies">
     <section class="main">
         <div class="m1">
             <div class="m2">

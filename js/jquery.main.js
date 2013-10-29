@@ -143,7 +143,7 @@ function initTechnologyWidth() {
 }
 
 function initWaypoints() {
-    var navigationItems = $('#nav').find('li');
+    var navigationItems = $('#nav').find('li.nav');
     var pageIndex = $('.page' + $('.page').index());
     function clearNav() {
         navigationItems.removeClass('active');
@@ -178,12 +178,12 @@ function initWaypoints() {
             offset: 70,
         }
     );
-    $.each($('.page'), function(){
-        $(this).attr('id', function(){
-            return "pageId" + ($(this).index() + 1);
-        });
-    });
-    $('#pageId1').waypoint( function(direction) {
+//    $.each($('.page'), function(){
+//        $(this).attr('id', function(){
+//            return "pageId" + ($(this).index() + 1);
+//        });
+//    });
+    $('#company').waypoint( function(direction) {
             if (direction == 'down') {
                 reduceHeader();
             }
