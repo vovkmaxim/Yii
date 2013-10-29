@@ -43,7 +43,7 @@ class SiteController extends Controller
             if ($name == '') {
                 $errors['name'] = 'empty_name';
             }
-            if ($email == '') {
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
                 $errors['email'] = 'empty_email';
             }
             if (empty($cv['name'])) {
@@ -68,8 +68,8 @@ class SiteController extends Controller
             move_uploaded_file($cv['tmp_name'], $attach);
 
             $mailer = new YiiMailer();
-            $mailer->setFrom('chisw@rambler.ru', 'CHI Software');
-            $mailer->setSubject($title . ' (' . $job->title . ')');
+            $mailer->setFrom('chisw@rambler.ru', $name);
+            $mailer->setSubject('СV for' . ' (' . $job->title . ')');
             $mailer->setAttachment($attach);
             $mailer->setView('cv');
             $mailer->setData(array('msg' => Text::formatText($message)));
@@ -85,6 +85,7 @@ class SiteController extends Controller
             $this->render('index', array(
                 'open' => true,
                 'name' => $name,
+                'email' => $email,
                 'message' => $message,
                 'tech' => $techList,
                 'projects' => $projects,
