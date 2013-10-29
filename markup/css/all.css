@@ -686,6 +686,7 @@ h2.technology-header{
     width: 100%;
     position: relative;
     overflow: hidden;
+    margin: 0 0 30px;
 }
 .vacancy-image .holder,
 .vacancy-image .frame{
@@ -699,7 +700,7 @@ h2.technology-header{
 }
 .two-columns.vacancy-columns ul{margin: 0;}
 .two-columns.vacancy-columns ul li:before{
-    content: '-';
+    content: '•';
     display: inline-block;
     vertical-align: baseline;
     padding: 0 4px 0 0;
