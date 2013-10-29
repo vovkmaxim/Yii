@@ -15,7 +15,7 @@
                             <?php else : ?>
                             <img alt="" src="<?php echo Yii::app()->getBaseUrl() . $project->projectsPics[0]->url; ?>">
                             <?php endif; ?>
-                            <a class="holder" href="http://chisw.us/images/designs/96/big.jpg">
+                            <a class="holder" href="/projects/view/project/<?php echo $project->url; ?>/tech/<?php echo $techBlock->url; ?>">
                                 <h1><?php echo $project->title; ?></h1>
                                 <p><?php echo $project->description; ?></p>
                             </a>
