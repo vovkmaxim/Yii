@@ -1,7 +1,7 @@
 <div id="wrapper">
 <header id="header">
     <div class="header-frame">
-        <strong class="logo"><a href="#">CHI software</a></strong>
+        <strong class="logo"><a href="/">CHI</a></strong>
         <nav id="nav">
             <ul>
                 <li class="nav"><a href="#company">Company</a></li>

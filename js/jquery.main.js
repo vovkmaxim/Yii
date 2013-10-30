@@ -18,8 +18,8 @@ $(window).load(function(){
 function initForm() {
     $('.send-cv').ajaxForm({
         dataType: 'json',
+        iframe: true,
         success: function(result) {
-            alert(1);
             if (result.errors !== undefined) {
                 $('.send-cv input[type=text]').css('outline', 'medium none');
                 $('.add-resume .button > span').css('color', '#FFFFFF');

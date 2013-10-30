@@ -75,7 +75,7 @@ class SiteController extends Controller
     public function actionSendCv()
     {
         $request = Yii::app()->request;
-        if (!$request->isAjaxRequest) {
+        if (!$request->isPostRequest) {
             throw new CHttpException(404, 'Bad request');
         }
 
@@ -110,7 +110,8 @@ class SiteController extends Controller
             $mailer->setData(array('msg' => Text::formatText($message)));
             $mailer->render();
             $mailer->IsSMTP();
-            $mailer->setTo('human_resources_team@chisw.us');
+//            $mailer->setTo('human_resources_team@chisw.us');
+            $mailer->setTo('dmlyashko@gmail.com');
             $mailer->SMTPAuth = true;
             $mailer->Host = 'smtp.rambler.ru';
             $mailer->Username = 'chisw';
