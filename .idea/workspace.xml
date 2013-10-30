@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo.png" afterPath="$PROJECT_DIR$/images/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/protected/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/index.php" afterPath="$PROJECT_DIR$/protected/views/site/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.main.js" afterPath="$PROJECT_DIR$/js/jquery.main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -39,11 +36,11 @@
     <file path="/User.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380721746961" ignored="false" />
     <file path="/sign.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380726258520" ignored="false" />
     <file path="/CActiveFinder.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1380809120069" ignored="false" />
-    <file path="/Dummy.txt" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1383135106301" ignored="false" />
+    <file path="/Dummy.txt" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1383151012197" ignored="false" />
     <file path="/scripts.js" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1383134746793" ignored="false" />
     <file path="$PROJECT_DIR$/assets/3f5cc17b/DT_bootstrap.css" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381150430563" ignored="false" />
     <file path="$PROJECT_DIR$/../pomogy/public/js/features.js" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381150934089" ignored="false" />
-    <file path="/jquery.main.js" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1383149486627" ignored="false" />
+    <file path="/jquery.main.js" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1383151196433" ignored="false" />
     <file path="/all.css" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1383125119291" ignored="false" />
     <file path="/PorjectImage.php" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381247274477" ignored="false" />
     <file path="/styles.css" changelist="d93c86f9-b3bf-4b0b-a112-e0b900cdb630" time="1381245202248" ignored="false" />
@@ -102,10 +99,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="39" selection-start="110" selection-end="110" vertical-scroll-proportion="0.088785045">
+            <state line="3" column="39" selection-start="110" selection-end="110" vertical-scroll-proportion="-2.0357144">
               <folding />
             </state>
           </provider>
@@ -120,10 +117,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.main.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="jquery.main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/jquery.main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="35" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
+            <state line="38" column="46" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.73731345">
               <folding />
             </state>
           </provider>
@@ -219,8 +216,8 @@
         <option value="$PROJECT_DIR$/protected/modules/admin/assets/scripts.js" />
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/TechController.php" />
         <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
-        <option value="$PROJECT_DIR$/js/jquery.main.js" />
         <option value="$PROJECT_DIR$/protected/views/site/index.php" />
+        <option value="$PROJECT_DIR$/js/jquery.main.js" />
       </list>
     </option>
   </component>
@@ -675,7 +672,11 @@
       <created>1383135108274</created>
       <updated>1383135108275</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Popup IE fix">
+      <created>1383151016772</created>
+      <updated>1383151016772</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -746,7 +747,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Popup fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Popup IE fix" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -764,6 +765,7 @@
     <MESSAGE value="User roles" />
     <MESSAGE value="Merge branch 'master' of http://rep.chdev.com.ua/CHI_corporate_website&#10;&#10;Conflicts:&#10;&#9;css/all.css&#10;" />
     <MESSAGE value="Popup fix" />
+    <MESSAGE value="Popup IE fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -819,13 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/assets/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="45" selection-start="1795" selection-end="1795" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/ProjectsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="48" selection-start="369" selection-end="369" vertical-scroll-proportion="-8.821428">
@@ -849,13 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="35" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="113" column="47" selection-start="3814" selection-end="3814" vertical-scroll-proportion="-12.642858">
@@ -872,9 +860,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/assets/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="45" selection-start="1795" selection-end="1795" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="39" selection-start="110" selection-end="110" vertical-scroll-proportion="0.088785045">
+        <state line="3" column="39" selection-start="110" selection-end="110" vertical-scroll-proportion="-2.0357144">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="46" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.73731345">
           <folding />
         </state>
       </provider>

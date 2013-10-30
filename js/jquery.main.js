@@ -36,6 +36,7 @@ function initForm() {
                 if (result.result !== undefined) {
                     $('.send-cv .success').html('<p>Your CV was sent. Thanks for reply </p>');
                     $('.send-cv .success').show();
+                    $('.send-cv').resetForm();
                     setTimeout(function() {location.reload();}, 2000);
                 }
             }
