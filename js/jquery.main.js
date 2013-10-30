@@ -6,6 +6,7 @@ $(function(){
     initScrollTo();
     initSameHeight();
     initCustomFileInput();
+    initForm();
 });
 
 $(window).load(function(){
@@ -14,7 +15,32 @@ $(window).load(function(){
     initWaypoints();
 });
 
-
+function initForm() {
+    $('.send-cv').ajaxForm({
+        dataType: 'json',
+        success: function(result) {
+            if (result.errors !== undefined) {
+                $('.send-cv input[type=text]').css('border', 'medium none');
+                $('.add-resume .button > span').css('color', '#FFFFFF');
+                if (result.errors.name !== undefined) {
+                    $('form input[name=name]').css('border', '2px solid red');
+                }
+                if (result.errors.email !== undefined) {
+                    $('form input[name=email]').css('border', '2px solid red');
+                }
+                if (result.errors.cv !== undefined) {
+                    $('.add-resume .button > span').css('color', 'red');
+                }
+            } else {
+                if (result.result !== undefined) {
+                    $('.send-cv .success').html('<p>Your CV was sent. Thanks for reply </p>');
+                    $('.send-cv .success').show();
+                    setTimeout(function() {location.reload();}, 2000);
+                }
+            }
+        }
+    });
+}
 function initCustomFileInput() {
     $('.custom-file').on('change', function() {
         $('.custom-file').each(function() {
@@ -285,47 +311,9 @@ function initPopup() {
         initialHeight: 300,
         speed: 400,
         onOpen: function() {
-            var errorName = ($('input[name=error_name]').length > 0);
-            var errorEmail = ($('input[name=error_email]').length > 0);
-            var errorCv = ($('input[name=error_cv]').length > 0);
-            if ($('input[name=job_id]').length > 0) {
-                var jobId = $('input[name=job_id]').val();
-            } else {
-                var jobId = $(this).attr('id');
-            }
-            $('#inline-content input[name=jobid]').val(jobId);
-            if (postedJobTitle !== undefined) {
-                jobTitle = postedJobTitle;
-            } else {
-                jobTitle = $(this).parent().find('h2').text();
-            }
-            $('#inline-content .job-title').text(jobTitle);
-            if (errorName | errorEmail | errorCv) {
-                $('#inline-content .form-row input[name=name]').val(name);
-                $('#inline-content .form-row input[name=email]').val(email);
-                $('#inline-content textarea').val(message);
-
-                var errorMessage = '';
-                if (errorName) {
-                    $('form input[name=name]').css('border', '2px solid red');
-                }
-                if (errorEmail) {
-                    $('form input[name=email]').css('border', '2px solid red');
-                }
-                if (errorCv) {
-                    $('.add-resume .button > span').css('color', 'red');
-                }
-
-            } else {
-                if ($('input[name="success"]').length > 0) {
-                    $('.send-cv .success').html('Thanks for response.');
-                    $('.send-cv .success').show();
-                    setTimeout(function() {
-                        location.href="/";
-                    }, 1000);
-                }
-            }
-
+             $('.send-cv').resetForm();
+             var jobId = $(this).attr('id');
+             $('#inline-content input[name=jobid]').val(jobId);
         }
     });
 
