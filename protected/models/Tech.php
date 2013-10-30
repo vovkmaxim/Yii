@@ -8,6 +8,7 @@
  * @property string $title
  * @property string $description
  * @property string $url
+ * @property int $position
  *
  * The followings are the available model relations:
  * @property TechList[] $techLists
@@ -35,7 +36,7 @@ class Tech extends CActiveRecord
 			array('title', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, description', 'safe', 'on'=>'search'),
+			array('id, title, description, url', 'safe', 'on'=>'search'),
 		);
 	}
 

@@ -6,7 +6,7 @@
             </div>
             <div class="block-content collapse in">
                 <div class="span12">
-                    <table class="table table-striped table-bordered table-condensed data" id="example">
+                    <table class="table table-striped table-bordered table-condensed tech" id="example">
                         <thead>
                             <tr>
                                 <th>Название</th>
@@ -15,7 +15,7 @@
                         </thead>
                         <tbody>
                             <?php foreach ($techList as $tech) : ?>
-                            <tr>
+                            <tr id="id-<?php echo $tech->id; ?>">
                                 <td><?php echo $tech->title; ?></td>
                                 <td>
                                     <div style="float:right;">
