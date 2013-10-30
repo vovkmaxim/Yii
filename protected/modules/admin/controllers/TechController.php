@@ -7,7 +7,7 @@ class TechController extends AdminController
     }
     public function actionIndex() {
         $techModel = new Tech();
-        $techList = $techModel->findAll();
+        $techList = $techModel->findAll(array('order' => 'position'));
         $this->render('index', array('techList' => $techList));
     }
 
