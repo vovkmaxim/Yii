@@ -19,7 +19,7 @@
             <div class="control-group">
                 <label>Описание</label>
                 <div class="controls">
-                    <textarea class="input-xxlarge" name="description"><?php echo $description; ?></textarea>
+                    <textarea class="input-xxlarge" cols="40" rows="20" name="description"><?php echo $description; ?></textarea>
                 </div>
             </div>
             <div class="control-group list">
@@ -57,4 +57,7 @@
             return false;
         })
     })
+    $('.elements').sortable({
+
+    }).disableSelection();
 </script>

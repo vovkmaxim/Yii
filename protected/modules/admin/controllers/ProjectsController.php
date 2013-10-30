@@ -13,7 +13,7 @@ class ProjectsController extends AdminController
                         'tech' => array(
                             'select' => array('title')
                         )
-                    ))->findAll(array('order' => 'position'));
+                    ))->findAll(array('order' => 't.position'));
         $this->render('index', array('projectsList' => $projectsList));
     }
 

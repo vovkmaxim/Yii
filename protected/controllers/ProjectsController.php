@@ -2,7 +2,7 @@
 
 class ProjectsController extends Controller {
     public function actionIndex() {
-        $this->render('index', array('tech' => Tech::model()->with('projects')->findAll()));
+        $this->render('index', array('tech' => Tech::model()->with(array('projects' => array('order' => 'projects.position')))->findAll(array('order' => 't.position'))));
     }
     public function actionView($project, $tech, $id) {
         if (!trim($project) || !trim($tech) || (int)$id == 0) {

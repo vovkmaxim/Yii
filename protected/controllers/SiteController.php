@@ -28,7 +28,7 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $request = Yii::app()->request;
-        $techList = Tech::model()->with('techLists')->findAll();
+        $techList = Tech::model()->with('techLists')->findAll(array('order' => 't.position'));
         $projects = Projects::model()->with('projectsPics')->findAll();
         $vacancies = Jobs::model()->findAll(array('order' => 'position'));
         $profile = (is_readable('profile/profile.pdf')) ? 'profile/profile.pdf' : '';
