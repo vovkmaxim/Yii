@@ -7,7 +7,7 @@ class TechController extends AdminController
     }
     public function actionIndex() {
         $techModel = new Tech();
-        $techList = $techModel->findAll();
+        $techList = $techModel->findAll(array('order' => 'position'));
         $this->render('index', array('techList' => $techList));
     }
 
@@ -109,5 +109,21 @@ class TechController extends AdminController
         $tech->delete();
         header('Location:' . Yii::app()->getBaseUrl(true) . '/admin/tech');
         exit();
+    }
+
+    public function actionSaveOrder() {
+        $request = Yii::app()->request;
+        if ($request->isAjaxRequest) {
+            $order = $request->getQuery('id');
+            fb($order);
+            foreach ($order as $id => $item) {
+                Yii::app()->db->createCommand()->update('tech', array('position' => $id), 'id = ' . $item);
+            }
+            echo CJavaScript::jsonEncode(array('order' => $order));
+            Yii::app()->end();
+        } else {
+            throw new CHttpException(404, 'Неправильный запрос');
+        }
+
     }
 }

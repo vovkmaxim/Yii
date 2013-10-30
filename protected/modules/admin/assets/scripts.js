@@ -54,6 +54,21 @@ $(function () {
         }
     }).disableSelection();
 
+    $(".tech tbody").sortable({
+        helper: fixHelper,
+        update: function (event, ui) {
+            var order = $(this).sortable("serialize");
+            $.ajax({
+                url: '/admin/tech/saveorder?' + order,
+                data: {order: order},
+                success: function (result) {
+                }
+            })
+        }
+    }).disableSelection();
+
+
+
 
     $('body').on('click', '.add-pic', function (e) {
         e.preventDefault();

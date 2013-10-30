@@ -741,12 +741,14 @@ h2.technology-header{
     float: left;
     width: 25%;
     position: relative;
+    height: 400px;
 }
 .portfolio .item>img{
     display: block;
-    width: 100%;
+    width: auto;
     max-width: 100%;
-    height: auto;
+    height: 100%;
+    margin: 0 auto;
 }
 .portfolio .item:hover .holder{opacity: 1;}
 .portfolio .item .holder{
@@ -935,7 +937,7 @@ h2.technology-header{
     font-size:199px;
     cursor:pointer;
     padding:0px;
-    margin: -100px 0 0 -100px;
+    margin: -100px 0 0 -450px;
     border:none;
 }
 #inline-content .add-resume .name{
@@ -992,4 +994,3 @@ h2.technology-header{
     color: black;
     text-decoration: none;
 }
-.custom-file{direction:rtl;}

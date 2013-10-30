@@ -12,13 +12,14 @@
     <script src="/js/waypoints.min.js"></script>
     <script src="/js/jquery.nicescroll.min.js"></script>
     <script src="/js/jquery.colorbox.js"></script>
+    <script src="/js/jquery.form.js"></script>
     <script src="/js/jquery.main.js"></script>
 </head>
 <body>
 <?php echo $content; ?>
 <div style="display:none;">
     <div id="inline-content">
-         <form class="send-cv" action="" method="post" enctype="multipart/form-data">
+         <form class="send-cv" action="/site/sendcv" method="post" enctype="multipart/form-data">
              <h1>vacancy request</h1>
              <!-- <span class="job-title"></span> -->
              <div class="alert" style="display:none;"></div>
