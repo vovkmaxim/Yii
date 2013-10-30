@@ -937,8 +937,9 @@ h2.technology-header{
     font-size:199px;
     cursor:pointer;
     padding:0px;
-    margin: -100px 0 0 -450px;
+    margin: -100px 0 0 -100px;
     border:none;
+    direction: rtl;
 }
 #inline-content .add-resume .name{
     max-width: 190px;
