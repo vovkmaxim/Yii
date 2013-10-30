@@ -741,12 +741,14 @@ h2.technology-header{
     float: left;
     width: 25%;
     position: relative;
+    height: 400px;
 }
 .portfolio .item>img{
     display: block;
-    width: 100%;
+    width: auto;
     max-width: 100%;
-    height: auto;
+    height: 100%;
+    margin: 0 auto;
 }
 .portfolio .item:hover .holder{opacity: 1;}
 .portfolio .item .holder{
