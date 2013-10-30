@@ -19,14 +19,15 @@ function initForm() {
     $('.send-cv').ajaxForm({
         dataType: 'json',
         success: function(result) {
+            alert(1);
             if (result.errors !== undefined) {
-                $('.send-cv input[type=text]').css('border', 'medium none');
+                $('.send-cv input[type=text]').css('outline', 'medium none');
                 $('.add-resume .button > span').css('color', '#FFFFFF');
                 if (result.errors.name !== undefined) {
-                    $('form input[name=name]').css('border', '2px solid red');
+                    $('form input[name=name]').css('outline', '2px solid red');
                 }
                 if (result.errors.email !== undefined) {
-                    $('form input[name=email]').css('border', '2px solid red');
+                    $('form input[name=email]').css('outline', '2px solid red');
                 }
                 if (result.errors.cv !== undefined) {
                     $('.add-resume .button > span').css('color', 'red');
@@ -42,21 +43,24 @@ function initForm() {
     });
 }
 function initCustomFileInput() {
-    $('.custom-file').on('change', function() {
-        $('.custom-file').each(function() {
-            $('.add-resume').find('.remove').remove();
-            var name = this.value;
-            reWin = /.*\\(.*)/;
-            var fileTitle = name.replace(reWin, "$1");
-            reUnix = /.*\/(.*)/;
-            fileTitle = fileTitle.replace(reUnix, "$1");
-            $(this).closest('.add-resume').addClass('uploaded').find('.name').html(fileTitle).after('<span class="remove"></span>');
-        });
+    $('.form-row').on('change', '.custom-file', function() {
+        $('.add-resume').find('.remove').remove();
+        var name = this.value;
+        reWin = /.*\\(.*)/;
+        var fileTitle = name.replace(reWin, "$1");
+        reUnix = /.*\/(.*)/;
+        fileTitle = fileTitle.replace(reUnix, "$1");
+        $(this).closest('.add-resume').addClass('uploaded').find('.name').html(fileTitle).after('<span class="remove"></span>');
     });
 
     $('.add-resume').on('click', '.remove', function () {
-        $(this).closest('.add-resume').removeClass('uploaded').find('.name').html('');
-        $(this).closest('.add-resume').find('.custom-file').val("");
+        $(this).closest('.add-resume').removeClass('uploaded').find('.name').html('&nbsp;');
+        if ( navigator.userAgent.match(/msie/i) ) {
+            $(this).closest('.add-resume').find('.custom-file').replaceWith($(this).closest('.add-resume').find('.custom-file').clone());
+        }
+        else {
+            $(this).closest('.add-resume').find('.custom-file').val("");
+        }
         $(this).remove();
     });
 }
