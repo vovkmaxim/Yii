@@ -4,6 +4,11 @@ class TechController extends AdminController
 {
     public function init() {
         $this->active = 'tech';
+
+        Yii::app()->clientScript->registerScriptFile(
+            CHtml::asset(
+                Yii::getPathOfAlias('admin.assets.js'). '/tech.js'
+            ));
     }
     public function actionIndex() {
         $techModel = new Tech();

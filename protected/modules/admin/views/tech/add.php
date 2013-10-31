@@ -30,7 +30,8 @@
                 <?php foreach ($list as $element) : ?>
                     <?php if (trim($element) != '') : ?>
                     <div class="input-list">
-                        <input type="text" name="list[]" value="<?php echo $element; ?>"/>
+                        <span><?php echo $element; ?></span>
+                        <input type="hidden" name="list[]" value="<?php echo $element; ?>"/>
                         <a href="#" title="Удалить элемент" class="icon-remove delete-element"> </a>
                     </div>
                     <?php endif; ?>
@@ -45,17 +46,3 @@
  </form>
 </div>
 <?php endif; ?>
-<script type="text/javascript">
-    $(function() {
-        $('body').on('click', '.add-element', function(e) {
-            e.preventDefault();
-            $('.elements').append('<div class="input-list"><input type="text" name="list[]" /><a href="#" title="Удалить элемент" class="icon-remove delete-element"> </a></div>');
-            return false;
-        })
-        $('body').on('click', '.input-list .delete-element', function(e) {
-            e.preventDefault();
-            $(this).parent().remove();
-            return false;
-        })
-    })
-</script>
