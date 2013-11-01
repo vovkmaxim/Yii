@@ -284,11 +284,11 @@ function clearCvInput() {
     else {
          _this.closest('.add-resume').find('.custom-file').val("");
     }
-    _this.remove();
+//    _this.remove();
 }
 function resetCvForm() {
     $('.send-cv').resetForm();
-    $('.send-cv input[type=text]').css('border', 'medium none');
+    $('.send-cv input[type=text]').css('outline', 'medium none');
     clearCvInput();
 }
 
