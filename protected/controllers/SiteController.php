@@ -110,8 +110,7 @@ class SiteController extends Controller
             $mailer->setData(array('msg' => Text::formatText($message)));
             $mailer->render();
             $mailer->IsSMTP();
-//            $mailer->setTo('human_resources_team@chisw.us');
-            $mailer->setTo('dmlyashko@gmail.com');
+            $mailer->setTo('human_resources_team@chisw.us');
             $mailer->SMTPAuth = true;
             $mailer->Host = 'smtp.rambler.ru';
             $mailer->Username = 'chisw';

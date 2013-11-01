@@ -177,6 +177,14 @@ class ProjectsController extends AdminController
             throw new CHttpException(404, 'Invalid request');
         }
         $project = Projects::model()->findByPk($id);
+        $projectsPics = $project->projectsPics;
+        if ($projectsPics) {
+            foreach ($projectsPics as $pic) {
+                if (is_file($_SERVER['DOCUMENT_ROOT'] . $pic->url)) {
+                    unlink ($_SERVER['DOCUMENT_ROOT'] . $pic->url);
+                }
+            }
+        }
         $project->delete();
         header('Location:' . Yii::app()->getBaseUrl(true) . '/admin/projects');
     }
