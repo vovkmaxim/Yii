@@ -284,7 +284,7 @@ function clearCvInput() {
     else {
          _this.closest('.add-resume').find('.custom-file').val("");
     }
-//    _this.remove();
+   _this.css('color', '#FFFFFF');
 }
 function resetCvForm() {
     $('.send-cv').resetForm();
