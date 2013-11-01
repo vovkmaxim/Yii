@@ -277,6 +277,7 @@ function initPopup() {
 
 function clearCvInput() {
     var _this = $(".add-resume");
+    _this.find('.button > span').css('color', '#FFFFFF');
     _this.closest('.add-resume').removeClass('uploaded').find('.name').html('&nbsp;');
     if ( navigator.userAgent.match(/msie/i) ) {
         _this.closest('.add-resume').find('.custom-file').replaceWith(_this.closest('.add-resume').find('.custom-file').clone());
@@ -284,7 +285,7 @@ function clearCvInput() {
     else {
          _this.closest('.add-resume').find('.custom-file').val("");
     }
-   _this.css('color', '#FFFFFF');
+
 }
 function resetCvForm() {
     $('.send-cv').resetForm();
