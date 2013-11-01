@@ -42,7 +42,9 @@
         <?php if (isset($previews)) : ?>
             <div class="previews">
             <?php foreach ($previews as $preview) : ?>
-                <div class="preview"><img src="<?php echo $preview['url']; ?>" /><a id="<?php echo base64_encode($preview['filename']); ?>" class="delete delete-preview icon-remove" href="#" title="Удалить"> </a></div>
+                <div class="preview"><img src="<?php echo $preview['url']; ?>" />
+                <input type="hidden" name="previews[]" value="<?php echo md5($preview['filename']); ?>">
+                <a id="<?php echo base64_encode($preview['filename']); ?>" class="delete delete-preview icon-remove" href="#" title="Удалить"> </a></div>
             <?php endforeach; ?>
             </div>
         <?php endif; ?>

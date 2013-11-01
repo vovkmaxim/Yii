@@ -39,6 +39,17 @@ class ProjectImage
         return $previews;
     }
 
+    public function cleanPreviews($postedPreviews) {
+        $oldPreviews = $this->getPreviews();
+        $previewDir = 'preview' . DIRECTORY_SEPARATOR . md5(session_id());
+        foreach ($oldPreviews as $preview) {
+            if (!in_array(md5($preview['filename']), $postedPreviews)) {
+                unlink($previewDir . DIRECTORY_SEPARATOR . $preview['filename']);
+            }
+        }
+        return true;
+    }
+
     protected function _createDirectory($dir) {
         if (!is_dir($dir)) {
             mkdir($dir, 0777, true);
@@ -47,6 +58,7 @@ class ProjectImage
     }
 
     public function loadImages($images, $projectId) {
+        $this->loadImagesFromPreviews($projectId);
         if (!is_array($images)) {
             return false;
         }
@@ -65,7 +77,7 @@ class ProjectImage
                 $modelImage->insert();
             }
         }
-        $this->loadImagesFromPreviews($projectId);
+
         return true;
     }
 

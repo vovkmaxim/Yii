@@ -61,7 +61,7 @@
                     <?php foreach ($previews as $preview) : ?>
                         <div class="preview"><img src="<?php echo $preview['url']; ?>"/><a
                                 id="<?php echo base64_encode($preview['filename']); ?>" class="delete delete-preview icon-remove"
-                                href="#" title="Удалить"> </a></div>
+                                href="#" title="Удалить"> </a><input type="hidden" name="loaded_previews[]" value="<?php ?>"></div>
                     <?php endforeach; ?>
                 </div>
             <?php endif; ?>

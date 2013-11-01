@@ -25,8 +25,8 @@ class ProjectsController extends AdminController
 
             $title = trim($request->getPost('title'));
             $description = trim($request->getPost('description'));
-            $desiredSkills = trim($request->getPost('desired_skills'));
             $tech = (array)$request->getPost('tech');
+            $postedPreviews = (array)$request->getPost('previews');
             $errors = array();
             $img = new ProjectImage();
             if ($title == '') {
@@ -38,6 +38,7 @@ class ProjectsController extends AdminController
             if (count($errors) > 0) {
                 if (!empty($_FILES['img'])) {
                     $images = $_FILES['img'];
+                    $img->cleanPreviews($postedPreviews);
                     $img->makePreview($images);
                     $previews = $img->getPreviews();
                     if (count($previews) > 0) {
@@ -45,7 +46,6 @@ class ProjectsController extends AdminController
                     }
                 }
                 $viewVars['description'] = $description;
-                $viewVars['desiredSkills'] = $desiredSkills;
                 $viewVars['tech'] = $tech;
                 $viewVars['errors'] = $errors;
             } else {
@@ -55,8 +55,8 @@ class ProjectsController extends AdminController
                 $project->tech = Tech::model()->findAllByPk($tech);
                 $project->save();
                 $images = empty($_FILES['img']) ? array() : $_FILES['img'];
+                $img->cleanPreviews($postedPreviews);
                 $img->loadImages($images, $project->id);
-
                 $viewVars['result'] = 'Проект успешно добавлен';
                 header('Refresh:2; url=' . Yii::app()->getBaseUrl(true) . '/admin/projects');
             }
@@ -91,7 +91,6 @@ class ProjectsController extends AdminController
             $title = trim($request->getPost('title'));
             $description = trim($request->getPost('description'));
             $tech = (array)$request->getPost('tech');
-
 
             $errors = array();
             if ($title == '') {
