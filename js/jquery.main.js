@@ -61,14 +61,7 @@ function initCustomFileInput() {
     });
 
     $('.add-resume').on('click', '.remove', function () {
-        $(this).closest('.add-resume').removeClass('uploaded').find('.name').html('&nbsp;');
-        if ( navigator.userAgent.match(/msie/i) ) {
-            $(this).closest('.add-resume').find('.custom-file').replaceWith($(this).closest('.add-resume').find('.custom-file').clone());
-        }
-        else {
-            $(this).closest('.add-resume').find('.custom-file').val("");
-        }
-        $(this).remove();
+         clearCvInput();
     });
 }
 
@@ -237,54 +230,6 @@ function initWaypoints() {
     );
 }
 
-function initCaseFixed() {
-//    var offsetOriginal = $('.case-info').offset();
-    var selector = $('.case-info');
-    var parentSelector = selector.parent();
-    var offsetOriginal = selector.offset();
-    var offsetReset = selector.removeAttr("style").offset();
-    var deltaHeight = parentSelector.height() - selector.height();
-    var deltaOffset = parentSelector.offset().top + deltaHeight - 80;
-    // $(window).on('resize', function(){
-    //     offsetReset = selector.removeAttr("style").offset();
-    //     selector.css({
-    //         'position': 'fixed',
-    //             'top' : '80px',
-    //             'left' : offsetReset.left
-    //     });
-    //     if(selector.height() > $(window).height()){
-    //         selector.removeAttr("style");
-    //     }
-    // });
-
-    $(document).scroll(function () {
-        var y = $(this).scrollTop();
-        if (offsetOriginal.top < y && y < deltaOffset) {
-            selector.css({
-                'position': 'fixed',
-                'left' : offsetReset.left,
-                'top' : 80
-            });
-        }
-        else if (selector.offset().top <= offsetOriginal.top ) {
-            selector.offset({ top : offsetOriginal.top, left: offsetReset.left }).css({'position': 'static'});
-        }
-        else if (y > deltaOffset) {
-            selector.css({
-                'position':'absolute',
-                'top':'auto',
-                'left':'auto',
-                'right':0,
-                'bottom':40
-            });
-        }
-        
-       if(selector.height() > $(window).height()){
-           selector.removeAttr("style");
-       }
-    });
-}
-
 // align blocks height
 function initSameHeight() {
     jQuery('.four-columns').sameHeight({
@@ -322,13 +267,31 @@ function initPopup() {
         initialHeight: 300,
         speed: 400,
         onOpen: function() {
-             $('.send-cv').resetForm();
+             resetCvForm();
              var jobId = $(this).attr('id');
              $('#inline-content input[name=jobid]').val(jobId);
         }
     });
 
 }
+
+function clearCvInput() {
+    var _this = $(".add-resume");
+    _this.closest('.add-resume').removeClass('uploaded').find('.name').html('&nbsp;');
+    if ( navigator.userAgent.match(/msie/i) ) {
+        _this.closest('.add-resume').find('.custom-file').replaceWith(_this.closest('.add-resume').find('.custom-file').clone());
+    }
+    else {
+         _this.closest('.add-resume').find('.custom-file').val("");
+    }
+    _this.remove();
+}
+function resetCvForm() {
+    $('.send-cv').resetForm();
+    $('.send-cv input[type=text]').css('border', 'medium none');
+    clearCvInput();
+}
+
 
 // background stretch module
 (function(){
