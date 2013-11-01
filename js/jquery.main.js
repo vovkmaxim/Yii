@@ -19,6 +19,10 @@ function initForm() {
     $('.send-cv').ajaxForm({
         dataType: 'json',
         iframe: true,
+        beforeSend: function() {
+            $('.send-cv input[type=submit]').attr('disabled', 'disabled');
+            $('body').css('cursor', 'wait');
+        },
         success: function(result) {
             if (result.errors !== undefined) {
                 $('.send-cv input[type=text]').css('outline', 'medium none');
@@ -32,6 +36,8 @@ function initForm() {
                 if (result.errors.cv !== undefined) {
                     $('.add-resume .button > span').css('color', 'red');
                 }
+                $('.send-cv input[type=submit]').removeAttr('disabled');
+                $('body').css('cursor', 'default');
             } else {
                 if (result.result !== undefined) {
                     $('.send-cv .success').html('<p>Your CV was sent. Thanks for reply </p>');
