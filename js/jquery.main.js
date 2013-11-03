@@ -94,7 +94,7 @@ function initFirstPageHeight() {
 function initNiceScroll() {
     $('body').niceScroll({
         cursoropacitymax: 0.5,
-        mousescrollstep: 20
+        mousescrollstep: 15
     });
 
     $('.technology-section').niceScroll({
@@ -105,9 +105,7 @@ function initNiceScroll() {
         autohidemode: false,
         touchbehavior: true,
         railvalign: 'top',
-        enablemousewheel: false,
-        preservenativescrolling: false,
-        cursordragspeed:0.1
+        mousescrollstep: 15
     });
 }
 
