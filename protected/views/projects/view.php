@@ -1,3 +1,4 @@
+<body>
 <div id="wrapper" class="header-small">
     <header id="header">
         <div class="header-frame">
@@ -54,7 +55,7 @@
         </div>
     </div>
 </div>
-
+</body>
 
 
 
