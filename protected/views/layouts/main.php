@@ -16,7 +16,7 @@
     <script src="/js/jquery.form.js"></script>
     <script src="/js/jquery.main.js"></script>
 </head>
-<body>
+<body class="main-page">
 <?php echo $content; ?>
 <div style="display:none;">
     <div id="inline-content">
