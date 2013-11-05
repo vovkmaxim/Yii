@@ -1,19 +1,53 @@
-$(function(){
-    initNiceScroll();
-    initPopup();
-    initBackgroundResize();
-    initFirstPageHeight();
-    initScrollTo();
-    initSameHeight();
-    initCustomFileInput();
-});
+function detectmob() { 
+ if( navigator.userAgent.match(/Android/i)
+  || navigator.userAgent.match(/webOS/i)
+  || navigator.userAgent.match(/iPhone/i)
+  || navigator.userAgent.match(/iPad/i)
+  || navigator.userAgent.match(/iPod/i)
+  || navigator.userAgent.match(/BlackBerry/i)
+  || navigator.userAgent.match(/Windows Phone/i)
+ ){
+    return true;
+  }
+ else {
+    return false;
+  }
+}
 
-$(window).load(function(){
-    initTechnologyWidth();
-    initCaseFixed();
-    initWaypoints();
-});
+if ( !detectmob() ) {
+    $(function(){
+        initNiceScroll();
+        initPopup();
+        initFirstPageHeight();
+        initScrollTo();
+        initSameHeight();
+        initCustomFileInput();
+    });
 
+    $(window).load(function(){
+        initTechnologyWidth();
+        // initCaseFixed();
+        initWaypoints();
+        initBackgroundResize();
+    });
+}
+else {
+    $(function(){
+        initPopup();
+        initFirstPageHeight();
+        initScrollTo();
+        initSameHeight();
+        initCustomFileInput();
+    });
+
+    $(window).load(function(){
+        // initTechnologyWidth();
+        // initCaseFixed();
+        initWaypoints();
+        // initBackgroundResize();
+        initNiceScrollMobile();
+    });
+}
 
 function initCustomFileInput() {
     $('.custom-file').on('change', function() {
@@ -75,9 +109,17 @@ function initNiceScroll() {
         autohidemode: false,
         touchbehavior: true,
         railvalign: 'top',
-        enablemousewheel: false,
-        preservenativescrolling: false,
-        cursordragspeed:0.1
+        mousescrollstep: 15
+    });
+}
+function initNiceScrollMobile() {
+    $('.technology-section').niceScroll({
+        cursorcolor: '#ffffff',
+        cursorborder: 'none',
+        cursoropacitymin: 0.76,
+        cursoropacitymax: 0.76,
+        autohidemode: false,
+        railvalign: 'top'
     });
 }
 
@@ -661,3 +703,190 @@ jQuery.onFontResize = (function($) {
         }
     };
 }(jQuery));
+
+/*
+ * Browser platform detection
+ */
+PlatformDetect = (function(){
+    var detectModules = {};
+    return {
+        options: {
+            cssPath: 'css/'
+        },
+        addModule: function(obj) {
+            detectModules[obj.type] = obj;
+        },
+        addRule: function(rule) {
+            if(this.matchRule(rule)) {
+                this.applyRule(rule);
+                return true;
+            }
+        },
+        matchRule: function(rule) {
+            return detectModules[rule.type].matchRule(rule);
+        },
+        applyRule: function(rule) {
+            var head = document.getElementsByTagName('head')[0], fragment, cssText;
+            if(rule.css) {
+                cssText = '<link rel="stylesheet" href="' + this.options.cssPath + rule.css + '" />';
+                if(head) {
+                    fragment = document.createElement('div');
+                    fragment.innerHTML = cssText;
+                    head.appendChild(fragment.childNodes[0]);
+                } else {
+                    document.write(cssText);
+                }
+            }
+            
+            if(rule.meta) {
+                if(head) {
+                    fragment = document.createElement('div');
+                    fragment.innerHTML = rule.meta;
+                    head.appendChild(fragment.childNodes[0]);
+                } else {
+                    document.write(rule.meta);
+                }
+            }
+        },
+        matchVersions: function(host, target) {
+            target = target.toString();
+            host = host.toString();
+
+            var majorVersionMatch = parseInt(target, 10) === parseInt(host, 10);
+            var minorVersionMatch = (host.length > target.length ? host.indexOf(target) : target.indexOf(host)) === 0;
+
+            return majorVersionMatch && minorVersionMatch;
+        }
+    };
+}());
+
+// All Mobile detection
+PlatformDetect.addModule({
+    type: 'allmobile',
+    uaMatch: function(str) {
+        if(!this.ua) {
+            this.ua = navigator.userAgent.toLowerCase();
+        }
+        return this.ua.indexOf(str.toLowerCase()) != -1;
+    },
+    matchRule: function(rule) {
+        return this.uaMatch('mobi') || this.uaMatch('midp') || this.uaMatch('ppc') || this.uaMatch('webos') || this.uaMatch('android') || this.uaMatch('phone os') || this.uaMatch('touch');
+    }
+});
+
+// iPhone detection
+PlatformDetect.addModule({
+    type: 'iphone',
+    parseUserAgent: function() {
+        var match = /(iPhone|iPod).*OS ([0-9_]*) .*/.exec(navigator.userAgent);
+        if(match) {
+            return {
+                retina: window.devicePixelRatio > 1,
+                version: match[2].replace(/_/g, '.')
+            };
+        }
+    },
+    matchRule: function(rule) {
+        this.matchData = this.matchData || this.parseUserAgent();
+        if(this.matchData) {
+            var matchVersion = rule.version ? PlatformDetect.matchVersions(this.matchData.version, rule.version) : true;
+            var matchDevice = rule.deviceType ? (rule.deviceType === 'retina' && this.matchData.retina) || (rule.deviceType === 'noretina' && !this.matchData.retina) : true;
+            return matchVersion && matchDevice;
+        }
+    }
+});
+
+// iPad detection
+PlatformDetect.addModule({
+    type: 'ipad',
+    parseUserAgent: function() {
+        var match = /(iPad).*OS ([0-9_]*) .*/.exec(navigator.userAgent);
+        if(match) {
+            return {
+                retina: window.devicePixelRatio > 1,
+                version: match[2].replace(/_/g, '.')
+            };
+        }
+    },
+    matchRule: function(rule) {
+        this.matchData = this.matchData || this.parseUserAgent();
+        if(this.matchData) {
+            var matchVersion = rule.version ? PlatformDetect.matchVersions(this.matchData.version, rule.version) : true;
+            var matchDevice = rule.deviceType ? (rule.deviceType === 'retina' && this.matchData.retina) || (rule.deviceType === 'noretina' && !this.matchData.retina) : true;
+            return matchVersion && matchDevice;
+        }
+    }
+});
+
+// Android detection
+PlatformDetect.addModule({
+    type: 'android',
+    parseUserAgent: function() {
+        var match = /(Android) ([0-9.]*).*/.exec(navigator.userAgent);
+        if(match) {
+            return {
+                deviceType: navigator.userAgent.indexOf('Mobile') > 0 ? 'mobile' : 'tablet',
+                version: match[2]
+            };
+        }
+    },
+    matchRule: function(rule) {
+        this.matchData = this.matchData || this.parseUserAgent();
+        if(this.matchData) {
+            var matchVersion = rule.version ? PlatformDetect.matchVersions(this.matchData.version, rule.version) : true;
+            var matchDevice = rule.deviceType ? rule.deviceType === this.matchData.deviceType : true;
+            return matchVersion && matchDevice;
+        }
+    }
+});
+
+// Windows Phone detection
+PlatformDetect.addModule({
+    type: 'winphone',
+    parseUserAgent: function() {
+        var match = /(Windows Phone OS) ([0-9.]*).*/.exec(navigator.userAgent);
+        if(match) {
+            return {
+                version: match[2]
+            };
+        }
+        if(/MSIE 10.*Touch/.test(navigator.userAgent)) {
+            return {
+                version: 8
+            };
+        }
+    },
+    matchRule: function(rule) {
+        this.matchData = this.matchData || this.parseUserAgent();
+        if(this.matchData) {
+            return rule.version ? PlatformDetect.matchVersions(this.matchData.version, rule.version) : true;
+        }
+    }
+});
+
+// Blackberry detection
+PlatformDetect.addModule({
+    type: 'blackberry',
+    parseUserAgent: function() {
+        var match = /(BlackBerry).*Version\/([0-9.]*).*/.exec(navigator.userAgent);
+        if(match) {
+            return {
+                version: match[2]
+            };
+        }
+    },
+    matchRule: function(rule) {
+        this.matchData = this.matchData || this.parseUserAgent();
+        if(this.matchData) {
+            return rule.version ? PlatformDetect.matchVersions(this.matchData.version, rule.version) : true;
+        }
+    }
+});
+
+// Detect rules
+PlatformDetect.addRule({type: 'allmobile', css: 'allmobile.css'});
+PlatformDetect.addRule({type: 'iphone', css: 'iphone.css'});
+PlatformDetect.addRule({type: 'ipad', css: 'ipad.css'});
+PlatformDetect.addRule({type: 'android', css: 'android.css'});
+PlatformDetect.addRule({type: 'blackberry', css: 'blackberry.css'});
+PlatformDetect.addRule({type: 'winphone', css: 'winphone.css'});
