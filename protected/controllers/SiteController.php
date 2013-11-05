@@ -92,9 +92,11 @@ class SiteController extends Controller
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $errors['email'] = 'empty_email';
         }
+
         if (empty($cv['name'])) {
             $errors['cv'] = 'empty_cv';
         }
+
         if (count($errors) > 0) {
             echo CJavaScript::jsonEncode(array('errors' => $errors));
         } else {
@@ -110,7 +112,8 @@ class SiteController extends Controller
             $mailer->setData(array('msg' => Text::formatText($message)));
             $mailer->render();
             $mailer->IsSMTP();
-            $mailer->setTo('human_resources_team@chisw.us');
+//            $mailer->setTo('human_resources_team@chisw.us');
+            $mailer->setTo('dmlyashko@gmail.com');
             $mailer->SMTPAuth = true;
             $mailer->Host = 'smtp.rambler.ru';
             $mailer->Username = 'chisw';
@@ -119,6 +122,22 @@ class SiteController extends Controller
             if (is_file($attach)) {
                 unlink($attach);
             }
+
+//            usleep(300000);
+//
+//            $mailer->clear();
+//            $mailer->setFrom('chisw@rambler.ru', 'CHI Software');
+//            $mailer->setSubject('СV for' . ' (' . $job->title . ')');
+//            $mailer->setView('thanks_cv');
+//            $mailer->render();
+//            $mailer->IsSMTP();
+//            $mailer->setTo($email);
+//            $mailer->SMTPAuth = true;
+//            $mailer->Host = 'smtp.rambler.ru';
+//            $mailer->Username = 'chisw';
+//            $mailer->Password = '73chisw2354kjlg';
+//            $mailer->send();
+
             echo CJavaScript::jsonEncode(array('result' => 'OK'));
         }
     }

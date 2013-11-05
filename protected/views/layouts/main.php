@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=1020" />
+    <meta name="MobileOptimized" content="1020" />
     <title>CHI Software</title>
     <link media="all" rel="stylesheet" type="text/css" href="/css/colorbox.css" />
     <link media="all" rel="stylesheet" type="text/css" href="/css/all.css" />
