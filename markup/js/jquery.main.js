@@ -22,6 +22,7 @@ if ( !detectmob() ) {
         initScrollTo();
         initSameHeight();
         initCustomFileInput();
+        randomBackground();
     });
 
     $(window).load(function(){
@@ -98,7 +99,8 @@ function initFirstPageHeight() {
 function initNiceScroll() {
     $('body').niceScroll({
         cursoropacitymax: 0.5,
-        mousescrollstep: 20
+        mousescrollstep: 20,
+        scrollspeed: 40
     });
 
     $('.technology-section').niceScroll({
@@ -361,6 +363,43 @@ function initPopup() {
         }
     });
 
+}
+
+function randomBackground() {
+    function getRandomInt(min, max){
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    var image =  $('#bg').find('img');
+    var random = getRandomInt(1, 5);
+    var randomImage = ("images/backgrounds/bg-body" + random + ".jpg").toString();
+    var smallImage = ("url(images/backgrounds/bg-body" + random + ".jpg)").toString();
+    image.attr('src', randomImage);
+    $(window).load(function(){
+        if ( $('#wrapper').hasClass('header-small') ){
+            $('.header-small #header').css({
+                'background-image': smallImage,
+                'background-position': '50% 0',
+                'background-size': 'cover'
+            });
+        }
+        $(document).on('scroll', function() {
+            if ( $('#wrapper').hasClass('header-small') ){
+                $('.header-small #header').css({
+                    'background-image': smallImage,
+                    'background-position': '50% 0',
+                    'background-size': 'cover'
+                });
+            }
+            else {
+                $('#header').css({
+                    'background-image': 'none'
+                });
+            }
+        })
+    });
+
+    console.log(smallImage)
+    
 }
 
 // background stretch module
