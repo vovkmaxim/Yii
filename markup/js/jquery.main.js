@@ -1,4 +1,4 @@
-function detectmob() { 
+function detectmob(){ 
  if( navigator.userAgent.match(/Android/i)
   || navigator.userAgent.match(/webOS/i)
   || navigator.userAgent.match(/iPhone/i)
@@ -36,6 +36,7 @@ else {
     $(function(){
         initPopup();
         initFirstPageHeight();
+        mobileRandomBackground();
         initScrollTo();
         initSameHeight();
         initCustomFileInput();
@@ -365,10 +366,11 @@ function initPopup() {
 
 }
 
+function getRandomInt(min, max){
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 function randomBackground() {
-    function getRandomInt(min, max){
-      return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
     var image =  $('#bg').find('img');
     var random = getRandomInt(1, 5);
     var randomImage = ("images/backgrounds/bg-body" + random + ".jpg").toString();
@@ -378,7 +380,7 @@ function randomBackground() {
         if ( $('#wrapper').hasClass('header-small') ){
             $('.header-small #header').css({
                 'background-image': smallImage,
-                'background-position': '50% 0',
+                'background-position': '50% -400px',
                 'background-size': 'cover'
             });
         }
@@ -386,7 +388,7 @@ function randomBackground() {
             if ( $('#wrapper').hasClass('header-small') ){
                 $('.header-small #header').css({
                     'background-image': smallImage,
-                    'background-position': '50% 0',
+                    'background-position': '50% -400px',
                     'background-size': 'cover'
                 });
             }
@@ -396,10 +398,38 @@ function randomBackground() {
                 });
             }
         })
-    });
+    });   
+}
 
-    console.log(smallImage)
-    
+function mobileRandomBackground() {
+    var random = getRandomInt(1, 5);
+    var image = ("url(images/backgrounds/bg-body" + random + ".jpg)").toString();
+    $('body').css({
+        'background-image': image
+    });
+    $(window).load(function(){
+        if ( $('#wrapper').hasClass('header-small') ){
+            $('.header-small #header').css({
+                'background-image': image,
+                'background-position': '50% -400px',
+                'background-size': 'cover'
+            });
+        }
+        $(document).on('scroll', function() {
+            if ( $('#wrapper').hasClass('header-small') ){
+                $('.header-small #header').css({
+                    'background-image': image,
+                    'background-position': '50% -400px',
+                    'background-size': 'cover'
+                });
+            }
+            else {
+                $('#header').css({
+                    'background-image': 'none'
+                });
+            }
+        })
+    });   
 }
 
 // background stretch module
