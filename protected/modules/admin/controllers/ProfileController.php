@@ -20,12 +20,28 @@ class ProfileController extends AdminController
                 $this->render('index', array('error' => $error));
                 Yii::app()->end();
             } elseif (isset($success)) {
-                move_uploaded_file($profile['tmp_name'], 'profile' . DIRECTORY_SEPARATOR . 'profile.pdf');
-                header('Refresh:2; url=' . Yii::app()->getBaseUrl(true) . '/admin/jobs');
+                $this->removeOldProfile();
+                move_uploaded_file($profile['tmp_name'], 'profile' . DIRECTORY_SEPARATOR . $profile['name']);
+                header('Refresh:2; url=' . Yii::app()->getBaseUrl(true) . '/admin/profile');
                 $this->render('index', array('success' => $success));
                 Yii::app()->end();
             }
         }
-        $this->render('index');
+        $this->render('index', array('profile' => Text::getCompanyProfile()));
+    }
+
+    protected function removeOldProfile() {
+        $oldProfiles = scandir('profile', 1);
+        array_pop($oldProfiles);
+        array_pop($oldProfiles);
+        if (count($oldProfiles) > 0) {
+            foreach ($oldProfiles as $profile) {
+                $fileName = 'profile' . DIRECTORY_SEPARATOR . $profile;
+                if (is_file($fileName)) {
+                    unlink($fileName);
+                }
+            }
+        }
+        return true;
     }
 }

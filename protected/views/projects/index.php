@@ -26,9 +26,15 @@
                                 <div class="item">
                                     <?php if (!isset($project->projectsPics[0]->url)) : ?>
                                         <div class="blank">&nbsp;</div>
-                                    <?php else : ?>
+                                    <?php else :
+                                    $preview = $project->projectsPics[0];
+                                    foreach ($project->projectsPics as $pic) {
+                                        if ($pic->preview == 1) {
+                                            $preview = $pic;
+                                        }
+                                    } ?>
                                         <img alt=""
-                                             src="<?php echo Yii::app()->getBaseUrl() . $project->projectsPics[0]->url; ?>">
+                                             src="<?php echo Yii::app()->getBaseUrl() . $preview->url; ?>">
                                     <?php endif; ?>
                                     <a class="holder"
                                        href="/projects/view/project/<?php echo $project->url; ?>/tech/<?php echo $techBlock->url; ?>/id/<?php echo $project->id; ?>">

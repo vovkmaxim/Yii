@@ -12,7 +12,8 @@ class AuthUser extends CWebUser
         'TechController' => array(self::ROLE_RECRUITER),
         'ProjectsController' => array(self::ROLE_RECRUITER),
         'JobsController' => array(self::ROLE_SALES),
-        'ProfileController' => array(self::ROLE_RECRUITER)
+        'ProfileController' => array(self::ROLE_RECRUITER),
+        'PartnersController' => array(self::ROLE_SALES)
     );
     private $_user;
     public function getModel(){

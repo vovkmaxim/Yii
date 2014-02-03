@@ -19,9 +19,11 @@ class AdminModule extends CWebModule
         $this->publishCssFile('admin.assets', '/styles.css');
         $this->publishCssFile('admin.assets', '/DT_bootstrap.css');
 
-        $this->publishJsFile('admin.assets', '/vendors/modernizr-2.6.2-respond-1.1.0.min.js');
-        $this->publishJsFile('admin.assets', '/vendors/jquery-1.9.1.min.js');
-        $this->publishJsFile('admin.assets', '/vendors/jquery-ui-1.10.3.js');
+//        $this->publishJsFile('admin.assets', '/vendors/modernizr-2.6.2-respond-1.1.0.min.js');
+        Yii::app()->clientScript->registerCoreScript('jquery');
+        Yii::app()->clientScript->registerCoreScript('jquery.ui');
+//        $this->publishJsFile('admin.assets', '/vendors/jquery-1.9.1.min.js');
+//        $this->publishJsFile('admin.assets', '/vendors/jquery-ui-1.10.3.js');
         $this->publishJsFile('admin.assets', '/bootstrap/js/bootstrap.js');
         $this->publishJsFile('admin.assets', '/vendors/datatables/js/jquery.dataTables.min.js');
         $this->publishJsFile('admin.assets', '/scripts.js');

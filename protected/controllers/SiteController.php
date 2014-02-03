@@ -31,7 +31,7 @@ class SiteController extends Controller
         $techList = Tech::model()->with('techLists')->findAll(array('order' => 't.position'));
         $projects = Projects::model()->with('projectsPics')->findAll();
         $vacancies = Jobs::model()->findAll(array('order' => 'position'));
-        $profile = (is_readable('profile/profile.pdf')) ? 'profile/profile.pdf' : '';
+        $profile = Text::getCompanyProfile();
 
 
         $this->render('index', array(
@@ -105,40 +105,33 @@ class SiteController extends Controller
             move_uploaded_file($cv['tmp_name'], $attach);
 
             $mailer = new YiiMailer();
-            $mailer->setFrom('chisw@rambler.ru', $name . ' <' . $email . '>');
+            $mailer->setFrom('dima.lyashko@chisw.us', $name . ' <' . $email . '>');
             $mailer->setSubject('СV for' . ' (' . $job->title . ')');
             $mailer->setAttachment($attach);
             $mailer->setView('cv');
             $mailer->setData(array('msg' => Text::formatText($message)));
             $mailer->render();
-            $mailer->IsSMTP();
+            $mailer->IsSMTP(true);
 //            $mailer->setTo('human_resources_team@chisw.us');
             $mailer->setTo('dmlyashko@gmail.com');
             $mailer->SMTPAuth = true;
-            $mailer->Host = 'smtp.rambler.ru';
-            $mailer->Username = 'chisw';
-            $mailer->Password = '73chisw2354kjlg';
-            $mailer->send();
+            $mailer->Host = 'mail.ukraine.com.ua';
+            $mailer->Username = 'dima.lyashko@chisw.us';
+            $mailer->Password = 'yFA2Ppu7';
+            if (!$mailer->send()) {
+                $errors['email'] = 'not_sent';
+            }
             if (is_file($attach)) {
                 unlink($attach);
             }
 
-//            usleep(300000);
-//
-//            $mailer->clear();
-//            $mailer->setFrom('chisw@rambler.ru', 'CHI Software');
-//            $mailer->setSubject('СV for' . ' (' . $job->title . ')');
-//            $mailer->setView('thanks_cv');
-//            $mailer->render();
-//            $mailer->IsSMTP();
-//            $mailer->setTo($email);
-//            $mailer->SMTPAuth = true;
-//            $mailer->Host = 'smtp.rambler.ru';
-//            $mailer->Username = 'chisw';
-//            $mailer->Password = '73chisw2354kjlg';
-//            $mailer->send();
 
-            echo CJavaScript::jsonEncode(array('result' => 'OK'));
+
+            if (count($errors) > 0) {
+                echo CJavaScript::jsonEncode(array('errors' => $errors));
+            } else {
+                echo CJavaScript::jsonEncode(array('result' => 'OK'));
+            }
         }
     }
 }

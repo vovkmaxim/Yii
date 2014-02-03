@@ -80,15 +80,13 @@ $(function () {
         e.preventDefault();
         var _this = $(this);
         _this.parent().remove();
-//        var deleteId = $(this).attr('id');
-//        $.ajax({
-//            url: '/admin/projects/deletepreview',
-//            data: {id: deleteId},
-//            type: 'post',
-//            success: function (result) {
-//                _this.parent().remove();
-//            }
-//        })
+         return false;
+    })
+
+    $('body').on('click', '.title .delete-preview', function (e) {
+        e.preventDefault();
+        var _this = $(this);
+        _this.parent().remove();
         return false;
     })
 

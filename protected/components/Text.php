@@ -29,4 +29,17 @@ class Text
         }
         return $result;
     }
+
+    public static function getCompanyProfile() {
+        if (!is_dir('profile')) {
+            return false;
+        }
+        $profiles = scandir('profile', 1);
+        array_pop($profiles);
+        array_pop($profiles);
+        if (count($profiles) == 0) {
+            return false;
+        }
+        return $profiles[0];
+    }
 }

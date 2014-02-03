@@ -3,13 +3,17 @@
 <header id="header">
     <div class="header-frame">
         <strong class="logo"><a href="/">CHI</a></strong>
+        &nbsp;
         <nav id="nav">
-            <ul>
-                <li class="nav"><a href="#company">Company</a></li>
-                <li class="nav"><a href="#tech">TECHNOLOGIES</a></li>
-                <li class="add"><a href="/projects">PROJECTS</a></li>
-                <li class="nav"><a href="#vacancies">Vacancies</a></li>
-            </ul>
+                <div style="margin-top: 10px; display:inline-block; color:white; text-align: center;">BETA</div>
+<!--            <ul>-->
+<!--                <li class="nav"><a href="#company">Company</a></li>-->
+<!--                <li class="nav"><a href="#tech">TECHNOLOGIES</a></li>-->
+<!--                <li class="add">&nbsp;-->
+<!--                    <a href="/projects">PROJECTS</a>-->
+<!--                </li>-->
+<!--                <li class="nav"><a href="#vacancies">Vacancies</a></li>-->
+<!--            </ul>-->
         </nav>
     </div>
 </header>
@@ -17,11 +21,11 @@
     <section class="main">
         <h1 class="slogan">DESIGN. CODE. CLOUDIFY. <strong>FROM IDEA TO THE PRODUCT.</strong></h1>
     </section>
-    <ul class="social-networks">
-        <li><a href="#" class="facebook">facebook</a></li>
-        <li><a href="#" class="twitter">twitter</a></li>
-        <li><a href="#" class="linkedin">linkedin</a></li>
-    </ul>
+<!--    <ul class="social-networks">-->
+<!--        <li><a href="#" class="facebook">facebook</a></li>-->
+<!--        <li><a href="#" class="twitter">twitter</a></li>-->
+<!--        <li><a href="#" class="linkedin">linkedin</a></li>-->
+<!--    </ul>-->
 </div>
 <div class="pages-holder">
     <div class="page" id="company">
@@ -64,7 +68,7 @@
                         </div>
                     </div>
                     <?php if ($profile != '') : ?>
-                        <a href="/profile/profile.pdf" class="banner"><img src="images/banner1.jpg" alt=""></a>
+                        <a href="/profile/<?php echo $profile; ?>" class="banner"><img src="images/banner1.jpg" alt=""></a>
                     <?php endif; ?>
                     <h2>Work Conditions</h2>
 
@@ -160,8 +164,10 @@
                                 <article class="item">
                                     <header>
                                         <h2 class="technology-header"><?php echo $technology->title; ?></h2>
-                                        <a href="/projects#<?php echo Controller::str2url($technology->title); ?>"
-                                           class="btn">get a glimpse of</a>
+<!--                                        <a href="/projects#--><?php ////echo Controller::str2url($technology->title); //?><!--"-->
+
+<!--                                           class="btn">get a glimpse of</a>-->
+<!--                                           <a href="#" class="btn">get a glimpse of</a>-->
                                     </header>
                                     <div class="info">
                                         <div class="description">

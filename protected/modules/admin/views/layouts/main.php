@@ -48,6 +48,11 @@
                         <a href="/admin/jobs">Вакансии</a>
                     </li>
                     <?php endif; ?>
+                    <?php if (!in_array($role, AuthUser::$denies['PartnersController'])) : ?>
+                        <li <?php echo ($this->active == 'partners') ? 'class="active"' : ''; ?>>
+                            <a href="/admin/partners">Партнеры</a>
+                        </li>
+                    <?php endif; ?>
                     <?php if (!in_array($role, AuthUser::$denies['ProfileController'])) : ?>
                         <li <?php echo ($this->active == 'profile') ? 'class="active"' : ''; ?>>
                             <a href="/admin/profile">Загрузить профиль</a>

@@ -218,8 +218,8 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     text-indent: -9999px;
     overflow: hidden;
     background: url(../images/logo.png) no-repeat;
-    width: 97px;
-    height: 56px;
+    width: 114px;
+    height: 66px;
 }
 .logo a{
     display: block;
@@ -230,6 +230,7 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     text-transform: uppercase;
     font-size: 12px;
     line-height: 14px;
+    display: none;
 }
 #nav a{color: #fff;}
 #nav a:hover,
@@ -245,10 +246,12 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
 #nav li{
     float: left;
     margin: 0 0 0 15px;
+
 }
 #nav li:first-child{margin: 0;}
 .header-small #header{
-    background: url(../images/bg-body-top.jpg) 50% 50% no-repeat;
+    /*background: url(../images/bg-body-top.jpg) 50% 50% no-repeat;*/
+    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -268,6 +271,9 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     left: 50%;
     top: 17px;
     margin: 0 0 0 -18px;
+}
+.header-small #nav {
+    display: block;
 }
 .header-small #header #nav li.add{margin: 0 0 0 100px;}
 .header-small #header #nav li{margin: 0 0 0 42px;}
@@ -993,4 +999,11 @@ h2.technology-header{
 .main h1 a, .main h1 a:hover {
     color: black;
     text-decoration: none;
+}
+
+.success {
+    margin-top: -20px;
+}
+.success p {
+    margin: 2px;
 }

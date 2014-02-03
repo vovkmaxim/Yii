@@ -7,6 +7,7 @@
  * @property integer $id
  * @property integer $project_id
  * @property string $url
+ * @property string $preview
  *
  * The followings are the available model relations:
  * @property Projects $project
@@ -29,11 +30,12 @@ class ProjectsPics extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('project_id, url', 'required'),
+			array('project_id, url, preview', 'required'),
 			array('project_id', 'numerical', 'integerOnly'=>true),
+			array('preview', 'length', 'max'=>1),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, project_id, url', 'safe', 'on'=>'search'),
+			array('id, project_id, url, preview', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -58,6 +60,7 @@ class ProjectsPics extends CActiveRecord
 			'id' => 'ID',
 			'project_id' => 'Project',
 			'url' => 'Url',
+			'preview' => 'Preview',
 		);
 	}
 
@@ -82,6 +85,7 @@ class ProjectsPics extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('project_id',$this->project_id);
 		$criteria->compare('url',$this->url,true);
+		$criteria->compare('preview',$this->preview,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

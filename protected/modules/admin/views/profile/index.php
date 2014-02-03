@@ -22,5 +22,10 @@
             </div>
 
         </form>
+        <?php if ($profile) : ?>
+            <div>
+                <a href="/profile/<?php echo $profile; ?>"><?php echo $profile; ?></a>
+            </div>
+        <?php endif;?>
     </div>
 <?php endif; ?>
