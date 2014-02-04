@@ -342,7 +342,7 @@ class CActiveForm extends CWidget
 	 */
 	public function run()
 	{
-		if(is_array($this->focus))
+        if(is_array($this->focus))
 			$this->focus="#".CHtml::activeId($this->focus[0],$this->focus[1]);
 
 		echo CHtml::endForm();

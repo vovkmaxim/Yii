@@ -218,8 +218,8 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     text-indent: -9999px;
     overflow: hidden;
     background: url(../images/logo.png) no-repeat;
-    width: 114px;
-    height: 66px;
+    width: 97px;
+    height: 56px;
 }
 .logo a{
     display: block;
@@ -230,7 +230,6 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     text-transform: uppercase;
     font-size: 12px;
     line-height: 14px;
-    display: none;
 }
 #nav a{color: #fff;}
 #nav a:hover,
@@ -246,12 +245,10 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
 #nav li{
     float: left;
     margin: 0 0 0 15px;
-
 }
 #nav li:first-child{margin: 0;}
 .header-small #header{
-    /*background: url(../images/bg-body-top.jpg) 50% 50% no-repeat;*/
-    background-color: black;
+    background: url(../images/bg-body-top.jpg) 50% 50% no-repeat;
     position: fixed;
     top: 0;
     left: 0;
@@ -271,9 +268,6 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     left: 50%;
     top: 17px;
     margin: 0 0 0 -18px;
-}
-.header-small #nav {
-    display: block;
 }
 .header-small #header #nav li.add{margin: 0 0 0 100px;}
 .header-small #header #nav li{margin: 0 0 0 42px;}
@@ -417,6 +411,52 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     display: block;
     width: 100%;
     height: auto;
+}
+.partners-list{
+    list-style: none;
+    margin: 0 0 0 -37px;
+    padding: 0;
+    overflow: hidden;
+    /*text-align: center;*/
+    font-size: 0;
+    line-height: 0;
+}
+.partners-list li{
+    list-style: none;
+    margin: 0 0 40px 37px;
+    padding: 0;
+    height: 98px;
+    border: 1px solid #d1cece;
+    display: inline-block;
+    width: 212px;
+    text-align: center;
+    overflow: hidden;
+}
+*+html .partners-list li{
+    display: inline;
+    zoom:1;
+}
+.partners-list li.diff{
+    margin-right: 0;
+}
+.partners-list li a span{
+    display: table-cell;
+    vertical-align: middle;
+}
+.partners-list li a{
+    display: table;
+    height: 98px;
+    width: 100%;
+}
+.partners-list li a img{
+    display: inline;
+}
+*+html .partners-list li{
+    position: relative;
+}
+*+html .partners-list li span{
+    top:50%;
+    position:relative;
 }
 .four-columns{
     overflow: hidden;
@@ -1000,10 +1040,33 @@ h2.technology-header{
     color: black;
     text-decoration: none;
 }
-
-.success {
-    margin-top: -20px;
+.vacancy-item .vacancy-date{
+    margin-bottom: 5px;
 }
-.success p {
-    margin: 2px;
+#footer{
+    background: #000;
+    color: #fff;
+}
+#footer a{
+    padding: 10px 0;
+    color: #fff;
+    float: right;
+}
+#footer a:hover{
+    text-decoration: none;
+}
+#footer a:hover span{
+    border-bottom: 1px solid #000;
+}
+#footer a span{
+    border-bottom: 1px dashed #fff;
+}
+.footer-holder{
+    max-width: 980px;
+    margin: 0 auto;
+}
+.footer-holder span.copy{
+    display: block;
+    padding: 10px 0;
+    width: 150px;
 }

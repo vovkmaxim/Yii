@@ -32,13 +32,15 @@ class SiteController extends Controller
         $projects = Projects::model()->with('projectsPics')->findAll();
         $vacancies = Jobs::model()->findAll(array('order' => 'position'));
         $profile = Text::getCompanyProfile();
+        $partners = Partners::model()->findAll();
 
 
         $this->render('index', array(
                 'tech' => $techList,
                 'projects' => $projects,
                 'jobs' => $vacancies,
-                'profile' => $profile
+                'profile' => $profile,
+                'partners' => $partners
             )
         );
     }
