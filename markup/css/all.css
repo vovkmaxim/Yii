@@ -211,6 +211,7 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     max-width: 980px;
     margin: 0 auto;
     position: relative;
+    z-index: 20;
 }
 .logo{
     display: block;
@@ -245,11 +246,11 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
 #nav li{
     float: left;
     margin: 0 0 0 15px;
+    position: relative;
 }
 #nav li:first-child{margin: 0;}
 .header-small #header{
     background: url(../images/bg-body-top.jpg) 50% 50% no-repeat;
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 10001;
@@ -1050,7 +1051,6 @@ h2.technology-header{
 #footer a{
 	padding: 10px 0;
 	color: #fff;
-	float: right;
 }
 #footer a:hover{
 	text-decoration: none;
@@ -1064,9 +1064,96 @@ h2.technology-header{
 .footer-holder{
 	max-width: 980px;
 	margin: 0 auto;
+    padding: 20px 0 0;
 }
 .footer-holder span.copy{
 	display: block;
 	padding: 10px 0;
 	width: 150px;
 }
+
+/* index */
+.group:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+#nav li ul{
+    margin: 0;
+    position: absolute;
+    right: -25px;
+    top: 100%;
+    vertical-align: top;
+    width: 135px;
+    display: none;
+    background: #000;
+    opacity: 0.83;
+}
+#nav li ul li{
+    display: block;
+    float: none;
+    position: relative;
+}
+#nav li ul li a{
+    display: block;
+}
+#nav li:hover ul{
+    display: block;
+}
+.five-columns {
+    margin: 0 0 31px;
+    overflow: hidden;
+    padding: 7px 0 0;
+}
+.five-columns .col:first-child {
+    margin: 0;
+}
+.five-columns .col {
+    float: left;
+    margin: 0 0 0 4%;
+    width: 16%;
+}
+.five-columns .col a{
+    display: block;
+    color: #797979;
+    font: 14px/22px 'CalibriRegular',Arial,Helvetica,sans-serif;
+    text-decoration: none;
+}
+.five-columns .col a:hover{
+    text-decoration: none;
+}
+.five-columns .col img{
+    text-align: center;
+}
+.block_text img{
+    float: right;
+    margin: 0 40px;
+}
+.block_left{
+    float: left;
+}
+.block_right{
+    float: right;
+}
+.block_left a, .block_right a{
+    float: left;
+}
+.block_left p, .block_right p{
+    float: right;
+    width: 175px;
+}
+.img_holder{
+    text-align: center;
+    width: 100%;
+}
+.block_text .block_right{
+    padding: 5px;
+    border: 3px solid #ccc;
+}
+.block_text .block_right p{
+    margin: 0;
+}
+#footer h3{
+    color: #fff;
+}
+/* end index */
