@@ -1,5 +1,5 @@
 <?php
-/*
+
 // change the following paths if necessary
 $yii=dirname(__FILE__).'/protected/framework/yii.php';
 $config=dirname(__FILE__).'/protected/config/main.php';
@@ -14,5 +14,4 @@ Yii::createWebApplication($config)->run();
 
 function fb($what){
     echo Yii::trace(CVarDumper::dumpAsString($what),'vardump');
-}*/
-echo 1;
+}
