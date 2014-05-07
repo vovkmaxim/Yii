@@ -10,7 +10,7 @@ return array(
     'name'=>'My Web Application',
 
     // preloading 'log' component
-    'preload'=>array('log'),
+    'preload'=>array('log', 'bootstrap'),
 
     // autoloading model and component classes
     'import'=>array(
@@ -35,7 +35,10 @@ return array(
         'user'=>array(
             // enable cookie-based authentication
             'allowAutoLogin'=>true,
-            'class' => 'AuthUser'
+            'class' => 'AuthUser',
+            ),
+        'bootstrap' => array(
+            'class' =>  'ext.yiibooster.components.Bootstrap',
         ),
         // uncomment the following to enable URLs in path-format
 
@@ -61,7 +64,6 @@ return array(
 
         'db'=>array(
             'connectionString' => 'mysql:host=localhost;dbname=chi',
-            'class' => 'CDbConnection',
             'emulatePrepare' => true,
             'username' => 'root',
             'password' => '21091989',

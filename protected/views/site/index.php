@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 <?php if ($profile != '') : ?>
-                    <a href="/profile/<?php echo $profile; ?>" class="banner"><img src="images/banner1.jpg" alt=""></a>
+                    <a href="<?php echo Yii::app()->request->baseUrl; ?>/profile/<?php echo $profile; ?>" class="banner"><img src="images/banner1.jpg" alt=""></a>
                 <?php endif; ?>
                 <?php if ($partners) : ?>
                     <h2>Our Partners</h2>
