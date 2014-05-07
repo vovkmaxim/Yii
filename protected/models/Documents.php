@@ -8,6 +8,7 @@
  * @property string $title
  * @property string $description
  * @property string $file
+ * @property integer $downloaded
  * @property integer $position
  */
 class Documents extends CActiveRecord
@@ -28,12 +29,12 @@ class Documents extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, description, position', 'required'),
-			array('position', 'numerical', 'integerOnly'=>true),
-			array('title', 'length', 'max'=>255),
-			array('file', 'file', 'allowEmpty' => false, 'types' => 'pdf', 'wrongType' => 'Загрузить можно только pdf файл', 'on' => 'insert'),
-            array('file', 'file', 'allowEmpty' => true, 'types' => 'pdf', 'wrongType' => 'Загрузить можно только pdf файл', 'on' => 'update'),
-			array('id, title, description, file, position', 'safe', 'on'=>'search'),
+			array('title, description, downloaded, position', 'required'),
+			array('downloaded, position', 'numerical', 'integerOnly'=>true),
+			array('title, file', 'length', 'max'=>255),
+			array('file', 'file', 'allowEmpty' => false, 'types' => 'pdf', 'wrongType' => 'Только формат pdf', 'on' => 'insert'),
+            array('file', 'file', 'allowEmpty' => true, 'types' => 'pdf', 'wrongType' => 'Только формат pdf', 'on' => 'update'),
+			array('id, title, description, file, downloaded, position', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -58,6 +59,7 @@ class Documents extends CActiveRecord
 			'title' => 'Title',
 			'description' => 'Description',
 			'file' => 'File',
+			'downloaded' => 'Downloaded',
 			'position' => 'Position',
 		);
 	}
@@ -84,6 +86,7 @@ class Documents extends CActiveRecord
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('description',$this->description,true);
 		$criteria->compare('file',$this->file,true);
+		$criteria->compare('downloaded',$this->downloaded);
 		$criteria->compare('position',$this->position);
 
 		return new CActiveDataProvider($this, array(

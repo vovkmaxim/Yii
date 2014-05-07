@@ -36,7 +36,7 @@ class DocumentsController extends AdminController
 				if (isset($_POST['Documents'])) {
 					$doc->attributes = $_POST['Documents'];
 					$doc->file=CUploadedFile::getInstance($doc,'file');
-					if ($doc->save()) {
+					if ($doc->save(false)) {
 						$doc->file->saveAs('documents/' . $doc->file->getName());
 						
 						Yii::app()->user->setFlash('success', 'Запись добавлена успешно!');
