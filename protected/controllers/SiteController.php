@@ -33,14 +33,35 @@ class SiteController extends Controller
         $vacancies = Jobs::model()->findAll(array('order' => 'position'));
         $profile = Text::getCompanyProfile();
         $partners = Partners::model()->findAll();
-
+        
+        //Dir files
+        $dir = 'documents';
+		$file = scandir($dir);		
+		
+		//Delete array
+		if(($key = array_search('download',$file)) !== FALSE){
+			 unset($file[$key]);
+		}
+		
+		if(($key = array_search('index.php',$file)) !== FALSE){
+			 unset($file[$key]);
+		}
+		
+		if(($key = array_search('.',$file)) !== FALSE){
+			 unset($file[$key]);
+		}
+		
+		if(($key = array_search('..',$file)) !== FALSE){
+			 unset($file[$key]);
+		}
 
         $this->render('index', array(
                 'tech' => $techList,
                 'projects' => $projects,
                 'jobs' => $vacancies,
                 'profile' => $profile,
-                'partners' => $partners
+                'partners' => $partners,
+                'files' => $file
             )
         );
     }

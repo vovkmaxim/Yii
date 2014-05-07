@@ -53,9 +53,9 @@
                             <a href="/admin/partners">Партнеры</a>
                         </li>
                     <?php endif; ?>
-                    <?php if (!in_array($role, AuthUser::$denies['ProfileController'])) : ?>
-                        <li <?php echo ($this->active == 'profile') ? 'class="active"' : ''; ?>>
-                            <a href="/admin/profile">Загрузить профиль</a>
+                    <?php if (!in_array($role, AuthUser::$denies['DocumentsController'])) : ?>
+                        <li <?php echo ($this->active == 'documents') ? 'class="active"' : ''; ?>>
+                            <a href="/admin/documents">Документы</a>
                         </li>
                     <?php endif; ?>
                 </ul>

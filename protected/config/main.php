@@ -64,7 +64,7 @@ return array(
             'class' => 'CDbConnection',
             'emulatePrepare' => true,
             'username' => 'root',
-            'password' => '21091989',
+            'password' => 'root',
             'charset' => 'utf8',
             'schemaCachingDuration' => 10
         ),

@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=1020" />
     <meta name="MobileOptimized" content="1020" />
     <title>CHI Software</title>
-    <link media="all" rel="stylesheet" type="text/css" href="/css/colorbox.css" />
-    <link media="all" rel="stylesheet" type="text/css" href="/css/all.css" />
-    <script src="/js/libs/jquery-1.9.0.min.js"></script>
-    <script src="/js/libs/modernizr-2.6.2.min.js"></script>
-    <script src="/js/waypoints.min.js"></script>
-    <script src="/js/jquery.nicescroll.min.js"></script>
-    <script src="/js/jquery.colorbox.js"></script>
-    <script src="/js/jquery.form.js"></script>
-    <script src="/js/jquery.main.js"></script>
+    <link media="all" rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/colorbox.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/all.css" />
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/jquery-1.9.0.min.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/modernizr-2.6.2.min.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/waypoints.min.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.nicescroll.min.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.colorbox.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.form.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.main.js"></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-37652812-1']);

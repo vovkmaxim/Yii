@@ -358,6 +358,14 @@ function initSameHeight() {
 	});
 }
 
+$( document ).ready(function() {
+	$('a#downloads_profile').colorbox({
+		height: 200,
+		width: 600,
+		inline: true
+	});
+});
+
 function initPopup() {
 	var open = ($('input[name=open]').val() == 1) ? true : false;
 	var title = '';
@@ -366,7 +374,8 @@ function initPopup() {
 		var postedJobTitle = $('input[name=job-title]').val();
 		title = $('input[name=title]').val();
 		message = $('input[name=message]').val();
-	}
+	}	
+	
 	$('.inline').colorbox({
 		open: open,
 		inline: true,

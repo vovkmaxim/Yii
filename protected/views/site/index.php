@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 <?php if ($profile != '') : ?>
-                    <a href="/profile/<?php echo $profile; ?>" class="banner"><img src="images/banner1.jpg" alt=""></a>
+                    <a href="#inline-profile" class="banner" id="downloads_profile"><img src="images/banner1.jpg" alt=""></a>
                 <?php endif; ?>
                 <?php if ($partners) : ?>
                     <h2>Our Partners</h2>
@@ -296,6 +296,65 @@
                 <input type="submit" value="Send"/>
             </div>
         </form>
+    </div>
+</div>
+
+
+<div style="display:none;">
+    <div id="inline-profile">
+        <?php
+			
+			echo CHtml::beginForm(); //form open
+				$i = 1;
+				foreach($files as $item) {
+					if($i == 1) {
+						echo CHtml::checkBox('file'.$i, true, array('value' => $item));
+					}else{
+						echo CHtml::checkBox('file'.$i, '', array('value' => $item));
+					}
+					echo $item;
+					echo '<br />';
+					$i++;
+				}
+				echo CHtml::ajaxSubmitButton('Download Selected Documents', Yii::app()->request->baseUrl.'/index.php/ajax/documents', array(
+					'type' => 'POST',
+					'dataType' => 'json',
+					'success'=>'function (data) {
+						if(data.true) {
+							$.colorbox.close();
+							location.href = "documents/index.php?doc="+data.true;
+						}
+					}'
+				),
+				array(
+					'type' => 'submit'
+				));
+				
+				echo "<br />";
+				
+				echo '<div id="message"></div>';
+				echo CHtml::textField('email');			
+				echo CHtml::ajaxSubmitButton('Send to my email', Yii::app()->request->baseUrl.'/index.php/ajax/documentsemail', array(
+					'type' => 'POST',
+					'dataType' => 'json',
+					'success'=>'function (data) {
+						if(data.true) {
+							function boxClose(){
+								$.colorbox.close();
+							}							
+							setTimeout(boxClose,5000);
+							$("#message").html(data.true);
+						}
+						if(data.error) {
+							$("#message").html(data.error);
+						}						
+					}'
+				),
+				array(
+					'type' => 'submit'
+				));			
+			echo CHtml::endForm(); //form end
+        ?>
     </div>
 </div>
 </body>
