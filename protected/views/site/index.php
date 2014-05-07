@@ -307,12 +307,12 @@
 			echo CHtml::beginForm(); //form open
 				$i = 1;
 				foreach($files as $item) {
-					if($i == 1) {
-						echo CHtml::checkBox('file'.$i, true, array('value' => $item));
+					if($i == 1) {								
+						echo CHtml::checkBox('file'.$i, true, array('value' => $item->file));
 					}else{
-						echo CHtml::checkBox('file'.$i, '', array('value' => $item));
+						echo CHtml::checkBox('file'.$i, '', array('value' => $item->file));
 					}
-					echo $item;
+					echo $item->title;	
 					echo '<br />';
 					$i++;
 				}
@@ -330,7 +330,7 @@
 					'type' => 'submit'
 				));
 				
-				echo "<br />";
+				echo '<br />';
 				
 				echo '<div id="message"></div>';
 				echo CHtml::textField('email');			
@@ -352,7 +352,7 @@
 				),
 				array(
 					'type' => 'submit'
-				));			
+				));						
 			echo CHtml::endForm(); //form end
         ?>
     </div>

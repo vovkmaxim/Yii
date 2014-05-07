@@ -34,26 +34,7 @@ class SiteController extends Controller
         $profile = Text::getCompanyProfile();
         $partners = Partners::model()->findAll();
         
-        //Dir files
-        $dir = 'documents';
-		$file = scandir($dir);		
-		
-		//Delete array
-		if(($key = array_search('download',$file)) !== FALSE){
-			 unset($file[$key]);
-		}
-		
-		if(($key = array_search('index.php',$file)) !== FALSE){
-			 unset($file[$key]);
-		}
-		
-		if(($key = array_search('.',$file)) !== FALSE){
-			 unset($file[$key]);
-		}
-		
-		if(($key = array_search('..',$file)) !== FALSE){
-			 unset($file[$key]);
-		}
+        $file = Documents::model()->findAll();
 
         $this->render('index', array(
                 'tech' => $techList,
