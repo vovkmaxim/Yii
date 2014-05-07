@@ -29,12 +29,12 @@ class Documents extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, description, downloaded, position', 'required'),
+			array('title', 'required'),
 			array('downloaded, position', 'numerical', 'integerOnly'=>true),
 			array('title, file', 'length', 'max'=>255),
 			array('file', 'file', 'allowEmpty' => false, 'types' => 'pdf', 'wrongType' => 'Только формат pdf', 'on' => 'insert'),
             array('file', 'file', 'allowEmpty' => true, 'types' => 'pdf', 'wrongType' => 'Только формат pdf', 'on' => 'update'),
-			array('id, title, description, file, downloaded, position', 'safe', 'on'=>'search'),
+			array('id, title, description, file, downloaded, position', 'safe', 'on'=>'search')
 		);
 	}
 

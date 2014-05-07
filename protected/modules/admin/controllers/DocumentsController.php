@@ -31,12 +31,13 @@ class DocumentsController extends AdminController
                     ->queryScalar();
                 $doc->title = $title;
                 $doc->description = $description;
-                $doc->position = $maxPosition + 1;           
+                $doc->position = $maxPosition + 1;
+                $doc->setScenario('insert');            
 
 				if (isset($_POST['Documents'])) {
 					$doc->attributes = $_POST['Documents'];
 					$doc->file=CUploadedFile::getInstance($doc,'file');
-					if ($doc->save(false)) {
+					if ($doc->save()) {
 						$doc->file->saveAs('documents/' . $doc->file->getName());
 						
 						Yii::app()->user->setFlash('success', 'Запись добавлена успешно!');
@@ -80,23 +81,25 @@ class DocumentsController extends AdminController
                 
                 if (isset($_POST['Documents'])) {
 				
-					$doc->attributes = $_POST['Documents'];				
+					$doc->attributes = $_POST['Documents'];	
 					
-					$post_file = CUploadedFile::getInstance($doc,'file');
-					if(!empty($post_file)){
-						$doc->file = CUploadedFile::getInstance($doc,'file');
-					}
-					
-					if (is_object($doc->file)) {
-						$doc->file->saveAs('documents/' . $doc->file->getName());
-						if (is_file($oldFileFileName)) {
-							unlink($oldFileFileName);
+					if($doc->save()){				
+						$post_file = CUploadedFile::getInstance($doc,'file');
+						if(!empty($post_file)){
+							$doc->file = CUploadedFile::getInstance($doc,'file');
 						}
-					}				
-					
-					$doc->update();
-					$viewVars['result'] = 'Документ успешно сохранена';
-					header('Refresh:2; url=' . Yii::app()->getBaseUrl(true) . '/admin/documents');
+						
+						if (is_object($doc->file)) {
+							$doc->file->saveAs('documents/' . $doc->file->getName());
+							//if (is_file($oldFileFileName)) {
+								//unlink($oldFileFileName);
+							//}
+						}				
+						
+						$doc->update();
+						$viewVars['result'] = 'Документ успешно сохранена';
+						header('Refresh:2; url=' . Yii::app()->getBaseUrl(true) . '/admin/documents');
+					}
 					
 				}
             }
