@@ -2,9 +2,4 @@
 /pics
 /protected/runtime/application.log
 /framework
-/config/console.php
-/config/database.php
-/config/import.php
-/config/console.example.php
-/config/database.example.php
-/config/import.examle.php
+
