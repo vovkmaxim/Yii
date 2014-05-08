@@ -18,8 +18,8 @@ class StaticpagesController extends AdminController
         if ($request->isPostRequest) {
 
             $title = trim($request->getPost('title'));
-            $text = $request->getPost('Staticpages');
-            $text = trim($text['text']);
+            $texts = $request->getPost('Staticpages');
+            $text = trim($texts['text']);
 
             $activelink = trim($request->getPost('activelink'));
             $etc = trim($request->getPost('etc'));
@@ -61,8 +61,8 @@ class StaticpagesController extends AdminController
                     );
         if ($request->isPostRequest) {
             $title = trim($request->getPost('title'));
-            $text = $request->getPost('Staticpages');
-            $text = trim($text['text']);
+            $texts = $request->getPost('Staticpages');
+            $text = trim($texts['text']);
             $activelink = trim($request->getPost('activelink'));
             $etc = trim($request->getPost('etc'));
             if ($title == '') {

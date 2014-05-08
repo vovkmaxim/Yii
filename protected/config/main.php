@@ -5,6 +5,9 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
+$database = include 'database.php';
+$import = include 'import.php';
+
 return array(
     'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
     'name'=>'My Web Application',
@@ -13,11 +16,7 @@ return array(
     'preload'=>array('log', 'bootstrap'),
 
     // autoloading model and component classes
-    'import'=>array(
-        'application.models.*',
-        'application.components.*',
-        'ext.YiiMailer.YiiMailer'
-    ),
+    'import'=> $import,
 
     'modules'=>array(
         // uncomment the following to enable the Gii tool
@@ -51,26 +50,10 @@ return array(
             ),
         ),
 
-//        'db'=>array(
-//            'connectionString' => 'mysql:host=chdev.com.ua;dbname=chisw',
-//            'class' => 'CDbConnection',
-//            'emulatePrepare' => true,
-//            'username' => 'chisw',
-//            'password' => 't%f{.PdrUFn\rud',
-//            'charset' => 'utf8',
-//            'schemaCachingDuration' => 10
-//        ),
 
 
-        'db'=>array(
-            'connectionString' => 'mysql:host=localhost;dbname=chi',
-            'emulatePrepare' => true,
-            'username' => 'root',
-            'password' => '21091989',
-            'charset' => 'utf8',
-            'schemaCachingDuration' => 10
-        ),
 
+        'db'=> $database,
         'errorHandler'=>array(
             // use 'site/error' action to display errors
             'errorAction'=>'site/error',
