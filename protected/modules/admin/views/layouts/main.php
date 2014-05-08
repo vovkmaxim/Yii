@@ -6,7 +6,8 @@
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/tinymce/tinymce.min.js"></script>
+
+
 </head>
 
 <body>
@@ -79,7 +80,7 @@
 </div>
 <!--/.fluid-container-->
 <footer>
-    <p><center>&copy; Admin</center></p>
+    <p>&copy; Admin</p>
 </footer>
 </body>
 

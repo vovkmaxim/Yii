@@ -2,7 +2,703 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7973aac-bc2f-4acd-a7c8-761371e998a4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\langs\readme.md" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\license.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\advlist\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\anchor\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\autolink\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\autoresize\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\autosave\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\bbcode\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\charmap\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\code\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\contextmenu\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\directionality\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\emoticons\img\smiley-cool.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\emoticons\img\smiley-cry.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\emoticons\img\smiley-embarassed.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\emoticons\img\smiley-foot-in-mouth.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\emoticons\img\smiley-frown.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\emoticons\img\smiley-innocent.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\emoticons\img\smiley-kiss.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\emoticons\img\smiley-laughing.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\emoticons\img\smiley-money-mouth.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\emoticons\img\smiley-sealed.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\emoticons\img\smiley-smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\emoticons\img\smiley-surprised.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\emoticons\img\smiley-tongue-out.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\emoticons\img\smiley-undecided.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\emoticons\img\smiley-wink.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\emoticons\img\smiley-yell.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\emoticons\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\example\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\example_dependency\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\fullpage\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\fullscreen\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\hr\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\image\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\importcss\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\insertdatetime\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\layer\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\legacyoutput\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\link\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\lists\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\media\moxieplayer.swf" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\media\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\nonbreaking\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\noneditable\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\pagebreak\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\paste\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\preview\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\print\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\save\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\searchreplace\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\spellchecker\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\tabfocus\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\table\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\template\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\textcolor\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\visualblocks\css\visualblocks.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\visualblocks\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\visualchars\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\plugins\wordcount\plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\skins\lightgray\content.inline.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\skins\lightgray\content.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\skins\lightgray\fonts\icomoon-small.eot" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\skins\lightgray\fonts\icomoon-small.svg" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\skins\lightgray\fonts\icomoon-small.ttf" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\skins\lightgray\fonts\icomoon-small.woff" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\skins\lightgray\fonts\icomoon.eot" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\skins\lightgray\fonts\icomoon.svg" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\skins\lightgray\fonts\icomoon.ttf" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\skins\lightgray\fonts\icomoon.woff" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\skins\lightgray\fonts\readme.md" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\skins\lightgray\img\anchor.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\skins\lightgray\img\loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\skins\lightgray\img\object.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\skins\lightgray\img\trans.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\skins\lightgray\img\wline.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\skins\lightgray\skin.ie7.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\skins\lightgray\skin.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\themes\modern\theme.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\assets\tinymce\tinymce.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\CKEditor.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckeditor.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\changelog.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\ckfinder.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\ckfinder.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\ckfinder.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\config.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\ckfinder_php4.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\ckfinder_php5.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\connector.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\constants.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\lang\de.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\lang\en.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\lang\es-mx.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\lang\es.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\lang\fr.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\lang\it.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\lang\lv.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\lang\pl.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\lang\pt-br.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\lang\ru.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\lang\sk.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\lang\zh-cn.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\lang\zh-tw.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\CommandHandler\CommandHandlerBase.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\CommandHandler\CreateFolder.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\CommandHandler\DeleteFile.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\CommandHandler\DeleteFolder.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\CommandHandler\DownloadFile.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\CommandHandler\FileUpload.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\CommandHandler\GetFiles.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\CommandHandler\GetFolders.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\CommandHandler\Init.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\CommandHandler\QuickUpload.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\CommandHandler\RenameFile.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\CommandHandler\RenameFolder.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\CommandHandler\Thumbnail.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\CommandHandler\XmlCommandHandlerBase.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\Core\AccessControlConfig.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\Core\Config.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\Core\Connector.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\Core\Factory.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\Core\FolderHandler.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\Core\ImagesConfig.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\Core\Registry.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\Core\ResourceTypeConfig.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\Core\ThumbnailsConfig.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\Core\Xml.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\ErrorHandler\Base.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\ErrorHandler\FileUpload.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\ErrorHandler\Http.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\ErrorHandler\QuickUpload.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\Utils\FileSystem.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\Utils\Misc.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\Utils\Security.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php4\Utils\XmlNode.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\CommandHandler\CommandHandlerBase.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\CommandHandler\CreateFolder.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\CommandHandler\DeleteFile.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\CommandHandler\DeleteFolder.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\CommandHandler\DownloadFile.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\CommandHandler\FileUpload.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\CommandHandler\GetFiles.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\CommandHandler\GetFolders.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\CommandHandler\Init.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\CommandHandler\QuickUpload.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\CommandHandler\RenameFile.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\CommandHandler\RenameFolder.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\CommandHandler\Thumbnail.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\CommandHandler\XmlCommandHandlerBase.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\Core\AccessControlConfig.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\Core\Config.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\Core\Connector.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\Core\Factory.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\Core\FolderHandler.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\Core\ImagesConfig.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\Core\Registry.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\Core\ResourceTypeConfig.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\Core\ThumbnailsConfig.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\Core\Xml.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\ErrorHandler\Base.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\ErrorHandler\FileUpload.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\ErrorHandler\Http.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\ErrorHandler\QuickUpload.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\Utils\FileSystem.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\Utils\Misc.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\Utils\Security.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\connector\php\php5\Utils\XmlNode.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\css\ckfinder.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\001.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\002.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\003.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\004.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\005.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\006.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\007.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\008.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\009.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\010.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\011.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\012.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\013.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\header.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\001.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\002.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\003.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\004.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\005.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\006.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\007.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\008.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\009.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\010.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\011.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\012.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\013.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\014.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\015.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\016.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\017.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\018.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\019.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\images\020.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\license.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\other\help.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\other\help.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\suggestions.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\files\toc.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\en\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\001.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\002.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\003.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\004.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\005.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\006.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\007.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\008.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\009.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\010.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\011.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\012.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\013.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\header.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\001.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\002.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\003.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\004.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\005.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\006.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\007.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\008.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\009.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\010.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\011.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\012.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\013.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\014.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\015.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\016.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\017.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\018.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\019.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\images\020.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\license.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\other\help.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\other\help.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\suggestions.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\files\toc.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es-mx\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\001.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\002.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\003.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\004.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\005.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\006.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\007.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\008.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\009.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\010.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\011.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\012.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\013.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\header.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\001.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\002.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\003.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\004.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\005.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\006.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\007.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\008.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\009.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\010.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\011.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\012.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\013.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\014.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\015.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\016.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\017.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\018.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\019.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\images\020.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\license.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\other\help.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\other\help.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\suggestions.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\files\toc.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\es\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\001.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\002.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\003.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\004.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\005.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\006.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\007.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\008.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\009.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\010.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\011.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\012.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\013.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\header.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\001.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\002.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\003.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\004.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\005.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\006.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\007.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\008.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\009.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\010.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\011.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\012.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\013.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\014.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\015.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\016.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\017.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\018.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\019.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\images\020.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\license.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\other\help.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\other\help.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\suggestions.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\files\toc.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\help\pl\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\ckffolder.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\ckffolderopened.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\ckfminus.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\ckfnothumb.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\ckfplus.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\ai.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\avi.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\bmp.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\cs.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\default.icon.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\dll.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\doc.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\exe.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\fla.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\gif.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\jpg.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\js.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\mdb.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\mp3.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\pdf.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\ppt.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\rdp.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\swf.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\swt.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\txt.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\vsd.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\xls.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\xml.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\16\zip.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\ai.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\avi.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\bmp.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\cs.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\default.icon.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\dll.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\doc.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\exe.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\fla.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\gif.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\jpg.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\js.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\mdb.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\mp3.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\pdf.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\ppt.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\rdp.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\swf.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\swt.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\txt.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\vsd.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\xls.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\xml.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\icons\32\zip.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\spacer.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\toolbar\add.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\toolbar\delete.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\toolbar\download.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\toolbar\help.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\toolbar\refresh.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\toolbar\settings.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\images\toolbar\view.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\js\ckfinder_gecko.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\js\ckfinder_ie.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\lang\da.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\lang\de.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\lang\es-mx.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\lang\es.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\lang\fr.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\lang\it.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\lang\lv.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\lang\pl.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\lang\pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\lang\ru.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\lang\sk.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\lang\sv.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\lang\zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\lang\zh-tw.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\pages\blank.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\pages\ckffiles.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\pages\ckffolders.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\default\fck_dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\default\fck_editor.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\default\images\toolbar.arrowright.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\default\images\toolbar.buttonarrow.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\default\images\toolbar.collapse.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\default\images\toolbar.end.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\default\images\toolbar.expand.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\default\images\toolbar.separator.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\default\images\toolbar.start.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\office2003\fck_dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\office2003\fck_editor.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\office2003\images\toolbar.arrowright.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\office2003\images\toolbar.bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\office2003\images\toolbar.buttonarrow.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\office2003\images\toolbar.collapse.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\office2003\images\toolbar.end.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\office2003\images\toolbar.expand.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\office2003\images\toolbar.separator.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\office2003\images\toolbar.start.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\silver\fck_dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\silver\fck_editor.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\silver\images\toolbar.arrowright.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\silver\images\toolbar.buttonarrow.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\silver\images\toolbar.buttonbg.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\silver\images\toolbar.collapse.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\silver\images\toolbar.end.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\silver\images\toolbar.expand.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\silver\images\toolbar.separator.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\core\skins\silver\images\toolbar.start.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\install.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\license.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\ckfinder\userfiles\.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\config.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\images\spacer.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\_languages.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\_translationstatus.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\af.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\ar.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\bg.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\bn.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\bs.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\ca.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\cs.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\da.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\de.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\el.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\en-au.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\en-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\en-uk.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\eo.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\es.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\et.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\eu.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\fa.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\fi.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\fo.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\fr.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\gl.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\gu.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\he.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\hi.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\hr.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\hu.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\is.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\it.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\ja.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\km.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\ko.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\lt.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\lv.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\mn.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\ms.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\nb.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\nl.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\no.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\pl.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\pt.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\ro.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\ru.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\sk.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\sl.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\sr-latn.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\sr.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\sv.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\th.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\tr.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\uk.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\vi.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\lang\zh.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\about\dialogs\about.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\about\dialogs\logo_ckeditor.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\about\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\basicstyles\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\blockquote\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\button\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\clipboard\dialogs\paste.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\clipboard\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\colorbutton\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\contextmenu\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\dialog\dialogDefinition.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\dialog\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\dialogui\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\domiterator\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\editingblock\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\elementspath\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\enterkey\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\entities\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\fakeobjects\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\filebrowser\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\find\dialogs\find.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\find\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\flash\dialogs\flash.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\flash\images\placeholder.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\flash\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\floatpanel\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\font\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\format\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\forms\dialogs\button.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\forms\dialogs\checkbox.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\forms\dialogs\form.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\forms\dialogs\hiddenfield.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\forms\dialogs\radio.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\forms\dialogs\select.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\forms\dialogs\textarea.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\forms\dialogs\textfield.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\forms\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\horizontalrule\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\htmldataprocessor\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\htmlwriter\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\iframedialog\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\image\dialogs\image.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\image\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\indent\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\justify\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\keystrokes\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\link\dialogs\anchor.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\link\dialogs\link.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\link\images\anchor.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\link\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\list\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\listblock\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\maximize\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\menu\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\menubutton\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\newpage\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\pagebreak\images\pagebreak.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\pagebreak\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\panel\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\panelbutton\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\pastefromword\dialogs\pastefromword.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\pastefromword\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\pastetext\dialogs\pastetext.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\pastetext\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\popup\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\preview\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\print\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\removeformat\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\resize\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\richcombo\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\save\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\scayt\dialogs\options.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\scayt\dialogs\toolbar.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\scayt\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\selection\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\showblocks\images\block_address.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\showblocks\images\block_blockquote.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\showblocks\images\block_div.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\showblocks\images\block_h1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\showblocks\images\block_h2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\showblocks\images\block_h3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\showblocks\images\block_h4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\showblocks\images\block_h5.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\showblocks\images\block_h6.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\showblocks\images\block_p.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\showblocks\images\block_pre.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\showblocks\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\dialogs\smiley.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\angel_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\angry_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\broken_heart.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\confused_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\cry_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\devil_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\embaressed_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\envelope.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\heart.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\kiss.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\lightbulb.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\omg_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\regular_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\sad_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\shades_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\teeth_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\thumbs_down.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\thumbs_up.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\tounge_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\whatchutalkingabout_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\images\wink_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\smiley\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\sourcearea\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\specialchar\dialogs\specialchar.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\specialchar\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\styles\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\stylescombo\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\stylescombo\styles\default.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\tab\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\table\dialogs\table.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\table\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\tabletools\dialogs\tableCell.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\tabletools\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\templates\dialogs\templates.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\templates\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\templates\templates\default.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\templates\templates\images\template1.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\templates\templates\images\template2.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\templates\templates\images\template3.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\toolbar\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\uicolor\dialogs\uicolor.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\uicolor\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\uicolor\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\uicolor\uicolor.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\uicolor\yui\assets\hue_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\uicolor\yui\assets\hue_thumb.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\uicolor\yui\assets\picker_mask.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\uicolor\yui\assets\picker_thumb.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\uicolor\yui\assets\yui.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\uicolor\yui\yui.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\undo\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\wsc\dialogs\ciframe.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\wsc\dialogs\tmpFrameset.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\wsc\dialogs\wsc.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\wsc\dialogs\wsc.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\wsc\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\plugins\wysiwygarea\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\kama\dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\kama\editor.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\kama\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\kama\images\dialog_sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\kama\images\dialog_sides.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\kama\images\dialog_sides_rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\kama\images\mini.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\kama\images\noimage.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\kama\images\sprites.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\kama\images\sprites_ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\kama\images\toolbar_start.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\kama\skin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\kama\templates.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\office2003\dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\office2003\editor.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\office2003\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\office2003\images\dialog_sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\office2003\images\dialog_sides.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\office2003\images\dialog_sides_rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\office2003\images\mini.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\office2003\images\noimage.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\office2003\images\sprites.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\office2003\images\sprites_ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\office2003\skin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\office2003\templates.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\v2\dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\v2\editor.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\v2\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\v2\images\dialog_sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\v2\images\dialog_sides.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\v2\images\dialog_sides_rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\v2\images\mini.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\v2\images\noimage.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\v2\images\sprites.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\v2\images\sprites_ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\v2\images\toolbar_start.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\v2\skin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\skins\v2\templates.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\repo\Yii-Training\CHI_corporate_website\protected\extensions\ckeditor\assets\themes\default\theme.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/AdminModule.php" afterPath="$PROJECT_DIR$/protected/modules/admin/AdminModule.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Staticpages.php" afterPath="$PROJECT_DIR$/protected/models/Staticpages.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/StaticpagesController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/StaticpagesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/staticpages/add.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/staticpages/add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/staticpages/edit.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/staticpages/edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/assets/scripts.js" afterPath="$PROJECT_DIR$/protected/modules/admin/assets/scripts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,19 +721,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+      <file leaf-file-name="form.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/staticpages/form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="33" selection-start="443" selection-end="443" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="1513">
+            <state line="36" column="13" selection-start="950" selection-end="950" vertical-scroll-proportion="-23.538462" vertical-offset="0" max-vertical-offset="867">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="StaticpagesController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/StaticpagesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="204" selection-end="204" vertical-scroll-proportion="0.2777778" vertical-offset="0" max-vertical-offset="612">
+            <state line="40" column="0" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.4112628" vertical-offset="439" max-vertical-offset="1377">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="34" selection-start="498" selection-end="541" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
@@ -69,31 +774,34 @@
         <option value="$PROJECT_DIR$/protected/modules/admin/views/projects/add.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/assets/styles.css" />
         <option value="$PROJECT_DIR$/protected/components/ProjectImage.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/assets/scripts.js" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/ProjectsController.php" />
         <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/protected/views/site/index.php" />
         <option value="$PROJECT_DIR$/protected/runtime/application.log" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/staticpages/_form.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/JobsController.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/projects/index.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/partners/index.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/jobs/index.php" />
-        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/protected/models/Staticpages.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/staticpages/index.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/staticpages/red.php" />
-        <option value="$PROJECT_DIR$/protected/extensions/ckeditor/CKEditor.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/staticpages/add.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/staticpages/edit.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/StaticpagesController.php" />
         <option value="$PROJECT_DIR$/protected/config/database.php" />
         <option value="$PROJECT_DIR$/protected/config/import.php" />
         <option value="$PROJECT_DIR$/protected/config/email.php" />
-        <option value="$PROJECT_DIR$/protected/config/main.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/protected/extensions/ckeditor/CKEditor.php" />
+        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/assets/scripts.js" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/staticpages/test.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/staticpages/edit.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/staticpages/add.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/protected/models/Staticpages.php" />
+        <option value="$PROJECT_DIR$/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/JobsController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/AdminModule.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/StaticpagesController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/staticpages/form.php" />
       </list>
     </option>
   </component>
@@ -130,7 +838,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -177,22 +884,94 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CHI_corporate_website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CHI_corporate_website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CHI_corporate_website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CHI_corporate_website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CHI_corporate_website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CHI_corporate_website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="D:/Program Files/Git/cmd/git.exe" />
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -201,7 +980,11 @@
       <recent name="D:\repo\Yii-Training\CHI_corporate_website\protected\modules\admin\views\staticpages" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.yiibooster">
+    <configuration default="false" name="yiibooster" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/protected/extensions/yiibooster" />
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
@@ -215,7 +998,14 @@
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
-    <list size="0" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="PHPUnit.yiibooster" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.yiibooster" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
@@ -242,7 +1032,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25768667" sideWeight="0.67108166" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2693997" sideWeight="0.67108166" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -290,51 +1080,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/components/ProjectImage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="0" selection-start="3422" selection-end="3422" vertical-scroll-proportion="-35.307693" vertical-offset="714" max-vertical-offset="4131" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/pages/about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/error.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/tech/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/runtime/application.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="4653" selection-end="4653" vertical-scroll-proportion="0.8297162" vertical-offset="200" max-vertical-offset="799" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/default/error.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/default/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="5" selection-start="3661" selection-end="3661" vertical-scroll-proportion="3.278157" vertical-offset="0" max-vertical-offset="2465" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/AdminModule.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.0307168" vertical-offset="604" max-vertical-offset="1190" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/TechController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="33" selection-start="40" selection-end="40" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="2363" />
@@ -348,11 +1093,6 @@
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/profile/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="37" selection-start="7" selection-end="55" vertical-scroll-proportion="0.058020476" vertical-offset="0" max-vertical-offset="1105" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/ProjectsPics.php">
@@ -460,115 +1200,166 @@
         <state line="22" column="132" selection-start="907" selection-end="934" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="629" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1686" selection-end="1686" vertical-scroll-proportion="0.7389079" vertical-offset="77" max-vertical-offset="663" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="8" selection-start="3946" selection-end="3946" vertical-scroll-proportion="0.67364746" vertical-offset="974" max-vertical-offset="1547" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/staticpages/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="31" selection-start="794" selection-end="794" vertical-scroll-proportion="0.4363002" vertical-offset="39" max-vertical-offset="748" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/jobs/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="22" selection-start="372" selection-end="372" vertical-scroll-proportion="-6.3461537" vertical-offset="56" max-vertical-offset="629" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/staticpages/red.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="799" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="561" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Staticpages.php">
+    <entry file="file://$PROJECT_DIR$/protected/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="5" selection-start="870" selection-end="870" vertical-scroll-proportion="-3.2692308" vertical-offset="714" max-vertical-offset="1751">
-          <folding />
-        </state>
+        <state line="19" column="0" selection-start="587" selection-end="587" vertical-scroll-proportion="0.55119455" vertical-offset="0" max-vertical-offset="586" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/JobsController.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="39" selection-start="3024" selection-end="3024" vertical-scroll-proportion="2.049488" vertical-offset="244" max-vertical-offset="1785" />
+        <state line="10" column="0" selection-start="204" selection-end="204" vertical-scroll-proportion="0.2777778" vertical-offset="0" max-vertical-offset="612" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/assets/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="73" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2091" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/jobs/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="22" selection-start="372" selection-end="372" vertical-scroll-proportion="0.38568935" vertical-offset="0" max-vertical-offset="629" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/staticpages/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="55" selection-start="908" selection-end="935" vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="1122" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2822" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/assets/bootstrap/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.117647" vertical-offset="2958" max-vertical-offset="38845" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/import.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="2" selection-start="113" selection-end="113" vertical-scroll-proportion="0.17406143" vertical-offset="0" max-vertical-offset="586" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/console.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.21843003" vertical-offset="128" max-vertical-offset="714" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/9f02d129/DT_bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.5833334" vertical-offset="969" max-vertical-offset="2788" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Jobs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="34" selection-start="2031" selection-end="2031" vertical-scroll-proportion="-4.576923" vertical-offset="1190" max-vertical-offset="1802">
-          <folding />
-        </state>
+        <state line="77" column="34" selection-start="2031" selection-end="2031" vertical-scroll-proportion="0.15870307" vertical-offset="1216" max-vertical-offset="1802" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="260" selection-end="260" vertical-scroll-proportion="-0.83152175" vertical-offset="612" max-vertical-offset="1564" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="0" selection-start="1887" selection-end="1887" vertical-scroll-proportion="1.1538461" vertical-offset="1067" max-vertical-offset="1632" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/staticpages/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="36" selection-start="1129" selection-end="1155" vertical-scroll-proportion="-6.1923075" vertical-offset="332" max-vertical-offset="918">
+        <state line="5" column="0" selection-start="97" selection-end="97" vertical-scroll-proportion="0.1450512" vertical-offset="0" max-vertical-offset="586">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/staticpages/edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="59" selection-start="1223" selection-end="1223" vertical-scroll-proportion="-12.423077" vertical-offset="170" max-vertical-offset="918">
+        <state line="0" column="58" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Staticpages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="26" selection-start="1221" selection-end="1221" vertical-scroll-proportion="0.26109216" vertical-offset="765" max-vertical-offset="1904">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/ckeditor/CKEditor.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/staticpages/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="314" column="19" selection-start="8886" selection-end="8886" vertical-scroll-proportion="1.5200698" vertical-offset="4416" max-vertical-offset="5474">
+        <state line="6" column="51" selection-start="290" selection-end="290" vertical-scroll-proportion="0.17801048" vertical-offset="0" max-vertical-offset="748" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="37" selection-start="7" selection-end="55" vertical-scroll-proportion="-0.74061435" vertical-offset="468" max-vertical-offset="1105" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/JobsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="5" selection-start="302" selection-end="302" vertical-scroll-proportion="0.34812286" vertical-offset="0" max-vertical-offset="1785" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/AdminModule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="1516" selection-end="1516" vertical-scroll-proportion="0.2320819" vertical-offset="408" max-vertical-offset="1190" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="34" selection-start="498" selection-end="541" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/staticpages/form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="13" selection-start="950" selection-end="950" vertical-scroll-proportion="-23.538462" vertical-offset="0" max-vertical-offset="867">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/StaticpagesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="44" selection-start="885" selection-end="885" vertical-scroll-proportion="0.43515357" vertical-offset="204" max-vertical-offset="2193">
+        <state line="40" column="0" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.4112628" vertical-offset="439" max-vertical-offset="1377">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/import.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="2" selection-start="113" selection-end="113" vertical-scroll-proportion="0.17406143" vertical-offset="0" max-vertical-offset="586">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="587" selection-end="587" vertical-scroll-proportion="0.55119455" vertical-offset="0" max-vertical-offset="586">
-          <folding>
-            <element signature="e#6#28#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="33" selection-start="443" selection-end="443" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="1513">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="204" selection-end="204" vertical-scroll-proportion="0.2777778" vertical-offset="0" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

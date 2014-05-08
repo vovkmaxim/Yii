@@ -29,6 +29,7 @@
 
     </script>
 
+
 </head>
 <?php echo $content; ?>
 </html>

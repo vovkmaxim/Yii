@@ -2,8 +2,7 @@ $(function () {
 
     tinyMCE.init({
         selector: "textarea.content-block",
-        plugins: 'advlist autolink link image lists charmap print preview'
-    });
+        plugins: 'advlist autolink link image lists charmap print preview'    });
     // Side Bar Toggle
     $('.hide-sidebar').click(function () {
         $('#sidebar').hide('fast', function () {

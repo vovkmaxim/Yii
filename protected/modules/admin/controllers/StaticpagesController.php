@@ -11,82 +11,36 @@ class StaticpagesController extends AdminController
         $this->render('index', array('staticpagesList' => $staticpagesList));
     }
 
-    public function actionAdd() {
+    protected function initSave(Staticpages $model)
+    {
+        if (isset($_POST['Staticpages'])) {
+            // Save process
+            $model->attributes = $_POST['Staticpages'];
 
-        $request = Yii::app()->request;
-        $viewVars = array('text' => '');
-        if ($request->isPostRequest) {
-
-            $title = trim($request->getPost('title'));
-            $texts = $request->getPost('Staticpages');
-            $text = trim($texts['text']);
-
-            $activelink = trim($request->getPost('activelink'));
-            $etc = trim($request->getPost('etc'));
-            if ($title == '') {
-                $error = 'Введите название';
-                $viewVars['error'] = $error;
-                $viewVars['text'] = $text;
+            if ($model->save()) {
+                $this->redirect( Yii::app()->request->baseUrl.'/admin/staticpages/index');
             }
-            else {
-                $staticpage = new Staticpages();
-
-                $staticpage->title = $title;
-                $staticpage->text = $text;
-                $staticpage->activelink = $activelink;
-                $staticpage->etc = $etc;
-                $staticpage->insert();
-                $viewVars['result'] = 'Страница успешно добавлена';
-                header('Refresh:2; url=' . Yii::app()->getBaseUrl(true) . '/admin/staticpages');
-            }
+//            var_dump($model->getErrors()); exit;
         }
-        $this->render('add', $viewVars);
     }
 
-    public function actionEdit($id) {
-        $id = (int)$id;
-        if ($id  == 0) {
-            throw new CHttpException(404,'Неправильный запрос');
-        }
-        $request = Yii::app()->request;
-        $staticpage = Staticpages::model()->findByPk($id);
-        if (!$staticpage) {
-            throw new CHttpException(404,'Неправильный запрос');
-        }
-        $viewVars = array(
-                          'title' => $staticpage->title,
-                          'text' => $staticpage->text,
-                          'activelink' => $staticpage->activelink,
-                          'etc' => $staticpage->etc
-                    );
-        if ($request->isPostRequest) {
-            $title = trim($request->getPost('title'));
-            $texts = $request->getPost('Staticpages');
-            $text = trim($texts['text']);
-            $activelink = trim($request->getPost('activelink'));
-            $etc = trim($request->getPost('etc'));
-            if ($title == '') {
-                $error = 'Введите название';
-                $viewVars['error'] = $error;
-                $viewVars['title'] = $title;
-                $viewVars['text'] = $text;
-                $viewVars['activelink'] = $activelink;
-                $viewVars['etc'] = $etc;
-            }
-            else {
-                $staticpage->title = $title;
-                $staticpage->text = $text;
-                $staticpage->activelink = $activelink;
-                $staticpage->etc = $etc;
-                $staticpage->update();
-                $viewVars['result'] = 'Страница успешно сохранена';
-                header('Refresh:2; url=' . Yii::app()->getBaseUrl(true) . '/admin/staticpages');
-            }
-        }
-        $this->render('edit', $viewVars);
+    public function actionAdd()
+    {
+        $model = new Staticpages();
+
+        $this->initSave($model);
+
+        $this->render('add', array('model' => $model));
     }
 
+    public function actionEdit($id)
+    {
+        $model = Staticpages::model()->findByPk($id);
 
+        $this->initSave($model);
+
+        $this->render('edit', array('model' => $model));
+    }
 
     public function actionDelete($id) {
         $id = (int)$id;
@@ -97,7 +51,6 @@ class StaticpagesController extends AdminController
         $staticpage->delete();
         header('Location:' . Yii::app()->getBaseUrl(true) . '/admin/staticpages');
         exit();
-
     }
 
     public function actionSaveOrder() {
@@ -117,7 +70,6 @@ class StaticpagesController extends AdminController
     }
     public function filters() {
         return array(
-        //... probably other filter specifications ...
         array('ext.yiibooster..filters.BootstrapFilter - delete')
     );
 }

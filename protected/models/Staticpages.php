@@ -28,7 +28,8 @@ class Staticpages extends CActiveRecord
     public function rules()
     {
         return array(
-
+            array('title, activelink, text', 'required', 'message' => 'Это поле обязательно для заполнения'),
+            array('id, title, activelink, text, etc', 'safe'),
         );
     }
 
@@ -48,10 +49,10 @@ class Staticpages extends CActiveRecord
     {
         return array(
             'id' => 'ID',
-            'title' => 'Title',
-            'activelink' => 'activelink',
-            'text' => 'text',
-            'etc'=>'etc'
+            'title' => 'Название',
+            'activelink' => 'Ссылка',
+            'text' => 'Текст',
+            'etc'=>'Другое'
         );
     }
 
@@ -94,4 +95,12 @@ class Staticpages extends CActiveRecord
         return parent::model($className);
     }
 
+    protected function beforeValidate()
+    {
+        $this->title = trim($this->title);
+        $this->activelink = trim($this->activelink);
+        $this->text = trim($this->text);
+        $this->etc = trim($this->etc);
+        return parent::beforeValidate();
+    }
 }
