@@ -1,53 +1,49 @@
 <div class="span4">
-    <?php if (Yii::app()->user->hasFlash('success')): ?>
-    <div class="alert alert-success">
-        <?php echo Yii::app()->user->getFlash('success'); ?>
+  <h2>Добавление документа</h2>
+  <?php $form = $this->beginWidget('CActiveForm', array(
+    'id' => 'documents-form',
+    'htmlOptions' => array(
+        'enctype' => 'multipart/form-data',
+    ),
+  )); ?>
+ 
+  <?php if($form->error($model, 'title')): ?>
+  <div class="alert alert-success">
+    <?php echo $form->error($model, 'title'); ?>    
+  </div>
+  <?php endif; ?>
+  
+  <?php if($form->error($model, 'file')): ?>
+  <div class="alert alert-success">
+    <?php echo $form->error($model, 'file'); ?>
+  </div>
+  <?php endif; ?>
+  
+  <div class="control-group">    
+    <?php echo $form->label($model,'Название*', array('for' => 'Documents_title')); ?>
+    <div class="controls">
+      <?php echo $form->textField($model,'title', array('class' => 'input-xxlarge')); ?>
     </div>
-    <?php else : ?>
+  </div>
 
-
-    <?php $doc = $this->beginWidget('CActiveForm',
-    array(
-        'id' => 'user-form',
-        'enableClientValidation' => true,
-        'clientOptions'=>array(
-            'validateOnSubmit'=>true,
-        ),
-        'htmlOptions' => array(
-            'enctype' => 'multipart/form-data'
-        )
-    ));
-    ?>
-    
-    <?php if (isset($value['error'])) : ?>
-        <div class="alert alert-error">
-            <?php echo $value['error']; ?>
-        </div>
-    <?php endif; ?>
-    
-    <div class="control-group">
-        <label>Название*</label>
-        <div class="controls">
-            <input type="text" class="input-xxlarge" name="title" value="<?php echo $value['title']; ?>" />
-        </div>
+  <div class="control-group">
+    <?php echo $form->label($model,'Описание', array('for' => 'Documents_description')); ?>
+    <div class="controls">
+      <?php echo $form->textarea($model,'description', array('class' => 'input-xxlarge content-block', 'cols' => 40, 'rows' => 20)); ?>
     </div>
-
-
-    <div class="control-group">
-        <label>Описание</label>
-        <div class="controls">
-            <textarea class="input-xxlarge content-block" cols="40" rows="20" name="description"><?php echo $value['description']; ?></textarea>
-        </div>
-    </div>
-    
-    <div class="control-group">
-        <?php echo $doc->error($model, 'file'); ?>
-        <?php echo $doc->fileField($model, 'file'); ?>
-    </div>
-    <div class="control-group">
-        <?php echo CHtml::submitButton('Добавить'); ?>
-    </div>
-    <?php $this->endWidget(); ?>
-    <?php endif; ?>
+  </div>
+  
+  <div class="control-group">
+    Формат PDF
+  </div>
+  
+  <div class="control-group">
+    <?php echo $form->fileField($model, 'file'); ?>
+  </div>
+  
+  <div class="controls">
+    <?php echo CHtml::submitButton('Добавить', array('class' => 'btn btn-save')); ?>
+  </div>
+ 
+  <?php $this->endWidget(); ?>
 </div>
-

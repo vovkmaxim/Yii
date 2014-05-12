@@ -8,6 +8,7 @@
 return array(
     'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
     'name'=>'My Web Application',
+    'language'=>'ru',
 
     // preloading 'log' component
     'preload'=>array('log'),
@@ -42,6 +43,17 @@ return array(
         'urlManager'=>array(
             'urlFormat'=>'path',
             'rules'=>array(
+                // Admin module
+                'admin'                                         => 'admin/index/index',
+                'admin/<controller:\w+>'                        => 'admin/<controller>/index',
+                'admin/<controller:\w+>/<action:\w+>/<id:\d+>'  => 'admin/<controller>/<action>',
+                'admin/<controller:\w+>/<action:\w+>'           => 'admin/<controller>/<action>',
+
+                // Default routes
+                '<module>/<controller:\w+>'                         => '<module>/<controller>/index',
+                '<module>/<controller:\w+>/<action:\w+>/<id:\d+>'   => '<module>/<controller>/<action>',
+                '<module>/<controller:\w+>/<action:\w+>'            => '<module>/<controller>/<action>',
+    
                 '<controller:\w+>/<id:\d+>'=>'<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
                 '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',

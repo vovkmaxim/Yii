@@ -322,7 +322,7 @@
 					'success'=>'function (data) {
 						if(data.true) {
 							$.colorbox.close();
-							location.href = "documents/index.php?doc="+data.true;
+							location.href = "documents/"+data.true;
 						}
 					}'
 				),

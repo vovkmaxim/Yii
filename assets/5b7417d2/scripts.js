@@ -2,7 +2,7 @@ $(function () {
 
     tinyMCE.init({
         selector: "textarea.content-block",
-	        plugins: 'link'
+	        plugins: 'images'
     });
     // Side Bar Toggle
     $('.hide-sidebar').click(function () {

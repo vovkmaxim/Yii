@@ -43,7 +43,7 @@
             <div class="control-group">
                 <label>Описание</label>
 
-                <div class="controls">
+                <div class="">
                     <textarea cols="40" rows="20" class="content-block"
                               name="description"><?php echo $description; ?></textarea>
                 </div>
