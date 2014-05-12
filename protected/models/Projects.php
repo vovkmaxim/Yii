@@ -47,7 +47,7 @@ class Projects extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'projectsPics' => array(self::HAS_MANY, 'ProjectsPics', 'project_id'),
-            'tech' => array(self::MANY_MANY, 'Tech', 'tech_project(project_id, tech_id)')
+      'tech' => array(self::MANY_MANY, 'Tech', 'tech_project(project_id, tech_id)')
 		);
 	}
 
@@ -58,9 +58,9 @@ class Projects extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'description' => 'Description',
-            'position' => 'Position'
+			'title' => 'Название',
+			'description' => 'Описание',
+      'position' => 'Position'
 		);
 	}
 

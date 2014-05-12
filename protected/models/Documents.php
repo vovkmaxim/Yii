@@ -31,11 +31,11 @@ class Documents extends CActiveRecord
 		// will receive user inputs.
     
 		return array(
-			array('title', 'required', 'message' => 'Вы не заполнели поле "название"'),
+			array('title', 'required'),
 			array('downloaded, position', 'numerical', 'integerOnly'=>true),
 			array('title, file', 'length', 'max'=>255),
-			array('file', 'file', 'allowEmpty' => false, 'types' => 'pdf', 'message' => 'Файл должен быть формата pdf', 'on' => 'insert'),
-      array('file', 'file', 'allowEmpty' => true, 'types' => 'pdf', 'message' => 'Файл должен быть формата pdf', 'on' => 'update'),
+			array('file', 'file', 'allowEmpty' => false, 'types' => 'pdf', 'on' => 'insert'),
+      array('file', 'file', 'allowEmpty' => true, 'types' => 'pdf', 'on' => 'update'),
 			array('id, title, description, file, downloaded, position', 'safe')
 		);
 	}
@@ -58,9 +58,9 @@ class Documents extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'description' => 'Description',
-			'file' => 'File',
+			'title' => 'Название',
+			'description' => 'Описание',
+			'file' => 'Файл',
 			'downloaded' => 'Downloaded',
 			'position' => 'Position',
 		);

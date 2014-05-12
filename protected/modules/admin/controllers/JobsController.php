@@ -6,7 +6,6 @@ class JobsController extends AdminController
         $this->active = 'jobs';
     }
 
-
     public function actionIndex() {
         $jobsList = Jobs::model()->findAll(array('order' => 'position'));
         $this->render('index', array('jobsList' => $jobsList));
