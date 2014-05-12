@@ -1125,6 +1125,11 @@ h2.technology-header{
 .five-columns .col img{
     text-align: center;
 }
+#footer h3{
+    color: #fff;
+}
+/* end index */
+/* outsourcing.html */
 .block_text img{
     float: right;
     margin: 0 40px;
@@ -1153,7 +1158,68 @@ h2.technology-header{
 .block_text .block_right p{
     margin: 0;
 }
-#footer h3{
-    color: #fff;
+.block_expertise{
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0 50px;
 }
-/* end index */
+.block_expertise:last-child{
+    border: none;
+}
+.block_stories img, .block_expertise img{
+    max-width: 100%;
+}
+.block_expertise .about{
+    float: left;
+    width: 80%;
+}
+/* end expertise.html */
+/* dot_net_expertise.html */
+.name_tehnology{
+    border: 1px solid #ccc;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    padding: 3px;
+    margin: 0 3px 0 0;
+}
+/* end dot_net_expertise.html */
+/* stories */
+
+.block_information{
+    float: left;
+    width: 78%;
+} 
+.image_holder{
+    float: left;
+    width: 20%;
+    margin: 0 2% 0 0;
+    text-align: center;
+}
+.block_stories_holder{
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0 0;
+}
+.block_stories_holder:last-child{
+    border: none;
+}
+.breadcrumps li {
+    float: left;
+}
+.breadcrumps li a{
+    color: #797979
+}
+/* end stories */
+/* marketing.html */
+.block_download .img_holder, .block_download p, .block_download .img_holder{
+    float: left;
+}
+.block_download p{
+    width: 76%;
+}
+.block_download .image_holder{
+    width: 10%;
+} 
+.block_download strong{
+    display: block;
+}
+/* end marketing.html */
