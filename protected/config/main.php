@@ -2,7 +2,7 @@
 
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
-Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/yiibooster');
+ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/yiibooster');
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
@@ -16,7 +16,7 @@ return array(
     // preloading component
     'preload' => array(
         'log',
-//        'bootstrap'
+        'bootstrap'
     ),
 
     // autoloading model and component classes
@@ -25,21 +25,21 @@ return array(
     'modules'=>array(
         // uncomment the following to enable the Gii tool
         'admin' => array(
-//            'preload' => array('bootstrap'),
-//            'components' => array(
-//                'bootstrap' => array(
-//                    'class' => 'bootstrap.components.Bootstrap',
-//                ),
-//            ),
+            'preload' => array('bootstrap'),
+            'components' => array(
+                'bootstrap' => array(
+                    'class' => 'bootstrap.components.Bootstrap',
+                ),
+            ),
         ),
         'gii' => array(
             'class'=>'system.gii.GiiModule',
             'password'=>'qwerty',
             // If removed, Gii defaults to localhost only. Edit carefully to taste.
             'ipFilters'=>array('127.0.0.1','::1'),
-//            'generatorPaths' => array(
-//                'bootstrap.gii',
-//            ),
+            'generatorPaths' => array(
+                'bootstrap.gii',
+            ),
         ),
     ),
 
@@ -48,13 +48,12 @@ return array(
         'user'=>array(
             // enable cookie-based authentication
             'allowAutoLogin'=>true,
-//            'class' => 'AuthUser',
+            'class' => 'AuthUser',
         ),
 
         'urlManager'=>array(
             'urlFormat'=>'path',
             'rules'=>array(
-                '/' => 'site/index',
                 '<controller:\w+>/<id:\d+>'=>'<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
                 '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',

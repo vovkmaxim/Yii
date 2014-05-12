@@ -6,7 +6,8 @@
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script src="/assets/tinymce/tinymce.min.js"></script>
+
+
 </head>
 
 <body>
@@ -35,27 +36,32 @@
                 <ul class="nav">
                     <?php if (!in_array($role, AuthUser::$denies['TechController'])) : ?>
                     <li <?php echo ($this->active == 'tech') ? 'class="active"' : ''; ?>>
-                        <a href="/admin/tech">Технологии</a>
+                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/tech">Технологии</a>
                     </li>
                     <?php endif; ?>
                     <?php if (!in_array($role, AuthUser::$denies['ProjectsController'])) : ?>
                     <li <?php echo ($this->active == 'projects') ? 'class="active"' : ''; ?>>
-                        <a href="/admin/projects">Проекты</a>
+                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/projects">Проекты</a>
                     </li>
                     <?php endif; ?>
                     <?php if (!in_array($role, AuthUser::$denies['JobsController'])) : ?>
                     <li <?php echo ($this->active == 'jobs') ? 'class="active"' : ''; ?>>
-                        <a href="/admin/jobs">Вакансии</a>
+                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/jobs">Вакансии</a>
                     </li>
                     <?php endif; ?>
                     <?php if (!in_array($role, AuthUser::$denies['PartnersController'])) : ?>
                         <li <?php echo ($this->active == 'partners') ? 'class="active"' : ''; ?>>
-                            <a href="/admin/partners">Партнеры</a>
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/partners">Партнеры</a>
                         </li>
                     <?php endif; ?>
-                    <?php if (!in_array($role, AuthUser::$denies['DocumentsController'])) : ?>
-                        <li <?php echo ($this->active == 'documents') ? 'class="active"' : ''; ?>>
-                            <a href="/admin/documents">Документы</a>
+                    <?php if (!in_array($role, AuthUser::$denies['ProfileController'])) : ?>
+                        <li <?php echo ($this->active == 'profile') ? 'class="active"' : ''; ?>>
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/profile">Загрузить профиль</a>
+                        </li>
+                    <?php endif; ?>
+                    <?php if (!in_array($role, AuthUser::$denies['ProfileController'])) : ?>
+                        <li <?php echo ($this->active == 'staticpages') ? 'class="active"' : ''; ?>>
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/staticpages">Статические страницы</a>
                         </li>
                     <?php endif; ?>
                 </ul>
@@ -70,12 +76,12 @@
 
     </div>
     <hr>
-    <footer>
-        <p>&copy; Admin</p>
-    </footer>
+
 </div>
 <!--/.fluid-container-->
-
+<footer>
+    <p>&copy; Admin</p>
+</footer>
 </body>
 
 </html>

@@ -24,10 +24,10 @@ class AdminModule extends CWebModule
         Yii::app()->clientScript->registerCoreScript('jquery.ui');
 //        $this->publishJsFile('admin.assets', '/vendors/jquery-1.9.1.min.js');
 //        $this->publishJsFile('admin.assets', '/vendors/jquery-ui-1.10.3.js');
-        $this->publishJsFile('admin.assets', '/bootstrap/js/bootstrap.js');
-        $this->publishJsFile('admin.assets', '/vendors/datatables/js/jquery.dataTables.min.js');
-        $this->publishJsFile('admin.assets', '/scripts.js');
-        $this->publishJsFile('admin.assets', '/DT_bootstrap.js');
+//        $this->publishJsFile('admin.assets', '/bootstrap/js/bootstrap.js');
+//        $this->publishJsFile('admin.assets', '/vendors/datatables/js/jquery.dataTables.min.js');
+//        $this->publishJsFile('admin.assets', '/scripts.js');
+//        $this->publishJsFile('admin.assets', '/DT_bootstrap.js');
         Yii::app()->errorHandler->errorAction = '/admin/default/error';
 
 
