@@ -34,7 +34,7 @@ class Projects extends CActiveRecord
 			array('title', 'required'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, description, position', 'safe', 'on'=>'search'),
+			array('id, title, description, position', 'safe'),
 		);
 	}
 
@@ -47,7 +47,7 @@ class Projects extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'projectsPics' => array(self::HAS_MANY, 'ProjectsPics', 'project_id'),
-      'tech' => array(self::MANY_MANY, 'Tech', 'tech_project(project_id, tech_id)')
+            'tech' => array(self::MANY_MANY, 'Tech', 'tech_project(project_id, tech_id)')
 		);
 	}
 
@@ -60,7 +60,7 @@ class Projects extends CActiveRecord
 			'id' => 'ID',
 			'title' => 'Название',
 			'description' => 'Описание',
-      'position' => 'Position'
+            'position' => 'Position'
 		);
 	}
 

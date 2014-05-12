@@ -1,6 +1,11 @@
 <?php
 class DocumentsController extends AdminController
 {
+
+    public function init() {
+        $this->active = 'documents';
+    }
+
   public function actionIndex() {
     $docList = Documents::model()->findAll(array('order' => 'position'));
     $this->render('index', array('docList' => $docList));
@@ -11,18 +16,16 @@ class DocumentsController extends AdminController
     if (isset($_POST['Documents'])) {
       // Save process
       $model->attributes = $_POST['Documents'];
-      $uploadFile = CUploadedFile::getInstance($model,'file');
-      $oldFile = $model->file;
-      $model->file = $uploadFile;
-	  if($model->file === null) {
-		$model->file = $oldFile;
-	  }
+      $uploadFile = CUploadedFile::getInstance($model, 'file');
+      if($uploadFile !== null) {
+        $model->file = $uploadFile;
+      }
       if ($model->save()) {
-        if(!empty($uploadFile)){
+        if (!empty($uploadFile)){
           $model->file->saveAs('documents/' . $model->file->getName());
-          if(is_file('documents/'.$oldFile)) {
-			unlink('documents/'.$oldFile);
-		  }
+          if(is_file('documents/' . $oldFile)) {
+              unlink('documents/' . $oldFile);
+          }
           $file = 'documents/' . $model->file;
         }
         $this->redirect('/admin/documents/index');
@@ -30,20 +33,20 @@ class DocumentsController extends AdminController
     }
   }
 
-  public function actionAdd() 
+  public function actionAdd()
   {
-    $model = new Documents();    
-    $this->initSave($model); 
+    $model = new Documents();
+    $this->initSave($model);
     $this->render('add', array('model' => $model));
   }
-  
-  public function actionEdit($id) 
+
+  public function actionEdit($id)
   {
-    $model = Documents::model()->findByPk($id);    
+    $model = Documents::model()->findByPk($id);
     $this->initSave($model);
     $this->render('edit', array('model' => $model));
   }
-  
+
   public function actionDelete($id) {
     $id = (int)$id;
     if ($id == 0) {
@@ -58,7 +61,7 @@ class DocumentsController extends AdminController
     header('Location: /admin/documents');
     exit();
   }
-  
+
   public function actionSaveOrder() {
     $request = Yii::app()->request;
     if($request->isAjaxRequest) {

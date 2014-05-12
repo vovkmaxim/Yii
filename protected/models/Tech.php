@@ -108,4 +108,14 @@ class Tech extends CActiveRecord
         return array('EAdvancedArBehavior' =>
         array('class' => 'application.components.EAdvancedArBehavior'));
     }
+
+    public static function titleList()
+    {
+        $techRes = Tech::model()->findAll();
+        $techList = array();
+        array_map(function($element) use (&$techList) {
+            $techList[$element->id] = $element->title;
+        }, $techRes);
+        return $techList;
+    }
 }

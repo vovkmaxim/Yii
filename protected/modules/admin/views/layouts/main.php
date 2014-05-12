@@ -54,14 +54,9 @@
                             <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/partners">Партнеры</a>
                         </li>
                     <?php endif; ?>
-                    <?php if (!in_array($role, AuthUser::$denies['ProfileController'])) : ?>
-                        <li <?php echo ($this->active == 'profile') ? 'class="active"' : ''; ?>>
-                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/profile">Загрузить профиль</a>
-                        </li>
-                    <?php endif; ?>
-                    <?php if (!in_array($role, AuthUser::$denies['ProfileController'])) : ?>
-                        <li <?php echo ($this->active == 'staticpages') ? 'class="active"' : ''; ?>>
-                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/staticpages">Статические страницы</a>
+                    <?php if (!in_array($role, AuthUser::$denies['DocumentsController'])) : ?>
+                        <li <?php echo ($this->active == 'documents') ? 'class="active"' : ''; ?>>
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/documents">Документы</a>
                         </li>
                     <?php endif; ?>
                 </ul>

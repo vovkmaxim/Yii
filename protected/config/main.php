@@ -12,6 +12,7 @@ $import = include 'import.php';
 return array(
     'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
     'name'=>'My Web Application',
+    'language' => 'ru',
 
     // preloading component
     'preload' => array(
