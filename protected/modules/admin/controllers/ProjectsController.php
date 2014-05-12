@@ -22,9 +22,10 @@ class ProjectsController extends AdminController
         if (isset($_POST['Projects'])) {
             // Save process
             $model->attributes = $_POST['Projects'];
+            $isNewRecord = $model->isNewRecord;
             if ($model->save()) {
                 $command = Yii::app()->db->createCommand();
-                if($model->isNewRecord) {
+                if($isNewRecord) {
                     $command->insert('tech_project', array(
                         'tech_id' => $_POST['Tech']['title'],
                         'project_id' => $model->id,
@@ -78,6 +79,21 @@ class ProjectsController extends AdminController
         $command->delete('tech_project', 'project_id=:id', array(':id'=>$id));
         $this->redirect('/admin/projects/index');
         exit();
+    }
+
+    public function actionSaveOrder() {
+        $request = Yii::app()->request;
+        if($request->isAjaxRequest) {
+            $order = $request->getQuery('id');
+            fb($order);
+            foreach ($order as $id => $item) {
+                Yii::app()->db->createCommand()->update('projects', array('position' => $id), 'id = ' . $item);
+            }
+            echo CJavaScript::jsonEncode(array('order' => $order));
+            Yii::app()->end();
+        } else {
+            throw new CHttpException(404, 'Неправильный запрос');
+        }
     }
 
 }
