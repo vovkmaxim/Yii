@@ -3,13 +3,13 @@
     <?php $form = $this->beginWidget('bootstrap.widgets.TbActiveForm'); ?>
 
     <?php if($form->error($model, 'title')): ?>
-        <div class="alert alert-success">
+        <div class="alert alert-error">
             <?php echo $form->error($model, 'title'); ?>
         </div>
     <?php endif; ?>
 
     <?php if($form->error($model, 'file')): ?>
-        <div class="alert alert-success">
+        <div class="alert alert-error">
             <?php echo $form->error($model, 'file'); ?>
         </div>
     <?php endif; ?>
