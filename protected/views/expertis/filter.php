@@ -5,6 +5,6 @@ foreach($projects as $item) {
 	echo '<br />';
 	echo $item['description'];
 	echo '<br />';
-	echo '<strong>'.$item['skills'].'</strong>';
+	echo '<strong>'.$item['tegs'].'</strong>';
 	echo '<hr />';
 }

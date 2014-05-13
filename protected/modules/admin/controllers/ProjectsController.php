@@ -17,13 +17,29 @@ class ProjectsController extends AdminController
         $this->render('index', array('projectsList' => $projectsList));
     }
 
-    function initSave(Projects $model)
+    function initSave(Projects $model, $tagsList)
     {
         if (isset($_POST['Projects'])) {
             // Save process
             $model->attributes = $_POST['Projects'];
             $isNewRecord = $model->isNewRecord;
+            if(substr($_POST['Projects']['tags'], -2) != ', ' and !empty($_POST['Projects']['tags'])){
+                $model->tags = $_POST['Projects']['tags'].', ';
+            }
             if ($model->save()) {
+                $post_tags = explode(', ', $_POST['Projects']['tags']);
+                array_map(function($element) use (&$tagsArr) {
+                    $tagsArr[mb_strtolower($element->title, 'UTF-8')] = $element->title;
+                }, $tagsList);
+
+                foreach($post_tags as $item){
+                    if(empty($tagsArr[mb_strtolower($item, 'UTF-8')])){
+                        $modelTags = new Tags;
+                        $modelTags->title = $item;
+                        $modelTags->save();
+                    }
+                }
+
                 $command = Yii::app()->db->createCommand();
                 if($isNewRecord) {
                     $command->insert('tech_project', array(
@@ -42,29 +58,34 @@ class ProjectsController extends AdminController
 
     public function actionAdd()
     {
+        $tagsList = Tags::model()->findAll(array('order' => 'title'));
         $tech = new Tech();
         $model = new Projects();
-        $this->initSave($model);
+        $this->initSave($model, $tagsList);
         $this->render('add', array(
             'model' => $model,
-            'tech' => $tech
+            'tagsList' => $tagsList,
+            'tech' => $tech,
         ));
     }
 
     public function actionEdit($id)
     {
+        $tagsList = Tags::model()->findAll(array('order' => 'title'));
         $tech = new Tech();
         $techId = Yii::app()->db->createCommand()
             ->select('tech_id')
             ->from('tech_project')
             ->where('project_id = :id', array(':id' => $id))
             ->queryRow();
+
         $model = Projects::model()->findByPk($id);
-        $this->initSave($model);
+        $this->initSave($model, $tagsList);
         $this->render('edit', array(
             'model' => $model,
             'tech' => $tech,
             'techId' => $techId['tech_id'],
+            'tagsList' => $tagsList,
         ));
     }
 

@@ -111,7 +111,7 @@ class Tech extends CActiveRecord
 
     public static function titleList()
     {
-        $techRes = Tech::model()->findAll();
+        $techRes = Tech::model()->findAll(array('order' => 'position'));
         $techList = array();
         array_map(function($element) use (&$techList) {
             $techList[$element->id] = $element->title;

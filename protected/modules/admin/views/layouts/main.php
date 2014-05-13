@@ -38,6 +38,11 @@
                         <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/tech">Технологии</a>
                     </li>
                     <?php endif; ?>
+                    <?php if (!in_array($role, AuthUser::$denies['TagsController'])) : ?>
+                        <li <?php echo ($this->active == 'tags') ? 'class="active"' : ''; ?>>
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/tags">Теги</a>
+                        </li>
+                    <?php endif; ?>
                     <?php if (!in_array($role, AuthUser::$denies['ProjectsController'])) : ?>
                     <li <?php echo ($this->active == 'projects') ? 'class="active"' : ''; ?>>
                         <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/projects">Проекты</a>

@@ -12,7 +12,7 @@ class ExpertisController extends Controller
 	public function actionProjects($key)
 	{		
 		$projects = Yii::app()->db->createCommand()
-			->select('projects.title, projects.description, projects.skills')
+			->select('projects.title, projects.description, projects.tegs')
 			->from('projects')
 			->leftJoin('tech_project', 'tech_project.project_id = projects.id')
 			->leftJoin('tech', 'tech.id = tech_project.tech_id')

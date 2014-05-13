@@ -22,6 +22,21 @@
     </div>
 
     <div class="control-group">
+        Теги - <a href="#" onclick="openTagsList();" id="clickTag">открыть</a>
+        <div class="controls">
+            <?php echo $form->textField($model,'tags', array('class' => 'input-xxlarge')); ?>
+        </div>
+    </div>
+
+    <div class="control-group" id="tagsList">
+        <?php
+        foreach($tagsList as $item){
+            echo '<a href="#" class="itemTag">'. $item->title .'</a>, ';
+        }
+        ?>
+    </div>
+
+    <div class="control-group">
         <?php echo $form->label($model,'Название*', array('for' => 'Documents_title')); ?>
         <div class="controls">
             <?php echo $form->textField($model,'title', array('class' => 'input-xxlarge')); ?>

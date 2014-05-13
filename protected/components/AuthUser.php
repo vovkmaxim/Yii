@@ -10,6 +10,7 @@ class AuthUser extends CWebUser
     public $loginUrl = array('/admin/default/login');
     public static $denies = array(
         'TechController' => array(self::ROLE_RECRUITER),
+        'TagsController' => array(self::ROLE_RECRUITER),
         'ProjectsController' => array(self::ROLE_RECRUITER),
         'JobsController' => array(self::ROLE_SALES),
         'DocumentsController' => array(self::ROLE_RECRUITER),

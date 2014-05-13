@@ -7,6 +7,7 @@
  * @property integer $id
  * @property string $title
  * @property string $description
+ * @property string $tags
  * @property int $position
  *
  * The followings are the available model relations:
@@ -34,7 +35,7 @@ class Projects extends CActiveRecord
 			array('title', 'required'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, description, position', 'safe'),
+			array('id, title, description, tags, position', 'safe'),
 		);
 	}
 
@@ -60,6 +61,7 @@ class Projects extends CActiveRecord
 			'id' => 'ID',
 			'title' => 'Название',
 			'description' => 'Описание',
+            'tags' => 'Теги',
             'position' => 'Position'
 		);
 	}
@@ -85,6 +87,7 @@ class Projects extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('description',$this->description,true);
+        $criteria->compare('tags',$this->tags,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
