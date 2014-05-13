@@ -1223,3 +1223,99 @@ h2.technology-header{
     display: block;
 }
 /* end marketing.html */
+/* gallery styles */
+.gallery-holder {
+    overflow: hidden;
+    width: 1514px;
+    margin: 0 auto;
+    position: relative;
+}
+.gallery-holder .gholder {
+    overflow: hidden;
+    width: 100%;
+}
+.gallery-holder .gmask {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    width: 1514px;
+    float: left;
+}
+.gallery-holder .gmask  ul {
+    list-style: none;
+    overflow: hidden;
+    height: 500px;
+    padding: 0;
+    margin: 0;
+}
+.gallery-holder .gmask  ul li {
+    float: left;
+    font-size: 60px;
+    text-align: center;
+    width: 1514px;
+    height: 500px;
+}
+.gallery-holder a.btn-prev,
+.gallery-holder a.btn-next {
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    font-size: 80px;
+    line-height: 80px;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+}
+.gallery-holder a.btn-next {
+    position: absolute;
+    right: 15px;
+    top: 42%;
+    z-index: 10;
+}
+.gallery-holder a.btn-prev{
+    position: absolute;
+    left: 15px;
+    top: 42%;
+    z-index: 10; 
+}
+.gallery-holder .pagination ul{
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
+    padding: 5px 0;
+    margin: 0;
+}
+.gallery-holder .pagination ul li {
+    padding: 0 5px;
+    display: inline;
+}
+.gallery-holder .pagination a {
+    text-decoration: none;
+    color: #fff;
+}
+.gallery-holder .pagination .active a {
+    color: #ccc;
+}
+.gallery-holder .pagination a:hover,
+.gallery-holder a.btn-prev:hover,
+.gallery-holder a.btn-next:hover {text-decoration:none;}
+.gallery-holder a.disabled {
+    border-color: #eee;
+    color: #ccc;
+}
+.slideshow .gmask ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slideshow .gmask ul li.active {
+    z-index: 1;
+}
+
+.slideshow .pagination {
+    bottom: 20px;
+    position: absolute;
+    right: 15px;
+    z-index: 10;
+}
+/* end gallery */
