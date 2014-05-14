@@ -33,66 +33,44 @@
         <div class="m1">
             <div class="m2">
 
-                <script>
-                    /*
-                     Get the curent slide
-                     */
-                    function currentSlide( current ) {
-                        $(".current_slide").text(current + " of " + $("#slides").slides("status","total") );
-                    }
-
-                    $(function(){
-                        /*
-                         Initialize SlidesJS
-                         */
-                        $("#slides").slides({
-                            navigateEnd: function( current ) {
-                                currentSlide( current );
-                            },
-                            loaded: function(){
-                                currentSlide( 1 );
-                            }
-                        });
-
-                        /*
-                         Play/stop button
-                         */
-                        $(".controls").click(function(e) {
-                            e.preventDefault();
-
-                            // Example status method usage
-                            var slidesStatus = $("#slides").slides("status","state");
-
-                            if (!slidesStatus || slidesStatus === "stopped") {
-
-                                // Example play method usage
-                                $("#slides").slides("play");
-
-                                // Change text
-                                $(this).text("Stop");
-                            } else {
-
-                                // Example stop method usage
-                                $("#slides").slides("stop");
-
-                                // Change text
-                                $(this).text("Play");
-                            }
+                <script language="javascript">
+                    $(document).ready(function(){
+                        $("#myController").jFlow({
+                            controller: ".jFlowControl", // must be class, use . sign
+                            slideWrapper : "#jFlowSlider", // must be id, use # sign
+                            slides: "#mySlides",  // the div where all your sliding divs are nested in
+                            selectedWrapper: "jFlowSelected",  // just pure text, no sign
+                            width: "800px",  // this is the width for the content-slider
+                            height: "350px",  // this is the height for the content-slider
+                            duration: 400,  // time in miliseconds to transition one slide
+                            prev: ".jFlowPrev", // must be class, use . sign
+                            next: ".jFlowNext", // must be class, use . sign
+                            auto: true
                         });
                     });
                 </script>
 
                 <div id="container">
-                    <div id="slides">
+                    <div id="mySlides">
                         <?php
+                        $i = 1;
                         foreach($slides as $item){
-                            echo '<img src="slides/'. $item->id .'/'. $item->img .'" width="780" height="300" alt="Slide 1">';
+                            echo '<div id="slide'. $i++ .'">';
+                            echo '<img src="slides/'. $item->id .'/'. $item->img .'" width="600px" height="300px" >';
+                            echo '<span><p>'. $item->description .'</p></span>';
+                            echo '</div>';
                         }
                         ?>
-
                     </div>
-                    <a href="#" class="controls">Play</a>
-                    <p class="current_slide"></p>
+
+                    <div id="myController">
+                        <span class="jFlowControl"></span>
+                        <span class="jFlowControl"></span>
+                        <span class="jFlowControl"></span>
+                    </div>
+
+                    <span class="jFlowPrev"><div>prev</div></span>
+                    <span class="jFlowNext"><div>next</div></span>
                 </div>
 
                 <h1>Company</h1>

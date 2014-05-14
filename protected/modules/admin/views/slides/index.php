@@ -16,7 +16,7 @@
                         <tbody>
                         <?php foreach ($model as $item) : ?>
                             <tr id="id-<?php echo $item->id; ?>">
-                                <td><?php echo $item->title; ?></td>
+                                <td><?php echo $item->description; ?></td>
                                 <td>
                                     <div style="float:right;">
                                         <a title="Редактировать" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/slides/edit/id/<?php echo $item->id;?>" class="icon-edit"></a>

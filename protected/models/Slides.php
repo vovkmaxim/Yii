@@ -5,7 +5,6 @@
  *
  * The followings are the available columns in table 'slides':
  * @property integer $id
- * @property string $title
  * @property string $description
  * @property string $img
  * @property integer $position
@@ -29,14 +28,13 @@ class Slides extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title', 'required'),
 			array('position', 'numerical', 'integerOnly'=>true),
-			array('title, img', 'length', 'max'=>255),
+			array('img', 'length', 'max'=>255),
             array('img', 'file', 'allowEmpty' => false, 'types' => 'jpg, jpeg, png, gif, bmp', 'on' => 'insert'),
             array('img', 'file', 'allowEmpty' => true, 'types' => 'jpg, jpeg, png, gif, bmp', 'on' => 'update'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, description, img, position', 'safe'),
+			array('id, description, img, position', 'safe'),
 		);
 	}
 
@@ -58,7 +56,6 @@ class Slides extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Название',
 			'description' => 'Описание',
 			'img' => 'Картинка',
 			'position' => 'Position',
@@ -84,7 +81,6 @@ class Slides extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('title',$this->title,true);
 		$criteria->compare('description',$this->description,true);
 		$criteria->compare('img',$this->img,true);
 		$criteria->compare('position',$this->position);
