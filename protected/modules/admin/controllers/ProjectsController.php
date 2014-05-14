@@ -23,20 +23,23 @@ class ProjectsController extends AdminController
             // Save process
             $model->attributes = $_POST['Projects'];
             $isNewRecord = $model->isNewRecord;
-            if(substr($_POST['Projects']['tags'], -2) != ', ' and !empty($_POST['Projects']['tags'])){
-                $model->tags = $_POST['Projects']['tags'].', ';
-            }
+            //if(substr($_POST['Projects']['tags'], -2) != ', ' and !empty($_POST['Projects']['tags'])){
+                //$model->tags = $_POST['Projects']['tags'].', ';
+            //}
+
             if ($model->save()) {
-                $post_tags = explode(', ', $_POST['Projects']['tags']);
+
                 array_map(function($element) use (&$tagsArr) {
-                    $tagsArr[mb_strtolower($element->title, 'UTF-8')] = $element->title;
+                    $tagsArr[mb_strtolower($element->title, 'UTF-8')] = $element->id;
                 }, $tagsList);
 
+                $post_tags = explode(', ', $_POST['Projects']['tags']);
                 foreach($post_tags as $item){
                     if(empty($tagsArr[mb_strtolower($item, 'UTF-8')])){
                         $modelTags = new Tags;
                         $modelTags->title = $item;
                         $modelTags->save();
+                        $idsTags[] = $modelTags->id;
                     }
                 }
 
@@ -50,7 +53,27 @@ class ProjectsController extends AdminController
                     $command->update('tech_project', array(
                         'tech_id' => $_POST['Tech']['title'],
                     ), 'project_id=:id', array(':id' => $model->id));
+
+                    $command->delete('tags_projects', 'project_id=:id', array(':id'=>$model->id));
                 }
+
+                $i = 0;
+                foreach($post_tags as $item){
+                    $key = mb_strtolower($item, 'UTF-8');
+                    if(!empty($tagsArr[$key])){
+                        $modelTagsProjects = new TagsProjects();
+                        $modelTagsProjects->tag_id = $tagsArr[$key];
+                        $modelTagsProjects->project_id = $model->id;
+                        $modelTagsProjects->save();
+                    }else{
+                        $modelTagsProjects = new TagsProjects();
+                        $modelTagsProjects->tag_id = $idsTags[$i++];
+                        $modelTagsProjects->project_id = $model->id;
+                        $modelTagsProjects->save();
+                    }
+
+                }
+
                 $this->redirect('/admin/projects/index');
             }
         }
@@ -72,6 +95,14 @@ class ProjectsController extends AdminController
     public function actionEdit($id)
     {
         $tagsList = Tags::model()->findAll(array('order' => 'title'));
+        $tagsListProjects = Yii::app()->db->createCommand()
+            ->select('tags.title')
+            ->from('tags')
+            ->join('tags_projects','tags_projects.tag_id = tags.id')
+            ->join('projects','projects.id = tags_projects.project_id')
+            ->where('projects.id = :id', array(':id' => $id))
+            ->queryAll();
+
         $tech = new Tech();
         $techId = Yii::app()->db->createCommand()
             ->select('tech_id')
@@ -86,6 +117,7 @@ class ProjectsController extends AdminController
             'tech' => $tech,
             'techId' => $techId['tech_id'],
             'tagsList' => $tagsList,
+            'tagsListProjects' => $tagsListProjects,
         ));
     }
 
@@ -98,6 +130,7 @@ class ProjectsController extends AdminController
         $model->delete();
         $command = Yii::app()->db->createCommand();
         $command->delete('tech_project', 'project_id=:id', array(':id'=>$id));
+        $command->delete('tags_projects', 'project_id=:id', array(':id'=>$id));
         $this->redirect('/admin/projects/index');
         exit();
     }

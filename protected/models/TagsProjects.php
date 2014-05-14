@@ -1,26 +1,20 @@
 <?php
 
 /**
- * This is the model class for table "projects".
+ * This is the model class for table "tags_projects".
  *
- * The followings are the available columns in table 'projects':
- * @property integer $id
- * @property string $title
- * @property string $description
- * @property int $position
- *
- * The followings are the available model relations:
- * @property ProjectsPics[] $projectsPics
- * @property Tech[] $tech
+ * The followings are the available columns in table 'tags_projects':
+ * @property integer $tag_id
+ * @property integer $project_id
  */
-class Projects extends CActiveRecord
+class TagsProjects extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'projects';
+		return 'tags_projects';
 	}
 
 	/**
@@ -31,10 +25,11 @@ class Projects extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title', 'required'),
+			array('tag_id, project_id', 'required'),
+			array('tag_id, project_id', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, description, position', 'safe'),
+			array('tag_id, project_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -46,8 +41,6 @@ class Projects extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'projectsPics' => array(self::HAS_MANY, 'ProjectsPics', 'project_id'),
-            'tech' => array(self::MANY_MANY, 'Tech', 'tech_project(project_id, tech_id)')
 		);
 	}
 
@@ -57,10 +50,8 @@ class Projects extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'title' => 'Название',
-			'description' => 'Описание',
-            'position' => 'Position'
+			'tag_id' => 'Tag',
+			'project_id' => 'Project',
 		);
 	}
 
@@ -82,9 +73,8 @@ class Projects extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('title',$this->title,true);
-		$criteria->compare('description',$this->description,true);
+		$criteria->compare('tag_id',$this->tag_id);
+		$criteria->compare('project_id',$this->project_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -95,15 +85,10 @@ class Projects extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Projects the static model class
+	 * @return TagsProjects the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
 	}
-
-    public function behaviors(){
-        return array('EAdvancedArBehavior' =>
-        array('class' => 'application.components.EAdvancedArBehavior'));
-    }
 }

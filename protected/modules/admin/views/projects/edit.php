@@ -24,7 +24,11 @@
     <div class="control-group">
         Теги - <a href="#" onclick="openTagsList();" id="clickTag">открыть</a>
         <div class="controls">
-            <?php echo $form->textField($model,'tags', array('class' => 'input-xxlarge')); ?>
+            <input type="text" value="<?php
+            foreach($tagsListProjects as $item){
+                echo $item['title'].', ';
+            }
+            ?>" name="Projects[tags]" class="input-xxlarge" id="Projects_tags" />
         </div>
     </div>
 

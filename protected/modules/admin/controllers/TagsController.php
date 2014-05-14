@@ -45,6 +45,8 @@ class TagsController extends AdminController
         }
         $model = Tags::model()->findByPk($id);
         $model->delete();
+        $command = Yii::app()->db->createCommand();
+        $command->delete('tags_projects', 'tag_id=:id', array(':id'=>$id));
         $this->redirect('/admin/tags/index');
         exit();
     }
