@@ -15,6 +15,7 @@ class DocumentsController extends AdminController
   {
     if (isset($_POST['Documents'])) {
       // Save process
+      $oldFile = $model->file;
       $model->attributes = $_POST['Documents'];
       $uploadFile = CUploadedFile::getInstance($model, 'file');
       if($uploadFile !== null) {
@@ -26,7 +27,6 @@ class DocumentsController extends AdminController
           if(is_file('documents/' . $oldFile)) {
               unlink('documents/' . $oldFile);
           }
-          $file = 'documents/' . $model->file;
         }
         $this->redirect('/admin/documents/index');
       }

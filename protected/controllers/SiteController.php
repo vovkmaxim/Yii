@@ -35,6 +35,7 @@ class SiteController extends Controller
         $partners = Partners::model()->findAll();
         
         $file = Documents::model()->findAll();
+        $slides = Slides::model()->findAll(array('order' => 'position'));
 
         $this->render('index', array(
                 'tech' => $techList,
@@ -42,7 +43,8 @@ class SiteController extends Controller
                 'jobs' => $vacancies,
                 'profile' => $profile,
                 'partners' => $partners,
-                'files' => $file
+                'files' => $file,
+                'slides' => $slides,
             )
         );
     }

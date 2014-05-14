@@ -16,6 +16,7 @@
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.colorbox.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.form.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.main.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/slides.js"></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-37652812-1']);
