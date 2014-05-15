@@ -28,7 +28,7 @@ if ( !detectmob() ) {
 	$(window).load(function(){
 		initTechnologyWidth();
 		// initCaseFixed();
-		initWaypoints();
+		//initWaypoints();
 		initBackgroundResize();
 	});
 }

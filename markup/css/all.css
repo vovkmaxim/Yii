@@ -247,6 +247,7 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     float: left;
     margin: 0 0 0 15px;
     position: relative;
+    color: #fff;
 }
 #nav li:first-child{margin: 0;}
 .header-small #header{
@@ -1170,7 +1171,7 @@ h2.technology-header{
 }
 .block_expertise .about{
     float: left;
-    width: 80%;
+    width: 78%;
 }
 /* end expertise.html */
 /* dot_net_expertise.html */
@@ -1181,6 +1182,11 @@ h2.technology-header{
     border-radius: 8px;
     padding: 3px;
     margin: 0 3px 0 0;
+    color: #797979;
+}
+.name_tehnology:hover{
+    color: #797979;
+    text-decoration: none;
 }
 /* end dot_net_expertise.html */
 /* stories */
