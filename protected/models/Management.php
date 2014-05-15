@@ -13,6 +13,7 @@
  */
 class Management extends CActiveRecord
 {
+    public $img;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -29,12 +30,13 @@ class Management extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, description, img, email, position', 'required'),
+			array('title, email', 'required'),
+            array('email', 'email'),
 			array('position', 'numerical', 'integerOnly'=>true),
 			array('title, img, email', 'length', 'max'=>255),
-			// The following rule is used by search().
-			// @todo Please remove those attributes that should not be searched.
-			array('id, title, description, img, email, position', 'safe', 'on'=>'search'),
+            array('img', 'file', 'allowEmpty' => false, 'types' => 'jpg, jpeg, png, gif, bmp', 'on' => 'insert'),
+            array('img', 'file', 'allowEmpty' => true, 'types' => 'jpg, jpeg, png, gif, bmp', 'on' => 'update'),
+			array('id, title, description, img, email, position', 'safe'),
 		);
 	}
 
@@ -56,9 +58,9 @@ class Management extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'description' => 'Description',
-			'img' => 'Img',
+			'title' => 'Название',
+			'description' => 'Описание',
+			'img' => 'Картинка',
 			'email' => 'Email',
 			'position' => 'Position',
 		);

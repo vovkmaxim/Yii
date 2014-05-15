@@ -68,6 +68,11 @@
                             <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/slides">Слайды</a>
                         </li>
                     <?php endif; ?>
+                    <?php if (!in_array($role, AuthUser::$denies['ManagementController'])) : ?>
+                        <li <?php echo ($this->active == 'management') ? 'class="active"' : ''; ?>>
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/management">Менеджмент</a>
+                        </li>
+                    <?php endif; ?>
                 </ul>
             </div>
             <!--/.nav-collapse -->
