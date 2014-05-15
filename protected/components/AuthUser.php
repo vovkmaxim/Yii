@@ -12,7 +12,7 @@ class AuthUser extends CWebUser
         'TechController' => array(self::ROLE_RECRUITER),
         'TagsController' => array(self::ROLE_RECRUITER),
         'ProjectsController' => array(self::ROLE_RECRUITER),
-        'JobsController' => array(self::ROLE_SALES),
+        'VacanciesController' => array(self::ROLE_SALES),
         'DocumentsController' => array(self::ROLE_RECRUITER),
         'PartnersController' => array(self::ROLE_SALES),
         'SlidesController' => array(self::ROLE_SALES)

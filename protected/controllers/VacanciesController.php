@@ -1,65 +1,16 @@
 <?php
 
-class SiteController extends Controller
+class VacanciesController extends Controller
 {
-    /**
-     * Declares class-based actions.
-     */
-    public function actions()
-    {
-        return array(
-            // captcha action renders the CAPTCHA image displayed on the contact page
-            'captcha' => array(
-                'class' => 'CCaptchaAction',
-                'backColor' => 0xFFFFFF,
-            ),
-            // page action renders "static" pages stored under 'protected/views/site/pages'
-            // They can be accessed via: index.php?r=site/page&view=FileName
-            'page' => array(
-                'class' => 'CViewAction',
-            ),
-        );
-    }
+	public function actionIndex()
+	{
+        $model = Vacancies::model()->findAll(array('order' => 'position'));
+		$this->render('index', array('model' => $model));
+	}
 
-    /**
-     * This is the default 'index' action that is invoked
-     * when an action is not explicitly requested by users.
-     */
-    public function actionIndex()
+    public function actionSend($id)
     {
-        $request = Yii::app()->request;
-        $techList = Tech::model()->with('techLists')->findAll(array('order' => 't.position'));
-        $projects = Projects::model()->with('projectsPics')->findAll();
-        $vacancies = Vacancies::model()->findAll(array('order' => 'position'));
-        $profile = Text::getCompanyProfile();
-        $partners = Partners::model()->findAll();
-        
-        $file = Documents::model()->findAll();
-        $slides = Slides::model()->findAll(array('order' => 'position'));
-
-        $this->render('index', array(
-                'tech' => $techList,
-                'projects' => $projects,
-                'jobs' => $vacancies,
-                'profile' => $profile,
-                'partners' => $partners,
-                'files' => $file,
-                'slides' => $slides,
-            )
-        );
-    }
-
-    /**
-     * This is the action to handle external exceptions.
-     */
-    public function actionError()
-    {
-        if ($error = Yii::app()->errorHandler->error) {
-            if (Yii::app()->request->isAjaxRequest)
-                echo $error['message'];
-            else
-                $this->render('error', $error);
-        }
+        $this->render('send', array('id' => $id));
     }
 
     public function actionGetJob()
@@ -111,27 +62,25 @@ class SiteController extends Controller
             move_uploaded_file($cv['tmp_name'], $attach);
 
             $mailer = new YiiMailer();
-            $mailer->setFrom('dima.lyashko@chisw.us', $name . ' <' . $email . '>');
+            $mailer->setFrom('konstantin.kostin@chisw.us', $name . ' <' . $email . '>');
             $mailer->setSubject('СV for' . ' (' . $job->title . ')');
             $mailer->setAttachment($attach);
             $mailer->setView('cv');
             $mailer->setData(array('msg' => Text::formatText($message)));
             $mailer->render();
             $mailer->IsSMTP(true);
-//            $mailer->setTo('human_resources_team@chisw.us');
-            $mailer->setTo('dmlyashko@gmail.com');
+            $mailer->setTo('flaksa@list.ru');
             $mailer->SMTPAuth = true;
             $mailer->Host = 'mail.ukraine.com.ua';
-            $mailer->Username = 'dima.lyashko@chisw.us';
-            $mailer->Password = 'yFA2Ppu7';
+            $mailer->Username = 'chisw_info@chisw.us';
+            $mailer->Password = 'eL533Nbd';
             if (!$mailer->send()) {
                 $errors['email'] = 'not_sent';
             }
+
             if (is_file($attach)) {
                 unlink($attach);
             }
-
-
 
             if (count($errors) > 0) {
                 echo CJavaScript::jsonEncode(array('errors' => $errors));
@@ -140,4 +89,5 @@ class SiteController extends Controller
             }
         }
     }
+
 }

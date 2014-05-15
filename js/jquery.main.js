@@ -82,7 +82,7 @@ function initForm() {
                     $('.send-cv .success').html('<p>Your CV was sent. Thanks for reply </p>');
                     $('.send-cv .success').show();
                     $('.send-cv').resetForm();
-                    setTimeout(function() {location.reload();}, 5000);
+                    setTimeout(function() {parent.$.fancybox.close();}, 5000);
                 }
             }
         }
@@ -374,8 +374,8 @@ function initPopup() {
 		var postedJobTitle = $('input[name=job-title]').val();
 		title = $('input[name=title]').val();
 		message = $('input[name=message]').val();
-	}	
-	
+	}
+
 	$('.inline').colorbox({
 		open: open,
 		inline: true,
@@ -1053,3 +1053,12 @@ PlatformDetect.addRule({type: 'ipad', css: 'ipad.css'});
 PlatformDetect.addRule({type: 'android', css: 'android.css'});
 PlatformDetect.addRule({type: 'blackberry', css: 'blackberry.css'});
 PlatformDetect.addRule({type: 'winphone', css: 'winphone.css'});
+
+
+// ------- Form send vacancies
+$(document).ready(function() {
+    $('.vacancies').fancybox({
+        maxWidth	: 300,
+        maxHeight	: 400
+    });
+});

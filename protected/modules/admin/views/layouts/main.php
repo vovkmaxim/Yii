@@ -48,9 +48,9 @@
                         <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/projects">Проекты</a>
                     </li>
                     <?php endif; ?>
-                    <?php if (!in_array($role, AuthUser::$denies['JobsController'])) : ?>
-                    <li <?php echo ($this->active == 'jobs') ? 'class="active"' : ''; ?>>
-                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/jobs">Вакансии</a>
+                    <?php if (!in_array($role, AuthUser::$denies['VacanciesController'])) : ?>
+                    <li <?php echo ($this->active == 'vacancies') ? 'class="active"' : ''; ?>>
+                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/vacancies">Вакансии</a>
                     </li>
                     <?php endif; ?>
                     <?php if (!in_array($role, AuthUser::$denies['PartnersController'])) : ?>
