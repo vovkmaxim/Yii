@@ -2,183 +2,250 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7973aac-bc2f-4acd-a7c8-761371e998a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/AjaxController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/components/Bootstrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/gii/bootstrap/BootstrapCode.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/filters/BootstrapFilter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/gii/bootstrap/BootstrapGenerator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/runtime/gii-1.1.14/ControllerCode.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/runtime/gii-1.1.14/CrudCode.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/Documents.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/DocumentsController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/ExpertiseController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/INSTALL.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/components/JSONStorage.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/Management.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/ManagementController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/ManagementController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/MdocsController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/helpers/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/Slides.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/SlidesController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/Staticpages.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/StaticpagesController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/Tags.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/TagsController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/TagsProjects.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbActiveForm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbAlert.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbBadge.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbBaseInputWidget.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbBaseMenu.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbBox.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbBreadcrumbs.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbBulkActions.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbButton.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbButtonColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbButtonGroup.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbButtonGroupColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbCKEditor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbCarousel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbCollapse.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbColorPicker.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbDataColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbDatePicker.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbDateRangePicker.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbDateTimePicker.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbDetailView.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbDropdown.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbEditable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbEditableColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbEditableDetailView.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbEditableField.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/components/TbEditableSaver.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbExtendedFilter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbExtendedGridView.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/actions/TbExtendedTooltipAction.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbFileUpload.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbForm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbFormButtonElement.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbFormInputElement.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbGoogleVisualizationChart.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbGridView.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbGroupButtonColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbGroupGridView.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbHeroUnit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbHighCharts.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/helpers/TbHtml.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbHtml5Editor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbImageColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbImageGallery.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/input/TbInput.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/input/TbInputHorizontal.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/input/TbInputInline.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/input/TbInputSearch.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/input/TbInputVertical.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbJsonButtonColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbJsonCheckBoxColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbJsonDataColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbJsonGridColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbJsonGridView.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbJsonPager.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbJsonPickerColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbJsonToggleColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbLabel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbListView.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbMarkdownEditorJs.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbMenu.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbModal.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbModalManager.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbNavbar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbPager.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbPassfield.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbPickerColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbProgress.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbRedactorJs.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbRelationalColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbScrollSpy.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbSelect2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/actions/TbSortableAction.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbTabView.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbTabs.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbTags.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbThumbnails.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbTimePicker.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/actions/TbToggleAction.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbToggleButton.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbToggleColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbTotalSumColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbTypeahead.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbUiLayout.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/TbWizard.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/Vacancies.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/VacanciesController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/VacanciesController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/gii/bootstrap/templates/default/_form.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/gii/bootstrap/templates/default/_search.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/gii/bootstrap/templates/default/_view.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/views/management/add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/views/staticpages/add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/views/tags/add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/views/vacancies/add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/gii/bootstrap/templates/default/admin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/runtime/application.log.1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/userdoc/build.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/userdoc/ckeditor/ckeditor.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/userdoc/clean.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/config/console.example.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/gii/bootstrap/templates/default/controller.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/gii/bootstrap/templates/default/create.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/config/database.example.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/config/database.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/views/fileupload/download.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/views/management/edit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/views/staticpages/edit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/views/tags/edit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/views/vacancies/edit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/userdoc/ckeditor/example.basic.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/userdoc/highcharts/example.basic.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/userdoc/redactorjs/example.basic.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/userdoc/redactorjs/example.callbacks_passing.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/userdoc/highcharts/example.function_in_options.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/userdoc/highcharts/example.official_demo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/userdoc/ckeditor/example.trimmed.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/userdoc/redactorjs/example.with_lang_and_plugins.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/userdoc/highcharts/example.zeros_in_data.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/expertise/filter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/views/fileupload/form.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/views/staticpages/form.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/userdoc/highcharts/highcharts.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/config/import.example.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/config/import.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/gii/bootstrap/templates/default/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/gii/bootstrap/views/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/views/management/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/views/staticpages/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/views/tags/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/views/vacancies/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/expertise/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/management/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/mdocs/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/vacancies/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/jquery.fancybox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.fancybox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/components/packages.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/views/gallery/preview.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/views/staticpages/red.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/userdoc/redactorjs/redactorjs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/vacancies/send.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/slides.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/views/staticpages/test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/gii/bootstrap/templates/default/update.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/views/fileupload/upload.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/userdoc/userdoc.php.xsl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/gii/bootstrap/templates/default/view.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/yiibooster/widgets/widgets.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/17ed678/jquery.dataTables.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/18f36edf/bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/18f36edf/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/1b37aa45/tech.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/398b573f/bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/398b573f/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/44332726/scripts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/5942926c/jquery.dataTables.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/6365916e/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/64034c1e/jquery-1.9.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/64034c1e/jquery-ui-1.10.3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/64034c1e/modernizr-2.6.2-respond-1.1.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/6b7615ce/DT_bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/6ee96876/scripts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/759e780b/DT_bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/759e780b/DT_bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/759e780b/scripts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/759e780b/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/802e041c/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/8503a9c4/scripts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/94c7d37/scripts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/94c7d37/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/b2e7b293/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/b56de0c3/scripts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bacf5732/scripts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/autocomplete/indicator.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/autocomplete/jquery.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.ajaxqueue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.ba-bbq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.ba-bbq.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.bgiframe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.history.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.maskedinput.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.maskedinput.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.metadata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.multifile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.rating.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.treeview.async.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.treeview.edit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.treeview.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.yii.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.yiiactiveform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jquery.yiitab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/images/ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/images/ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/images/ui-bg_glass_75_dadada_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/images/ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/images/ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/images/ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/images/ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/images/ui-icons_454545_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/images/ui-icons_888888_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/images/ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/jquery.ui.accordion.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/jquery.ui.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/jquery.ui.button.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/jquery.ui.core.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/jquery.ui.datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/jquery.ui.dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/jquery.ui.menu.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/jquery.ui.progressbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/jquery.ui.resizable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/jquery.ui.selectable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/jquery.ui.slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/jquery.ui.spinner.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/jquery.ui.tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/jquery.ui.theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/css/base/jquery.ui.tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/js/jquery-ui-i18n.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/jui/js/jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/punycode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/punycode.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/rating/delete.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/rating/jquery.rating.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/rating/star.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/treeview/images/ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/treeview/images/file.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/treeview/images/folder-closed.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/treeview/images/folder.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/treeview/images/minus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/treeview/images/plus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/treeview/images/treeview-black-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/treeview/images/treeview-black.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/treeview/images/treeview-default-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/treeview/images/treeview-default.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/treeview/images/treeview-famfamfam-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/treeview/images/treeview-famfamfam.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/treeview/images/treeview-gray-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/treeview/images/treeview-gray.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/treeview/images/treeview-red-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/treeview/images/treeview-red.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/treeview/jquery.treeview.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bd4c089d/yiitab/jquery.yiitab.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/cb4e1153/scripts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/cd2c4ed7/scripts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/ce1a2046/jquery-1.9.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/ce1a2046/jquery-ui-1.10.3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/ce1a2046/modernizr-2.6.2-respond-1.1.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/css/ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/css/print.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/css/screen.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/fancy_close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/fancy_loading.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/fancy_nav_left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/fancy_nav_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/fancy_shadow_e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/fancy_shadow_n.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/fancy_shadow_ne.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/fancy_shadow_nw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/fancy_shadow_s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/fancy_shadow_se.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/fancy_shadow_sw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/fancy_shadow_w.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/fancy_title_left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/fancy_title_main.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/fancy_title_over.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/fancy_title_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/fancybox-x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/fancybox-y.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/fancybox.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/jquery.fancybox-1.3.1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/fancybox/jquery.fancybox-1.3.1.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/d532ef5f/js/tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/ddcb52ca/DT_bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e3804a9/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/css/ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/css/print.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/css/screen.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/fancy_close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/fancy_loading.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/fancy_nav_left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/fancy_nav_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/fancy_shadow_e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/fancy_shadow_n.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/fancy_shadow_ne.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/fancy_shadow_nw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/fancy_shadow_s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/fancy_shadow_se.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/fancy_shadow_sw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/fancy_shadow_w.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/fancy_title_left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/fancy_title_main.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/fancy_title_over.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/fancy_title_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/fancybox-x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/fancybox-y.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/fancybox.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/jquery.fancybox-1.3.1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/fancybox/jquery.fancybox-1.3.1.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/e9dbaa3b/js/tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/autocomplete/indicator.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/autocomplete/jquery.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.ajaxqueue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.ba-bbq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.ba-bbq.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.bgiframe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.history.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.maskedinput.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.maskedinput.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.metadata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.multifile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.rating.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.treeview.async.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.treeview.edit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.treeview.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.yii.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.yiiactiveform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jquery.yiitab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/images/ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/images/ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/images/ui-bg_glass_75_dadada_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/images/ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/images/ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/images/ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/images/ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/images/ui-icons_454545_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/images/ui-icons_888888_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/images/ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/jquery.ui.accordion.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/jquery.ui.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/jquery.ui.button.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/jquery.ui.core.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/jquery.ui.datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/jquery.ui.dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/jquery.ui.menu.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/jquery.ui.progressbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/jquery.ui.resizable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/jquery.ui.selectable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/jquery.ui.slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/jquery.ui.spinner.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/jquery.ui.tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/jquery.ui.theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/css/base/jquery.ui.tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/js/jquery-ui-i18n.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/jui/js/jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/punycode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/punycode.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/rating/delete.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/rating/jquery.rating.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/rating/star.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/treeview/images/ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/treeview/images/file.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/treeview/images/folder-closed.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/treeview/images/folder.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/treeview/images/minus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/treeview/images/plus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/treeview/images/treeview-black-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/treeview/images/treeview-black.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/treeview/images/treeview-default-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/treeview/images/treeview-default.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/treeview/images/treeview-famfamfam-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/treeview/images/treeview-famfamfam.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/treeview/images/treeview-gray-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/treeview/images/treeview-gray.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/treeview/images/treeview-red-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/treeview/images/treeview-red.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/treeview/jquery.treeview.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f1a4568c/yiitab/jquery.yiitab.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/f7febcb7/scripts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/feb056b5/bootstrap.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chi.iws" />
@@ -422,6 +489,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CHI_corporate_website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CHI_corporate_website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -482,7 +563,11 @@
       <created>1400235457368</created>
       <updated>1400235457368</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="merge konstantine;">
+      <created>1400235565978</created>
+      <updated>1400235565978</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -490,14 +575,14 @@
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2642344" sideWeight="0.67108166" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2642344" sideWeight="0.67108166" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
