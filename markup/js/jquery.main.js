@@ -379,7 +379,8 @@ function getRandomInt(min, max){
 }
 
 function randomBackground() {
-	var image =  $('#bg').find('img');
+	if($('.first-page').length>0){
+		var image =  $('#bg').find('img');
 	var random = getRandomInt(1, 5);
 	var randomImage = ("images/backgrounds/bg-body" + random + ".jpg").toString();
 	var smallImage = ("url(images/backgrounds/bg-body" + random + ".jpg)").toString();
@@ -412,6 +413,8 @@ function randomBackground() {
 		win.on('scroll', refreshPosition);
 	});
 	win.on('resize', refreshPosition);
+	}
+	
 }
 
 function mobileRandomBackground() {

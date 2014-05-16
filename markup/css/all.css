@@ -166,9 +166,9 @@ ul li {list-style:none; list-style:none outside;}
 /* =============================================================================
 	SEMANTIC TAG
 	========================================================================== */
-h1 {font:36px/1.25 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif; margin:0 0 30px; color: #000;}
-h2 {font:30px/1.25 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif; margin:0 0 28px; color: #000;}
-h3 {font:24px/1.2 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif; margin:0 0 24px; color: #000;}
+h1 {font:30px/1.25 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif; margin:0 0 30px; color: #000;}
+h2 {font:24px/1.25 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif; margin:0 0 28px; color: #000;}
+h3 {font:14px/1.2 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif; margin:0 0 24px; color: #000;}
 h4 {font:22px/1.2 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif; margin:0 0 18px; color: #000;}
 h5 {font:20px/1.1 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif; margin:0 0 16px; color: #000;}
 h6 {font:18px/1.1 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif; margin:0 0 14px; color: #000;}
@@ -179,7 +179,7 @@ sub, sup {line-height:0; position:relative; vertical-align:baseline;}
 sub {bottom:-0.25em;}
 sup {top:-0.5em;}
 svg:not(:root) {overflow:hidden;}
-p {margin:0 0 22px;}
+p {font:14px/1.5 'Calibri', Tahoma, Geneva, Arial, Helvetica, sans-serif;margin:0 0 22px;}
 hr {display:block; height:1px; border:0; border-top:1px solid #ccc; margin:0; padding:0;}
 *+html hr {margin:-7px 0;}
 mark {background:#ff0;}
@@ -205,7 +205,17 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
 #wrapper.header-small{
     padding: 76px 0 0;
 }
-#header{width: 100%;}
+#header{
+    width: 100%;
+    position: relative;
+}
+#header h1{
+    color: #fff;
+}
+#header.bg_main{
+    background: url("../images/tmp/main1.jpg")0 0/100% no-repeat;
+    height: 459px; 
+}
 .header-frame{
     padding: 25px 0 20px;
     max-width: 980px;
@@ -215,12 +225,14 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
 }
 .logo{
     display: block;
-    margin: 0 auto 25px;
+    margin: 0;
     text-indent: -9999px;
     overflow: hidden;
     background: url(../images/logo.png) no-repeat;
     width: 97px;
     height: 56px;
+    float: left;
+
 }
 .logo a{
     display: block;
@@ -231,6 +243,8 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     text-transform: uppercase;
     font-size: 12px;
     line-height: 14px;
+    float: right;
+    margin: 30px 0 0;
 }
 #nav a{color: #fff;}
 #nav a:hover,
@@ -376,7 +390,7 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
 }
 .main>.m1>.m2>h1,
 .header-section h1,
-#colorbox h1{
+#colorbox h1, #header h1{
     font-family: 'politicabold', Tahoma, Geneva, Arial, Helvetica, sans-serif;
     text-align: center;
     position: relative;
@@ -386,7 +400,7 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
 }
 .main>.m1>.m2>h1:after,
 .header-section h1:after,
-#colorbox h1:after{
+#colorbox h1:after, #header h1:after{
     content: '';
     position: absolute;
     left: 50%;
@@ -395,6 +409,24 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     height: 6px;
     background: #000;
     margin: 0 0 0 -52px;
+}
+#header:after{
+    content: '';
+    width: 1px;
+    height: 100%;
+    margin: 0 0 0 -5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#header .main_header_holder{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    margin: -100px 0 0;
+}
+#header h1:after{
+    background: #fff;
 }
 .two-columns{
     overflow: hidden;
@@ -1072,6 +1104,9 @@ h2.technology-header{
 	padding: 10px 0;
 	width: 150px;
 }
+#footer .four-columns{
+    margin: 0;
+}
 
 /* index */
 .group:after{
@@ -1087,8 +1122,8 @@ h2.technology-header{
     vertical-align: top;
     width: 135px;
     display: none;
-    background: #000;
-    opacity: 0.83;
+    /* background: #000;
+    opacity: 0.83; */
 }
 #nav li ul li{
     display: block;
@@ -1177,9 +1212,6 @@ h2.technology-header{
 /* dot_net_expertise.html */
 .name_tehnology{
     border: 1px solid #ccc;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
     padding: 3px;
     margin: 0 3px 0 0;
     color: #797979;
