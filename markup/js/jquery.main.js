@@ -28,7 +28,7 @@ if ( !detectmob() ) {
 	$(window).load(function(){
 		initTechnologyWidth();
 		// initCaseFixed();
-		initWaypoints();
+		//initWaypoints();
 		initBackgroundResize();
 	});
 }
@@ -137,7 +137,8 @@ function initScrollTo() {
 
 function initTechnologyWidth() {
 	var section = $('.technology-section');
-	var items = section.find('.item');
+	if(section.length>0){
+var items = section.find('.item');
 	var newWidth = 0;
 	var selector = section.find('.frame');
 	var frameOffsetTop = section.offset().top + 100;
@@ -190,6 +191,8 @@ function initTechnologyWidth() {
 
 	});
 
+	}	
+	
 }
 
 function initWaypoints() {

@@ -211,6 +211,7 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     max-width: 980px;
     margin: 0 auto;
     position: relative;
+    z-index: 20;
 }
 .logo{
     display: block;
@@ -245,11 +246,12 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
 #nav li{
     float: left;
     margin: 0 0 0 15px;
+    position: relative;
+    color: #fff;
 }
 #nav li:first-child{margin: 0;}
 .header-small #header{
     background: url(../images/bg-body-top.jpg) 50% 50% no-repeat;
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 10001;
@@ -1050,7 +1052,6 @@ h2.technology-header{
 #footer a{
 	padding: 10px 0;
 	color: #fff;
-	float: right;
 }
 #footer a:hover{
 	text-decoration: none;
@@ -1064,9 +1065,263 @@ h2.technology-header{
 .footer-holder{
 	max-width: 980px;
 	margin: 0 auto;
+    padding: 20px 0 0;
 }
 .footer-holder span.copy{
 	display: block;
 	padding: 10px 0;
 	width: 150px;
 }
+
+/* index */
+.group:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+#nav li ul{
+    margin: 0;
+    position: absolute;
+    right: -25px;
+    top: 100%;
+    vertical-align: top;
+    width: 135px;
+    display: none;
+    background: #000;
+    opacity: 0.83;
+}
+#nav li ul li{
+    display: block;
+    float: none;
+    position: relative;
+}
+#nav li ul li a{
+    display: block;
+}
+#nav li:hover ul{
+    display: block;
+}
+.five-columns {
+    margin: 0 0 31px;
+    overflow: hidden;
+    padding: 7px 0 0;
+}
+.five-columns .col:first-child {
+    margin: 0;
+}
+.five-columns .col {
+    float: left;
+    margin: 0 0 0 4%;
+    width: 16%;
+}
+.five-columns .col a{
+    display: block;
+    color: #797979;
+    font: 14px/22px 'CalibriRegular',Arial,Helvetica,sans-serif;
+    text-decoration: none;
+}
+.five-columns .col a:hover{
+    text-decoration: none;
+}
+.five-columns .col img{
+    text-align: center;
+}
+#footer h3{
+    color: #fff;
+}
+/* end index */
+/* outsourcing.html */
+.block_text img{
+    float: right;
+    margin: 0 40px;
+}
+.block_left{
+    float: left;
+}
+.block_right{
+    float: right;
+}
+.block_left a, .block_right a{
+    float: left;
+}
+.block_left p, .block_right p{
+    float: right;
+    width: 175px;
+}
+.img_holder{
+    text-align: center;
+    width: 100%;
+}
+.block_text .block_right{
+    padding: 5px;
+    border: 3px solid #ccc;
+}
+.block_text .block_right p{
+    margin: 0;
+}
+.block_expertise{
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0 50px;
+}
+.block_expertise:last-child{
+    border: none;
+}
+.block_stories img, .block_expertise img{
+    max-width: 100%;
+}
+.block_expertise .about{
+    float: left;
+    width: 78%;
+}
+/* end expertise.html */
+/* dot_net_expertise.html */
+.name_tehnology{
+    border: 1px solid #ccc;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    padding: 3px;
+    margin: 0 3px 0 0;
+    color: #797979;
+}
+.name_tehnology:hover{
+    color: #797979;
+    text-decoration: none;
+}
+/* end dot_net_expertise.html */
+/* stories */
+
+.block_information{
+    float: left;
+    width: 78%;
+} 
+.image_holder{
+    float: left;
+    width: 20%;
+    margin: 0 2% 0 0;
+    text-align: center;
+}
+.block_stories_holder{
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0 0;
+}
+.block_stories_holder:last-child{
+    border: none;
+}
+.breadcrumps li {
+    float: left;
+}
+.breadcrumps li a{
+    color: #797979
+}
+/* end stories */
+/* marketing.html */
+.block_download .img_holder, .block_download p, .block_download .img_holder{
+    float: left;
+}
+.block_download p{
+    width: 76%;
+}
+.block_download .image_holder{
+    width: 10%;
+} 
+.block_download strong{
+    display: block;
+}
+/* end marketing.html */
+/* gallery styles */
+.gallery-holder {
+    overflow: hidden;
+    width: 1514px;
+    margin: 0 auto;
+    position: relative;
+}
+.gallery-holder .gholder {
+    overflow: hidden;
+    width: 100%;
+}
+.gallery-holder .gmask {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    width: 1514px;
+    float: left;
+}
+.gallery-holder .gmask  ul {
+    list-style: none;
+    overflow: hidden;
+    height: 500px;
+    padding: 0;
+    margin: 0;
+}
+.gallery-holder .gmask  ul li {
+    float: left;
+    font-size: 60px;
+    text-align: center;
+    width: 1514px;
+    height: 500px;
+}
+.gallery-holder a.btn-prev,
+.gallery-holder a.btn-next {
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    font-size: 80px;
+    line-height: 80px;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+}
+.gallery-holder a.btn-next {
+    position: absolute;
+    right: 15px;
+    top: 42%;
+    z-index: 10;
+}
+.gallery-holder a.btn-prev{
+    position: absolute;
+    left: 15px;
+    top: 42%;
+    z-index: 10; 
+}
+.gallery-holder .pagination ul{
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
+    padding: 5px 0;
+    margin: 0;
+}
+.gallery-holder .pagination ul li {
+    padding: 0 5px;
+    display: inline;
+}
+.gallery-holder .pagination a {
+    text-decoration: none;
+    color: #fff;
+}
+.gallery-holder .pagination .active a {
+    color: #ccc;
+}
+.gallery-holder .pagination a:hover,
+.gallery-holder a.btn-prev:hover,
+.gallery-holder a.btn-next:hover {text-decoration:none;}
+.gallery-holder a.disabled {
+    border-color: #eee;
+    color: #ccc;
+}
+.slideshow .gmask ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slideshow .gmask ul li.active {
+    z-index: 1;
+}
+
+.slideshow .pagination {
+    bottom: 20px;
+    position: absolute;
+    right: 15px;
+    z-index: 10;
+}
+/* end gallery */
