@@ -7,14 +7,18 @@
     <meta name="MobileOptimized" content="1020" />
     <title>CHI Software</title>
     <link media="all" rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/colorbox.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/jquery.fancybox.css" />
     <link media="all" rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/all.css" />
+
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/jquery-1.9.0.min.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.fancybox.js?v=2.1.5"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/modernizr-2.6.2.min.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/waypoints.min.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.nicescroll.min.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.colorbox.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.form.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.main.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/slides.js"></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-37652812-1']);
@@ -27,6 +31,8 @@
         })();
 
     </script>
+
+
 </head>
 <?php echo $content; ?>
 </html>

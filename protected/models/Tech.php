@@ -36,7 +36,7 @@ class Tech extends CActiveRecord
 			array('title', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, description, url', 'safe', 'on'=>'search'),
+			array('id, title, description, url', 'safe'),
 		);
 	}
 
@@ -60,8 +60,8 @@ class Tech extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'description' => 'Description',
+			'title' => 'Название',
+			'description' => 'Описание',
             'url' => 'Url'
 		);
 	}
@@ -107,5 +107,15 @@ class Tech extends CActiveRecord
     public function behaviors(){
         return array('EAdvancedArBehavior' =>
         array('class' => 'application.components.EAdvancedArBehavior'));
+    }
+
+    public static function titleList()
+    {
+        $techRes = Tech::model()->findAll(array('order' => 'position'));
+        $techList = array();
+        array_map(function($element) use (&$techList) {
+            $techList[$element->id] = $element->title;
+        }, $techRes);
+        return $techList;
     }
 }
