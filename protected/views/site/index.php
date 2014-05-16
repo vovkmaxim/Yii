@@ -32,6 +32,47 @@
     <section class="main">
         <div class="m1">
             <div class="m2">
+
+                <script language="javascript">
+                    $(document).ready(function(){
+                        $("#myController").jFlow({
+                            controller: ".jFlowControl", // must be class, use . sign
+                            slideWrapper : "#jFlowSlider", // must be id, use # sign
+                            slides: "#mySlides",  // the div where all your sliding divs are nested in
+                            selectedWrapper: "jFlowSelected",  // just pure text, no sign
+                            width: "800px",  // this is the width for the content-slider
+                            height: "350px",  // this is the height for the content-slider
+                            duration: 400,  // time in miliseconds to transition one slide
+                            prev: ".jFlowPrev", // must be class, use . sign
+                            next: ".jFlowNext", // must be class, use . sign
+                            auto: true
+                        });
+                    });
+                </script>
+
+                <div id="container">
+                    <div id="mySlides">
+                        <?php
+                        $i = 1;
+                        foreach($slides as $item){
+                            echo '<div id="slide'. $i++ .'">';
+                            echo '<img src="slides/'. $item->id .'/'. $item->img .'" width="600px" height="300px" >';
+                            echo '<span><p>'. $item->description .'</p></span>';
+                            echo '</div>';
+                        }
+                        ?>
+                    </div>
+
+                    <div id="myController">
+                        <span class="jFlowControl"></span>
+                        <span class="jFlowControl"></span>
+                        <span class="jFlowControl"></span>
+                    </div>
+
+                    <span class="jFlowPrev"><div>prev</div></span>
+                    <span class="jFlowNext"><div>next</div></span>
+                </div>
+
                 <h1>Company</h1>
 
                 <h2>Offshore Development Center</h2>
@@ -67,7 +108,7 @@
                     </div>
                 </div>
                 <?php if ($profile != '') : ?>
-                    <a href="/profile/<?php echo $profile; ?>" class="banner"><img src="images/banner1.jpg" alt=""></a>
+                    <a href="#inline-profile" class="banner" id="downloads_profile"><img src="images/banner1.jpg" alt=""></a>
                 <?php endif; ?>
                 <?php if ($partners) : ?>
                     <h2>Our Partners</h2>
@@ -296,6 +337,65 @@
                 <input type="submit" value="Send"/>
             </div>
         </form>
+    </div>
+</div>
+
+
+<div style="display:none;">
+    <div id="inline-profile">
+        <?php
+			
+			echo CHtml::beginForm(); //form open
+				$i = 1;
+				foreach($files as $item) {
+					if($i == 1) {								
+						echo CHtml::checkBox('file'.$i, true, array('value' => $item->file));
+					}else{
+						echo CHtml::checkBox('file'.$i, '', array('value' => $item->file));
+					}
+					echo $item->title;	
+					echo '<br />';
+					$i++;
+				}
+				echo CHtml::ajaxSubmitButton('Download Selected Documents', Yii::app()->request->baseUrl.'/index.php/ajax/documents', array(
+					'type' => 'POST',
+					'dataType' => 'json',
+					'success'=>'function (data) {
+						if(data.true) {
+							$.colorbox.close();
+							location.href = "documents/"+data.true;
+						}
+					}'
+				),
+				array(
+					'type' => 'submit'
+				));
+				
+				echo '<br />';
+				
+				echo '<div id="message"></div>';
+				echo CHtml::textField('email');			
+				echo CHtml::ajaxSubmitButton('Send to my email', Yii::app()->request->baseUrl.'/index.php/ajax/documentsemail', array(
+					'type' => 'POST',
+					'dataType' => 'json',
+					'success'=>'function (data) {
+						if(data.true) {
+							function boxClose(){
+								$.colorbox.close();
+							}							
+							setTimeout(boxClose,5000);
+							$("#message").html(data.true);
+						}
+						if(data.error) {
+							$("#message").html(data.error);
+						}						
+					}'
+				),
+				array(
+					'type' => 'submit'
+				));						
+			echo CHtml::endForm(); //form end
+        ?>
     </div>
 </div>
 </body>

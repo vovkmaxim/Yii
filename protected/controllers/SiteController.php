@@ -30,17 +30,21 @@ class SiteController extends Controller
         $request = Yii::app()->request;
         $techList = Tech::model()->with('techLists')->findAll(array('order' => 't.position'));
         $projects = Projects::model()->with('projectsPics')->findAll();
-        $vacancies = Jobs::model()->findAll(array('order' => 'position'));
+        $vacancies = Vacancies::model()->findAll(array('order' => 'position'));
         $profile = Text::getCompanyProfile();
         $partners = Partners::model()->findAll();
-
+        
+        $file = Documents::model()->findAll();
+        $slides = Slides::model()->findAll(array('order' => 'position'));
 
         $this->render('index', array(
                 'tech' => $techList,
                 'projects' => $projects,
                 'jobs' => $vacancies,
                 'profile' => $profile,
-                'partners' => $partners
+                'partners' => $partners,
+                'files' => $file,
+                'slides' => $slides,
             )
         );
     }
@@ -63,7 +67,7 @@ class SiteController extends Controller
         $request = Yii::app()->request;
         if ($request->isAjaxRequest) {
             $id = $request->getPost($id);
-            $job = Jobs::model()->findByPk($id);
+            $job = Vacancies::model()->findByPk($id);
             if ($job->title !== null) {
                 echo CJavaScript::encode(array('job' => $job));
                 Yii::app()->end();
@@ -85,7 +89,7 @@ class SiteController extends Controller
         $name = trim($request->getPost('name'));
         $email = trim($request->getPost('email'));
         $message = trim($request->getPost('message'));
-        $job = Jobs::model()->findByPk($jobId);
+        $job = Vacancies::model()->findByPk($jobId);
         $cv = (empty($_FILES['cv'])) ? array() : $_FILES['cv'];
         $errors = array();
         if ($name == '') {

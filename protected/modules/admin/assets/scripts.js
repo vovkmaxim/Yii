@@ -1,9 +1,5 @@
 $(function () {
-
-    tinyMCE.init({
-        selector: "textarea.content-block",
-        plugins: 'link'
-    });
+  
     // Side Bar Toggle
     $('.hide-sidebar').click(function () {
         $('#sidebar').hide('fast', function () {
@@ -35,6 +31,45 @@ $(function () {
             var order = $(this).sortable("serialize");
             $.ajax({
                 url: '/admin/jobs/saveorder?' + order,
+                data: {order: order},
+                success: function (result) {
+                }
+            })
+        }
+    }).disableSelection();
+
+    $(".slides tbody").sortable({
+        helper: fixHelper,
+        update: function (event, ui) {
+            var order = $(this).sortable("serialize");
+            $.ajax({
+                url: '/admin/slides/saveorder?' + order,
+                data: {order: order},
+                success: function (result) {
+                }
+            })
+        }
+    }).disableSelection();
+    
+    $(".documents tbody").sortable({
+        helper: fixHelper,
+        update: function (event, ui) {
+            var order = $(this).sortable("serialize");
+            $.ajax({
+                url: '/admin/documents/saveorder?' + order,
+                data: {order: order},
+                success: function (result) {
+                }
+            })
+        }
+    }).disableSelection();
+
+    $(".management tbody").sortable({
+        helper: fixHelper,
+        update: function (event, ui) {
+            var order = $(this).sortable("serialize");
+            $.ajax({
+                url: '/admin/management/saveorder?' + order,
                 data: {order: order},
                 success: function (result) {
                 }
@@ -115,4 +150,30 @@ $(function () {
 
         return false;
     })
+
+    $('.itemTag').click(function(){
+        var title = $(this).html();
+        var parseTags =  $('#Projects_tags').val();
+        if(parseTags.indexOf(title) + 1) {
+            parseTags = parseTags.replace(title+', ','');
+            $('#Projects_tags').val(parseTags);
+        }else{
+            $('#Projects_tags').val(parseTags + title + ', ');
+        }
+
+
+    });
 });
+
+function openTagsList() {
+    $('#tagsList').css('display','block');
+    $('#clickTag').attr('onclick','closeTagsList()');
+    $('#clickTag').html('закрыть');
+}
+
+function closeTagsList() {
+    $('#tagsList').css('display','none');
+    $('#clickTag').attr('onclick','openTagsList()');
+    $('#clickTag').html('открыть');
+}
+

@@ -31,10 +31,10 @@ class Text
     }
 
     public static function getCompanyProfile() {
-        if (!is_dir('profile')) {
+        if (!is_dir('documents')) {
             return false;
         }
-        $profiles = scandir('profile', 1);
+        $profiles = scandir('documents', 1);
         array_pop($profiles);
         array_pop($profiles);
         if (count($profiles) == 0) {

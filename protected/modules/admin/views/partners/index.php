@@ -28,7 +28,7 @@
                         </tbody>
                     </table>
                 </div>
-                <a class="btn" href="/admin/partners/add">Добавить</a>
+                <a class="btn" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/partners/add">Добавить</a>
             </div>
         </div>
     </div>

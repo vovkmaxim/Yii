@@ -11,100 +11,55 @@ class TechController extends AdminController
             ));
     }
     public function actionIndex() {
-        $techModel = new Tech();
-        $techList = $techModel->findAll(array('order' => 'position'));
+        $techList = Tech::model()->findAll(array('order' => 'position'));
         $this->render('index', array('techList' => $techList));
     }
 
-    public function actionAdd() {
-        $request = Yii::app()->request;
-        $viewVars = array('description' => '');
-        if ($request->isPostRequest) {
-            $title = trim($request->getPost('title'));
-            $description = trim($request->getPost('description'));
-            $list = $request->getPost('list');
-            if ($title == '') {
-                $viewVars['error'] = 'Введите название';
-                $viewVars['description'] = $description;
-                $viewVars['list'] = $list;
-
-            } else {
-                $tech = new Tech();
-                $tech->title = $title;
-                $tech->description = $description;
-                $tech->url = self::str2url($tech->title);
-                $tech->insert();
-                if (is_array($list)) {
-                    foreach ($list as $id => $element) {
-                        if (trim($element) != '') {
-                            $insertList = new TechList();
-                            $insertList->title = $element;
-                            $insertList->tech_id = $tech->id;
-                            $insertList->position = $id;
-                            $insertList->insert();
-                        }
-                    }
+    public function actionAdd()
+    {
+        $model = new Tech();
+        if (isset($_POST['Tech'])) {
+            $model->attributes = $_POST['Tech'];
+            if ($model->save()) {
+                foreach($_POST['list'] as $item){
+                    $techList = new TechList;
+                    $techList->tech_id = $model->id;
+                    $techList->title = $item;
+                    $techList->save(false);
                 }
-
-                $viewVars['result'] = 'Технология успешно добавлена';
-                header('Refresh:2; url=' . Yii::app()->getBaseUrl(true) . '/admin/tech');
+                $this->redirect('/admin/tech/index');
             }
         }
-
-        $this->render('add', $viewVars);
+        if(isset($_POST['list'])){
+            $list = $_POST['list'];
+        }else{
+            $list = null;
+        }
+        $this->render('add', array('model' => $model, 'list' => $list));
     }
 
-    public function actionEdit($id) {
-        $id = (int)$id;
-        if ($id  == 0) {
-            throw new CHttpException(404,'Неправильный запрос');
-        }
-        $request = Yii::app()->request;
-        $tech = Tech::model()->findByPk($id);
-        if (!$tech) {
-            throw new CHttpException(404,'Неправильный запрос');
-        }
-        $techList = TechList::model()->findAllByAttributes(array('tech_id' => $tech->id));
-        $list = array();
-        foreach ($techList as $el) {
-            $list[] = $el->title;
-        }
-        $viewVars = array('title' => $tech->title, 'description' => $tech->description, 'techList' => $list);
-        if ($request->isPostRequest) {
-            $title = trim($request->getPost('title'));
-            $description = trim($request->getPost('description'));
-            $list = $request->getPost('list');
-            if ($title == '') {
-                $viewVars['error'] = 'Введите название';
-                $viewVars['title'] = $title;
-                $viewVars['description'] = $description;
-                $viewVars['techList'] = $list;
-
-
-            } else {
-                $tech->title = $title;
-                $tech->description = $description;
-                $tech->url = self::str2url($tech->title);
-                $tech->save();
-                TechList::model()->deleteAllByAttributes(array('tech_id' => $id));
-                if (is_array($list)) {
-                    foreach ($list as $id => $element) {
-                        if (trim($element) == '') {
-                            continue;
-                        }
-                        $insertElement = new TechList();
-                        $insertElement->title = $element;
-                        $insertElement->tech_id = $tech->id;
-                        $insertElement->position = $id;
-                        $insertElement->insert();
-                    }
+    public function actionEdit($id)
+    {
+        $list = TechList::model()->findAll('tech_id = :id', array(':id' => $id));
+        $model = Tech::model()->findByPk($id);
+        if (isset($_POST['Tech'])) {
+            $model->attributes = $_POST['Tech'];
+            if ($model->save()) {
+                foreach($list as $item){
+                    TechList::model()->deleteByPk($item->id);
                 }
-                $viewVars['result'] = 'Технология успешно изменена';
-                header('Refresh:2; url=' . Yii::app()->getBaseUrl(true) . '/admin/tech');
+                foreach($_POST['list'] as $item){
+                    $techList = new TechList;
+                    $techList->tech_id = $model->id;
+                    $techList->title = $item;
+                    $techList->save(false);
+                }
+                $this->redirect('/admin/tech/index');
             }
         }
-        $this->render('edit', $viewVars);
+        $this->render('edit', array('model' => $model, 'list' => $list));
     }
+
     public function actionDelete($id) {
         $id = (int)$id;
         if ($id == 0) {
@@ -112,7 +67,7 @@ class TechController extends AdminController
         }
         $tech = Tech::model()->findByPk($id);
         $tech->delete();
-        header('Location:' . Yii::app()->getBaseUrl(true) . '/admin/tech');
+        $this->redirect('/admin/tech/index');
         exit();
     }
 

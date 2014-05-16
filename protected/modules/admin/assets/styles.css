@@ -242,3 +242,14 @@ body {
     background-color: #EEEEEE;
     cursor: hand;
 }
+
+/* ----------- Tags */
+#tagsList {
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    display: none;
+    padding: 10px;
+    width: 400px;
+    margin-top: -10px;
+    border-radius: 2px;
+}

@@ -34,7 +34,7 @@ class Projects extends CActiveRecord
 			array('title', 'required'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, description, position', 'safe', 'on'=>'search'),
+			array('id, title, description, position', 'safe'),
 		);
 	}
 
@@ -58,8 +58,8 @@ class Projects extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'description' => 'Description',
+			'title' => 'Название',
+			'description' => 'Описание',
             'position' => 'Position'
 		);
 	}
