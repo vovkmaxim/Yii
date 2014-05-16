@@ -7,25 +7,27 @@ class StaticpagesController extends AdminController
     }
 
     public function actionIndex() {
-        $staticpagesList = staticpages::model()->findAll(array('order' => 'ID'));
-        $this->render('index', array('staticpagesList' => $staticpagesList));
+        $model = new Staticpages('search');
+        $model->unsetAttributes();  // clear any default values
+        if (isset($_GET['Staticpages'])) {
+            $model->attributes = $_GET['Staticpages'];
+        }
+
+        $this->render('index', array(
+            'model' => $model,
+        ));
     }
 
-    protected function initSave(Staticpages $model)
-    {
+    protected function initSave(Staticpages $model) {
         if (isset($_POST['Staticpages'])) {
-            // Save process
             $model->attributes = $_POST['Staticpages'];
-
             if ($model->save()) {
                 $this->redirect( Yii::app()->request->baseUrl.'/admin/staticpages/index');
             }
-//            var_dump($model->getErrors()); exit;
         }
     }
 
-    public function actionAdd()
-    {
+    public function actionAdd() {
         $model = new Staticpages();
 
         $this->initSave($model);
@@ -33,8 +35,7 @@ class StaticpagesController extends AdminController
         $this->render('add', array('model' => $model));
     }
 
-    public function actionEdit($id)
-    {
+    public function actionUpdate($id) {
         $model = Staticpages::model()->findByPk($id);
 
         $this->initSave($model);
@@ -43,14 +44,23 @@ class StaticpagesController extends AdminController
     }
 
     public function actionDelete($id) {
-        $id = (int)$id;
-        if ($id == 0) {
-            throw new CHttpException(404, 'Invalid request');
-        }
-        $staticpage = Staticpages::model()->findByPk($id);
-        $staticpage->delete();
-        header('Location:' . Yii::app()->getBaseUrl(true) . '/admin/staticpages');
-        exit();
+
+          if(Yii::app()->request->isPostRequest)
+            {
+                $this->loadModel($id)->delete();
+                if(!isset($_GET['ajax']))
+                    $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+            }
+            else
+                throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
+    }
+
+    public function loadModel($id)
+    {
+        $model=Staticpages::model()->findByPk($id);
+        if($model===null)
+            throw new CHttpException(404,'The requested page does not exist.');
+        return $model;
     }
 
     public function actionSaveOrder() {
@@ -70,7 +80,7 @@ class StaticpagesController extends AdminController
     }
     public function filters() {
         return array(
-        array('ext.yiibooster..filters.BootstrapFilter - delete')
-    );
-}
+            array('ext.yiibooster..filters.BootstrapFilter - delete')
+        );
+    }
 }

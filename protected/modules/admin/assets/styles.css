@@ -5,6 +5,15 @@ body {
 	background-color: #f5f5f5;
 }
 
+#tdtext {
+    /*word-break: break-all;*/
+    max-width: 100px;
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    padding: 5px; /* Поля вокруг текста */
+    text-overflow: ellipsis;
+}
+
 /** Login Page **/
 #login {
     padding-top: 40px;
@@ -242,14 +251,16 @@ body {
     background-color: #EEEEEE;
     cursor: hand;
 }
+table td, table th {
+    max-width: 100px;
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    padding: 5px; /* Поля вокруг текста */
+    text-overflow: ellipsis;
+}
 
-/* ----------- Tags */
-#tagsList {
-    background: #FFFFFF;
-    border: 1px solid #CCCCCC;
-    display: none;
-    padding: 10px;
-    width: 400px;
-    margin-top: -10px;
-    border-radius: 2px;
+table.detail-view td
+{
+    word-break: break-all;
+    white-space: normal;
 }

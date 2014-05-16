@@ -1,16 +1,47 @@
 <?php
-$form = $this->beginWidget(
-    'bootstrap.widgets.TbActiveForm',
-    array(
-        'id' => 'horizontalForm',
-        'type' => 'horizontal',
-    )
-); ?>
+    $form = $this->beginWidget(
+        'bootstrap.widgets.TbActiveForm',
+        array(
+            'id' => 'horizontalForm',
+            'type' => 'horizontal',
+        )
+    );
+?>
 
 
 <?php echo $form->textFieldRow($model, 'title', array('class' => "input-xxlarge")); ?>
 
-<?php echo $form->textFieldRow($model, 'activelink', array('class' => "input-xxlarge",)); ?>
+<?php
+
+    if (!$model->isNewRecord){
+        echo $form->textFieldRow(
+            $model,
+            'activelink',
+            array(
+                'disabled' => true,
+                'class' => "input-xxlarge",
+            )
+        );
+        echo $form->textFieldRow(
+            $model,
+            'dateCreate',
+            array(
+                'disabled' => true,
+                'class' => "input-xxlarge",
+            )
+        );
+        echo $form->textFieldRow(
+            $model,
+            'dateUpdate',
+            array(
+                'disabled' => true,
+                'class' => "input-xxlarge",
+            )
+        );
+    } else {
+       $Staticpages['dateCreate'] = date("F j, Y");
+     }
+?>
 
 <?php echo $form->ckEditorRow(
     $model,
@@ -25,7 +56,7 @@ $form = $this->beginWidget(
     )
 ); ?>
 
-<?php echo $form->textFieldRow($model, 'etc', array('class' => "input-xxlarge",)); ?>
+<?php //echo $form->textFieldRow($model, 'etc', array('class' => "input-xxlarge",)); ?>
 
     <div class="form-actions">
         <?php $this->widget(

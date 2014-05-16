@@ -6,3 +6,7 @@ images/
 slides/
 assets/
 documents/
+cv/
+partners/
+protected/config/database.php
+protected/config/import.php

@@ -27,9 +27,10 @@ class Staticpages extends CActiveRecord
      */
     public function rules()
     {
-        return array(
-            array('title, activelink, text', 'required', 'message' => 'Это поле обязательно для заполнения'),
+       return array(
+            array('title, text', 'required', 'message' => 'Это поле обязательно для заполнения'),
             array('id, title, activelink, text, etc', 'safe'),
+            array('title', 'length', 'max' => 150, 'tooLong' => 'So big string'),
         );
     }
 
@@ -52,7 +53,8 @@ class Staticpages extends CActiveRecord
             'title' => 'Название',
             'activelink' => 'Ссылка',
             'text' => 'Текст',
-            'etc'=>'Другое'
+            'dateCreate'=>'Дата создания',
+            'dateUpdate'=>'Дата обновления',
         );
     }
 
@@ -78,7 +80,6 @@ class Staticpages extends CActiveRecord
         $criteria->compare('title',$this->title,true);
         $criteria->compare('text',$this->text,true);
         $criteria->compare('activelink',$this->activelink,true);
-        $criteria->compare('etc',$this->etc,true);
         return new CActiveDataProvider($this, array(
             'criteria'=>$criteria,
         ));
@@ -100,7 +101,16 @@ class Staticpages extends CActiveRecord
         $this->title = trim($this->title);
         $this->activelink = trim($this->activelink);
         $this->text = trim($this->text);
-        $this->etc = trim($this->etc);
         return parent::beforeValidate();
+    }
+
+    protected function beforeSave()
+    {
+        if ($this->isNewRecord)
+            $this->dateCreate = new CDbExpression('NOW()');
+        $this->dateUpdate = new CDbExpression('NOW()');
+        $this->title = str_replace (' ','_',$this->title);
+        $this->activelink = Yii::app()->getBaseUrl(true) . '/' . $this->title;
+        return parent::beforeSave();
     }
 }

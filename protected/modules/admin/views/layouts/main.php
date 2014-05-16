@@ -73,6 +73,26 @@
                             <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/management">Менеджмент</a>
                         </li>
                     <?php endif; ?>
+                     <?php if (!in_array($role, AuthUser::$denies['StaticpagesController'])) : ?>
+                        <li <?php echo ($this->active == 'staticpages') ? 'class="active"' : ''; ?>>
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/staticpages">Статические страницы</a>
+                        </li>
+                    <?php endif; ?>
+                    <?php if (!in_array($role, AuthUser::$denies['ContactdataController'])) : ?>
+                        <li <?php echo ($this->active == 'contactdata') ? 'class="active"' : ''; ?>>
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/contactdata">Контактные данные</a>
+                        </li>
+                    <?php endif; ?>
+                    <?php if (!in_array($role, AuthUser::$denies['ContactusController'])) : ?>
+                        <li <?php echo ($this->active == 'contactus') ? 'class="active"' : ''; ?>>
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/contactus">Список вопросов</a>
+                        </li>
+                    <?php endif; ?>
+                    <?php if (!in_array($role, AuthUser::$denies['SuccessstoriesController'])) : ?>
+                        <li <?php echo ($this->active == 'successstories') ? 'class="active"' : ''; ?>>
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/successstories">Success stories</a>
+                        </li>
+                    <?php endif; ?>
                 </ul>
             </div>
             <!--/.nav-collapse -->
