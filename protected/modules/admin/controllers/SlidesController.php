@@ -7,7 +7,7 @@ class SlidesController extends AdminController
 
     public function actionIndex() {
         $model = Slides::model()->findAll(array('order' => 'position'));
-        $this->render('index', array('model' => $model));
+        $this->render('application.modules.admin.views.slide.index', array('model' => $model));
     }
 
     function initSave(Slides $model)
@@ -39,14 +39,14 @@ class SlidesController extends AdminController
     {
         $model = new Slides();
         $this->initSave($model);
-        $this->render('add', array('model' => $model));
+        $this->render('application.modules.admin.views.slide.add', array('model' => $model));
     }
 
     public function actionEdit($id)
     {
         $model = Slides::model()->findByPk($id);
         $this->initSave($model);
-        $this->render('edit', array('model' => $model));
+        $this->render('application.modules.admin.views.slide.edit', array('model' => $model));
     }
 
     public function actionDelete($id) {
@@ -86,5 +86,4 @@ class SlidesController extends AdminController
         }
         rmdir($dir);
     }
-
 }
