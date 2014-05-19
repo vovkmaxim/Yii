@@ -1,6 +1,5 @@
 #bg{display: none;}
-body{background: #fff;}
-body.main-page{
+body{
     background: url(../images/bg-body.jpg) no-repeat;
     background-size: 100% 100%;
 }
@@ -21,7 +20,7 @@ body.main-page{
 }
 
 @media only screen and (orientation : landscape) {
-	body.main-page{
+	body{
 	    background-size: auto auto;
 	}
 }

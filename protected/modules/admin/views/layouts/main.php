@@ -33,6 +33,11 @@
                 </ul>
                 <?php $role = (isset(Yii::app()->user->model->role)) ? Yii::app()->user->model->role : 0; ?>
                 <ul class="nav">
+                    <?php if (!in_array($role, AuthUser::$denies['MenuController'])) : ?>
+                        <li <?php echo ($this->active == 'menu') ? 'class="active"' : ''; ?>>
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/menu">Меню</a>
+                        </li>
+                    <?php endif; ?>
                     <?php if (!in_array($role, AuthUser::$denies['TechController'])) : ?>
                     <li <?php echo ($this->active == 'tech') ? 'class="active"' : ''; ?>>
                         <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/tech">Технологии</a>
