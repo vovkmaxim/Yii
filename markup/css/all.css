@@ -166,9 +166,9 @@ ul li {list-style:none; list-style:none outside;}
 /* =============================================================================
 	SEMANTIC TAG
 	========================================================================== */
-h1 {font:36px/1.25 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif; margin:0 0 30px; color: #000;}
-h2 {font:30px/1.25 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif; margin:0 0 28px; color: #000;}
-h3 {font:24px/1.2 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif; margin:0 0 24px; color: #000;}
+h1 {font:30px/1.25 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif; margin:0 0 30px; color: #000;}
+h2 {font:24px/1.25 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif; margin:0 0 28px; color: #000;}
+h3 {font:14px/1.2 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif; margin:0 0 24px; color: #000;}
 h4 {font:22px/1.2 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif; margin:0 0 18px; color: #000;}
 h5 {font:20px/1.1 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif; margin:0 0 16px; color: #000;}
 h6 {font:18px/1.1 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif; margin:0 0 14px; color: #000;}
@@ -179,7 +179,7 @@ sub, sup {line-height:0; position:relative; vertical-align:baseline;}
 sub {bottom:-0.25em;}
 sup {top:-0.5em;}
 svg:not(:root) {overflow:hidden;}
-p {margin:0 0 22px;}
+p {font:14px/1.5 'Calibri', Tahoma, Geneva, Arial, Helvetica, sans-serif;margin:0 0 22px;}
 hr {display:block; height:1px; border:0; border-top:1px solid #ccc; margin:0; padding:0;}
 *+html hr {margin:-7px 0;}
 mark {background:#ff0;}
@@ -199,13 +199,25 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
 	========================================================================== */
 #wrapper {
     width:100%;
+    height: 100%;
     position: relative;
     overflow: hidden;
+    display: table;
 }
 #wrapper.header-small{
     padding: 76px 0 0;
 }
-#header{width: 100%;}
+#header{
+    width: 100%;
+    position: relative;
+}
+#header h1{
+    color: #fff;
+}
+#header.bg_main{
+    background: url("../images/tmp/main1.jpg")0 0/100% no-repeat;
+    height: 459px; 
+}
 .header-frame{
     padding: 25px 0 20px;
     max-width: 980px;
@@ -215,12 +227,13 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
 }
 .logo{
     display: block;
-    margin: 0 auto 25px;
+    margin: 0;
     text-indent: -9999px;
     overflow: hidden;
     background: url(../images/logo.png) no-repeat;
     width: 97px;
     height: 56px;
+    float: left;
 }
 .logo a{
     display: block;
@@ -231,6 +244,8 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     text-transform: uppercase;
     font-size: 12px;
     line-height: 14px;
+    float: right;
+    margin: 30px 0 0;
 }
 #nav a{color: #fff;}
 #nav a:hover,
@@ -352,6 +367,10 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
 .pages-holder{
     outline: none;
 }
+.content_wrapper{
+    width:100%;
+    display:table-row;
+}
 .main-image{
     display: block;
     width: 100%;
@@ -376,7 +395,7 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
 }
 .main>.m1>.m2>h1,
 .header-section h1,
-#colorbox h1{
+#colorbox h1, #header h1{
     font-family: 'politicabold', Tahoma, Geneva, Arial, Helvetica, sans-serif;
     text-align: center;
     position: relative;
@@ -386,7 +405,7 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
 }
 .main>.m1>.m2>h1:after,
 .header-section h1:after,
-#colorbox h1:after{
+#colorbox h1:after, #header h1:after{
     content: '';
     position: absolute;
     left: 50%;
@@ -395,6 +414,24 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     height: 6px;
     background: #000;
     margin: 0 0 0 -52px;
+}
+#header:after{
+    content: '';
+    width: 1px;
+    height: 100%;
+    margin: 0 0 0 -5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#header .main_header_holder{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    margin: -100px 0 0;
+}
+#header h1:after{
+    background: #fff;
 }
 .two-columns{
     overflow: hidden;
@@ -1048,6 +1085,9 @@ h2.technology-header{
 #footer{
 	background: #000;
 	color: #fff;
+    width:100%;
+    overflow:hidden; /*for FF on Windows 7*/
+    display:table-footer-group;
 }
 #footer a{
 	padding: 10px 0;
@@ -1066,11 +1106,18 @@ h2.technology-header{
 	max-width: 980px;
 	margin: 0 auto;
     padding: 20px 0 0;
+    height: 1%;
+    display: table-row;
 }
+#footer .footer-frame { display:table-cell;}
 .footer-holder span.copy{
 	display: block;
 	padding: 10px 0;
 	width: 150px;
+}
+#footer .four-columns{
+    margin: 0 auto;
+    max-width: 980px;
 }
 
 /* index */
@@ -1087,8 +1134,8 @@ h2.technology-header{
     vertical-align: top;
     width: 135px;
     display: none;
-    background: #000;
-    opacity: 0.83;
+    /* background: #000;
+    opacity: 0.83; */
 }
 #nav li ul li{
     display: block;
@@ -1177,9 +1224,6 @@ h2.technology-header{
 /* dot_net_expertise.html */
 .name_tehnology{
     border: 1px solid #ccc;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
     padding: 3px;
     margin: 0 3px 0 0;
     color: #797979;
@@ -1228,100 +1272,7 @@ h2.technology-header{
 .block_download strong{
     display: block;
 }
+.m2 h2 a {
+    margin: 0 0 0 10px;
+}
 /* end marketing.html */
-/* gallery styles */
-.gallery-holder {
-    overflow: hidden;
-    width: 1514px;
-    margin: 0 auto;
-    position: relative;
-}
-.gallery-holder .gholder {
-    overflow: hidden;
-    width: 100%;
-}
-.gallery-holder .gmask {
-    position: relative;
-    overflow: hidden;
-    background: #fff;
-    width: 1514px;
-    float: left;
-}
-.gallery-holder .gmask  ul {
-    list-style: none;
-    overflow: hidden;
-    height: 500px;
-    padding: 0;
-    margin: 0;
-}
-.gallery-holder .gmask  ul li {
-    float: left;
-    font-size: 60px;
-    text-align: center;
-    width: 1514px;
-    height: 500px;
-}
-.gallery-holder a.btn-prev,
-.gallery-holder a.btn-next {
-    font-weight: bold;
-    text-align: center;
-    color: #fff;
-    font-size: 80px;
-    line-height: 80px;
-    text-decoration: none;
-    width: 50px;
-    height: 50px;
-}
-.gallery-holder a.btn-next {
-    position: absolute;
-    right: 15px;
-    top: 42%;
-    z-index: 10;
-}
-.gallery-holder a.btn-prev{
-    position: absolute;
-    left: 15px;
-    top: 42%;
-    z-index: 10; 
-}
-.gallery-holder .pagination ul{
-    font-weight: bold;
-    list-style: none;
-    text-align: center;
-    padding: 5px 0;
-    margin: 0;
-}
-.gallery-holder .pagination ul li {
-    padding: 0 5px;
-    display: inline;
-}
-.gallery-holder .pagination a {
-    text-decoration: none;
-    color: #fff;
-}
-.gallery-holder .pagination .active a {
-    color: #ccc;
-}
-.gallery-holder .pagination a:hover,
-.gallery-holder a.btn-prev:hover,
-.gallery-holder a.btn-next:hover {text-decoration:none;}
-.gallery-holder a.disabled {
-    border-color: #eee;
-    color: #ccc;
-}
-.slideshow .gmask ul li {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.slideshow .gmask ul li.active {
-    z-index: 1;
-}
-
-.slideshow .pagination {
-    bottom: 20px;
-    position: absolute;
-    right: 15px;
-    z-index: 10;
-}
-/* end gallery */
