@@ -264,7 +264,7 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     position: relative;
     color: #fff;
 }
-#nav li:first-child{margin: 0;}
+/* #nav li:first-child{margin: 0;} */
 .header-small #header{
     background: url(../images/bg-body-top.jpg) 50% 50% no-repeat;
     top: 0;
@@ -933,11 +933,12 @@ h2.technology-header{
 #nav li ul{
     margin: 0;
     position: absolute;
-    right: -25px;
+    left: 0;
     top: 100%;
     vertical-align: top;
     width: 135px;
     display: none;
+    text-align: left;
     /* background: #000;
     opacity: 0.83; */
 }
@@ -945,6 +946,8 @@ h2.technology-header{
     display: block;
     float: none;
     position: relative;
+    margin: 5px 0 0;
+    text-transform: capitalize;
 }
 #nav li ul li a{
     display: block;
@@ -994,6 +997,7 @@ h2.technology-header{
 }
 .block_left a, .block_right a{
     float: left;
+    margin: 0 10px 0 0;
 }
 .block_left p, .block_right p{
     float: right;
@@ -1029,8 +1033,10 @@ h2.technology-header{
 .name_tehnology{
     border: 1px solid #ccc;
     padding: 3px;
-    margin: 0 3px 0 0;
+    margin: 0 3px 5px 0;
     color: #797979;
+    display: inline-block;
+    vertical-align: top;
 }
 .name_tehnology:hover{
     color: #797979;
@@ -1064,14 +1070,19 @@ h2.technology-header{
 }
 /* end stories */
 /* marketing.html */
-.block_download .img_holder, .block_download p, .block_download .img_holder{
+.block_download{
+    margin: 0 0 10px;
+}
+.block_download p, .block_download .links_pdf{
     float: left;
 }
 .block_download p{
-    width: 76%;
+    width: 80%;
+    margin: 0 2%;
 }
-.block_download .image_holder{
-    width: 10%;
+.block_download .links_pdf{
+    width: 8%;
+    height: 100%;
 } 
 .block_download strong{
     display: block;
