@@ -22,7 +22,7 @@ if ( !detectmob() ) {
 		initScrollTo();
 		initSameHeight();
 		initCustomFileInput();
-		randomBackground();
+		//randomBackground();
 	});
 
 	$(window).load(function(){
@@ -45,9 +45,10 @@ else {
 	$(window).load(function(){
 		// initTechnologyWidth();
 		// initCaseFixed();
-		initWaypoints();
+		//initWaypoints();
 		// initBackgroundResize();
 		initNiceScrollMobile();
+
 	});
 }
 
@@ -74,7 +75,8 @@ function initCustomFileInput() {
 // background stretching
 function initBackgroundResize() {
 		var holder = document.getElementById('bg');
-		if(holder) {
+		var flag = $('.first-page');
+		if(holder && flag.length>0) {
 				var images = holder.getElementsByTagName('img');
 				for(var i = 0; i < images.length; i++) {
 						BackgroundStretcher.stretchImage(images[i]);
