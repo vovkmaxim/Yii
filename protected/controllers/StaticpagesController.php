@@ -14,8 +14,22 @@ class StaticpagesController extends Controller
 	public function actionIndex($page)
 	{
         $model = Staticpages::model()->findByAttributes(array('title' => $page));
+        $view = 'index';
+        switch ($page) {
+            case 'expertise':
+                $view = 'expertise';
+            case 'marketing':
+                $view = 'marketing';
+            case 'management':
+                $view = 'management';
+            case 'vacancies':
+                $view = 'vacancies';
+            case 'contactus':
+                $view = 'contactus';
+
+        }
         if ($model) {
-            $this->render('index', array(
+            $this->render($view, array(
                 'content' => $model->text,
             ));
             Yii::app()->end();

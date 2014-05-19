@@ -98,7 +98,7 @@
             <!--/.nav-collapse -->
         </div>
     </div>
-</div>
+</div><br><br><br>
 <div class="container-fluid">
     <div class="row-fluid">
         <?php echo $content; ?>

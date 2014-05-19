@@ -13,7 +13,7 @@ return array(
     'connectionString' => 'mysql:host=localhost;dbname=chi',
     'emulatePrepare' => true,
     'username' => 'root',
-    'password' => 'root',
+    'password' => '21091989',
     'charset' => 'utf8',
     'schemaCachingDuration' => 10
 );

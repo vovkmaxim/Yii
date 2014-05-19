@@ -5,15 +5,15 @@
         <strong class="logo"><a href="/">CHI</a></strong>
         &nbsp;
         <nav id="nav">
-            <div style="margin-top: 10px; display:inline-block; color:white; text-align: center;">BETA</div>
-            <!--            <ul>-->
-            <!--                <li class="nav"><a href="#company">Company</a></li>-->
-            <!--                <li class="nav"><a href="#tech">TECHNOLOGIES</a></li>-->
-            <!--                <li class="add">&nbsp;-->
-            <!--                    <a href="/projects">PROJECTS</a>-->
-            <!--                </li>-->
-            <!--                <li class="nav"><a href="#vacancies">Vacancies</a></li>-->
-            <!--            </ul>-->
+<!--            <div style="margin-top: 10px; display:inline-block; color:white; text-align: center;">BETA</div>-->
+                        <ul>
+                            <li class="nav"><a href="#company">Company</a></li>
+                            <li class="nav"><a href="#tech">TECHNOLOGIES</a></li>
+                            <li class="add">&nbsp;
+                                <a href="/projects">PROJECTS</a>
+                            </li>
+                            <li class="nav"><a href="#vacancies">Vacancies</a></li>
+                        </ul>
         </nav>
     </div>
 </header>
@@ -21,11 +21,11 @@
     <section class="main">
         <h1 class="slogan">DESIGN. CODE. CLOUDIFY. <strong>FROM IDEA TO THE PRODUCT.</strong></h1>
     </section>
-    <!--    <ul class="social-networks">-->
-    <!--        <li><a href="#" class="facebook">facebook</a></li>-->
-    <!--        <li><a href="#" class="twitter">twitter</a></li>-->
-    <!--        <li><a href="#" class="linkedin">linkedin</a></li>-->
-    <!--    </ul>-->
+        <ul class="social-networks">
+            <li><a href="#" class="facebook">facebook</a></li>
+            <li><a href="#" class="twitter">twitter</a></li>
+            <li><a href="#" class="linkedin">linkedin</a></li>
+        </ul>
 </div>
 <div class="pages-holder">
 <div class="page" id="company">
@@ -107,9 +107,9 @@
                             loss of the time and money.</p>
                     </div>
                 </div>
-                <?php if ($profile != '') : ?>
+<!--                --><?php //if ($profile != '') : ?>
                     <a href="#inline-profile" class="banner" id="downloads_profile"><img src="images/banner1.jpg" alt=""></a>
-                <?php endif; ?>
+<!--                --><?php //endif; ?>
                 <?php if ($partners) : ?>
                     <h2>Our Partners</h2>
                     <ul class="partners-list">

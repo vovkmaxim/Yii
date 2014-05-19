@@ -2,8 +2,9 @@
 
 class Successstories extends CActiveRecord
 {
+    public $pic;
 
-	public function tableName()
+    public function tableName()
 	{
 		return 'successstories';
 	}
@@ -12,17 +13,29 @@ class Successstories extends CActiveRecord
 	{
 
 		return array(
-			array('client, task, solution, result, pic', 'required', 'message'=>'Это поле обязательно для заполнения'),
+			array('client, task, solution, result', 'required', 'message'=>'Это поле обязательно для заполнения'),
 			array('id, client, task, solution, result, pic', 'safe', 'on'=>'search'),
-//            array('pic', 'file', 'types'=>'jpg, gif, png','message'=>'Допустимые форматы: jpg, gif, png'),
-		);
+            array('pic', 'file', 'types'=>'jpg, jpeg, gif, png', 'allowEmpty' => true),
+            array('pic', 'unsafe'),
+    	);
 	}
 
+    public function behaviors()
+    {
+        return array(
+            'AttachmentBehavior' => array(
+                'class' => 'AttachmentBehavior',
+                'attribute' => 'pic',
+                'path' => "images/stories/:custom:filename",
+                'custom' => microtime(true),
+                'fallback_image' => 'images/stories/default.png',
+            ),
+        );
+    }
 
 	public function relations()
 	{
-		// NOTE: you may need to adjust the relation name and the related
-		// class name for the relations automatically generated below.
+
 		return array(
 		);
 	}
@@ -38,22 +51,10 @@ class Successstories extends CActiveRecord
 			'task' => 'Задача',
 			'solution' => 'Решение',
 			'result' => 'Результат',
-			'pic' => 'Картинка',
+			'pic' => 'Логотип',
 		);
 	}
 
-	/**
-	 * Retrieves a list of models based on the current search/filter conditions.
-	 *
-	 * Typical usecase:
-	 * - Initialize the model fields with values from filter form.
-	 * - Execute this method to get CActiveDataProvider instance which will filter
-	 * models according to data in model fields.
-	 * - Pass data provider to CGridView, CListView or any similar widget.
-	 *
-	 * @return CActiveDataProvider the data provider that can return the models
-	 * based on the search/filter conditions.
-	 */
 	public function search()
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
@@ -72,14 +73,25 @@ class Successstories extends CActiveRecord
 		));
 	}
 
-	/**
-	 * Returns the static model of the specified AR class.
-	 * Please note that you should have this exact method in all your CActiveRecord descendants!
-	 * @param string $className active record class name.
-	 * @return Successstories the static model class
-	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
 	}
+
+    protected function beforeSave(){
+        if(!parent::beforeSave())
+            return false;
+
+        if ($this->scenario == 'update' && !$this->pic) {
+            unset($this->pic);
+        }
+        return true;
+    }
+
+    protected function beforeDelete(){
+        if(!parent::beforeDelete())
+            return false;
+        return true;
+    }
 }
+
