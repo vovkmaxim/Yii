@@ -22,7 +22,7 @@ if ( !detectmob() ) {
 		initScrollTo();
 		initSameHeight();
 		initCustomFileInput();
-		//randomBackground();
+		randomBackground();
 	});
 
 	$(window).load(function(){
