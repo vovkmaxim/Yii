@@ -17,25 +17,16 @@
                             <p>We tailor the process using a smart mix of methodologies to create a zero-fat productive development process and to produce high quality software. By introducing transparency into our development process, delivering potentially shippable product every iteration, inspecting results, and adopting features according to customer's feedback, we work without loss of the time and money.</p>
                         </div>
                     </div>
+
                     <h2>Work Conditions<a href="#"><img src="images/pdf-icon0.png" alt=""></a></h2>
                     <p>CHI Software is flexible to follow different business models and leverage optimal measures to ensure more profitability for the Client.</p>
                     <div class="four-columns">
+                        <?php foreach($conditionsList as $item) : ?>
                         <div class="col">
-                            <h3 class="col-heading">Offshore Dedicated Development Team</h3>
-                            <p>CHI Software provides customers with technical experts, thoroughly selected, based on each customer's project needs. Our customers choose and have full control over our technical experts, treating them as employees of their own company.</p>
+                            <h3 class="col-heading"><?php echo $item->title; ?></h3>
+                            <?php echo $item->description; ?>
                         </div>
-                        <div class="col">
-                            <h3 class="col-heading">Monthly Resource-<br />based Model</h3>
-                            <p>CHI Software's technical experts provide our customers with high-quality software development services during large projects. Our customers do monthly billing.</p>
-                        </div>
-                        <div class="col">
-                            <h3 class="col-heading">Time and Material</h3>
-                            <p>CHI Software monitors our technical experts work on daily basis. Our customers do billing based on hourly rate of our technical experts the actual time spent.</p>
-                        </div>
-                        <div class="col">
-                            <h3 class="col-heading">Fixed Price</h3>
-                            <p>CHI Software's business analysts and architects work with our customers to make project estimation and delivery part, based on mutually agreed price for final deliverable result.</p>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
 
                     <h2>Our Expertise <a href="#"><img src="images/pdf-icon0.png" alt="" width="22" height="27"></a></h2>

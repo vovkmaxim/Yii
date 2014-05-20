@@ -28,10 +28,12 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $techList = Tech::model()->with('techLists')->findAll(array('order' => 't.position', 'limit' => 5));
+        $conditionsList = Conditions::model()->findAll(array('order' => 'position', 'limit' => 5));
+        $techList = Tech::model()->findAll(array('order' => 'position', 'limit' => 5));
 
         $this->render('index', array(
-                'techList' => $techList
+                'techList' => $techList,
+                'conditionsList' => $conditionsList,
             )
         );
     }
