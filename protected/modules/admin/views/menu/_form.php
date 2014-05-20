@@ -39,6 +39,13 @@
     </div>
 </div>
 
+<div class="control-group">
+    Категория
+    <div class="controls">
+        <?php echo $form->dropDownList($model,'category', NavigationCategories::titleList()); ?>
+    </div>
+</div>
+
 <div class="controls">
     <?php echo CHtml::submitButton('Принять', array('class' => 'btn btn-save')); ?>
 </div>

@@ -59,30 +59,7 @@
                             <li>2003-<?php echo date('Y'); ?> &copy;</li>
                         </ul>
                     </div>
-                    <div class="col">
-                        <h3>Follow Us</h3>
-                        <ul>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">LinkedIn</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h3>Information</h3>
-                        <ul>
-                            <li><a href="#">Vacancies</a></li>
-                            <li><a href="#">Management</a></li>
-                            <li><a href="#">Marketing documents</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h3>Contact Us</h3>
-                        <ul>
-                            <li><a href="#">Call +1 650 45 11117</a></li>
-                            <li><a href="#">Contact Use Form</a></li>
-                            <li><a href="#">Live Chat</a></li>
-                        </ul>
-                    </div>
+                    <?php $this->renderPartial('application.views.layouts._footer', array('rootId' => 0)); ?>
                 </div>
             </div>
         </div>

@@ -1,23 +1,20 @@
 <?php
 
 /**
- * This is the model class for table "navigation".
+ * This is the model class for table "navigation_categories".
  *
- * The followings are the available columns in table 'navigation':
+ * The followings are the available columns in table 'navigation_categories':
  * @property integer $id
  * @property string $title
- * @property string $url
- * @property integer $parent
- * @property integer $position
  */
-class Navigation extends CActiveRecord
+class NavigationCategories extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'navigation';
+		return 'navigation_categories';
 	}
 
 	/**
@@ -29,11 +26,10 @@ class Navigation extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('title', 'required'),
-			array('parent, position', 'numerical', 'integerOnly'=>true),
-			array('title, url', 'length', 'max'=>255),
+			array('title', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, url, parent, category, position', 'safe'),
+			array('id, title', 'safe'),
 		);
 	}
 
@@ -56,10 +52,6 @@ class Navigation extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'title' => 'Название',
-			'url' => 'Url',
-			'parent' => 'Parent',
-            'category' => 'Категория',
-			'position' => 'Position',
 		);
 	}
 
@@ -83,10 +75,6 @@ class Navigation extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
-		$criteria->compare('url',$this->url,true);
-		$criteria->compare('parent',$this->parent);
-        $criteria->compare('category',$this->category);
-		$criteria->compare('position',$this->position);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -97,7 +85,7 @@ class Navigation extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Navigation the static model class
+	 * @return NavigationCategories the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -106,17 +94,12 @@ class Navigation extends CActiveRecord
 
     public static function titleList()
     {
-        $navRes = Navigation::model()->findAll(array('order' => 'position'));
+        $navRes = NavigationCategories::model()->findAll();
         $navList = array();
         $navList[0] = '';
         array_map(function($element) use (&$navList) {
             $navList[$element->id] = $element->title;
         }, $navRes);
         return $navList;
-    }
-
-    public static function menuItems($rootId = 0, $categoryId)
-    {
-        return self::model()->findAllByAttributes(array('parent' => $rootId, 'category' => $categoryId), array('order' => 'position'));
     }
 }

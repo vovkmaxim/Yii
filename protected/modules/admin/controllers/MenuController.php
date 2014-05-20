@@ -7,7 +7,11 @@ class MenuController extends AdminController
     }
 
     public function actionIndex() {
-        $model = Navigation::model()->findAll(array('order' => 'position'));
+        $model = Yii::app()->db->createCommand()
+            ->select('navigation.id, navigation.title, navigation_categories.title as category_title')
+            ->from('navigation')
+            ->join('navigation_categories', 'navigation_categories.id = navigation.category')
+            ->queryAll();
         $this->render('index', array('model' => $model));
     }
 
@@ -53,7 +57,7 @@ class MenuController extends AdminController
             $order = $request->getQuery('id');
             fb($order);
             foreach ($order as $id => $item) {
-                Yii::app()->db->createCommand()->update('menu', array('position' => $id), 'id = ' . $item);
+                Yii::app()->db->createCommand()->update('navigation', array('position' => $id), 'id = ' . $item);
             }
             echo CJavaScript::jsonEncode(array('order' => $order));
             Yii::app()->end();

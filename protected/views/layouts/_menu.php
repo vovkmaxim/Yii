@@ -1,5 +1,5 @@
 <?php
-$menuItems = Navigation::menuItems($rootId);
+$menuItems = Navigation::menuItems($rootId, 2);
 ?>
 <ul>
     <?php foreach ($menuItems as $item) : ?>

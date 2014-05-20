@@ -18,6 +18,7 @@
                         </div>
                     </div>
 
+                    <?php if(!empty($conditionsList)): ?>
                     <h2>Work Conditions<a href="#"><img src="images/pdf-icon0.png" alt=""></a></h2>
                     <p>CHI Software is flexible to follow different business models and leverage optimal measures to ensure more profitability for the Client.</p>
                     <div class="four-columns">
@@ -28,7 +29,9 @@
                         </div>
                         <?php endforeach; ?>
                     </div>
+                    <?php endif; ?>
 
+                    <?php if(!empty($techList)): ?>
                     <h2>Our Expertise <a href="#"><img src="images/pdf-icon0.png" alt="" width="22" height="27"></a></h2>
                     <p>CHI Software is flexible to follow different business models and leverage optimal measures to ensure more profitability for the Client.</p>
                     <div class="five-columns">
@@ -42,12 +45,17 @@
                         </div>
                         <?php endforeach; ?>
                     </div>
+                    <?php endif; ?>
+
+                    <?php if(!empty($clientsList)): ?>
                     <h2>Our Clients</h2>
                     <ul class="partners-list">
-                        <?php foreach($partnersList as $item) : ?>
-                        <li><a href="<?php echo $item->url; ?>"><span><img src="images/partners/<?php echo $item->id; ?>/<?php echo $item->img; ?>" alt="#"/></span></a></li>
+                        <?php foreach($clientsList as $item) : ?>
+                        <li><a href="#"><span><img src="images/stories/<?php echo $item->id; ?>/<?php echo $item->pic; ?>" alt="#"/></span></a></li>
                         <?php endforeach; ?>
                     </ul>
+                    <?php endif; ?>
+
                     <h2>Testimonials</h2>
                     <div class="three-columns">
                         <div class="col">
