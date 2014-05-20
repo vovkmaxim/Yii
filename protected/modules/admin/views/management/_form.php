@@ -55,8 +55,14 @@
     </div>
 
     <div class="control-group">
+        Форматы картинки JPG, JPEG, BMP, GIF, PNG
+    </div>
+
+    <?php if(!empty($model->img)): ?>
+    <div class="control-group">
         Картинка - <a href="/images/management/<?php echo $model->id; ?>/<?php echo $model->img; ?>" target="_blank"><?php echo $model->img; ?></a>
     </div>
+    <?php endif; ?>
 
     <div class="control-group">
         <?php echo $form->fileField($model, 'img'); ?>

@@ -6,10 +6,11 @@
  * The followings are the available columns in table 'partners':
  * @property integer $id
  * @property string $url
- * @property string $icon
+ * @property string $img
  */
 class Partners extends CActiveRecord
 {
+    public $img;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -23,12 +24,17 @@ class Partners extends CActiveRecord
 	 */
 	public function rules()
 	{
-        return array(
-            array('url', 'url', 'message' => 'Некорректный URL'),
-            array('url', 'required', 'message' => 'Некорректный URL'),
-            array('icon', 'file', 'allowEmpty' => false, 'types' => 'jpg, jpeg, png, gif, ico', 'wrongType' => 'Для иконки можно загрузить только картинку', 'on' => 'insert'),
-            array('icon', 'file', 'allowEmpty' => true, 'types' => 'jpg, jpeg, png, gif, ico', 'wrongType' => 'Для иконки можно загрузить только картинку', 'on' => 'update')
-        );
+		// NOTE: you should only define rules for those attributes that
+		// will receive user inputs.
+		return array(
+			array('url, img', 'required'),
+			array('url, img', 'length', 'max'=>255),
+            array('img', 'file', 'allowEmpty' => false, 'types' => 'jpg, jpeg, png, gif, bmp', 'on' => 'insert'),
+            array('img', 'file', 'allowEmpty' => true, 'types' => 'jpg, jpeg, png, gif, bmp', 'on' => 'update'),
+			// The following rule is used by search().
+			// @todo Please remove those attributes that should not be searched.
+			array('id, url, img', 'safe'),
+		);
 	}
 
 	/**
@@ -49,8 +55,8 @@ class Partners extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'url' => 'Ссылка на страницу партнера',
-			'icon' => 'Иконка',
+			'url' => 'Ссылка',
+			'img' => 'Картинка',
 		);
 	}
 
@@ -74,7 +80,7 @@ class Partners extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('url',$this->url,true);
-		$criteria->compare('icon',$this->icon,true);
+		$criteria->compare('img',$this->img,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

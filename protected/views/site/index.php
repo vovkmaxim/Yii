@@ -44,14 +44,9 @@
                     </div>
                     <h2>Our Clients</h2>
                     <ul class="partners-list">
-                        <li><a href="#"><span><img src="images/tmp/partner1.jpg" alt="#"/></span></a></li>
-                        <li><a href="#"><span><img src="images/tmp/partner2.jpg" alt="#"/></span></a></li>
-                        <li><a href="#"><span><img src="images/tmp/partner3.jpg" alt="#"/></span></a></li>
-                        <li><a href="#"><span><img src="images/tmp/partner4.jpg" alt="#"/></span></a></li>
-                        <li><a href="#"><span><img src="images/tmp/partner1.jpg" alt="#"/></span></a></li>
-                        <li><a href="#"><span><img src="images/tmp/partner2.jpg" alt="#"/></span></a></li>
-                        <li><a href="#"><span><img src="images/tmp/partner3.jpg" alt="#"/></span></a></li>
-                        <li><a href="#"><span><img src="images/tmp/partner4.jpg" alt="#"/></span></a></li>
+                        <?php foreach($partnersList as $item) : ?>
+                        <li><a href="<?php echo $item->url; ?>"><span><img src="images/partners/<?php echo $item->id; ?>/<?php echo $item->img; ?>" alt="#"/></span></a></li>
+                        <?php endforeach; ?>
                     </ul>
                     <h2>Testimonials</h2>
                     <div class="three-columns">
