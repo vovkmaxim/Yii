@@ -1091,12 +1091,12 @@ h2.technology-header{
     margin: 0 0 0 10px;
 }
 /* end marketing.html */
-.popup_holder{
+.popup_header_holder{
     background: #fff;
     padding: 0 25px;
-    position: relative;
     display: inline-block;
-    left: 14%;
+    left: 22%;
     padding: 0 20px;
-    top: -27px;
+    position: relative;
+    top: -22px;
 }

@@ -85,7 +85,7 @@
 }
 #colorbox h1:after{background: #000;}
 #inline-content{
-    width: 331px;
+    width: 388px;
     border: 1px solid #848484;
     background: #fff;
     position: relative;
@@ -195,7 +195,7 @@
 #inline-content .submit-holder{
     text-align: center;
     bottom: -19px;
-    left: 25%;
+    left: 29%;
     position: relative;
     text-align: center;
     background: #fff;
@@ -207,7 +207,7 @@
     display: block;
     clear: both;
 }
-#inline-content .submit-holder input[type="submit"]{
+#inline-content input[type="submit"]{
     text-align: center;
     height: 39px;
     border: 2px solid #000;
@@ -218,10 +218,63 @@
     font: 18px/39px 'CalibriBold', Tahoma, Geneva, Arial, Helvetica, sans-serif;
     padding: 0;
 }
-#inline-content .submit-holder input[type="submit"]:hover{
+#inline-content input[type="submit"]:hover{
     color: #fff;
     background: #000;
 }
 .form-row label span{
     color:red;
 }
+/* popup marketing_documents */
+.form_documents .popup_header_holder{
+    left: 10%;
+    padding: 0 10px;
+    position: relative;
+    top: -27px;
+}
+.form_documents p{
+    text-align: center;
+}
+.form_documents input[type=checkbox], .form_documents input[type=email]{
+    float: left;
+    margin: 0 2% 0 0;
+}
+#inline-content .form_documents label{
+    float: left;
+    max-width: 83%;
+    font: 12px/15px 'CalibriRegular',Arial,Helvetica,sans-serif;
+    position: relative;
+    padding: 0 0 0 30px;
+}
+.form_documents label:before{
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    background:url(../images/pdf-icon0.png) no-repeat;
+    width: 22px;
+    height: 27px;
+}
+.form_documents .row{
+    margin: 0 0 20px;
+}
+#inline-content .form_documents .submit-holder{
+    text-align: center;
+    position: static;
+    padding: 0;
+    width: 100%;
+}
+#inline-content .form_documents .submit-holder input[type=submit]{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 20px;
+    min-width: 300px;
+}
+#inline-content .form_documents .two-columns input[type=submit]{
+    height: 33px;
+    float: right;
+}
+#colorbox .form_documents h1{
+    margin: 0 0 10px;
+}
+/* end popup marketing_documents */
