@@ -90,6 +90,19 @@ $(function () {
         }
     }).disableSelection();
 
+    $(".conditions tbody").sortable({
+        helper: fixHelper,
+        update: function (event, ui) {
+            var order = $(this).sortable("serialize");
+            $.ajax({
+                url: '/admin/conditions/saveorder?' + order,
+                data: {order: order},
+                success: function (result) {
+                }
+            })
+        }
+    }).disableSelection();
+
     $(".projects tbody").sortable({
         helper: fixHelper,
         update: function (event, ui) {

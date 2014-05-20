@@ -53,6 +53,11 @@
                         <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/projects">Проекты</a>
                     </li>
                     <?php endif; ?>
+                    <?php if (!in_array($role, AuthUser::$denies['ConditionsController'])) : ?>
+                        <li <?php echo ($this->active == 'conditions') ? 'class="active"' : ''; ?>>
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/conditions">Условия</a>
+                        </li>
+                    <?php endif; ?>
                     <?php if (!in_array($role, AuthUser::$denies['VacanciesController'])) : ?>
                     <li <?php echo ($this->active == 'vacancies') ? 'class="active"' : ''; ?>>
                         <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/vacancies">Вакансии</a>
