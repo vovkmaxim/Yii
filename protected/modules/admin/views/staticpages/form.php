@@ -56,7 +56,6 @@
     )
 ); ?>
 
-<?php //echo $form->textFieldRow($model, 'etc', array('class' => "input-xxlarge",)); ?>
 
     <div class="form-actions">
         <?php $this->widget(

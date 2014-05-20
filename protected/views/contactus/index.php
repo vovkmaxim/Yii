@@ -1,6 +1,5 @@
 <h1>Contact Us</h1>
 
-
 <p>General queries: <?php echo $model2->general;?></p>
 <p>Job orrortunities: <?php echo $model2->jobs;?></p>
 <p>Partnership: <?php echo $model2->partnership;?></p>

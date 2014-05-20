@@ -12,7 +12,8 @@
                     'name' => 'title',
                     'value' => 'CHtml::link(
                                     $data->title,
-                                    array("/staticpages/index","page"=>$data->title),
+//                                    array("/staticpages/index","page"=>$data->title),
+                                    array("/$data->title"),
                                     array("target"=>"_blank")
                                 )',
                     'type' => 'raw',

@@ -12,7 +12,7 @@ $import = include 'import.php';
 return array(
     'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
     'name'=>'My Web Application',
-//    'language' => 'ru',
+    'language' => 'ru',
 
     // preloading component
     'preload' => array(
@@ -63,8 +63,8 @@ return array(
                 '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
                 '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 
-                'contactus' => 'contactus/index',
-                'successstories' => 'successstories/index',
+//                'contactus' => 'contactus/index',
+//                'successstories' => 'successstories/index',
                 'projects' => 'projects/index',
                 'admin' => 'admin/default/index',
                 '<module:\w+>/<controller:\w+>'=>'<module>/<controller>/index',
