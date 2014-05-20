@@ -277,4 +277,8 @@
 #colorbox .form_documents h1{
     margin: 0 0 10px;
 }
+.form_documents .error{
+    font: 12px/15px 'CalibriRegular',Arial,Helvetica,sans-serif;
+    color:red;
+}
 /* end popup marketing_documents */
