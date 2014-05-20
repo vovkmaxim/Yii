@@ -31,11 +31,13 @@ class SiteController extends Controller
         $conditionsList = Conditions::model()->findAll(array('order' => 'position'));
         $techList = Tech::model()->findAll(array('order' => 'position', 'limit' => 5));
         $clientsList = Successstories::model()->findAll();
+        $file = Documents::model()->findAll();
 
         $this->render('index', array(
                 'techList' => $techList,
                 'conditionsList' => $conditionsList,
                 'clientsList' => $clientsList,
+                'files' => $file,
             )
         );
     }
