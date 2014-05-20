@@ -2,6 +2,7 @@
 
 class SiteController extends Controller
 {
+    public $layout = 'main';
     /**
      * Declares class-based actions.
      */
@@ -27,24 +28,10 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $request = Yii::app()->request;
-        $techList = Tech::model()->with('techLists')->findAll(array('order' => 't.position'));
-        $projects = Projects::model()->with('projectsPics')->findAll();
-        $vacancies = Vacancies::model()->findAll(array('order' => 'position'));
-        $profile = Text::getCompanyProfile();
-        $partners = Partners::model()->findAll();
-        
-        $file = Documents::model()->findAll();
-        $slides = Slides::model()->findAll(array('order' => 'position'));
+        $techList = Tech::model()->with('techLists')->findAll(array('order' => 't.position', 'limit' => 5));
 
         $this->render('index', array(
-                'tech' => $techList,
-                'projects' => $projects,
-                'jobs' => $vacancies,
-                'profile' => $profile,
-                'partners' => $partners,
-                'files' => $file,
-                'slides' => $slides,
+                'techList' => $techList
             )
         );
     }

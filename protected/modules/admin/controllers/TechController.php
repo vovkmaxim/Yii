@@ -21,11 +21,13 @@ class TechController extends AdminController
         if (isset($_POST['Tech'])) {
             $model->attributes = $_POST['Tech'];
             if ($model->save()) {
-                foreach($_POST['list'] as $item){
-                    $techList = new TechList;
-                    $techList->tech_id = $model->id;
-                    $techList->title = $item;
-                    $techList->save(false);
+                if(!empty($_POST['list'])){
+                    foreach($_POST['list'] as $item){
+                        $techList = new TechList;
+                        $techList->tech_id = $model->id;
+                        $techList->title = $item;
+                        $techList->save(false);
+                    }
                 }
                 $this->redirect('/admin/tech/index');
             }
@@ -48,15 +50,19 @@ class TechController extends AdminController
                 foreach($list as $item){
                     TechList::model()->deleteByPk($item->id);
                 }
-                foreach($_POST['list'] as $item){
-                    $techList = new TechList;
-                    $techList->tech_id = $model->id;
-                    $techList->title = $item;
-                    $techList->save(false);
+                if(!empty($_POST['list'])){
+                    foreach($_POST['list'] as $item){
+                        $techList = new TechList;
+                        $techList->tech_id = $model->id;
+                        $techList->title = $item;
+                        $techList->save(false);
+                    }
                 }
+
                 $this->redirect('/admin/tech/index');
             }
         }
+
         $this->render('edit', array('model' => $model, 'list' => $list));
     }
 
