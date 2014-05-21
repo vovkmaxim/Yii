@@ -1099,3 +1099,18 @@ h2.technology-header{
     position: relative;
     top: -22px;
 }
+/*------------------------media----------------------*/
+@media screen and (max-width: 585px){
+    .logo{
+        float: none;
+        margin: 0 auto;
+    } 
+    #nav{
+        float: none;
+    }
+    #nav li{
+        float: none;
+        display: inline-block;
+    }
+}
+/*------------------------end media------------------*/
