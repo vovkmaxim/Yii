@@ -424,11 +424,10 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     vertical-align: middle;
 }
 #header .main_header_holder{
-    position: absolute;
-    margin: -38px 0 0 -38px;
     text-align: center;
-    top: 50%;
-    left: 50%;
+    max-width: 960px;
+    padding: 115px 0 0;
+    margin: 0 auto;
 }
 #header h1:after{
     background: #fff;
