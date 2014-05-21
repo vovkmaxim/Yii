@@ -318,62 +318,7 @@ function initSameHeight() {
 }
 
 function initPopup() {
-	var open = ($('input[name=open]').val() == 1) ? true : false;
-	var title = '';
-	var message = '';
-	if (open) {
-		var postedJobTitle = $('input[name=job-title]').val();
-		title = $('input[name=title]').val();
-		message = $('input[name=message]').val();
-	}
-	$('.inline').colorbox({
-		open: open,
-		inline: true,
-		// transition: 'none',
-		initialWidth: 433,
-		initialHeight: 300,
-		speed: 400,
-		onOpen: function() {
-			var errorSubject = ($('input[name=error_subject]').length > 0);
-			var errorCv = ($('input[name=error_cv]').length > 0);
-			if ($('input[name=job_id]').length > 0) {
-				var jobId = $('input[name=job_id]').val();
-			} else {
-				var jobId = $(this).attr('id');
-			}
-			$('#inline-content input[name=jobid]').val(jobId);
-			if (postedJobTitle !== undefined) {
-				jobTitle = postedJobTitle;
-			} else {
-				jobTitle = $(this).parent().find('h2').text();
-			}
-			$('#inline-content .job-title').text(jobTitle);
-			if (errorSubject | errorCv) {
-				$('#inline-content .form-row input[name=title]').val(title);
-				$('#inline-content textarea').val(message);
-
-				var errorMessage = '';
-				if (errorSubject) {
-					errorMessage += "Введите тему письма . <br>";
-				}
-				if (errorCv) {
-					errorMessage += "Вы должны загрузить файл с резюме . <br>";
-				}
-				$('.send-cv .alert').html(errorMessage);
-				$('.send-cv .alert').show();
-			} else {
-				if ($('input[name="success"]').length > 0) {
-					$('.send-cv .success').html('Спасибо за отправку резюме.');
-					$('.send-cv .success').show();
-					setTimeout(function() {
-						location.href="/";
-					}, 1000);
-				}
-			}
-
-		}
-	});
-
+    $('a.inline').colorbox();
 }
 
 function getRandomInt(min, max){
