@@ -8,16 +8,12 @@
         <div class="col">
             <?php
             $i = 1;
-            foreach($files as $item) {
-                echo '
-                                <div class="row group">
-                                    <input type="checkbox" id="doc1" name="file'. $i .'" value="'. $item->file .'">
-                                    <label for="doc1">'. $item->title .'</label>
-                                </div>
-                            ';
-                $i++;
-            }
-            ?>
+            foreach($files as $item) : ?>
+                <div class="row group">
+                    <input type="checkbox" id="doc<?php echo $i; ?>" name="file<?php echo $i; ?>" value="<?php echo $item->file; ?>" <?php if($_GET['id'] == $item->id) echo 'checked'; ?>>
+                    <label for="doc<?php echo $i; ?>"><?php echo $item->title; ?></label>
+                </div>
+            <?php $i++; endforeach; ?>
         </div>
     </div>
     <div class="submit-holder">
