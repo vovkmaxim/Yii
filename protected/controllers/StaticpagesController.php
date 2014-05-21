@@ -11,7 +11,7 @@ class StaticpagesController extends Controller
                                 'Success_Stories',  //work
                                 'Vacancies',        //work
                                 'Management',       //work
-                                'Marketing',
+                                'Marketing',        //work
                                 'Expertise',        //don`t work
 
                             )
