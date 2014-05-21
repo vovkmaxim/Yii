@@ -19,7 +19,7 @@
                     </div>
 
                     <?php if(!empty($conditionsList)): ?>
-                    <h2>Work Conditions<a href="#inline-content" class="inline cboxElement"><img src="images/pdf-icon0.png" alt=""></a></h2>
+                    <h2>Work Conditions<a href="/popup/DocumentsAll?key=WorkConditions" class="inline cboxElement" id="documents"><img src="images/pdf-icon0.png" alt=""></a></h2>
                     <p>CHI Software is flexible to follow different business models and leverage optimal measures to ensure more profitability for the Client.</p>
                     <div class="four-columns">
                         <?php foreach($conditionsList as $item) : ?>
@@ -80,76 +80,3 @@
     </div>
 </div>
 <div id="bg"><img src="images/backgrounds/bg-body1.jpg" alt="" /></div>
-<div class="popup-hide">
-    <div id="inline-content">
-        <?php echo CHtml::beginForm('','', array('class' => 'form_documents')); ?>
-            <div class="popup_header_holder">
-                <h1>CHI Marketing Documents</h1>
-            </div>
-            <p>Please select what marketing documents you would like to download.</p>
-            <div class="two-columns group">
-                <div class="col">
-                    <?php
-                    $i = 1;
-                    foreach($files as $item) {
-                        echo '
-                                <div class="row group">
-                                    <input type="checkbox" id="doc1" name="file'. $i .'" value="'. $item->file .'">
-                                    <label for="doc1">'. $item->title .'</label>
-                                </div>
-                            ';
-                        $i++;
-                    }
-                    ?>
-                </div>
-            </div>
-            <div class="submit-holder">
-                <?php
-                echo CHtml::ajaxSubmitButton('Download Selected Documents', Yii::app()->request->baseUrl.'/index.php/ajax/documents', array(
-                        'type' => 'POST',
-                        'dataType' => 'json',
-                        'success'=>'function (data) {
-						if(data.true) {
-							$.colorbox.close();
-							location.href = "documents/"+data.true;
-						}
-					}'
-                    ),
-                    array(
-                        'type' => 'submit'
-                    ));
-                ?>
-            </div>
-            <div class="two-columns group">
-                <div class="col">
-                    <input type="email" placeholder="email" name="email">
-                    <span class="error" id="error"></span>
-                </div>
-                <div class="col group">
-                    <?php
-                    echo CHtml::ajaxSubmitButton('Send', Yii::app()->request->baseUrl.'/index.php/ajax/documentsemail', array(
-                            'type' => 'POST',
-                            'dataType' => 'json',
-                            'success'=>'function (data) {
-                                if(data.true) {
-                                    function boxClose(){
-                                        $.colorbox.close();
-                                    }
-                                    setTimeout(boxClose,5000);
-                                    $("#message").html(data.true);
-                                }
-                                if(data.error) {
-                                    $("#error").html(data.error);
-                                }
-                            }'
-                        ),
-                        array(
-                            'type' => 'submit'
-                        ));
-                    ?>
-                </div>
-            </div>
-            <p id="message"></p>
-        <?php echo CHtml::endForm(); ?>
-    </div>
-</div>
