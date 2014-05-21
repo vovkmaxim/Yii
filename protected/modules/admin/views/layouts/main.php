@@ -70,11 +70,11 @@
                         <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/vacancies">Вакансии</a>
                     </li>
                     <?php endif; ?>
-                    <?php if (!in_array($role, AuthUser::$denies['PartnersController'])) : ?>
-                        <li <?php echo ($this->active == 'partners') ? 'class="active"' : ''; ?>>
-                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/partners">Партнеры</a>
-                        </li>
-                    <?php endif; ?>
+<!--                    --><?php //if (!in_array($role, AuthUser::$denies['PartnersController'])) : ?>
+<!--                        <li --><?php //echo ($this->active == 'partners') ? 'class="active"' : ''; ?><!-->
+<!--                            <a href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/admin/partners">Партнеры</a>-->
+<!--                        </li>-->
+<!--                    --><?php //endif; ?>
                     <?php if (!in_array($role, AuthUser::$denies['DocumentsController'])) : ?>
                         <li <?php echo ($this->active == 'documents') ? 'class="active"' : ''; ?>>
                             <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/documents">Документы</a>

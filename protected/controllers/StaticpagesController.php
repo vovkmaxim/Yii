@@ -2,9 +2,17 @@
 
 class StaticpagesController extends Controller
 {
-	public $layout = '//layouts/static';
+	public $layout = '//layouts/page';
 
-	public function actionIndex($page)
+    public function loadModel($id)
+    {
+        $model=Contactus::model()->findByPk($id);
+        if($model===null)
+            throw new CHttpException(404,'The requested page does not exist.');
+        return $model;
+    }
+
+    public function actionIndex($page)
 	{
         if (in_array($page, array(
                                 'Contact_us',       //work
@@ -34,7 +42,6 @@ class StaticpagesController extends Controller
 
     public function actionContact_us()
     {
-        $this->layout='//layouts/contactus';
         $modelContactdata = Contactdata::model()->find();
         $modelContactus = Contactus::model()->findAll();
 
