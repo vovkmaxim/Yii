@@ -239,14 +239,17 @@
     float: left;
     margin: 0 2% 0 0;
 }
-#inline-content .form_documents label{
+#inline-content .form_documents .row label{
     float: left;
     max-width: 83%;
     font: 12px/15px 'CalibriRegular',Arial,Helvetica,sans-serif;
     position: relative;
     padding: 0 0 0 30px;
 }
-.form_documents label:before{
+#inline-content .form_documents .form-row{
+    padding: 0 0 20px;
+}
+.form_documents .row label:before{
     content: '';
     position: absolute;
     top: -4px;
@@ -268,7 +271,8 @@
     display: inline-block;
     vertical-align: top;
     margin: 0 0 20px;
-    min-width: 300px;
+    min-width: 121px;
+    padding: 0 5px;
 }
 #inline-content .form_documents .two-columns input[type=submit]{
     height: 33px;
@@ -280,5 +284,9 @@
 .form_documents .error{
     font: 12px/15px 'CalibriRegular',Arial,Helvetica,sans-serif;
     color:red;
+    display: none;
+}
+.form_documents .success{
+    display: none;
 }
 /* end popup marketing_documents */

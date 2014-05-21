@@ -51,7 +51,7 @@
                     </div>
 
                     <?php if(!empty($conditionsList)): ?>
-                    <h2>Work Conditions<a href="#inline-content" class="inline cboxElement"><img src="images/pdf-icon0.png" alt=""></a></h2>
+                    <h2>Work Conditions<a href="/popup/DocumentsAll?id=1" class="inline cboxElement"><img src="images/pdf-icon0.png" alt=""></a></h2>
                     <p>CHI Software is flexible to follow different business models and leverage optimal measures to ensure more profitability for the Client.</p>
                     <div class="four-columns">
                         <?php foreach($conditionsList as $item) : ?>
@@ -64,7 +64,7 @@
                     <?php endif; ?>
 
                     <?php if(!empty($techList)): ?>
-                    <h2>Our Expertise <a href="#"><img src="images/pdf-icon0.png" alt="" width="22" height="27"></a></h2>
+                    <h2>Our Expertise <a href="/popup/DocumentsAll?id=2" class="inline cboxElement"><img src="images/pdf-icon0.png" alt="" width="22" height="27"></a></h2>
                     <p>CHI Software is flexible to follow different business models and leverage optimal measures to ensure more profitability for the Client.</p>
                     <div class="five-columns">
                         <?php foreach($techList as $item) : ?>
@@ -126,6 +126,7 @@
         </section>
     </div>
 </div>
+<<<<<<< HEAD
 <div id="bg"><img src="images/backgrounds/bg-body1.jpg" alt="" /></div>
 <div class="popup-hide">
     <div id="inline-content">
@@ -200,3 +201,6 @@
         <?php echo CHtml::endForm(); ?>
     </div>
 </div>
+=======
+<div id="bg"><img src="images/backgrounds/bg-body1.jpg" alt="" /></div>
+>>>>>>> f330ac758140bbf931c534fda9b230d4e5f03594

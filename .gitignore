@@ -2,12 +2,5 @@
 /pics
 /protected/runtime/
 .idea/
-/images
-/images/partners
-/images/stories
-/slides
 assets/
-/documents
-/cv
-/partners
 /protected/config/database.php
