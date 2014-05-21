@@ -7,17 +7,17 @@ class StaticpagesController extends Controller
 	public function actionIndex($page)
 	{
         if (in_array($page, array(
-                                'Contactus',
-                                'Success_Stories',
-                                'Vacancies',
-                                'Management',
+                                'Contact_us',       //work
+                                'Success_Stories',  //work
+                                'Vacancies',        //work
+                                'Management',       //work
                                 'Marketing',
-                                'Expertise',
+                                'Expertise',        //don`t work
 
                             )
             ))
            {
-            $this->redirect($page);
+            $this->redirect(Yii::app()->request->baseUrl.'/staticpages/'.$page);
             Yii::app()->end();
         }
         $model = Staticpages::model()->findByAttributes(array('title' => $page));
@@ -32,7 +32,7 @@ class StaticpagesController extends Controller
         $this->redirect(Yii::app()->request->baseUrl);
 	}
 
-    public function actionContactus()
+    public function actionContact_us()
     {
         $this->layout='//layouts/contactus';
         $modelContactdata = Contactdata::model()->find();
@@ -45,10 +45,10 @@ class StaticpagesController extends Controller
         ));
     }
 
-    public function actionSuccess_stories($page)
+    public function actionSuccess_Stories()
     {
-//        $this->layout='//layouts/successstories';
-        $modelStatic = Staticpages::model()->findByAttributes(array('title' => 'Success_stories'));
+        $this->layout='//layouts/successstories';
+        $modelStatic = Staticpages::model()->findByAttributes(array('title' => 'Success_Stories'));
         $modelDynamic = Successstories::model()->findAll();
 
 
@@ -58,10 +58,10 @@ class StaticpagesController extends Controller
         ));
     }
 
-    public function actionVacancies($page)
+    public function actionVacancies()
     {
         $this->layout='//layouts/vacancies';
-        $modelStatic = Staticpages::model()->findByAttributes(array('title' => $page));
+        $modelStatic = Staticpages::model()->findByAttributes(array('title' => 'Vacancies'));
         $modelDynamic = Vacancies::model()->findAll();
 
 
@@ -71,10 +71,10 @@ class StaticpagesController extends Controller
         ));
     }
 
-    public function actionManagement($page)
+    public function actionManagement()
     {
         $this->layout='//layouts/management';
-        $modelStatic = Staticpages::model()->findByAttributes(array('title' => $page));
+        $modelStatic = Staticpages::model()->findByAttributes(array('title' => 'Management'));
         $modelDynamic = Management::model()->findAll();
 
 
@@ -84,11 +84,11 @@ class StaticpagesController extends Controller
         ));
     }
 
-    public function actionMarketing($page)
+    public function actionMarketing()
     {
         $this->layout='//layouts/marketing';
-        $modelStatic = Staticpages::model()->findByAttributes(array('title' => $page));
-        $modelDynamic = Marketing::model()->findAll();
+        $modelStatic = Staticpages::model()->findByAttributes(array('title' => 'Marketing'));
+        $modelDynamic = Documents::model()->findAll();
 
 
         $this->render('marketing', array(
@@ -97,16 +97,18 @@ class StaticpagesController extends Controller
         ));
     }
 
-    public function actionExpertise($page)
+    public function actionExpertise()
     {
         $this->layout='//layouts/expertise';
-        $modelStatic = Staticpages::model()->findByAttributes(array('title' => $page));
-        $modelDynamic = Expertise::model()->findAll();
+        $modelStatic = Staticpages::model()->findByAttributes(array('title' => 'Expertise'));
+        $modelProjects = Projects::model()->findAll();
+        $modelTech = Tech::model()->findAll();
 
 
         $this->render('expertise', array(
             'modelStatic' => $modelStatic,
-            'modelDynamic' => $modelDynamic,
+            'modelProjects' => $modelProjects,
+            'modelTech' => $modelTech,
         ));
     }
 }

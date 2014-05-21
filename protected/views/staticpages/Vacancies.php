@@ -1,4 +1,5 @@
-<h2>Management</h2>
+<h2>Vacancies</h2>
+
 $Model:
 <pre><?php var_dump($modelStatic); ?></pre>
 <br>
