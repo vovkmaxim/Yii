@@ -47,8 +47,8 @@
             <?php if (!empty($list)) : ?>
                 <?php foreach ($list as $item) : ?>
                     <div class="input-list">
-                        <span><?php echo $item; ?></span>
-                        <input type="hidden" name="list[]" value="<?php echo $item; ?>"/>
+                        <span><?php echo $item->title; ?></span>
+                        <input type="hidden" name="list[]" value="<?php echo $item->title; ?>"/>
                         <a href="#" title="Удалить элемент" class="icon-remove delete-element"> </a>
                     </div>
                 <?php endforeach; ?>

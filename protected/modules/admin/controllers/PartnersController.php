@@ -7,69 +7,47 @@ class PartnersController extends AdminController
     }
 
     public function actionIndex() {
-        $partners = Partners::model()->findAll();
-        $this->render('index', array('partners' => $partners));
+        $model = Partners::model()->findAll();
+        $this->render('index', array('model' => $model));
     }
 
-    public function actionAdd() {
-        if (Yii::app()->user->hasFlash('success')) {
-            header('Refresh:2; url=' . Yii::app()->getBaseUrl(true) . '/admin/partners');
-        }
-        $form = new Partners();
-        $form->setScenario('insert');
+    function initSave(Partners $model)
+    {
         if (isset($_POST['Partners'])) {
-
-            $form->attributes = $_POST['Partners'];
-            $form->icon=CUploadedFile::getInstance($form,'icon');
-            if ($form->save()) {
-                mkdir('partners' . DIRECTORY_SEPARATOR . $form->id);
-                $form->icon->saveAs('partners/' . $form->id . '/' . $form->icon->getName());
-                Yii::app()->user->setFlash('success', 'Запись добавлена успешно!');
-                $this->redirect(array('/admin/partners/add'));
+            // Save process
+            $oldImg = $model->img;
+            $model->attributes = $_POST['Partners'];
+            $uploadFile = CUploadedFile::getInstance($model, 'img');
+            if($uploadFile !== null) {
+                $model->img = $uploadFile;
             }
-        }
-
-        $this->render('add', array('model' => $form));
-    }
-
-    public function actionEdit($id) {
-        if ($id == 0) {
-            throw new CHttpException(404, 'Invalid request');
-        }
-        if (Yii::app()->user->hasFlash('success')) {
-            header('Refresh:2; url=' . Yii::app()->getBaseUrl(true) . '/admin/partners');
-        }
-        $form = Partners::model()->findByPk($id);
-        $form->setScenario('update');
-
-        $oldIconFileName = 'partners' . DIRECTORY_SEPARATOR . $form->id . DIRECTORY_SEPARATOR . $form->icon;
-        $oldIcon = $form->icon;
-        if (isset($_POST['Partners'])) {
-
-            $form->attributes = $_POST['Partners'];
-
-            $form->icon=CUploadedFile::getInstance($form,'icon');
-            if ($form->icon === null) {
-                $form->icon = $oldIcon;
-            }
-            if ($form->save()) {
-                if (!is_dir('partners' . DIRECTORY_SEPARATOR . $form->id)) {
-                    mkdir('partners' . DIRECTORY_SEPARATOR . $form->id);
-                }
-                if (is_object($form->icon)) {
-                    clearstatcache();
-                    if (is_file($oldIconFileName)) {
-                        unlink($oldIconFileName);
+            if ($model->save()) {
+                if (!empty($uploadFile)){
+                    if(!is_dir('images/partners/'. $model->id)){
+                        mkdir('images/partners/'. $model->id);
                     }
-                    $form->icon->saveAs('partners/' . $form->id . '/' . $form->icon->getName());
+                    $model->img->saveAs('images/partners/'. $model->id . '/' . $model->img->getName());
+                    if(is_file('images/partners/'. $model->id . '/' . $oldImg)) {
+                        unlink('images/partners/'. $model->id . '/' . $oldImg);
+                    }
                 }
-
-                Yii::app()->user->setFlash('success', 'Запись обновлена успешно!');
-                $this->redirect(array('/admin/partners/edit/id/' . $form->id));
+                $this->redirect('/admin/partners');
             }
-
         }
-        $this->render('edit', array('model' => $form));
+    }
+
+    public function actionAdd()
+    {
+        $model = new Partners();
+        $this->initSave($model);
+        $this->render('add', array('model' => $model));
+    }
+
+    public function actionEdit($id)
+    {
+        $model = Partners::model()->findByPk($id);
+        $this->initSave($model);
+        $this->render('edit', array('model' => $model));
     }
 
     public function actionDelete($id) {
@@ -77,14 +55,21 @@ class PartnersController extends AdminController
         if ($id == 0) {
             throw new CHttpException(404, 'Invalid request');
         }
-        $partner = Partners::model()->findByPk($id);
-        $icon = 'partners' . DIRECTORY_SEPARATOR . $partner->id . DIRECTORY_SEPARATOR . $partner->icon;
-        if (is_file($icon)) {
-            unlink($icon);
-            rmdir('partners' . DIRECTORY_SEPARATOR . $partner->id);
+        $model = Partners::model()->findByPk($id);
+        if($model->delete()){
+            $this->removeDirectory('images/partners/'. $model->id);
         }
-        $partner->delete();
-        header('Location:' . Yii::app()->getBaseUrl(true) . '/admin/partners');
+
+        $this->redirect('/admin/partners');
         exit();
+    }
+
+    function removeDirectory($dir) {
+        if ($objs = glob($dir."/*")) {
+            foreach($objs as $obj) {
+                is_dir($obj) ? removeDirectory($obj) : unlink($obj);
+            }
+        }
+        rmdir($dir);
     }
 }

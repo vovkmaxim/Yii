@@ -1,22 +1,20 @@
 <?php
 
 /**
- * This is the model class for table "partners".
+ * This is the model class for table "navigation_categories".
  *
- * The followings are the available columns in table 'partners':
+ * The followings are the available columns in table 'navigation_categories':
  * @property integer $id
- * @property string $url
- * @property string $img
+ * @property string $title
  */
-class Partners extends CActiveRecord
+class NavigationCategories extends CActiveRecord
 {
-    public $img;
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'partners';
+		return 'navigation_categories';
 	}
 
 	/**
@@ -27,13 +25,11 @@ class Partners extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('url, img', 'required'),
-			array('url, img', 'length', 'max'=>255),
-            array('img', 'file', 'allowEmpty' => false, 'types' => 'jpg, jpeg, png, gif, bmp', 'on' => 'insert'),
-            array('img', 'file', 'allowEmpty' => true, 'types' => 'jpg, jpeg, png, gif, bmp', 'on' => 'update'),
+			array('title', 'required'),
+			array('title', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, url, img', 'safe'),
+			array('id, title', 'safe'),
 		);
 	}
 
@@ -55,8 +51,7 @@ class Partners extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'url' => 'Ссылка',
-			'img' => 'Картинка',
+			'title' => 'Название',
 		);
 	}
 
@@ -79,8 +74,7 @@ class Partners extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('url',$this->url,true);
-		$criteria->compare('img',$this->img,true);
+		$criteria->compare('title',$this->title,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -91,10 +85,21 @@ class Partners extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Partners the static model class
+	 * @return NavigationCategories the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
 	}
+
+    public static function titleList()
+    {
+        $navRes = NavigationCategories::model()->findAll();
+        $navList = array();
+        $navList[0] = '';
+        array_map(function($element) use (&$navList) {
+            $navList[$element->id] = $element->title;
+        }, $navRes);
+        return $navList;
+    }
 }

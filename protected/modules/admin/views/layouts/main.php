@@ -22,7 +22,6 @@
                 <ul class="nav pull-right">
                     <li class="dropdown">
                         <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i> Admin <i class="caret"></i>
-
                         </a>
                         <ul class="dropdown-menu">
                             <li>
@@ -33,6 +32,19 @@
                 </ul>
                 <?php $role = (isset(Yii::app()->user->model->role)) ? Yii::app()->user->model->role : 0; ?>
                 <ul class="nav">
+                    <?php if (!in_array($role, AuthUser::$denies['MenuController'])) : ?>
+                        <li <?php echo ($this->active == 'menu') ? 'class="active"' : ''; ?>>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Меню</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/menu">Управление</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/menuCategories">Категории</a>
+                                </li>
+                            </ul>
+                        </li>
+                    <?php endif; ?>
                     <?php if (!in_array($role, AuthUser::$denies['TechController'])) : ?>
                     <li <?php echo ($this->active == 'tech') ? 'class="active"' : ''; ?>>
                         <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/tech">Технологии</a>
@@ -47,6 +59,11 @@
                     <li <?php echo ($this->active == 'projects') ? 'class="active"' : ''; ?>>
                         <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/projects">Проекты</a>
                     </li>
+                    <?php endif; ?>
+                    <?php if (!in_array($role, AuthUser::$denies['ConditionsController'])) : ?>
+                        <li <?php echo ($this->active == 'conditions') ? 'class="active"' : ''; ?>>
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/conditions">Условия</a>
+                        </li>
                     <?php endif; ?>
                     <?php if (!in_array($role, AuthUser::$denies['VacanciesController'])) : ?>
                     <li <?php echo ($this->active == 'vacancies') ? 'class="active"' : ''; ?>>

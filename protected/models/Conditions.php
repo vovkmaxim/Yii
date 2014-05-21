@@ -1,22 +1,22 @@
 <?php
 
 /**
- * This is the model class for table "partners".
+ * This is the model class for table "conditions".
  *
- * The followings are the available columns in table 'partners':
+ * The followings are the available columns in table 'conditions':
  * @property integer $id
- * @property string $url
- * @property string $img
+ * @property string $title
+ * @property string $description
+ * @property integer $position
  */
-class Partners extends CActiveRecord
+class Conditions extends CActiveRecord
 {
-    public $img;
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'partners';
+		return 'conditions';
 	}
 
 	/**
@@ -27,13 +27,12 @@ class Partners extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('url, img', 'required'),
-			array('url, img', 'length', 'max'=>255),
-            array('img', 'file', 'allowEmpty' => false, 'types' => 'jpg, jpeg, png, gif, bmp', 'on' => 'insert'),
-            array('img', 'file', 'allowEmpty' => true, 'types' => 'jpg, jpeg, png, gif, bmp', 'on' => 'update'),
+			array('title', 'required'),
+			array('position', 'numerical', 'integerOnly'=>true),
+			array('title', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, url, img', 'safe'),
+			array('id, title, description, position', 'safe'),
 		);
 	}
 
@@ -55,8 +54,9 @@ class Partners extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'url' => 'Ссылка',
-			'img' => 'Картинка',
+			'title' => 'Название',
+			'description' => 'Описание',
+			'position' => 'Position',
 		);
 	}
 
@@ -79,8 +79,9 @@ class Partners extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('url',$this->url,true);
-		$criteria->compare('img',$this->img,true);
+		$criteria->compare('title',$this->title,true);
+		$criteria->compare('description',$this->description,true);
+		$criteria->compare('position',$this->position);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -91,7 +92,7 @@ class Partners extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Partners the static model class
+	 * @return Conditions the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

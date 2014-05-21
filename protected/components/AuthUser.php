@@ -21,6 +21,8 @@ class AuthUser extends CWebUser
         'ContactdataController' => array(self::ROLE_SALES),
         'ContactusController' => array(self::ROLE_SALES),
         'SuccessstoriesController' => array(self::ROLE_SALES),
+        'MenuController' => array(self::ROLE_SALES),
+        'ConditionsController' => array(self::ROLE_SALES),
 
     );
     private $_user;

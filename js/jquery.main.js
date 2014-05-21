@@ -23,15 +23,13 @@ if ( !detectmob() ) {
 		initSameHeight();
 		initCustomFileInput();
 		randomBackground();
-        initForm();
 	});
 
 	$(window).load(function(){
 		initTechnologyWidth();
 		// initCaseFixed();
-		initWaypoints();
+		//initWaypoints();
 		initBackgroundResize();
-        fixPartners();
 	});
 }
 else {
@@ -42,61 +40,18 @@ else {
 		initScrollTo();
 		initSameHeight();
 		initCustomFileInput();
-        initForm();
 	});
 
 	$(window).load(function(){
 		// initTechnologyWidth();
 		// initCaseFixed();
-		initWaypoints();
+		//initWaypoints();
 		// initBackgroundResize();
 		initNiceScrollMobile();
+
 	});
 }
 
-function initForm() {
-    $('.send-cv').ajaxForm({
-        dataType: 'json',
-        iframe: true,
-        beforeSend: function() {
-            $('.send-cv input[type=submit]').attr('disabled', 'disabled');
-            $('body').css('cursor', 'wait');
-        },
-        success: function(result) {
-            if (result.errors !== undefined) {
-                $('.send-cv input[type=text]').css('outline', 'medium none');
-                $('.add-resume .button > span').css('color', '#FFFFFF');
-                if (result.errors.name !== undefined) {
-                    $('form input[name=name]').css('outline', '2px solid red');
-                }
-                if (result.errors.email !== undefined) {
-                    $('form input[name=email]').css('outline', '2px solid red');
-                }
-                if (result.errors.cv !== undefined) {
-                    $('.add-resume .button > span').css('color', 'red');
-                }
-                $('.send-cv input[type=submit]').removeAttr('disabled');
-                $('body').css('cursor', 'default');
-            } else {
-                if (result.result !== undefined) {
-                    $('.send-cv .success').html('<p>Your CV was sent. Thanks for reply </p>');
-                    $('.send-cv .success').show();
-                    $('.send-cv').resetForm();
-                    setTimeout(function() {parent.$.fancybox.close();}, 5000);
-                }
-            }
-        }
-    });
-}
-
-function fixPartners() {
-    $('.partners-list li').each(function() {
-        var containerWidth = $(this).width();
-        if ($(this).find('img').width() > containerWidth) {
-            $(this).find('img').attr('style', 'width:100%;');
-        }
-    })
-}
 function initCustomFileInput() {
 	$('.custom-file').on('change', function() {
 		$('.custom-file').each(function() {
@@ -120,7 +75,8 @@ function initCustomFileInput() {
 // background stretching
 function initBackgroundResize() {
 		var holder = document.getElementById('bg');
-		if(holder) {
+		var flag = $('.first-page');
+		if(holder && flag.length>0) {
 				var images = holder.getElementsByTagName('img');
 				for(var i = 0; i < images.length; i++) {
 						BackgroundStretcher.stretchImage(images[i]);
@@ -183,7 +139,8 @@ function initScrollTo() {
 
 function initTechnologyWidth() {
 	var section = $('.technology-section');
-	var items = section.find('.item');
+	if(section.length>0){
+var items = section.find('.item');
 	var newWidth = 0;
 	var selector = section.find('.frame');
 	var frameOffsetTop = section.offset().top + 100;
@@ -236,6 +193,8 @@ function initTechnologyWidth() {
 
 	});
 
+	}	
+	
 }
 
 function initWaypoints() {
@@ -358,14 +317,6 @@ function initSameHeight() {
 	});
 }
 
-$( document ).ready(function() {
-	$('a#downloads_profile').colorbox({
-		height: 200,
-		width: 600,
-		inline: true
-	});
-});
-
 function initPopup() {
 	var open = ($('input[name=open]').val() == 1) ? true : false;
 	var title = '';
@@ -375,7 +326,6 @@ function initPopup() {
 		title = $('input[name=title]').val();
 		message = $('input[name=message]').val();
 	}
-
 	$('.inline').colorbox({
 		open: open,
 		inline: true,
@@ -431,7 +381,8 @@ function getRandomInt(min, max){
 }
 
 function randomBackground() {
-	var image =  $('#bg').find('img');
+	if($('.first-page').length>0){
+		var image =  $('#bg').find('img');
 	var random = getRandomInt(1, 5);
 	var randomImage = ("images/backgrounds/bg-body" + random + ".jpg").toString();
 	var smallImage = ("url(images/backgrounds/bg-body" + random + ".jpg)").toString();
@@ -464,6 +415,8 @@ function randomBackground() {
 		win.on('scroll', refreshPosition);
 	});
 	win.on('resize', refreshPosition);
+	}
+	
 }
 
 function mobileRandomBackground() {
@@ -506,24 +459,6 @@ function mobileRandomBackground() {
 	win.on('resize orientationchange', function(){
 		offsetTop = firstPage.height();
 	});
-}
-
-function clearCvInput() {
-    var _this = $(".add-resume");
-    _this.find('.button > span').css('color', '#FFFFFF');
-    _this.closest('.add-resume').removeClass('uploaded').find('.name').html('&nbsp;');
-    if ( navigator.userAgent.match(/msie/i) ) {
-        _this.closest('.add-resume').find('.custom-file').replaceWith(_this.closest('.add-resume').find('.custom-file').clone());
-    }
-    else {
-        _this.closest('.add-resume').find('.custom-file').val("");
-    }
-
-}
-function resetCvForm() {
-    $('.send-cv').resetForm();
-    $('.send-cv input[type=text]').css('outline', 'medium none');
-    clearCvInput();
 }
 
 // background stretch module
@@ -1053,12 +988,3 @@ PlatformDetect.addRule({type: 'ipad', css: 'ipad.css'});
 PlatformDetect.addRule({type: 'android', css: 'android.css'});
 PlatformDetect.addRule({type: 'blackberry', css: 'blackberry.css'});
 PlatformDetect.addRule({type: 'winphone', css: 'winphone.css'});
-
-
-// ------- Form send vacancies
-$(document).ready(function() {
-    $('.vacancies').fancybox({
-        maxWidth	: 300,
-        maxHeight	: 400
-    });
-});
