@@ -980,6 +980,10 @@ PlatformDetect.addModule({
 		}
 	}
 });
+// custom checkbox
+jcf.lib.domReady(function(){
+			jcf.customForms.replaceAll();
+		});
 
 // Detect rules
 PlatformDetect.addRule({type: 'allmobile', css: 'allmobile.css'});
