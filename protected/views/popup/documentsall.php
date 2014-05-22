@@ -20,7 +20,7 @@
                 data: posts,
                 success: function (data) {
                     if(data.true) {
-                        location.href = "documents/"+data.true;
+                        location.href = "/documents/"+data.true;
                         $.colorbox.close();
                     }
                 }
