@@ -45,11 +45,11 @@ class Contactus extends CActiveRecord
 	{
 		return array(
 			'id' => '№',
-			'name' => 'Имя',
-			'email' => 'E-mail',
-			'subject' => 'Тема',
-			'body' => 'Текст',
-			'date' => 'Дата создания',
+			'name' => 'Your Name',
+			'email' => 'Email',
+			'subject' => 'Subject',
+			'body' => 'Message',
+			'date' => 'Created',
 		);
 	}
 
