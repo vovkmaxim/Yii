@@ -8,7 +8,7 @@ class AjaxController extends Controller
 		$post_count = count($_POST);
 					
 		if($post_count > 1){				
-			if(file_exists('documents/download/documents.tar')){
+			if(is_file('documents/download/documents.tar')){
 				unlink('documents/download/documents.tar');
 			}		
 			
