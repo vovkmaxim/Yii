@@ -51,12 +51,6 @@ return array(
             'allowAutoLogin'=>true,
             'class' => 'AuthUser',
         ),
-        'clientScript' => array(
-            'scriptMap' => array(
-                'jquery.js' => false,
-            )
-        ),
-
 
         'urlManager'=>array(
             'urlFormat'=>'path',
