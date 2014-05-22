@@ -91,8 +91,8 @@
     position: relative;
     padding: 0 50px;
     color: #000;
-    font-size: 17px;
-    line-height: 19px;
+    /* font-size: 17px;
+    line-height: 19px; */
 }
 #inline-content a{
     text-decoration: underline;
@@ -234,6 +234,7 @@
 }
 .form_documents p{
     text-align: center;
+    font: 12px/15px 'CalibriRegular',Arial,Helvetica,sans-serif;
 }
 .form_documents input[type=checkbox], .form_documents input[type=email]{
     float: left;
