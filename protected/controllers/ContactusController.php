@@ -35,18 +35,18 @@ class ContactusController extends Controller
 
 	public function actionIndex()
 	{
-        $model=new Contactus;
-        $model2=Contactdata::model()->find();
+        $model = new Contactus;
+        $model2 = Contactdata::model()->find();
 
-        if (isset($_GET['Contactdata'])){
-            $model2->attributes=$_GET['Contactdata'];
+        if (isset($_GET['Contactdata'])) {
+            $model2->attributes = $_GET['Contactdata'];
         }
-        if(isset($_POST['Contactus'])) {
-            $model->attributes=$_POST['Contactus'];
+        if (isset($_POST['Contactus'])) {
+            $model->attributes = $_POST['Contactus'];
             if($model->save()) {
                 Yii::app()->user->setFlash('success',"Вопрос отправлен");
 
-                $this->redirect(array('index','id'=>$model->id));
+                $this->redirect(array('staticpages/contactus','id'=>$model->id));
             }
         }
         Yii::app()->clientScript->registerScript(

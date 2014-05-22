@@ -5,4 +5,3 @@
 assets/
 documents/download/*
 /protected/config/database.php
-/protected/config/import.php

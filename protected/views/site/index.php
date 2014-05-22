@@ -19,41 +19,41 @@
                     </div>
 
                     <?php if(!empty($conditionsList)): ?>
-                    <h2>Work Conditions<a href="/popup/DocumentsAll?id=1" class="inline cboxElement"><img src="images/pdf-icon0.png" alt=""></a></h2>
-                    <p>CHI Software is flexible to follow different business models and leverage optimal measures to ensure more profitability for the Client.</p>
-                    <div class="four-columns">
-                        <?php foreach($conditionsList as $item) : ?>
-                        <div class="col">
-                            <h3 class="col-heading"><?php echo $item->title; ?></h3>
-                            <?php echo $item->description; ?>
+                        <h2>Work Conditions<a href="/popup/DocumentsAll?id=1" class="inline cboxElement"><img src="images/pdf-icon0.png" alt=""></a></h2>
+                        <p>CHI Software is flexible to follow different business models and leverage optimal measures to ensure more profitability for the Client.</p>
+                        <div class="four-columns">
+                            <?php foreach($conditionsList as $item) : ?>
+                                <div class="col">
+                                    <h3 class="col-heading"><?php echo $item->title; ?></h3>
+                                    <?php echo $item->description; ?>
+                                </div>
+                            <?php endforeach; ?>
                         </div>
-                        <?php endforeach; ?>
-                    </div>
                     <?php endif; ?>
 
                     <?php if(!empty($techList)): ?>
-                    <h2>Our Expertise <a href="/popup/DocumentsAll?id=2" class="inline cboxElement"><img src="images/pdf-icon0.png" alt="" width="22" height="27"></a></h2>
-                    <p>CHI Software is flexible to follow different business models and leverage optimal measures to ensure more profitability for the Client.</p>
-                    <div class="five-columns">
-                        <?php foreach($techList as $item) : ?>
-                        <div class="col">
-                            <a href="expertise/projects/tech/<?php echo $item->title; ?>">
-                                <img src="images/tmp/partner1.jpg" alt="#"/>
-                                <h3><?php echo $item->title; ?></h3>
-                                <?php echo $item->description; ?>
-                            </a>
+                        <h2>Our Expertise <a href="/popup/DocumentsAll?id=2" class="inline cboxElement"><img src="images/pdf-icon0.png" alt="" width="22" height="27"></a></h2>
+                        <p>CHI Software is flexible to follow different business models and leverage optimal measures to ensure more profitability for the Client.</p>
+                        <div class="five-columns">
+                            <?php foreach($techList as $item) : ?>
+                                <div class="col">
+                                    <a href="expertise/projects/tech/<?php echo $item->title; ?>">
+                                        <img src="images/tmp/partner1.jpg" alt="#"/>
+                                        <h3><?php echo $item->title; ?></h3>
+                                        <?php echo $item->description; ?>
+                                    </a>
+                                </div>
+                            <?php endforeach; ?>
                         </div>
-                        <?php endforeach; ?>
-                    </div>
                     <?php endif; ?>
 
                     <?php if(!empty($clientsList)): ?>
-                    <h2>Our Clients</h2>
-                    <ul class="partners-list">
-                        <?php foreach($clientsList as $item) : ?>
-                        <li><a href="#"><span><img src="images/stories/<?php echo $item->id; ?>/<?php echo $item->pic; ?>" alt="#"/></span></a></li>
-                        <?php endforeach; ?>
-                    </ul>
+                        <h2>Our Clients</h2>
+                        <ul class="partners-list">
+                            <?php foreach($clientsList as $item) : ?>
+                                <li><a href="#"><span><img src="images/stories/<?php echo $item->id; ?>/<?php echo $item->pic; ?>" alt="#"/></span></a></li>
+                            <?php endforeach; ?>
+                        </ul>
                     <?php endif; ?>
 
                     <h2>Testimonials</h2>

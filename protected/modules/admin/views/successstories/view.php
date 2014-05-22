@@ -13,8 +13,17 @@
                     'task',
                     'solution',
                     'result',
-                    'pic',
+                    array (
+                        'name'=>'pic',
+                        'type'=>'raw',
+                        'value'=>CHtml::image(
+                                Yii::app()->getBaseUrl(true).'/'.$model->pic,
+                                $model->pic),
+//                                array("style"=>"border: solid 2px;")),
+                    ),
             ),
+
+
         )
     );
 ?>

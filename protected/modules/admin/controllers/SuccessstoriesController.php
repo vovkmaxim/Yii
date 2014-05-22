@@ -27,47 +27,69 @@ class SuccessstoriesController extends AdminController
         $this->render('view',array('model'=>$this->loadModel($id),));
     }
 
-    protected function initSave(Successstories $model) {
+//    protected function initSave(Successstories $model) {
+//        if (isset($_POST['Successstories'])) {
+//            $model->attributes = $_POST['Successstories'];
+//
+//            if ($model->save()) {
+////                $model->image->saveAs("Yii::app()->request->baseUrl;.'path/to/localFile");
+//                $this->redirect( Yii::app()->request->baseUrl.'/admin/successstories/index');
+//            }
+//        }
+//    }
+
+//    public function actionCreate()
+//    {
+//        $model=new Successstories;
+////        $model->pic=CUploadedFile::getInstance($model,'pic');
+//
+//
+//        $this->initSave($model);
+//
+//        $this->render('create',array('model'=>$model,));
+//    }
+//
+//    public function actionUpdate($id)
+//    {
+//        $model=$this->loadModel($id);
+////        $model->pic=CUploadedFile::getInstance($model,'pic');
+//
+//
+//        $this->initSave($model);
+//
+//        $this->render('update',array('model'=>$model,));
+//    }
+
+    public function actionUpdate($id=null){
+        // в зависимости от аргумента создаем модель или ищем уже существующую
+        if ($id === null) {
+            $model = new Successstories();
+        } else if(!$model=$this->loadModel($id)) {
+            throw new CHttpException(404);
+        }
         if (isset($_POST['Successstories'])) {
             $model->attributes = $_POST['Successstories'];
+
             if ($model->save()) {
-//                $model->image->saveAs("Yii::app()->request->baseUrl;.'path/to/localFile");
-                $this->redirect( Yii::app()->request->baseUrl.'/admin/successstories/index');
+                // отображаем успешное сообщение, обновляем страницу
+                // или перенаправляем куда-либо ещё
+                $this->redirect(Yii::app()->request->baseUrl.'/admin/successstories/index');
             }
         }
-    }
-    public function actionCreate()
-    {
-        $model=new Successstories;
-//        $model->pic=CUploadedFile::getInstance($model,'pic');
 
-
-        $this->initSave($model);
-
-        $this->render('create',array('model'=>$model,));
+        $this->render('update',array('model'=>$model));
     }
 
-    public function actionUpdate($id)
-    {
-        $model=$this->loadModel($id);
-//        $model->pic=CUploadedFile::getInstance($model,'pic');
-
-
-        $this->initSave($model);
-
-        $this->render('update',array('model'=>$model,));
-    }
 
     public function actionDelete($id)
     {
-    if(Yii::app()->request->isPostRequest){
+        if (Yii::app()->request->isPostRequest) {
+            $this->loadModel($id)->delete();
 
-        $this->loadModel($id)->delete();
-
-        if(!isset($_GET['ajax'])){
-            $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
-        }
-    }   else{
+            if (!isset($_GET['ajax'])) {
+                $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+            }
+        } else{
             throw new CHttpException(400,'Неправильный запрос');
         }
     }
@@ -100,10 +122,10 @@ class SuccessstoriesController extends AdminController
 
     protected function performAjaxValidation($model)
     {
-    if(isset($_POST['ajax']) && $_POST['ajax']==='successstories-form')
-    {
-    echo CActiveForm::validate($model);
-    Yii::app()->end();
-    }
+        if (isset($_POST['ajax']) && $_POST['ajax']==='successstories-form')
+        {
+            echo CActiveForm::validate($model);
+            Yii::app()->end();
+        }
     }
 }
