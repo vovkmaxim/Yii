@@ -1091,13 +1091,21 @@ h2.technology-header{
 }
 /* end marketing.html */
 .popup_header_holder{
+    position: relative;
+    top: -22px;
+    text-align: center;
+}
+#colorbox .popup_header_holder h1, .popup_header_holder h1{
     background: #fff;
     padding: 0 25px;
     display: inline-block;
-    left: 22%;
-    padding: 0 20px;
-    position: relative;
-    top: -22px;
+    margin: 0 0 10px;
+}
+.contact_wrapper {
+    padding: 0 0 50px;
+}
+.form_help h1{
+
 }
 /*------------------------media----------------------*/
 @media screen and (max-width: 585px){
