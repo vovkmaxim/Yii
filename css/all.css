@@ -545,6 +545,26 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     margin: -45px 0 0 -3px;
     background: #cacaca;
 }
+.form-box{
+    float: left;
+    width: 394px;
+    padding: 19px 30px;
+    border: 1px dashed #8a8a8a;
+    position: relative;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    margin: 13px 22px 0 0;
+}
+.form-box:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 90px;
+    margin: -45px 0 0 -3px;
+}
 .contact-box .contact-list{
     margin: 0;
     float: left;
