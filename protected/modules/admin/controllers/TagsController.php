@@ -19,7 +19,7 @@ class TagsController extends AdminController
             // Save process
             $model->attributes = $_POST['Tags'];
             if ($model->save()) {
-                $this->redirect('/admin/tags/index');
+                $this->redirect('/admin/tags');
             }
         }
     }
@@ -47,7 +47,7 @@ class TagsController extends AdminController
         $model->delete();
         $command = Yii::app()->db->createCommand();
         $command->delete('tags_projects', 'tag_id=:id', array(':id'=>$id));
-        $this->redirect('/admin/tags/index');
+        $this->redirect('/admin/tags');
         exit();
     }
 
