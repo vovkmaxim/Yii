@@ -2,7 +2,7 @@
 
 class StaticpagesController extends Controller
 {
-    public $layout = '//layouts/page';
+    public $layout = '//layouts/static';
 
     public function loadModel($id)
     {
