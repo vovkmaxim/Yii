@@ -27,6 +27,9 @@
                         </nav>
                     </div>
                 </div>
+                <div class="main_header_holder">
+                    <h1><?php echo $this->pageTitle; ?></h1>
+                </div>
             </header>
         </div>
             <?php echo $content; ?>
