@@ -318,7 +318,7 @@ function initSameHeight() {
 }
 
 function initPopup() {
-    $('a.inline').colorbox();
+	$('.inline').colorbox();
 }
 
 function getRandomInt(min, max){
@@ -924,6 +924,10 @@ PlatformDetect.addModule({
 			return rule.version ? PlatformDetect.matchVersions(this.matchData.version, rule.version) : true;
 		}
 	}
+});
+// custom checkbox
+jcf.lib.domReady(function(){
+	jcf.customForms.replaceAll();
 });
 
 // Detect rules

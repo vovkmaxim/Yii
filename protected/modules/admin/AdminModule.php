@@ -14,10 +14,7 @@ class AdminModule extends CWebModule
 		));
         $this->layoutPath = Yii::getPathOfAlias('admin.views.layouts');
         $this->layout = 'main';
-        $this->publishCssFile('admin.assets', '/bootstrap/css/bootstrap.min.css');
-        $this->publishCssFile('admin.assets', '/bootstrap/css/bootstrap-responsive.min.css');
         $this->publishCssFile('admin.assets', '/styles.css');
-        $this->publishCssFile('admin.assets', '/DT_bootstrap.css');
 
         //$this->publishJsFile('admin.assets', '/vendors/modernizr-2.6.2-respond-1.1.0.min.js');
         Yii::app()->clientScript->registerCoreScript('jquery');

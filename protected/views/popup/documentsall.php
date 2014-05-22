@@ -1,3 +1,37 @@
+<script>
+    jcf.customForms.replaceAll();
+
+    $('#download_file').click(function(){
+        var list = null, res = new Array(), posts = '';
+        var i = 1;
+
+        list = $('.form_documents input:checkbox:checked');
+        list.each( function() {
+            res[i] = $(this).val();
+            posts += 'doc'+i+'='+res[i]+'&';
+            i++;
+        });
+
+        if(i >= 3){
+            $.ajax({
+                type: 'POST',
+                dataType: 'json',
+                url: '/index.php/ajax/documents',
+                data: posts,
+                success: function (data) {
+                    if(data.true) {
+                        location.href = "/documents/"+data.true;
+                        $.colorbox.close();
+                    }
+                }
+            });
+        }else{
+            window.open('/documents/'+res[1]);
+        }
+
+        return false;
+    });
+</script>
 <div id="inline-content">
     <?php echo CHtml::beginForm('','', array('class' => 'form_documents')); ?>
         <div class="popup_header_holder">
@@ -13,29 +47,17 @@
                         <input type="checkbox" id="doc<?php echo $i; ?>" name="file<?php echo $i; ?>" value="<?php echo $item->file; ?>" <?php if($_GET['id'] == $item->id) echo 'checked'; ?>>
                         <label for="doc<?php echo $i; ?>"><?php echo $item->title; ?></label>
                     </div>
-                <?php $i++; endforeach; ?>
+                    <?php $i++; endforeach; ?>
             </div>
         </div>
         <div class="submit-holder">
             <?php
-                echo CHtml::ajaxSubmitButton('Download Selected Documents', Yii::app()->request->baseUrl.'/index.php/ajax/documents', array(
-                    'type' => 'POST',
-                    'dataType' => 'json',
-                    'success'=>'function (data) {
-						if(data.true) {
-							location.href = "documents/"+data.true;
-							$.colorbox.close();
-						}
-					}'
-                ),
-                array(
-                    'type' => 'submit'
-                ));
+                echo CHtml::SubmitButton('Download Selected Documents', array('id' => 'download_file'));
             ?>
         </div>
         <div class="form-row">
             <label>e-mail<span>*</span></label>
-            <input type="email" placeholder="email" name="email">
+            <input type="email" name="email">
         </div>
         <div class="submit-holder">
             <?php
@@ -54,7 +76,7 @@
                         if(data.error) {
                             $("#error").html(data.error);
                         }
-                     }'
+                    }'
                 ),
                 array(
                     'type' => 'submit'

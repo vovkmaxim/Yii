@@ -424,11 +424,10 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     vertical-align: middle;
 }
 #header .main_header_holder{
-    position: absolute;
-    margin: -38px 0 0 -38px;
     text-align: center;
-    top: 50%;
-    left: 50%;
+    max-width: 960px;
+    padding: 115px 0 0;
+    margin: 0 auto;
 }
 #header h1:after{
     background: #fff;
@@ -544,26 +543,6 @@ pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
     height: 90px;
     margin: -45px 0 0 -3px;
     background: #cacaca;
-}
-.form-box{
-    float: left;
-    width: 394px;
-    padding: 19px 30px;
-    border: 1px dashed #8a8a8a;
-    position: relative;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000;
-    margin: 13px 22px 0 0;
-}
-.form-box:after{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 1px;
-    height: 90px;
-    margin: -45px 0 0 -3px;
 }
 .contact-box .contact-list{
     margin: 0;
@@ -1120,3 +1099,18 @@ h2.technology-header{
     position: relative;
     top: -22px;
 }
+/*------------------------media----------------------*/
+@media screen and (max-width: 585px){
+    .logo{
+        float: none;
+        margin: 0 auto;
+    } 
+    #nav{
+        float: none;
+    }
+    #nav li{
+        float: none;
+        display: inline-block;
+    }
+}
+/*------------------------end media------------------*/

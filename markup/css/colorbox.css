@@ -195,7 +195,7 @@
 #inline-content .submit-holder{
     text-align: center;
     bottom: -19px;
-    left: 29%;
+    left: 27%;
     position: relative;
     text-align: center;
     background: #fff;
@@ -226,12 +226,6 @@
     color:red;
 }
 /* popup marketing_documents */
-.form_documents .popup_header_holder{
-    left: 10%;
-    padding: 0 10px;
-    position: relative;
-    top: -27px;
-}
 .form_documents p{
     text-align: center;
     font: 12px/15px 'CalibriRegular',Arial,Helvetica,sans-serif;
@@ -279,9 +273,6 @@
     height: 33px;
     float: right;
 }
-#colorbox .form_documents h1{
-    margin: 0 0 10px;
-}
 .form_documents .error{
     font: 12px/15px 'CalibriRegular',Arial,Helvetica,sans-serif;
     color:red;
@@ -291,3 +282,17 @@
     display: none;
 }
 /* end popup marketing_documents */
+.popup_header_holder{
+    position: relative;
+    top: -22px;
+    text-align: center;
+}
+#colorbox .popup_header_holder h1, .popup_header_holder h1{
+    background: #fff;
+    padding: 0 25px;
+    display: inline-block;
+    margin: 0 0 10px;
+}
+.contact_wrapper {
+    padding: 0 0 50px;
+}
