@@ -36,28 +36,7 @@
             </header>
         </div>
             <?php echo $content; ?>
-        <div class="additional_info group">
-            <div class="pages-holder">
-                <div class="page">
-                    <section class="main">
-                        <div class="m1">
-                            <div class="m2">
-                                <div class="block_left group">
-                                    <a href="/Success_Stories"><img src="images/tmp/outsoursing4.png" alt=""></a>
-                                    <p>To see how we apply this in practise you can read success stories</p>
-                                </div>
-                                <div class="block_right group">
-                                    <a href="/popup/DocumentsAll?id=0" class="inline cboxElement"><img src="images/tmp/outsoursing3.png" alt=""></a>
-                                    <p>To get more overview of CHI's Outstaffing you can download additional information</p>
-                                </div>                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-
-
-        </div>
-            <footer id="footer">
+        <footer id="footer">
                 <div class="footer-holder">
                     <div class="footer-frame">
                         <div class="four-columns">

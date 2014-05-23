@@ -101,7 +101,7 @@ class StaticpagesController extends Controller
 
     public function actionManagement()
     {
-        $this->layout='//layouts/management';
+        $this->layout='//layouts/page';
         $modelStatic = Staticpages::model()->findByAttributes(array('title' => 'Management'));
         $modelDynamic = Management::model()->findAll();
         $this->pageTitle = 'Contact Us';
@@ -115,7 +115,7 @@ class StaticpagesController extends Controller
 
     public function actionMarketing()
     {
-        $this->layout='//layouts/marketing';
+        $this->layout='//layouts/page';
         $modelStatic = Staticpages::model()->findByAttributes(array('title' => 'Marketing'));
         $modelDynamic = Documents::model()->findAll();
         $this->pageTitle = 'Contact Us';
@@ -129,7 +129,7 @@ class StaticpagesController extends Controller
 
     public function actionExpertise()
     {
-        $this->layout='//layouts/expertise';
+        $this->layout='//layouts/page';
         $modelStatic = Staticpages::model()->findByAttributes(array('title' => 'Expertise'));
         $modelProjects = Projects::model()->findAll();
         $modelTech = Tech::model()->findAll();
