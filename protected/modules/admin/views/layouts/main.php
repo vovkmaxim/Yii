@@ -22,7 +22,16 @@
             <div class="nav-collapse collapse">
                 <ul class="nav pull-right">
                     <li class="dropdown">
-                        <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i> <?php echo Yii::app()->user->model->username; ?> <i class="caret"></i>
+                        <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon-user"></i>
+                            <?php
+                            if(isset(Yii::app()->user->model->username)){
+                                echo Yii::app()->user->model->username;
+                            }else{
+                                $this->redirect('/admin/default/logout');
+                            }
+                            ?>
+                            <i class="caret"></i>
                         </a>
                         <ul class="dropdown-menu">
                             <?php if (in_array($role, AuthUser::$denies['UsersController'])) : ?>
