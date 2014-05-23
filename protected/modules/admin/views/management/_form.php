@@ -31,7 +31,7 @@
     </div>
 
     <div class="control-group">
-        <?php echo $form->label($model,'E-Mail*'); ?>
+        <?php echo $form->label($model,'Email*'); ?>
         <div class="controls">
             <?php echo $form->textField($model,'email', array('class' => 'input-xxlarge')); ?>
         </div>
