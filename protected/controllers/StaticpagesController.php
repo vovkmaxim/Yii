@@ -43,6 +43,7 @@ class StaticpagesController extends Controller
 
     public function actionContact_us()
     {
+        $this->layout='//layouts/page';
         $modelContactdata = Contactdata::model()->find();
         $modelContactus = new Contactus;
         $this->pageTitle = 'Contact Us';
