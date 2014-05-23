@@ -19,8 +19,8 @@
                                 <td><?php echo $item->description; ?></td>
                                 <td>
                                     <div style="float:right;">
-                                        <a title="Редактировать" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/slides/edit/id/<?php echo $item->id;?>" class="icon-edit"></a>
-                                        <a title="Удалить" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/slides/delete/id/<?php echo $item->id;?>" class="icon-remove"></a>
+                                        <a title="Редактировать" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/slides/edit/id/<?php echo $item->id;?>" class="icon-pencil"></a>
+                                        <a title="Удалить" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/slides/delete/id/<?php echo $item->id;?>" class="icon-trash"></a>
                                     </div>
                                 </td>
                             </tr>
