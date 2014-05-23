@@ -45,7 +45,7 @@
                             </div>
                         </div>
                         <div class="form-box">
-                            <h2>Ask us</h2>
+                            <h2>How can we help you?</h2>
                             <?php if(Yii::app()->user->hasFlash('success')):?>
                                 <div class="info">
                                     <?php echo Yii::app()->user->getFlash('success'); ?>
@@ -87,7 +87,7 @@
                             </div>
 
                             <div class="row buttons">
-                                <?php echo CHtml::submitButton('Отправить'); ?>
+                                <?php echo CHtml::submitButton('Send'); ?>
                             </div>
 
                             <?php $this->endWidget(); ?>
@@ -96,22 +96,12 @@
 
                         </div>
                         <div class="form-box">
-                            <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/livechat.png" alt="">
-                            <p><center>Don't work :(</center></p>
+
 
                         </div>
+                    </div>
                 </div>
-            </div>
         </section>
     </div>
 </div>
-<!--$modelContactus-->
-<!--'id' => '№',-->
-<!--'name' => 'Имя',-->
-<!--'email' => 'E-mail',-->
-<!--'subject' => 'Тема',-->
-<!--'body' => 'Текст',-->
-<!--'date' => 'Дата создания',-->
-
-<!--<div class="form">-->
 

@@ -2,7 +2,7 @@
 
 class StaticpagesController extends Controller
 {
-	public $layout = '//layouts/page';
+    public $layout = '//layouts/static';
 
     public function loadModel($id)
     {
@@ -13,24 +13,25 @@ class StaticpagesController extends Controller
     }
 
     public function actionIndex($page)
-	{
+    {
         if (in_array($page, array(
-                                'Contact_us',       //work
-                                'Success_Stories',  //work
-                                'Vacancies',        //work
-                                'Management',       //work
-                                'Marketing',        //work
-                                'Expertise',        //don`t work
+                'Contact_us',       //work
+                'Success_Stories',  //work
+                'Vacancies',        //work
+                'Management',       //work
+                'Marketing',        //work
+                'Expertise',        //don`t work
 
-                            )
-            ))
-           {
+            )
+        ))
+        {
             $this->redirect(Yii::app()->request->baseUrl.'/staticpages/'.$page);
             Yii::app()->end();
         }
         $model = Staticpages::model()->findByAttributes(array('title' => $page));
 
         if ($model) {
+            $this->pageTitle = $page;
             $this->render('index', array(
                 'content' => $model->text,
 
@@ -38,7 +39,7 @@ class StaticpagesController extends Controller
             Yii::app()->end();
         }
         $this->redirect(Yii::app()->request->baseUrl);
-	}
+    }
 
     public function actionContact_us()
     {
@@ -49,7 +50,7 @@ class StaticpagesController extends Controller
         if (isset($_POST['Contactus'])) {
             $modelContactus->attributes = $_POST['Contactus'];
             if($modelContactus->save()) {
-                Yii::app()->user->setFlash('success',"Вопрос отправлен");
+                Yii::app()->user->setFlash('success',"Your question has been submitted");
 
                 $this->redirect(Yii::app()->request->baseUrl.'Contact_us/#ask');
             }
@@ -70,15 +71,16 @@ class StaticpagesController extends Controller
 
     public function actionSuccess_Stories()
     {
-        $this->layout='//layouts/successstories';
+        $this->layout='//layouts/page';
         $modelStatic = Staticpages::model()->findByAttributes(array('title' => 'Success_Stories'));
         $modelDynamic = Successstories::model()->findAll();
-        $this->pageTitle = 'Contact Us';
-
+        $this->pageTitle = 'Success Stories';
+        $dataProvider=new CActiveDataProvider('Successstories');
 
         $this->render('successstories', array(
             'modelStatic' => $modelStatic,
             'modelDynamic' => $modelDynamic,
+            'dataProvider'=>$dataProvider,
         ));
     }
 
