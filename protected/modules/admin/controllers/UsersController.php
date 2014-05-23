@@ -11,8 +11,13 @@ class UsersController extends AdminController
     {
         if (isset($_POST['Users'])) {
             // Save process
+            $oldPassword = $model->password;
             $model->attributes = $_POST['Users'];
-            $model->password = md5($_POST['Users']['password']);
+            if($_POST['Users']['password'] == null) {
+                $model->password = $oldPassword;
+            }else{
+                $model->password = md5($_POST['Users']['password']);
+            }
             if ($model->save()) {
                 $this->redirect('/admin/users');
             }
