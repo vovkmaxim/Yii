@@ -12,4 +12,10 @@ class PopupController extends Controller
             'files' => $file,
         ));
     }
+
+    public function actionSummary()
+    {
+        Yii::app()->clientScript->scriptMap['jquery.js'] = false;
+        $this->render('summary');
+    }
 }

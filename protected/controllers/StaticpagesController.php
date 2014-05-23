@@ -87,7 +87,7 @@ class StaticpagesController extends Controller
 
     public function actionVacancies()
     {
-        $this->layout='//layouts/vacancies';
+        $this->layout='//layouts/page';
         $modelStatic = Staticpages::model()->findByAttributes(array('title' => 'Vacancies'));
         $modelDynamic = Vacancies::model()->findAll();
         $this->pageTitle = 'Contact Us';

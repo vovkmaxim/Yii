@@ -39,7 +39,7 @@ class AjaxController extends Controller
 		}elseif(filter_var($post_email, FILTER_VALIDATE_EMAIL)) {
 					
 			$mailer = new YiiMailer();
-			$mailer->setFrom('chisw_info@chisw.us', 'Dowload');
+			$mailer->setFrom('chisw_info@chisw.us', 'Download');
 			$mailer->setSubject('CHI');			
 			$mailer->setView('cv');
 			$mailer->setData(array('msg' => ''));
@@ -84,6 +84,32 @@ class AjaxController extends Controller
 			echo CJSON::encode(array('error'=> 'Your e-mail seems to be wrong. Please check it.'));
 		}	
 	}
+
+    public function actionSummarySend()
+    {
+        $post_email = Yii::app()->request->getPost('email');
+
+        if(empty($post_email)) {
+            echo CJSON::encode(array('error'=> 'Please enter your e-mail'));
+        }elseif(filter_var($post_email, FILTER_VALIDATE_EMAIL)) {
+            $mailer = new YiiMailer();
+            $mailer->setFrom('chisw_info@chisw.us', 'Summory');
+            $mailer->setSubject('CHI');
+            $mailer->setView('cv');
+            $mailer->setData(array('msg' => ''));
+            $mailer->render();
+            $mailer->IsSMTP(true);
+            $mailer->setTo('flaksa@list.ru');
+            $mailer->SMTPAuth = true;
+            $mailer->Host = 'mail.ukraine.com.ua';
+            $mailer->Username = 'chisw_info@chisw.us';
+            $mailer->Password = 'eL533Nbd';
+
+            $mailer->send();
+            echo CJSON::encode(array('true'=> 'Thank you, the document has been sent to your e-mail ().'));
+
+        }
+    }
 }
 
 
