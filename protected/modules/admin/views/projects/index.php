@@ -29,8 +29,8 @@
                                 </td>
                                 <td>
                                     <div style="float:right;">
-                                        <a title="Редактировать" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/projects/edit/id/<?php echo $project->id;?>" class="icon-edit"></a>
-                                        <a title="Удалить" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/projects/delete/id/<?php echo $project->id;?>" class="icon-remove"></a>
+                                        <a title="Редактировать" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/projects/edit/id/<?php echo $project->id;?>" class="icon-pencil"></a>
+                                        <a title="Удалить" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/projects/delete/id/<?php echo $project->id;?>" class="icon-trash"></a>
                                     </div>
                                 </td>
                             </tr>

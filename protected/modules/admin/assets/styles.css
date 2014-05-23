@@ -264,3 +264,7 @@ table.detail-view td
     word-break: break-all;
     white-space: normal;
 }
+
+.cke_reset_all, .cke_reset_all * {
+    max-width: none;
+}

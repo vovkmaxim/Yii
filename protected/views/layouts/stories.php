@@ -7,7 +7,10 @@
 	<title>CHI Software</title>
 	<link media="all" rel="stylesheet" type="text/css" href="css/colorbox.css" />
 	<link media="all" rel="stylesheet" type="text/css" href="css/all.css" />
-	<script src="js/libs/jquery-1.9.0.min.js"></script>
+    <link media="all" rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/jcf.css" />
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/jcf.js"></script>
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/libs/jcf.checkbox.js"></script>
+    <script src="js/libs/jquery-1.9.0.min.js"></script>
 	<script src="js/libs/modernizr-2.6.2.min.js"></script>
 	<script src="js/waypoints.min.js"></script>
 	<script src="js/jquery.nicescroll.min.js"></script>

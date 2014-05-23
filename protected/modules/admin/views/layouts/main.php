@@ -94,12 +94,12 @@
                             <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/documents">Документы</a>
                         </li>
                     <?php endif; ?>
-                    <?php if (in_array($role, AuthUser::$denies['SlidesController'])) : ?>
-                        <li <?php echo ($this->active == 'slides') ? 'class="active"' : ''; ?>>
-                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/slides">Слайды</a>
-                        </li>
-                    <?php endif; ?>
-                    <?php if (in_array($role, AuthUser::$denies['ManagementController'])) : ?>
+<!--                    --><?php //if (!in_array($role, AuthUser::$denies['SlidesController'])) : ?>
+<!--                        <li --><?php //echo ($this->active == 'slides') ? 'class="active"' : ''; ?><!-->-->
+<!--                            <a href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/admin/slides">Слайды</a>-->
+<!--                        </li>-->
+<!--                    --><?php //endif; ?>
+                    <?php if (!in_array($role, AuthUser::$denies['ManagementController'])) : ?>
                         <li <?php echo ($this->active == 'management') ? 'class="active"' : ''; ?>>
                             <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/management">Менеджмент</a>
                         </li>

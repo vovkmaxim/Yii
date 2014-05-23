@@ -31,7 +31,7 @@ class Management extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('title, email', 'required'),
-            array('email', 'email'),
+            array('email', 'email','message' => 'Email не является правильным Email адресом.',),
 			array('position', 'numerical', 'integerOnly'=>true),
 			array('title, img, email', 'length', 'max'=>255),
             array('img', 'file', 'allowEmpty' => false, 'types' => 'jpg, jpeg, png, gif, bmp', 'on' => 'insert'),

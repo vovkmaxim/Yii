@@ -19,8 +19,8 @@
                                 <td><?php echo $job->title; ?></td>
                                 <td>
                                     <div style="float:right;">
-                                        <a title="Редактировать" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/vacancies/edit/id/<?php echo $job->id;?>" class="icon-edit"></a>
-                                        <a title="Удалить" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/vacancies/delete/id/<?php echo $job->id;?>" class="icon-remove"></a>
+                                        <a title="Редактировать" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/vacancies/edit/id/<?php echo $job->id;?>" class="icon-pencil"></a>
+                                        <a title="Удалить" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/vacancies/delete/id/<?php echo $job->id;?>" class="icon-trash"></a>
                                     </div>
                                 </td>
                             </tr>
