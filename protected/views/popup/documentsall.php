@@ -27,6 +27,7 @@
             });
         }else{
             window.open('/documents/'+res[1]);
+            $.colorbox.close();
         }
 
         return false;
