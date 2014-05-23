@@ -43,14 +43,9 @@
                                 <strong class="title">Development Center</strong>
                                 <span><?php echo $modelContactdata->adress; ?></span>
                             </div>
-                        </div>
-                        <div class="form-box">
-                            <h2>How can we help you?</h2>
-                            <?php if(Yii::app()->user->hasFlash('success')):?>
-                                <div class="info">
-                                    <?php echo Yii::app()->user->getFlash('success'); ?>
-                                </div>
-                            <?php endif; ?>
+                        </div><p><a name="ask"></a></p>
+                    </div>
+                    <div id="inline-content">
 
                             <?php
                             $form=$this->beginWidget(
@@ -58,35 +53,45 @@
                                 array(
                                     'id'=>'contactus-form',
                                     'enableAjaxValidation'=>false,
+                                    'htmlOptions' => array('class' => 'form_help')
                                 )
                             ); ?>
+                            <div class="popup_header_holder">
+                                <h1>How can we help you?</h1>
+
+                            </div>
                             <p><a name="ask"></a></p>
+                            <?php if(Yii::app()->user->hasFlash('success')):?>
+                                <div class="info">
+                                    <?php echo Yii::app()->user->getFlash('success'); ?>
+                                </div>
+                            <?php endif; ?>
+                            <div class="row-holder">
+                                <div class="form-row">
+                                    <?php echo $form->labelEx($modelContactus,'name'); ?>
+                                    <?php echo $form->textField($modelContactus,'name',array('size'=>40,'maxlength'=>255)); ?>
+                                    <?php echo $form->error($modelContactus,'name'); ?>
+                                </div>
 
-                            <div class="row">
-                                <?php echo $form->labelEx($modelContactus,'name'); ?>
-                                <?php echo $form->textField($modelContactus,'name',array('size'=>40,'maxlength'=>255)); ?>
-                                <?php echo $form->error($modelContactus,'name'); ?>
+                                <div class="form-row">
+                                    <?php echo $form->labelEx($modelContactus,'email'); ?>
+                                    <?php echo $form->textField($modelContactus,'email',array('size'=>40,'maxlength'=>255)); ?>
+                                    <?php echo $form->error($modelContactus,'email'); ?>
+                                </div>
+
+                                <div class="form-row">
+                                    <?php echo $form->labelEx($modelContactus,'subject'); ?>
+                                    <?php echo $form->textField($modelContactus,'subject',array('size'=>40,'maxlength'=>255)); ?>
+                                    <?php echo $form->error($modelContactus,'subject'); ?>
+                                </div>
+
+                                <div class="form-row">
+                                    <?php echo $form->labelEx($modelContactus,'body'); ?>
+                                    <?php echo $form->textArea($modelContactus,'body',array('rows'=>6, 'cols'=>43)); ?>
+                                    <?php echo $form->error($modelContactus,'body'); ?>
+                                </div>
                             </div>
-
-                            <div class="row">
-                                <?php echo $form->labelEx($modelContactus,'email'); ?>
-                                <?php echo $form->textField($modelContactus,'email',array('size'=>40,'maxlength'=>255)); ?>
-                                <?php echo $form->error($modelContactus,'email'); ?>
-                            </div>
-
-                            <div class="row">
-                                <?php echo $form->labelEx($modelContactus,'subject'); ?>
-                                <?php echo $form->textField($modelContactus,'subject',array('size'=>40,'maxlength'=>255)); ?>
-                                <?php echo $form->error($modelContactus,'subject'); ?>
-                            </div>
-
-                            <div class="row">
-                                <?php echo $form->labelEx($modelContactus,'body'); ?>
-                                <?php echo $form->textArea($modelContactus,'body',array('rows'=>6, 'cols'=>43)); ?>
-                                <?php echo $form->error($modelContactus,'body'); ?>
-                            </div>
-
-                            <div class="row buttons">
+                            <div class="submit-holder">
                                 <?php echo CHtml::submitButton('Send'); ?>
                             </div>
 
@@ -95,12 +100,8 @@
                             <!--</div>-->
 
                         </div>
-                        <div class="form-box">
-
-
-                        </div>
-                    </div>
                 </div>
+            </div>
         </section>
     </div>
 </div>
