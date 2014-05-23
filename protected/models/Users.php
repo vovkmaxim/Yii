@@ -7,6 +7,10 @@
  * @property integer $id
  * @property string $username
  * @property string $password
+ * @property string $email
+ * @property string $email_host
+ * @property string $email_user
+ * @property string $email_password
  * @property integer $role
  */
 class Users extends CActiveRecord
@@ -27,12 +31,13 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('username, password, role', 'required'),
+			array('username', 'required'),
+            array('email', 'email'),
 			array('role', 'numerical', 'integerOnly'=>true),
-			array('username, password', 'length', 'max'=>255),
+			array('username, password, email, email_host, email_user, email_password', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, username, password, role', 'safe', 'on'=>'search'),
+			array('id, username, password, email, email_host, email_user, email_password, role', 'safe'),
 		);
 	}
 
@@ -56,6 +61,10 @@ class Users extends CActiveRecord
 			'id' => 'ID',
 			'username' => 'Username',
 			'password' => 'Password',
+			'email' => 'E-mail',
+			'email_host' => 'E-mail Host',
+			'email_user' => 'E-mail User',
+			'email_password' => 'E-mail Password',
 			'role' => 'Role',
 		);
 	}
@@ -81,6 +90,10 @@ class Users extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('username',$this->username,true);
 		$criteria->compare('password',$this->password,true);
+		$criteria->compare('email',$this->email,true);
+		$criteria->compare('email_host',$this->email_host,true);
+		$criteria->compare('email_user',$this->email_user,true);
+		$criteria->compare('email_password',$this->email_password,true);
 		$criteria->compare('role',$this->role);
 
 		return new CActiveDataProvider($this, array(
@@ -98,4 +111,18 @@ class Users extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public static function titleList()
+    {
+        $roleRes = Yii::app()->db->createCommand()
+            ->select('*')
+            ->from('users_roles')
+            ->queryAll();
+
+        $navList = array();
+        array_map(function($element) use (&$navList) {
+            $navList[$element['id']] = $element['title'];
+        }, $roleRes);
+        return $navList;
+    }
 }

@@ -48,7 +48,7 @@ class AdminModule extends CWebModule
 		if(parent::beforeControllerAction($controller, $action))
 		{
             if (isset(AuthUser::$denies[get_class($controller)]) && Yii::app()->user->getModel()) {
-                if (in_array(Yii::app()->user->getModel()->role, AuthUser::$denies[get_class($controller)])) {
+                if (!in_array(Yii::app()->user->getModel()->role, AuthUser::$denies[get_class($controller)])) {
                     $controller->redirect(Yii::app()->getBaseUrl() . '/admin');
                 }
             }
