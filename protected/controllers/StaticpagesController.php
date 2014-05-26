@@ -132,8 +132,8 @@ class StaticpagesController extends Controller
         $this->layout='//layouts/page';
         $modelStatic = Staticpages::model()->findByAttributes(array('title' => 'Expertise'));
         $modelProjects = Projects::model()->findAll();
-        $modelTech = Tech::model()->findAll();
-        $this->pageTitle = 'Contact Us';
+        $modelTech = Tech::model()->findAll(array('limit' => 5));
+        $this->pageTitle = 'Expertise';
 
 
         $this->render('expertise', array(
