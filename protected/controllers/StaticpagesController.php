@@ -118,7 +118,7 @@ class StaticpagesController extends Controller
         $this->layout='//layouts/page';
         $modelStatic = Staticpages::model()->findByAttributes(array('title' => 'Marketing'));
         $modelDynamic = Documents::model()->findAll();
-        $this->pageTitle = 'Contact Us';
+        $this->pageTitle = 'Marketing Documents';
 
 
         $this->render('marketing', array(
