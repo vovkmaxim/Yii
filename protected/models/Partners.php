@@ -55,8 +55,8 @@ class Partners extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'url' => 'Ссылка',
-			'img' => 'Картинка',
+			'url' => 'Url',
+			'img' => 'Picture',
 		);
 	}
 

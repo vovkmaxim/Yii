@@ -58,8 +58,8 @@ class Projects extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Название',
-			'description' => 'Описание',
+			'title' => 'Title',
+			'description' => 'Description',
             'position' => 'Position'
 		);
 	}

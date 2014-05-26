@@ -58,9 +58,9 @@ class Documents extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Название',
-			'description' => 'Описание',
-			'file' => 'Файл',
+			'title' => 'Title',
+			'description' => 'Description',
+			'file' => 'File',
 			'downloaded' => 'Downloaded',
 			'position' => 'Position',
 		);

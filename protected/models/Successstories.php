@@ -48,11 +48,11 @@ class Successstories extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'client' => 'Клиент',
-			'task' => 'Задача',
-			'solution' => 'Решение',
-			'result' => 'Результат',
-			'pic' => 'Логотип',
+			'client' => 'Client',
+			'task' => 'Task',
+			'solution' => 'Solution',
+			'result' => 'Result',
+			'pic' => 'Picture',
 		);
 	}
 

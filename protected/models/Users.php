@@ -61,10 +61,10 @@ class Users extends CActiveRecord
 			'id' => 'ID',
 			'username' => 'Username',
 			'password' => 'Password',
-			'email' => 'E-mail',
-			'email_host' => 'E-mail Host',
-			'email_user' => 'E-mail User',
-			'email_password' => 'E-mail Password',
+			'email' => 'Email',
+			'email_host' => 'Email Host',
+			'email_user' => 'Email User',
+			'email_password' => 'Email Password',
 			'role' => 'Role',
 		);
 	}

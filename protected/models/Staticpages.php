@@ -50,11 +50,11 @@ class Staticpages extends CActiveRecord
     {
         return array(
             'id' => 'ID',
-            'title' => 'Название',
-            'activelink' => 'Ссылка',
-            'text' => 'Текст',
-            'dateCreate'=>'Дата создания',
-            'dateUpdate'=>'Дата обновления',
+            'title' => 'Title',
+            'activelink' => 'URL',
+            'text' => 'Text',
+            'dateCreate'=>'Created',
+            'dateUpdate'=>'Updated',
         );
     }
 

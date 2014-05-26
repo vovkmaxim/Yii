@@ -7,7 +7,7 @@
 <?php endif; ?>
 
 <div class="control-group">
-    <?php echo $form->label($model,'Название*'); ?>
+    <?php echo $form->label($model,'Title*'); ?>
     <div class="controls">
         <?php echo $form->textField($model,'title', array('class' => 'input-xxlarge')); ?>
     </div>
@@ -31,7 +31,7 @@
 </div>
 
 <div class="controls">
-    <?php echo CHtml::submitButton('Принять', array('class' => 'btn btn-save')); ?>
+    <?php echo CHtml::submitButton('Accept', array('class' => 'btn btn-save')); ?>
 </div>
 
 <?php $this->endWidget(); ?>

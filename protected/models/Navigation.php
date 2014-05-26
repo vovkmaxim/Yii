@@ -55,10 +55,10 @@ class Navigation extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Название',
+			'title' => 'Title',
 			'url' => 'Url',
 			'parent' => 'Parent',
-            'category' => 'Категория',
+            'category' => 'Category',
 			'position' => 'Position',
 		);
 	}

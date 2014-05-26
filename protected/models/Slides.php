@@ -56,8 +56,8 @@ class Slides extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'description' => 'Описание',
-			'img' => 'Картинка',
+			'description' => 'Description',
+			'img' => 'Picture',
 			'position' => 'Position',
 		);
 	}

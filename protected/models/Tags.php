@@ -51,7 +51,7 @@ class Tags extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Название',
+			'title' => 'Title',
 		);
 	}
 

@@ -8,4 +8,5 @@ class Helper {
     {
         return $className = ucfirst(strtolower(str_replace("_","",$className)));
     }
+
 }
