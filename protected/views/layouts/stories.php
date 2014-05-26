@@ -23,7 +23,7 @@
 			<header id="header" class="bg_main">
 				<div class="header-frame">
 					<div class="header_holder group">
-						<strong class="logo"><a href="#">CHI software</a></strong>
+						<strong class="logo"><a href="/">CHI software</a></strong>
 						<nav id="nav">
 							<ul>
 								<li><a href="index.html">Home</a></li>

@@ -44,7 +44,7 @@
                                 <span><?php echo $modelContactdata->adress; ?></span>
                             </div>
                         </div><p><a name="ask"></a></p>
-                    </div>
+                    </div><br><br><br>
                     <div id="inline-content">
 
                             <?php
@@ -52,8 +52,9 @@
                                 'CActiveForm',
                                 array(
                                     'id'=>'contactus-form',
+                                    'action'=>'Contact_us#ask',
                                     'enableAjaxValidation'=>false,
-                                    'htmlOptions' => array('class' => 'form_help')
+                                    'htmlOptions' => array('class' => 'form_help'),
                                 )
                             ); ?>
                             <div class="popup_header_holder">
@@ -62,10 +63,11 @@
                             </div>
                             <p><a name="ask"></a></p>
                             <?php if(Yii::app()->user->hasFlash('success')):?>
-                                <div class="info">
-                                    <?php echo Yii::app()->user->getFlash('success'); ?>
+                                <div  class="info">
+                                   <h3> <?php echo Yii::app()->user->getFlash('success'); ?></h3>
                                 </div>
                             <?php endif; ?>
+
                             <div class="row-holder">
                                 <div class="form-row">
                                     <?php echo $form->labelEx($modelContactus,'name'); ?>

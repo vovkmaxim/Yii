@@ -6,21 +6,19 @@
                     <ul class="breadcrumps group">
                         <li><a href="/">Home </a>&nbsp;&gt;&nbsp;</li>
                         <li><a href="#">Information</a>&nbsp;&gt;&nbsp;</li>
-                        <li>Marketing Documents</li>
+                        <li>Managament</li>
                     </ul>
                     <?php echo $modelStatic->text; ?>
                     <?php foreach($modelDynamic as $item) : ?>
                     <div class="block_download group">
-                        <a href="#" class="links_pdf">
-                            <img src="/images/pdf-icon_big.png" alt="">
-                        </a>
-                        <p>
-                            <strong><?php echo $item->title; ?></strong>
-                            <?php echo $item->description; ?>
-                        </p>
-                        <a href="#" class="links_pdf">
-                            <img src="/images/pdf-icon_big.png" alt="">
-                        </a>
+                        <div class="managImg">
+                            <img src="/images/management/1/<?php echo $item->img; ?>" alt="">
+                        </div>
+                        <div class="managText">
+                                <p><strong><?php echo $item->title; ?></strong></p>
+                                <a href="mailto:<?php echo $item->email ?>">Send an Email</a>
+                                <?php echo $item->description; ?>
+                        </div>
                     </div>
                     <?php endforeach; ?>
                 </div>

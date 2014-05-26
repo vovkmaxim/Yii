@@ -8,19 +8,18 @@
                         <li><a href="#">Information</a>&nbsp;&gt;&nbsp;</li>
                         <li>Marketing Documents</li>
                     </ul>
-                    <?php echo $modelStatic->text; ?>
+                    <div class="market"><?php echo $modelStatic->text; ?></div>
                     <?php foreach($modelDynamic as $item) : ?>
                         <div class="block_download group">
-                            <a href="<?php echo Yii::app()->request->baseUrl .'/mdocs/download?file='. $item->file; ?>" class="links_pdf">
-                                <img src="/images/pdf-icon_big.png" alt="">
-                            </a>
-                            <p>
+
+                                <a id="marpdf" href="<?php echo Yii::app()->request->baseUrl .'/mdocs/download?file='. $item->file; ?>" class="links_pdf">
+                                    <img src="/images/pdf-icon_big.png" alt="">
+                                </a>
+
+
                                 <strong><?php echo $item->title; ?></strong>
                                 <?php echo $item->description; ?>
-                            </p>
-                            <a href="<?php echo Yii::app()->request->baseUrl .'/mdocs/download?file='. $item->file; ?>" class="links_pdf">
-                                <img src="/images/pdf-icon_big.png" alt="">
-                            </a>
+
                         </div>
                     <?php endforeach; ?>
                 </div>

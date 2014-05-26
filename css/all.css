@@ -1074,6 +1074,7 @@ h2.technology-header{
 }
 .block_download p, .block_download .links_pdf{
     float: left;
+    margin: 25px;
 }
 .block_download p{
     width: 80%;
@@ -1122,3 +1123,14 @@ h2.technology-header{
     }
 }
 /*------------------------end media------------------*/
+
+.errorMessage {color: red;}
+#successMessage {color: green;}
+
+.managImg {  float: left; text-align: center;}
+.managText {float: left; width: 85%;}
+
+#marPdf {  float: left; margin: 20px;}
+.marText {overflow: hidden;}
+
+.market {width:95%}

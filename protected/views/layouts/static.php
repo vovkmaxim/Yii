@@ -23,7 +23,7 @@
             <header id="header" class="bg_main">
                 <div class="header-frame">
                     <div class="header_holder group">
-                        <strong class="logo"><a href="#">CHI software</a></strong>
+                        <strong class="logo"><a href="/">CHI software</a></strong>
                         <!--                    --><?php //$this->widget('Menu'); ?>
                         <nav id="nav">
                             <?php $this->renderPartial('application.views.layouts._menu', array('rootId' => 0)); ?>

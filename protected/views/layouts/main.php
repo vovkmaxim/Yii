@@ -28,7 +28,7 @@
         <header id="header">
             <div class="header-frame">
                 <div class="header_holder group">
-                    <strong class="logo"><a href="#">CHI software</a></strong>
+                    <strong class="logo"><a href="/">CHI software</a></strong>
                     <nav id="nav">
                         <?php $this->renderPartial('application.views.layouts._menu', array('rootId' => 0)); ?>
                     </nav>

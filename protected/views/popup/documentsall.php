@@ -58,9 +58,11 @@
         </div>
         <div class="form-row">
             <label>e-mail<span>*</span></label>
-            <input type="email" name="email">
+            <input type="email" id="email" name="email">
         </div>
         <div class="submit-holder">
+            <p id="err" style="display: block;"></p>
+
             <?php
                 echo CHtml::ajaxSubmitButton('Send', Yii::app()->request->baseUrl.'/index.php/ajax/documentsemail', array(
                     'type' => 'POST',
@@ -75,7 +77,10 @@
                             $.colorbox.resize();
                         }
                         if(data.error) {
-                            $("#error").html(data.error);
+                            $("#err").html(data.error);
+                            $("#email").css("border","solid 1px red");
+                            $("#err").css("color","red");
+                            $.colorbox.resize();
                         }
                     }'
                 ),
