@@ -90,7 +90,7 @@ class StaticpagesController extends Controller
         $this->layout='//layouts/page';
         $modelStatic = Staticpages::model()->findByAttributes(array('title' => 'Vacancies'));
         $modelDynamic = Vacancies::model()->findAll();
-        $this->pageTitle = 'Contact Us';
+        $this->pageTitle = 'Vacancies';
 
 
         $this->render('vacancies', array(
@@ -104,7 +104,7 @@ class StaticpagesController extends Controller
         $this->layout='//layouts/page';
         $modelStatic = Staticpages::model()->findByAttributes(array('title' => 'Management'));
         $modelDynamic = Management::model()->findAll();
-        $this->pageTitle = 'Contact Us';
+        $this->pageTitle = 'Management';
 
 
         $this->render('management', array(
