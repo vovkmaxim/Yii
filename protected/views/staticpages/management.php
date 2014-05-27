@@ -5,7 +5,7 @@
                 <div class="m2">
                     <ul class="breadcrumps group">
                         <li><a href="/">Home </a>&nbsp;&gt;&nbsp;</li>
-                        <li>Managament</li>
+                        <li>Management</li>
                     </ul>
                     <?php echo $modelStatic->text; ?>
                     <?php foreach($modelDynamic as $item) : ?>
