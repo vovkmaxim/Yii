@@ -16,7 +16,7 @@
                                 </a>
 
 
-                                <strong><?php echo $item->title; ?></strong>
+                                <p><strong><?php echo $item->title; ?></strong></p>
                                 <?php echo $item->description; ?>
 
                         </div>
