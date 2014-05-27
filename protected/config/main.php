@@ -64,7 +64,7 @@ return array(
                 '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 //                'contactus' => 'contactus/index',
 //                'successstories' => 'successstories/index',
-                'projects' => 'projects/index',
+                'expertise' => 'expertise/index',
                 'admin' => 'admin/default/index',
                 '<module:\w+>/<controller:\w+>'=>'<module>/<controller>/index',
 //                '<module:\w+>/<action:\w+>'=>'<module>/default/<action>',

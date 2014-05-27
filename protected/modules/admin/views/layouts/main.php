@@ -51,7 +51,7 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu</a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/menu">Main Menu</a>
+                                    <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/menu">Menu</a>
                                 </li>
                                 <li>
                                     <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/menuCategories">Categories</a>

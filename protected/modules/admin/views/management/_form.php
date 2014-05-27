@@ -55,7 +55,8 @@
     </div>
 
     <div class="control-group">
-        Форматы картинки JPG, JPEG, BMP, GIF, PNG
+        <p>Formats: JPG, JPEG, BMP, GIF, PNG.</p>
+        <p>Recommended size: 120x120</p>
     </div>
 
     <?php if(!empty($model->img)): ?>

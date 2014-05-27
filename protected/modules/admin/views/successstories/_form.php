@@ -18,6 +18,10 @@
 <!--	--><?php //echo $form->textFieldRow($model,'pic',array('class'=>'span5')); ?>
 <!--    --><?php //echo $form->fileFieldGroup($model, 'pic',array('wrapperHtmlOptions' => array('class' => 'col-sm-5',),)); ?>
     <?php echo $form->labelEx($model,'pic'); ?>
+<div class="control-group">
+    <p>Formats: JPG, JPEG, GIF, PNG.</p>
+    <p>Recommended size: 120x120</p>
+</div>
     <?php if($model->pic): ?>
         <p><?php echo CHtml::encode($model->pic); ?></p>
     <?php endif; ?>
@@ -29,12 +33,12 @@
 	<?php $this->widget('bootstrap.widgets.TbButton', array(
 			'buttonType'=>'submit',
 			'type'=>'primary',
-			'label'=>$model->isNewRecord ? 'Создать' : 'Сохранить',
+			'label'=>$model->isNewRecord ? 'Create' : 'Save',
 		));
     ?>
     <?php $this->widget(
         'bootstrap.widgets.TbButton',
-        array('buttonType' => 'reset', 'label' => 'Сбросить')
+        array('buttonType' => 'reset', 'label' => 'Reset')
     );
     ?>
 </div>

@@ -3,6 +3,10 @@
         <section class="main">
             <div class="m1">
                 <div class="m2">
+                    <ul class="breadcrumps group">
+                        <li><a href="/">Home </a>&nbsp;&gt;&nbsp;</li>
+                        <li>Vacancies</li>
+                    </ul>
                     <div class="vacancy-image">
                         <div class="holder">
                             <div class="frame">

@@ -5,6 +5,10 @@
         <section class="main">
             <div class="m1">
                 <div class="m2">
+                    <ul class="breadcrumps group">
+                        <li><a href="/">Home </a>&nbsp;&gt;&nbsp;</li>
+                        <li>Contact Us</li>
+                    </ul>
                     <div class="section">
                         <div class="contact-box">
                             <ul class="contact-list">
@@ -52,7 +56,7 @@
                                 'CActiveForm',
                                 array(
                                     'id'=>'contactus-form',
-                                    'action'=>'Contact_us#ask',
+                                    'action'=>'/staticpages/Contact_us#ask',
                                     'enableAjaxValidation'=>false,
                                     'htmlOptions' => array('class' => 'form_help'),
                                 )

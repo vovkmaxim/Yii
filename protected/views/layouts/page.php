@@ -35,7 +35,9 @@
                 </div>
             </header>
         </div>
+
             <?php echo $content; ?>
+
             <footer id="footer">
                 <div class="footer-holder">
                     <div class="footer-frame">

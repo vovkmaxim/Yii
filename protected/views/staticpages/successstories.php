@@ -1,8 +1,15 @@
 <div class="pages-holder">
+
     <div class="page">
+
         <section class="main">
             <div class="m1">
                 <div class="m2">
+<!--                    <ul class="breadcrumps group">-->
+<!--                        <li><a href="/">Home </a>&nbsp;&gt;&nbsp;</li>-->
+<!---->
+<!--                        <li>--><?php //echo $modelStatic->title; ?><!--</li>-->
+<!--                    </ul>-->
                     <h2 style="font-style:italic"><strong>Success Stories</strong>
                     <a href="/popup/DocumentsAll?id=2" style="line-height: 1.2em; font-size: 13px;" class="inline cboxElement"><img alt="" src="../../images/pdf-icon0.png" /></a></h2>
 
@@ -12,7 +19,7 @@
                             echo "
                             <div class='block_stories group'>
                                 <div class='image_holder'>
-                                    <img src='../".$item->pic."' alt='' width='200' height='200'>
+                                    <img src='../".$item->pic."' alt='' >
                                 </div>
                                 <div class='block_information'>
                                     <strong>The client</strong>

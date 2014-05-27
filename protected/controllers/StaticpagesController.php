@@ -59,7 +59,7 @@ class StaticpagesController extends Controller
 
         Yii::app()->clientScript->registerScript(
             'myHideEffect',
-            '$(".info").animate({opacity: 1.0}, 1000).fadeOut("slow");',
+            '$(".info").animate({opacity: 1.0}, 2000).fadeOut("slow");',
             CClientScript::POS_READY
         );
         $this->render('contactus', array(

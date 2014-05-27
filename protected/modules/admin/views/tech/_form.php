@@ -18,7 +18,7 @@
     <?php endif; ?>
 
     <div class="control-group">
-        <?php echo $form->label($model,'Название*'); ?>
+        <?php echo $form->label($model,'Titlr*'); ?>
         <div class="controls">
             <?php echo $form->textField($model,'title', array('class' => 'input-xxlarge')); ?>
         </div>
@@ -29,6 +29,23 @@
             <?php echo $form->ckEditorRow(
                 $model,
                 'description',
+                array(
+                    'editorOptions' => array(
+                        'fullpage' => 'js:true',
+                        'width' => '840',
+                        'resize_maxWidth' => '640',
+                        'resize_minWidth' => '320'
+                    )
+                )
+            ); ?>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <div class="controls">
+            <?php echo $form->ckEditorRow(
+                $model,
+                'info',
                 array(
                     'editorOptions' => array(
                         'fullpage' => 'js:true',

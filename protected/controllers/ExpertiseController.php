@@ -2,15 +2,29 @@
 
 class ExpertiseController extends Controller
 {
-	
-	public function actionIndex()
+    public $layout = '//layouts/page';
+    public $pageTitle='Expertise';
+    public $modelStatic;
+    public $modelTech;
+
+    public function actionIndex()
 	{
-		$model = Tech::model()->findAll();
-		$this->render('index', array('model' => $model));
+        $modelStatic = Staticpages::model()->findByAttributes(array('title' => 'Expertise'));
+        $modelProjects = Projects::model()->findAll();
+        $modelTech = Tech::model()->findAll();
+        $this->render(
+            'index',
+            array(
+                'modelStatic' => $modelStatic,
+                'modelProjects' => $modelProjects,
+                'modelTech' => $modelTech,
+            ));
 	}
 	
 	public function actionProjects($tech = '', $tag = '')
 	{
+        $modelTech = Tech::model()->findByAttributes(array('title' => $tech));
+
         if(!empty($tech)){
             $projects = Yii::app()->db->createCommand()
                 ->select('projects.id, projects.title, projects.description')
@@ -20,6 +34,7 @@ class ExpertiseController extends Controller
                 ->where('tech.title = :tech', array(':tech' => $tech))
                 ->order('projects.position')
                 ->queryAll();
+
         }else{
             $projects = Yii::app()->db->createCommand()
                 ->select('projects.id, projects.title, projects.description')
@@ -30,6 +45,7 @@ class ExpertiseController extends Controller
                 ->order('projects.position')
                 ->queryAll();
         }
+//        $modelPics = ProjectsPics::model()->findByAttributes(array('project_id' => $projects['id']));
 
         $tagsList = Yii::app()->db->createCommand()
             ->select('tags.title, tags_projects.project_id')
@@ -38,7 +54,7 @@ class ExpertiseController extends Controller
             ->order('tags.title')
             ->queryAll();
 
-        $this->render('filter', array('projects' => $projects, 'tagsList' => $tagsList));
+        $this->render('filter', array('projects' => $projects, 'tagsList' => $tagsList, 'modelTech' => $modelTech, ));
 	}
 
 }

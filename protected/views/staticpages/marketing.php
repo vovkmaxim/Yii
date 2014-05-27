@@ -5,7 +5,6 @@
                 <div class="m2">
                     <ul class="breadcrumps group">
                         <li><a href="/">Home </a>&nbsp;&gt;&nbsp;</li>
-                        <li><a href="#">Information</a>&nbsp;&gt;&nbsp;</li>
                         <li>Marketing Documents</li>
                     </ul>
                     <div class="market"><?php echo $modelStatic->text; ?></div>

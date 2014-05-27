@@ -7,6 +7,7 @@
  * @property integer $id
  * @property string $title
  * @property string $description
+ * @property string info
  * @property string $url
  * @property int $position
  *
@@ -32,11 +33,11 @@ class Tech extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title', 'required'),
+			array('title, info', 'required'),
 			array('title', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, description, url', 'safe'),
+			array('id, title, description, info, url', 'safe'),
 		);
 	}
 
@@ -62,6 +63,7 @@ class Tech extends CActiveRecord
 			'id' => 'ID',
 			'title' => 'Title',
 			'description' => 'Description',
+            'info'=>'Page Content',
             'url' => 'Url'
 		);
 	}
@@ -87,6 +89,7 @@ class Tech extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('description',$this->description,true);
+		$criteria->compare('info',$this->info,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

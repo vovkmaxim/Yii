@@ -1,14 +1,57 @@
-<?php
+<?php if (isset($_GET['tech'])) $tech=$_GET['tech']; else $tech=''; ?>
 
-foreach($projects as $item) {
-	echo '<h4>'.$item['title'].'</h4>';
-	echo '<br />';
-	echo $item['description'];
-	echo '<br />';
-    foreach($tagsList as $tag){
-        if($tag['project_id'] == $item['id']){
-            echo '<a href="/expertise/projects/tag/'. $tag['title'] .'">'. $tag['title'] .'</a> ';
-        }
-    }
-	echo '<hr />';
-}
+
+<!--   --><?php //foreach($projects as $item) {
+//        echo '<h4>'.$item['title'].'</h4>';
+//        echo '<br />';
+//        echo $item['description'];
+//        echo '<br />';
+//        echo '<img src="'.$item['url'].'" alt="img">';
+//        foreach($tagsList as $tag){
+//            if($tag['project_id'] == $item['id']){
+//
+//                echo '<a href="/expertise/projects/tag/'. $tag['title'] .'">'. $tag['title'] .'</a> ';
+//            }
+//        }
+//        echo '<hr />';
+//   }
+//   ?>
+
+<div class="pages-holder">
+    <div class="page">
+        <section class="main">
+            <div class="m1">
+                <div class="m2">
+                    <ul class="breadcrumps group">
+                        <li><a href="/">Home </a>&nbsp;&gt;&nbsp;</li>
+                        <li><a href="/expertise">Expertise </a>&nbsp;&gt;&nbsp;</li>
+                        <li><?php echo $tech; ?></li>
+                    </ul>
+                    <?php if (isset($modelTech->info)) echo  $modelTech->info; ?>
+                    <h2>Our Projects</h2>
+                    <p><?php if (isset($modelTech->description)) echo $modelTech->description?></p>
+                    <?php foreach($projects as $item): ?>
+                    <div class="block_expertise group">
+                        <div class="image_holder">
+                            <img src="/images/tmp/partner1.jpg" alt="img">
+                        </div>
+                        <div class="about">
+                            <h3><?php echo $item['title']; ?></h3>
+                            <p><?php echo $item['description']; ?></p>
+                            <?php
+                                foreach($tagsList as $tag){
+                                    if($tag['project_id'] == $item['id']){
+//                                        echo '<a href="/expertise/projects/tag/'. $tag['title'] .'" class="name_tehnology">'. $tag['title'] .'</a> ';
+                                        echo '<a href=#" class="name_tehnology">'. $tag['title'] .'</a> ';
+                                    }
+                                }
+                            ?>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

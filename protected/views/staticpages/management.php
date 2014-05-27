@@ -5,14 +5,13 @@
                 <div class="m2">
                     <ul class="breadcrumps group">
                         <li><a href="/">Home </a>&nbsp;&gt;&nbsp;</li>
-                        <li><a href="#">Information</a>&nbsp;&gt;&nbsp;</li>
                         <li>Managament</li>
                     </ul>
                     <?php echo $modelStatic->text; ?>
                     <?php foreach($modelDynamic as $item) : ?>
                     <div class="block_download group">
                         <div class="managImg">
-                            <img src="/images/management/1/<?php echo $item->img; ?>" alt="">
+                            <img src="/images/management/<?php echo $item->id; ?>/<?php echo $item->img; ?>" alt="img">
                         </div>
                         <div class="managText">
                                 <p><strong><?php echo $item->title; ?></strong></p>

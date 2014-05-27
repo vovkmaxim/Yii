@@ -84,7 +84,7 @@
 html{height: 100%;}
 body {
     margin:0;
-    color:#797979;
+    color:#000;
     font:14px/22px 'CalibriRegular', Arial, Helvetica, sans-serif;
     background:#fff;
     -webkit-text-size-adjust:100%;
@@ -1021,7 +1021,8 @@ h2.technology-header{
     border: none;
 }
 .block_stories img, .block_expertise img{
-    max-width: 100%;
+    max-width: 200px;
+    max-height: 200px;
 }
 .block_expertise .about{
     float: left;
@@ -1128,9 +1129,12 @@ h2.technology-header{
 #successMessage {color: green;}
 
 .managImg {  float: left; text-align: center;}
+.managImg img {max-height: 120px; max-width: 120px; min-height: 120px; min-width: 120px;}
+
 .managText {float: left; width: 85%;}
 
 #marPdf {  float: left; margin: 20px;}
 .marText {overflow: hidden;}
 
 .market {width:95%}
+
