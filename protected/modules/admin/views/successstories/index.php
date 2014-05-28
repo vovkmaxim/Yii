@@ -6,6 +6,7 @@ $this->widget(
     array(
         'id'=>'successstories-grid',
         'dataProvider'=>$model->search(),
+        'template'=>"{items}\n{pager}",
         'filter'=>$model,
         'columns'=>array(
             //        'id',
@@ -22,4 +23,4 @@ $this->widget(
     )
 );
 ?>
-<a class="btn" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/successstories/update">Добавить</a>
+<a class="btn" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/successstories/update">Add</a>

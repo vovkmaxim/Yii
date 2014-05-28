@@ -268,3 +268,5 @@ table.detail-view td
 .cke_reset_all, .cke_reset_all * {
     max-width: none;
 }
+
+.storiesImg {max-width: 120px; max-height: 120px}

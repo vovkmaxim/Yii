@@ -18,14 +18,14 @@
     <?php endif; ?>
 
     <div class="control-group">
-        Технология
+        Technology
         <div class="controls">
             <?php echo $form->dropDownList($tech,'title', Tech::titleList()); ?>
         </div>
     </div>
 
     <div class="control-group">
-        Теги - <a href="#" onclick="openTagsList();" id="clickTag">открыть</a>
+        Tags - <a href="#" onclick="openTagsList();" id="clickTag">открыть</a>
         <div class="controls">
             <input type="text" value="" name="Projects[tags]" class="input-xxlarge" id="Projects_tags" />
         </div>
@@ -40,7 +40,7 @@
     </div>
 
     <div class="control-group">
-        <?php echo $form->label($model,'Название*'); ?>
+        <?php echo $form->label($model,'Title*'); ?>
         <div class="controls">
             <?php echo $form->textField($model,'title', array('class' => 'input-xxlarge')); ?>
         </div>
@@ -63,8 +63,18 @@
         </div>
     </div>
 
-    <div class="controls">
-        <?php echo CHtml::submitButton('Принять', array('class' => 'btn btn-save')); ?>
+    <div class="form-actions">
+    <?php $this->widget('bootstrap.widgets.TbButton', array(
+        'buttonType'=>'submit',
+        'type'=>'primary',
+        'label'=>$model->isNewRecord ? 'Create' : 'Save',
+    ));
+    ?>
+    <?php $this->widget(
+        'bootstrap.widgets.TbButton',
+        array('buttonType' => 'reset', 'label' => 'Reset')
+    );
+    ?>
     </div>
 
     <?php $this->endWidget(); ?>

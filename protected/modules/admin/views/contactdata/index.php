@@ -1,4 +1,4 @@
-<h1>Данные страницы Contact Us</h1>
+<h2>Contact Data</h2>
 
 <?php
     $this->widget(

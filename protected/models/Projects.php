@@ -15,6 +15,8 @@
  */
 class Projects extends CActiveRecord
 {
+     public $technology;
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -34,7 +36,7 @@ class Projects extends CActiveRecord
 			array('title', 'required'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, description, position', 'safe'),
+			array('id, title, description, position, technology', 'safe'),
 		);
 	}
 
@@ -51,6 +53,23 @@ class Projects extends CActiveRecord
 		);
 	}
 
+    /**
+     * Get Technologies
+     *
+     * @return string
+     */
+    public function getTech()
+    {
+        $arr = array();
+            if (count($this->tech)>0) {
+                foreach ($this->tech as $item) {
+                    $arr[] = $item->title;
+                }
+            }
+
+        return (count($arr)>0) ? (implode(',', $arr)) : '' ;
+    }
+
 	/**
 	 * @return array customized attribute labels (name=>label)
 	 */
@@ -60,7 +79,7 @@ class Projects extends CActiveRecord
 			'id' => 'ID',
 			'title' => 'Title',
 			'description' => 'Description',
-            'position' => 'Position'
+
 		);
 	}
 
@@ -81,14 +100,27 @@ class Projects extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
+        $criteria->with = array('tech');
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('description',$this->description,true);
+//		$criteria->compare('tech',$this->tech,true);
+        $criteria->compare('tech.title', $this->technology, true );
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
-		));
+            'sort'=>array(
+                'attributes'=>array(
+                    'technology'=>array(
+                        'asc'=>'tech.title',
+                        'desc'=>'tech.title DESC',
+                    ),
+                    '*',
+                ),
+            ),
+
+        ));
 	}
 
 	/**

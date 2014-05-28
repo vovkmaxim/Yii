@@ -1,1 +1,1 @@
-<div class="span1">Hello world!</div>
+Welcome to Admin Panel!

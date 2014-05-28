@@ -3,7 +3,7 @@
 class UsersController extends AdminController
 {
     public function actionIndex() {
-        $model = Users::model()->findAll();
+        $model = new Users('search');
         $this->render('index', array('model' => $model));
     }
 
@@ -31,11 +31,11 @@ class UsersController extends AdminController
         $this->render('add', array('model' => $model));
     }
 
-    public function actionEdit($id)
+    public function actionUpdate($id)
     {
         $model = Users::model()->findByPk($id);
         $this->initSave($model);
-        $this->render('edit', array('model' => $model));
+        $this->render('update', array('model' => $model));
     }
 
     public function actionDelete($id) {

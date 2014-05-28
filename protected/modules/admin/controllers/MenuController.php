@@ -7,11 +7,12 @@ class MenuController extends AdminController
     }
 
     public function actionIndex() {
-        $model = Yii::app()->db->createCommand()
-            ->select('navigation.id, navigation.title, navigation_categories.title as category_title')
-            ->from('navigation')
-            ->join('navigation_categories', 'navigation_categories.id = navigation.category')
-            ->queryAll();
+//        $model = Yii::app()->db->createCommand()
+//            ->select('navigation.id, navigation.title, navigation_categories.title as category_title')
+//            ->from('navigation')
+//            ->join('navigation_categories', 'navigation_categories.id = navigation.category')
+//            ->queryAll();
+        $model = new Navigation('search');
         $this->render('index', array('model' => $model));
     }
 
@@ -33,11 +34,11 @@ class MenuController extends AdminController
         $this->render('add', array('model' => $model));
     }
 
-    public function actionEdit($id)
+    public function actionUpdate($id)
     {
         $model = Navigation::model()->findByPk($id);
         $this->initSave($model);
-        $this->render('edit', array('model' => $model));
+        $this->render('update', array('model' => $model));
     }
 
     public function actionDelete($id) {

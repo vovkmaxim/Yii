@@ -1,5 +1,5 @@
-<a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/contactus"><<<Назад к списку вопросов</a>
-<h2>Подробный просмотр вопроса №<?php echo $model->id; ?></h2>
+<a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/contactus">&lt;&nbsp;&lt;&nbsp;&lt;&nbsp; Back to questions</a>
+<h2>Detail view for question №<?php echo $model->id; ?></h2>
 
 <?php
     $this->widget(

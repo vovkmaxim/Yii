@@ -20,7 +20,7 @@
 </div>
 
 <div class="control-group">
-    <?php echo $form->label($model,'E-Mail'); ?>
+    <?php echo $form->label($model,'EMail'); ?>
     <div class="controls">
         <?php echo $form->textField($model,'email', array('class' => 'input-xxlarge')); ?>
     </div>
@@ -34,7 +34,7 @@
 </div>
 
 <div class="control-group">
-    Роль
+    <?php echo $form->label($model,'role'); ?>
     <div class="controls">
         <?php echo $form->dropDownList($model,'role', Users::titleList()); ?>
     </div>
@@ -61,8 +61,18 @@
     </div>
 </div>
 
-<div class="controls">
-    <?php echo CHtml::submitButton('Принять', array('class' => 'btn btn-save')); ?>
+<div class="form-actions">
+    <?php $this->widget('bootstrap.widgets.TbButton', array(
+        'buttonType'=>'submit',
+        'type'=>'primary',
+        'label'=>$model->isNewRecord ? 'Create' : 'Save',
+    ));
+    ?>
+    <?php $this->widget(
+        'bootstrap.widgets.TbButton',
+        array('buttonType' => 'reset', 'label' => 'Reset')
+    );
+    ?>
 </div>
 
 <?php $this->endWidget(); ?>

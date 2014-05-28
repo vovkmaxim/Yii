@@ -7,7 +7,7 @@ class TagsController extends AdminController
     }
 
     public function actionIndex() {
-        $model = Tags::model()->findAll(array('order' => 'title'));
+        $model = new Tags('search');
         $this->render('index', array(
             'model' => $model
         ));
@@ -31,11 +31,11 @@ class TagsController extends AdminController
         $this->render('add', array('model' => $model));
     }
 
-    public function actionEdit($id)
+    public function actionUpdate($id)
     {
         $model = Tags::model()->findByPk($id);
         $this->initSave($model);
-        $this->render('edit', array('model' => $model));
+        $this->render('update', array('model' => $model));
     }
 
     public function actionDelete($id) {

@@ -7,8 +7,8 @@ class DocumentsController extends AdminController
     }
 
     public function actionIndex() {
-        $docList = Documents::model()->findAll(array('order' => 'position'));
-        $this->render('index', array('docList' => $docList));
+        $model = new Documents('search');
+        $this->render('index', array('model' => $model));
     }
 
     function initSave(Documents $model)
@@ -40,11 +40,11 @@ class DocumentsController extends AdminController
         $this->render('add', array('model' => $model));
     }
 
-    public function actionEdit($id)
+    public function actionUpdate($id)
     {
         $model = Documents::model()->findByPk($id);
         $this->initSave($model);
-        $this->render('edit', array('model' => $model));
+        $this->render('update', array('model' => $model));
     }
 
     public function actionDelete($id) {

@@ -1,4 +1,4 @@
-<h2>Вопросы пользователей</h2>
+<h2>Questions</h2>
 
 <?php
     $this->widget(
@@ -17,7 +17,6 @@
                 'date',
                 array(
                     'class'=>'bootstrap.widgets.TbButtonColumn',
-//                    'template'=>'{delete}{update}',
                     'template'=>'{delete}{view}',
                 ),
             ),

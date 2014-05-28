@@ -1,22 +1,73 @@
-<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm',array(
-	'id'=>'successstories-form',
-	'enableAjaxValidation'=>false,
-    'htmlOptions' => array('enctype' => 'multipart/form-data'),
-)); ?>
+<?php
+    $form=$this->beginWidget(
+        'bootstrap.widgets.TbActiveForm',
+        array(
+            'id'=>'successstories-form',
+            'enableAjaxValidation'=>true,
+            'htmlOptions' => array('enctype' => 'multipart/form-data'),
+        )
+    );
+?>
 
+<?php echo $form->ckEditorRow(
+    $model,
+    'client',
+    array(
+        'editorOptions' => array(
+            'fullpage' => 'js:true',
+            'width' => '840',
+            'resize_maxWidth' => '640',
+            'resize_minWidth' => '320'
+        )
+    )
+); ?>
+<?php echo $form->ckEditorRow(
+    $model,
+    'task',
+    array(
+        'editorOptions' => array(
+            'fullpage' => 'js:true',
+            'width' => '840',
+            'resize_maxWidth' => '640',
+            'resize_minWidth' => '320'
+        )
+    )
+); ?>
 
+<?php echo $form->ckEditorRow(
+    $model,
+    'solution',
+    array(
+        'editorOptions' => array(
+            'fullpage' => 'js:true',
+            'width' => '840',
+            'resize_maxWidth' => '640',
+            'resize_minWidth' => '320'
+        )
+    )
+); ?>
 
+<?php echo $form->ckEditorRow(
+    $model,
+    'result',
+    array(
+        'editorOptions' => array(
+            'fullpage' => 'js:true',
+            'width' => '840',
+            'resize_maxWidth' => '640',
+            'resize_minWidth' => '320'
+        )
+    )
+); ?>
 
-	<?php echo $form->textFieldRow($model,'client',array('rows'=>6, 'cols'=>50, 'class'=>'span8')); ?>
+<!--	--><?php //echo $form->textFieldRow($model,'client',array('rows'=>6, 'cols'=>50, 'class'=>'span8')); ?>
+<!---->
+<!--	--><?php //echo $form->textFieldRow($model,'task',array('rows'=>6, 'cols'=>50, 'class'=>'span8')); ?>
+<!---->
+<!--	--><?php //echo $form->textAreaRow($model,'solution',array('rows'=>6, 'cols'=>50, 'class'=>'span8')); ?>
+<!---->
+<!--	--><?php //echo $form->textAreaRow($model,'result',array('rows'=>6, 'cols'=>50, 'class'=>'span8')); ?>
 
-	<?php echo $form->textFieldRow($model,'task',array('rows'=>6, 'cols'=>50, 'class'=>'span8')); ?>
-
-	<?php echo $form->textAreaRow($model,'solution',array('rows'=>6, 'cols'=>50, 'class'=>'span8')); ?>
-
-	<?php echo $form->textAreaRow($model,'result',array('rows'=>6, 'cols'=>50, 'class'=>'span8')); ?>
-
-<!--	--><?php //echo $form->textFieldRow($model,'pic',array('class'=>'span5')); ?>
-<!--    --><?php //echo $form->fileFieldGroup($model, 'pic',array('wrapperHtmlOptions' => array('class' => 'col-sm-5',),)); ?>
     <?php echo $form->labelEx($model,'pic'); ?>
 <div class="control-group">
     <p>Formats: JPG, JPEG, GIF, PNG.</p>

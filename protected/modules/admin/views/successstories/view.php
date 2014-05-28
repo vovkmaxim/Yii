@@ -1,6 +1,6 @@
-<a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/successstories"><<<Назад к списку Successstories</a>
+<a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/successstories">&lt;&nbsp;&lt;&nbsp;&lt;&nbsp; Back to Successstories</a>
 
-<h2>Подробный просмотр </h2>
+<h2> Detail View </h2>
 
 <?php
     $this->widget(
@@ -16,10 +16,8 @@
                     array (
                         'name'=>'pic',
                         'type'=>'raw',
-                        'value'=>CHtml::image(
-                                Yii::app()->getBaseUrl(true).'/'.$model->pic,
-                                $model->pic),
-//                                array("style"=>"border: solid 2px;")),
+                        'value'=>CHtml::image(Yii::app()->getBaseUrl(true).'/'.$model->pic,$model->pic,array('class'=>'storiesImg')),
+                        'htmlOptions'=>array('class'=>'storiesImg'),
                     ),
             ),
 

@@ -7,7 +7,7 @@ class ManagementController extends AdminController
     }
 
     public function actionIndex() {
-        $model = Management::model()->findAll(array('order' => 'position'));
+        $model = new Management('search');;
         $this->render('index', array('model' => $model));
     }
 
@@ -43,11 +43,11 @@ class ManagementController extends AdminController
         $this->render('add', array('model' => $model));
     }
 
-    public function actionEdit($id)
+    public function actionUpdate($id)
     {
         $model = Management::model()->findByPk($id);
         $this->initSave($model);
-        $this->render('edit', array('model' => $model));
+        $this->render('update', array('model' => $model));
     }
 
     public function actionDelete($id) {
@@ -57,7 +57,9 @@ class ManagementController extends AdminController
         }
         $model = Management::model()->findByPk($id);
         if($model->delete()){
-            $this->removeDirectory('images/management/'. $model->id);
+            if(is_file('images/management/'. $model->id)){
+                $this->removeDirectory('images/management/'. $model->id);
+            }
             $this->redirect('/admin/management');
         }
         exit();

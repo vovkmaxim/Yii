@@ -13,7 +13,7 @@ class Successstories extends CActiveRecord
 	{
 
 		return array(
-			array('client, task, solution, result', 'required', 'message'=>'Это поле обязательно для заполнения'),
+			array('client, task, solution, result', 'required', 'message'=>'This field is required'),
 			array('id, client, task, solution, result, pic', 'safe', 'on'=>'search'),
             array('pic', 'file', 'types'=>'jpg, jpeg, gif, png', 'allowEmpty' => true),
             array('pic', 'file', 'types'=>'jpg, jpeg, gif, png', 'allowEmpty' => true),

@@ -12,12 +12,12 @@ class Contactdata extends CActiveRecord
 	{
 
 		return array(
-			array('general, jobs, partnership, phone, adress', 'required', 'message'=>'Это поле обязательно для заполнения'),
+			array('general, jobs, partnership, phone, adress', 'required', 'message'=>'This field is required'),
 			array('general, jobs, partnership', 'length', 'max'=>255),
 			array('phone', 'length', 'max'=>50),
 			array('id, general, jobs, partnership, phone, adress', 'safe', 'on'=>'search'),
-            array('general, jobs, partnership', 'email','message'=>'Некорректный E-mail адресс'),
-            array('phone', 'numerical', 'integerOnly'=>true,'message'=>'Некорректный номер телефона'),
+            array('general, jobs, partnership', 'email','message'=>'Wrong Email'),
+            array('phone', 'numerical', 'integerOnly'=>true,'message'=>'Wrong number'),
 		);
 	}
 

@@ -31,7 +31,7 @@ class Documents extends CActiveRecord
 		// will receive user inputs.
     
 		return array(
-			array('title', 'required'),
+			array('title, description', 'required'),
 			array('downloaded, position', 'numerical', 'integerOnly'=>true),
 			array('title, file', 'length', 'max'=>255),
 			array('file', 'file', 'allowEmpty' => false, 'types' => 'pdf', 'on' => 'insert'),

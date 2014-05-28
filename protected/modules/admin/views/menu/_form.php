@@ -19,7 +19,7 @@
 <?php endif; ?>
 
 <div class="control-group">
-    <?php echo $form->label($model,'Название*'); ?>
+    <?php echo $form->label($model,'Title*'); ?>
     <div class="controls">
         <?php echo $form->textField($model,'title', array('class' => 'input-xxlarge')); ?>
     </div>
@@ -33,21 +33,31 @@
 </div>
 
 <div class="control-group">
-    Родитель
+    <?php echo $form->label($model,'Parent*'); ?>
     <div class="controls">
         <?php echo $form->dropDownList($model,'parent', Navigation::titleList()); ?>
     </div>
 </div>
 
 <div class="control-group">
-    Категория
+    <?php echo $form->label($model,'Category*'); ?>
     <div class="controls">
         <?php echo $form->dropDownList($model,'category', NavigationCategories::titleList()); ?>
     </div>
 </div>
 
-<div class="controls">
-    <?php echo CHtml::submitButton('Принять', array('class' => 'btn btn-save')); ?>
+<div class="form-actions">
+    <?php $this->widget('bootstrap.widgets.TbButton', array(
+        'buttonType'=>'submit',
+        'type'=>'primary',
+        'label'=>$model->isNewRecord ? 'Create' : 'Save',
+    ));
+    ?>
+    <?php $this->widget(
+        'bootstrap.widgets.TbButton',
+        array('buttonType' => 'reset', 'label' => 'Reset')
+    );
+    ?>
 </div>
 
 <?php $this->endWidget(); ?>

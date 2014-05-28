@@ -31,7 +31,7 @@ class Contactus extends CActiveRecord
 			array('name, email, subject, body', 'required','message'=>'This field is required'),
 			array('name, email, subject', 'length', 'max'=>255),
 			array('id, name, email, subject, body, date', 'safe', 'on'=>'search'),
-            array('email', 'email','message'=>'Некорректный E-mail адресс'),
+            array('email', 'email','message'=>'Wrong Email'),
 
         );
 	}
@@ -45,7 +45,7 @@ class Contactus extends CActiveRecord
 	{
 		return array(
 			'id' => '№',
-			'name' => 'Your Name',
+			'name' => 'Name',
 			'email' => 'Email',
 			'subject' => 'Subject',
 			'body' => 'Message',

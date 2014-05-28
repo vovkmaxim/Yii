@@ -7,14 +7,15 @@ class ProjectsController extends AdminController
     }
 
     public function actionIndex() {
-        $projectsModel = new Projects();
-        $projectsList = $projectsModel->with(
-        array(
-            'tech' => array(
-            'select' => array('title')
-        )
-        ))->findAll(array('order' => 't.position'));
-        $this->render('index', array('projectsList' => $projectsList));
+//        $projectsModel = new Projects();
+//        $projectsList = $projectsModel->with(
+//        array(
+//            'tech' => array(
+//            'select' => array('title')
+//        )
+//        ))->findAll(array('order' => 't.position'));
+        $model = new Projects('search');
+        $this->render('index', array('model' => $model));
     }
 
     function initSave(Projects $model, $tagsList)
@@ -92,7 +93,7 @@ class ProjectsController extends AdminController
         ));
     }
 
-    public function actionEdit($id)
+    public function actionUpdate($id)
     {
         $tagsList = Tags::model()->findAll(array('order' => 'title'));
         $tagsListProjects = Yii::app()->db->createCommand()
@@ -112,7 +113,7 @@ class ProjectsController extends AdminController
 
         $model = Projects::model()->findByPk($id);
         $this->initSave($model, $tagsList);
-        $this->render('edit', array(
+        $this->render('update', array(
             'model' => $model,
             'tech' => $tech,
             'techId' => $techId['tech_id'],

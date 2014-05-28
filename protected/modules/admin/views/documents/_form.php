@@ -19,7 +19,7 @@
     <?php endif; ?>
 
     <div class="control-group">
-        <?php echo $form->label($model,'Название*', array('for' => 'Documents_title')); ?>
+        <?php echo $form->label($model,'Title*', array('for' => 'Documents_title')); ?>
         <div class="controls">
             <?php echo $form->textField($model,'title', array('class' => 'input-xxlarge')); ?>
         </div>
@@ -43,7 +43,7 @@
     </div>
 
     <div class="control-group">
-        Формат PDF
+        Only PDF format
     </div>
 
     <div class="control-group">
@@ -58,8 +58,18 @@
         <?php echo $form->fileField($model, 'file'); ?>
     </div>
 
-    <div class="controls">
-        <?php echo CHtml::submitButton('Принять', array('class' => 'btn btn-save')); ?>
+    <div class="form-actions">
+        <?php $this->widget('bootstrap.widgets.TbButton', array(
+            'buttonType'=>'submit',
+            'type'=>'primary',
+            'label'=>$model->isNewRecord ? 'Create' : 'Save',
+        ));
+        ?>
+        <?php $this->widget(
+            'bootstrap.widgets.TbButton',
+            array('buttonType' => 'reset', 'label' => 'Reset')
+        );
+        ?>
     </div>
 
     <?php $this->endWidget(); ?>

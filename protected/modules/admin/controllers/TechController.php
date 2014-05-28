@@ -11,7 +11,7 @@ class TechController extends AdminController
             ));
     }
     public function actionIndex() {
-        $techList = Tech::model()->findAll(array('order' => 'position'));
+        $techList = new Tech('search');
         $this->render('index', array('techList' => $techList));
     }
 
@@ -40,7 +40,7 @@ class TechController extends AdminController
         $this->render('add', array('model' => $model, 'list' => $list));
     }
 
-    public function actionEdit($id)
+    public function actionUpdate($id)
     {
         $list = TechList::model()->findAll('tech_id = :id', array(':id' => $id));
         $model = Tech::model()->findByPk($id);
@@ -63,7 +63,7 @@ class TechController extends AdminController
             }
         }
 
-        $this->render('edit', array('model' => $model, 'list' => $list));
+        $this->render('update', array('model' => $model, 'list' => $list));
     }
 
     public function actionDelete($id) {

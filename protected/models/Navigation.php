@@ -12,6 +12,7 @@
  */
 class Navigation extends CActiveRecord
 {
+    public $Cat;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -33,7 +34,7 @@ class Navigation extends CActiveRecord
 			array('title, url', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, url, parent, category, position', 'safe'),
+			array('id, title, url, parent, category, position, cat', 'safe'),
 		);
 	}
 
@@ -45,7 +46,7 @@ class Navigation extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-		);
+        );
 	}
 
 	/**
@@ -90,6 +91,7 @@ class Navigation extends CActiveRecord
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+            'pagination'=>array('pageSize'=>'100'),
 		));
 	}
 
@@ -118,5 +120,16 @@ class Navigation extends CActiveRecord
     public static function menuItems($rootId = 0, $categoryId)
     {
         return self::model()->findAllByAttributes(array('parent' => $rootId, 'category' => $categoryId), array('order' => 'position'));
+    }
+
+    public function getMenu()
+    {
+       $menu = Yii::app()->db->createCommand()
+            ->select('navigation.id, navigation.title, navigation_categories.title as category_title')
+            ->from('navigation')
+            ->join('navigation_categories', 'navigation_categories.id = navigation.category')
+            ->queryAll();
+
+        return $menu ;
     }
 }

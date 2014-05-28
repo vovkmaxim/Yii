@@ -1,10 +1,11 @@
-<h2>Статические страницы</h2>
+<h2>Static content</h2>
 <?php
     $this->widget(
         'bootstrap.widgets.TbGridView',
         array(
             'id'=>'staticpages-grid',
             'dataProvider'=>$model->search(),
+            'template'=>"{items}\n{pager}",
             'filter'=>$model,
             'columns'=>array(
         //        'id',

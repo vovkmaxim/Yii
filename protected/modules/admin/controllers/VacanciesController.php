@@ -7,7 +7,8 @@ class VacanciesController extends AdminController
     }
 
     public function actionIndex() {
-        $model = Vacancies::model()->findAll(array('order' => 'position'));
+//        $model = Vacancies::model()->findAll(array('order' => 'position'));
+        $model = new Vacancies('search');
         $this->render('index', array('model' => $model));
     }
 
@@ -28,10 +29,10 @@ class VacanciesController extends AdminController
         $this->render('add', array('model' => $model));
     }
 
-    public function actionEdit($id) {
+    public function actionUpdate($id) {
         $model = Vacancies::model()->findByPk($id);
         $this->initSave($model);
-        $this->render('edit', array('model' => $model));
+        $this->render('update', array('model' => $model));
     }
 
     public function actionDelete($id) {

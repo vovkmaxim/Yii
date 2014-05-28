@@ -7,7 +7,8 @@ class ConditionsController extends AdminController
     }
 
     public function actionIndex() {
-        $model = Conditions::model()->findAll(array('order' => 'position'));
+//        $model = Conditions::model()->findAll(array('order' => 'position'));
+        $model = new Conditions('search');
         $this->render('index', array('model' => $model));
     }
 
@@ -29,11 +30,11 @@ class ConditionsController extends AdminController
         $this->render('add', array('model' => $model));
     }
 
-    public function actionEdit($id)
+    public function actionUpdate($id)
     {
         $model = Conditions::model()->findByPk($id);
         $this->initSave($model);
-        $this->render('edit', array('model' => $model));
+        $this->render('update', array('model' => $model));
     }
 
     public function actionDelete($id) {

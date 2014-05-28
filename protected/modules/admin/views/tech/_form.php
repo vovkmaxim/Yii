@@ -18,7 +18,7 @@
     <?php endif; ?>
 
     <div class="control-group">
-        <?php echo $form->label($model,'Titlr*'); ?>
+        <?php echo $form->label($model,'Title*'); ?>
         <div class="controls">
             <?php echo $form->textField($model,'title', array('class' => 'input-xxlarge')); ?>
         </div>
@@ -66,16 +66,26 @@
                     <div class="input-list">
                         <span><?php echo $item->title; ?></span>
                         <input type="hidden" name="list[]" value="<?php echo $item->title; ?>"/>
-                        <a href="#" title="Удалить элемент" class="icon-remove delete-element"> </a>
+                        <a href="#" title="Delete element" class="icon-remove delete-element"> </a>
                     </div>
                 <?php endforeach; ?>
             <?php endif; ?>
         </div>
-        <a title="Добавить элемент" href="#" class="icon-plus add-element"></a>
+        <a title="Add element" href="#" class="icon-plus add-element"></a>
     </div>
 
-    <div class="controls">
-        <?php echo CHtml::submitButton('Принять', array('class' => 'btn btn-save')); ?>
+    <div class="form-actions">
+        <?php $this->widget('bootstrap.widgets.TbButton', array(
+            'buttonType'=>'submit',
+            'type'=>'primary',
+            'label'=>$model->isNewRecord ? 'Create' : 'Save',
+        ));
+        ?>
+        <?php $this->widget(
+            'bootstrap.widgets.TbButton',
+            array('buttonType' => 'reset', 'label' => 'Reset')
+        );
+        ?>
     </div>
 
     <?php $this->endWidget(); ?>

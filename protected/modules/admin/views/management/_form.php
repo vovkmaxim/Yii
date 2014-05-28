@@ -24,7 +24,7 @@
     <?php endif; ?>
 
     <div class="control-group">
-        <?php echo $form->label($model,'Название*'); ?>
+        <?php echo $form->label($model,'Title*'); ?>
         <div class="controls">
             <?php echo $form->textField($model,'title', array('class' => 'input-xxlarge')); ?>
         </div>
@@ -61,7 +61,7 @@
 
     <?php if(!empty($model->img)): ?>
     <div class="control-group">
-        Картинка - <a href="/images/management/<?php echo $model->id; ?>/<?php echo $model->img; ?>" target="_blank"><?php echo $model->img; ?></a>
+        Picture - <a href="/images/management/<?php echo $model->id; ?>/<?php echo $model->img; ?>" target="_blank"><?php echo $model->img; ?></a>
     </div>
     <?php endif; ?>
 
@@ -69,9 +69,18 @@
         <?php echo $form->fileField($model, 'img'); ?>
     </div>
 
-    <div class="controls">
-        <?php echo CHtml::submitButton('Принять', array('class' => 'btn btn-save')); ?>
+    <div class="form-actions">
+        <?php $this->widget('bootstrap.widgets.TbButton', array(
+            'buttonType'=>'submit',
+            'type'=>'primary',
+            'label'=>$model->isNewRecord ? 'Create' : 'Save',
+        ));
+        ?>
+        <?php $this->widget(
+            'bootstrap.widgets.TbButton',
+            array('buttonType' => 'reset', 'label' => 'Reset')
+        );
+        ?>
     </div>
-
     <?php $this->endWidget(); ?>
 </div>

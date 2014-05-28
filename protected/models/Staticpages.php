@@ -28,7 +28,7 @@ class Staticpages extends CActiveRecord
     public function rules()
     {
        return array(
-            array('title', 'required', 'message' => 'Это поле обязательно для заполнения'),
+            array('title', 'required', 'message' => 'This field is required'),
             array('id, title, activelink, text, etc', 'safe'),
             array('title', 'length', 'max' => 150, 'tooLong' => 'So big string'),
         );

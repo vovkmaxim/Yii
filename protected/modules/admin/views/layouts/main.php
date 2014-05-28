@@ -18,7 +18,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="#">Admin Panel</a>
+            <a class="brand" href="/admin">Admin Panel</a>
             <div class="nav-collapse collapse">
                 <ul class="nav pull-right">
                     <li class="dropdown">

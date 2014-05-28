@@ -6169,3 +6169,4 @@ a.badge:focus {
   position: fixed;
 }
 
+.storiesImg {max-width: 120px; max-height: 120px}
