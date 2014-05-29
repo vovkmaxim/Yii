@@ -59,6 +59,17 @@
         )
     )
 ); ?>
+<?php ////echo $form->labelEx($model,'client'); ?>
+<?php ////$this->widget('application.extensions.vince.widgets.redactorjs.Redactor', array( 'model' => $model, 'attribute' => 'result' )); ?>
+<!--<!---->
+<?php //echo $form->labelEx($model,'task'); ?>
+<?php //$this->widget('application.extensions.vince.widgets.redactorjs.Redactor', array( 'model' => $model, 'attribute' => 'result' )); ?>
+<!---->
+<?php //echo $form->labelEx($model,'solution'); ?>
+<?php //$this->widget('application.extensions.vince.widgets.redactorjs.Redactor', array( 'model' => $model, 'attribute' => 'result' )); ?>
+<!---->
+<?php //echo $form->labelEx($model,'result'); ?>
+<?php //$this->widget('application.extensions.vince.widgets.redactorjs.Redactor', array( 'model' => $model, 'attribute' => 'result' )); ?>
 
 <!--	--><?php //echo $form->textFieldRow($model,'client',array('rows'=>6, 'cols'=>50, 'class'=>'span8')); ?>
 <!---->

@@ -62,6 +62,16 @@
     <?php if(!empty($model->img)): ?>
     <div class="control-group">
         Picture - <a href="/images/management/<?php echo $model->id; ?>/<?php echo $model->img; ?>" target="_blank"><?php echo $model->img; ?></a>
+        <?php if(!$model->isNewRecord): ?>
+            <?php if ($model->img != ''): ?>
+<!--            <a title="Delete" href="/admin/management/deletefile/id/--><?php //echo $model->id;?><!--" class="icon-trash"></a>-->
+               <?php  echo CHtml::link('', array("/admin/management/deletefile/", 'id'=>$model->id), array('confirm'=>'Are you sure?', 'class'=>'icon-trash')); ?>
+            <?php endif; ?>
+        <?php endif; ?>
+    </div>
+    <?php else: ?>
+    <div class="control-group">
+      No Picture uploaded
     </div>
     <?php endif; ?>
 

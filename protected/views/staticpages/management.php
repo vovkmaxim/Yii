@@ -11,7 +11,11 @@
                     <?php foreach($modelDynamic as $item) : ?>
                     <div class="block_download group">
                         <div class="managImg">
+                            <?php if(is_file('images/management/'.$item->id.DIRECTORY_SEPARATOR.$item->img)): ?>
                             <img src="/images/management/<?php echo $item->id; ?>/<?php echo $item->img; ?>" alt="img">
+                            <?php else: ?>
+                            <img src="/images/management/0/nophoto.png" alt="img">
+                            <? endif; ?>
                         </div>
                         <div class="managText">
                                 <p><strong><?php echo $item->title; ?></strong></p>

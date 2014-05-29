@@ -10,6 +10,6 @@ array('label'=>'Manage Successstories','url'=>array('admin')),
 );
 ?>
 
-<h1>Create Successstories</h1>
+<h1>Create Success story</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
