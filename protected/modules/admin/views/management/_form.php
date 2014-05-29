@@ -54,29 +54,54 @@
         </div>
     </div>
 
-    <div class="control-group">
-        <p>Formats: JPG, JPEG, BMP, GIF, PNG.</p>
-        <p>Recommended size: 120x120</p>
-    </div>
+<!--    <div class="control-group">-->
+<!--        <p>Formats: JPG, JPEG, BMP, GIF, PNG.</p>-->
+<!--        <p>Recommended size: 120x120</p>-->
+<!--    </div>-->
+<!---->
+<!--    --><?php //if(!empty($model->img)): ?>
+<!--    <div class="control-group">-->
+<!--        Picture - <a href="/images/management/--><?php //echo $model->id; ?><!--/--><?php //echo $model->img; ?><!--" target="_blank">--><?php //echo $model->img; ?><!--</a>-->
+<!--        --><?php //if(!$model->isNewRecord): ?>
+<!--            --><?php //if ($model->img != ''): ?>
+<!--               --><?php // echo CHtml::link('', array("/admin/management/deletefile/", 'id'=>$model->id), array('confirm'=>'Are you sure?', 'class'=>'icon-trash')); ?>
+<!--            --><?php //endif; ?>
+<!--        --><?php //endif; ?>
+<!--    </div>-->
+<!--    --><?php //else: ?>
+<!--    <div class="control-group">-->
+<!--      No Picture uploaded-->
+<!--    </div>-->
+<!--    --><?php //endif; ?>
+<!---->
+<!--    <div class="control-group">-->
+<!--        --><?php //echo $form->fileField($model, 'img'); ?>
+<!--    </div>-->
 
-    <?php if(!empty($model->img)): ?>
+
     <div class="control-group">
-        Picture - <a href="/images/management/<?php echo $model->id; ?>/<?php echo $model->img; ?>" target="_blank"><?php echo $model->img; ?></a>
-        <?php if(!$model->isNewRecord): ?>
-            <?php if ($model->img != ''): ?>
-<!--            <a title="Delete" href="/admin/management/deletefile/id/--><?php //echo $model->id;?><!--" class="icon-trash"></a>-->
-               <?php  echo CHtml::link('', array("/admin/management/deletefile/", 'id'=>$model->id), array('confirm'=>'Are you sure?', 'class'=>'icon-trash')); ?>
+        <?php if(!empty($model->img)): ?>
+            Image:<br>
+            <?php
+                echo CHtml::image(
+                    "/images/management/".$model->id.DIRECTORY_SEPARATOR.$model->img,
+                    "this is alt tag of image",
+                    array("width"=>"120px" ,"height"=>"120px"));
+            ?>
+            <?php if(!$model->isNewRecord): ?>
+                <?php if ($model->img != ''): ?>
+                    <p><?php echo CHtml::link('Delete image', array("/admin/management/deletefile/", 'id'=>$model->id), array('confirm'=>'Are you sure?', )); ?></p>
+                <?php endif; ?>
             <?php endif; ?>
-        <?php endif; ?>
-    </div>
-    <?php else: ?>
-    <div class="control-group">
-      No Picture uploaded
-    </div>
-    <?php endif; ?>
+        <?php else: ?>
+            No Picture uploaded
 
-    <div class="control-group">
-        <?php echo $form->fileField($model, 'img'); ?>
+        <?php endif; ?>
+
+        <br>
+        <p>Upload new image: Formats: JPG, JPEG, GIF, PNG. Recommended size: 120x120</p>
+        <?php echo $form->fileField($model,'img'); ?>
+        <?php echo $form->error($model,'img'); ?>
     </div>
 
     <div class="form-actions">

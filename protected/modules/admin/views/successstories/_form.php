@@ -79,18 +79,36 @@
 <!---->
 <!--	--><?php //echo $form->textAreaRow($model,'result',array('rows'=>6, 'cols'=>50, 'class'=>'span8')); ?>
 
-    <?php echo $form->labelEx($model,'pic'); ?>
 <div class="control-group">
-    <p>Formats: JPG, JPEG, GIF, PNG.</p>
-    <p>Recommended size: 120x120</p>
-</div>
-    <?php if($model->pic): ?>
-        <p><?php echo CHtml::encode($model->pic); ?></p>
+<!--    --><?php //if($model->pic): ?>
+<!--        Image:<br>-->
+<!--        --><?php //echo CHtml::image(DIRECTORY_SEPARATOR.$model->pic,
+//            "this is alt tag of image",
+//            array("width"=>"120px" ,"height"=>"120px"));
+//        ?>
+<!--    --><?php //endif; ?>
+
+    <?php if(!empty($model->pic)): ?>
+    Image:<br>
+    <?php echo CHtml::image(DIRECTORY_SEPARATOR.$model->pic,
+        "this is alt tag of image",
+        array("width"=>"120px" ,"height"=>"120px"));
+    ?>
+    <?php if(!$model->isNewRecord): ?>
+            <?php if ($model->pic != ''): ?>
+                <p><?php  echo CHtml::link('Delete image', array("/admin/successstories/deletefile/", 'id'=>$model->id), array('confirm'=>'Are you sure?',)); ?></p>
+            <?php endif; ?>
+        <?php endif; ?>
+    <?php else: ?>
+        No Picture uploaded
+
     <?php endif; ?>
 
+<br>
+<p>Upload new image: Formats: JPG, JPEG, GIF, PNG. Recommended size: 120x120</p>
     <?php echo $form->fileField($model,'pic'); ?>
     <?php echo $form->error($model,'pic'); ?>
-
+</div>
 <div class="form-actions">
 	<?php $this->widget('bootstrap.widgets.TbButton', array(
 			'buttonType'=>'submit',
