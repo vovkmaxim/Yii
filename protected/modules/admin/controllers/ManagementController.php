@@ -128,4 +128,19 @@ class ManagementController extends AdminController
             throw new CHttpException(404,'The requested page does not exist.');
         return $model;
     }
+
+    public function actions() {
+        return array(
+            'fmanager'=>array(
+                'class'=>'ext.fm.ElFinderAction',
+            ),
+        );
+    }
+
+    public function actionBrowse()
+    {
+        $this->layout='//layouts/empty_backend';
+        $this->render('browser');
+    }
+
 }

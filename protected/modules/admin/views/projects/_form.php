@@ -46,22 +46,36 @@
         </div>
     </div>
 
-    <div class="control-group">
-        <div class="controls">
-            <?php echo $form->ckEditorRow(
-                $model,
-                'description',
-                array(
-                    'editorOptions' => array(
-                        'fullpage' => 'js:true',
-                        'width' => '840',
-                        'resize_maxWidth' => '640',
-                        'resize_minWidth' => '320'
-                    )
-                )
-            ); ?>
-        </div>
-    </div>
+    <?php echo $form->label($model,'description*'); ?>
+    <?php
+    $this->widget(
+        'application.extensions.ckeditor.CKEditor',
+        array(
+            'model' => $model,
+            'attribute' => 'description',
+            'language' => 'en',
+            'editorTemplate' => 'full',
+            'options'=>array('filebrowserBrowseUrl'=>CHtml::normalizeUrl(array('projects/browse')),'width'=>'840')
+
+        )
+    );
+    ?>
+<!--    <div class="control-group">-->
+<!--        <div class="controls">-->
+<!--            --><?php //echo $form->ckEditorRow(
+//                $model,
+//                'description',
+//                array(
+//                    'editorOptions' => array(
+//                        'fullpage' => 'js:true',
+//                        'width' => '840',
+//                        'resize_maxWidth' => '640',
+//                        'resize_minWidth' => '320'
+//                    )
+//                )
+//            ); ?>
+<!--        </div>-->
+<!--    </div>-->
 
     <div class="form-actions">
     <?php $this->widget('bootstrap.widgets.TbButton', array(

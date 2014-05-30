@@ -7,6 +7,14 @@ class SuccessstoriesController extends AdminController
         $this->active = 'successstories';
     }
 
+    public function actions() {
+        return array(
+            'fmanager'=>array(
+                'class'=>'ext.fm.ElFinderAction',
+            ),
+        );
+    }
+
     public function filters()
     {
         return array('accessControl', array('ext.yiibooster..filters.BootstrapFilter - delete'),);
@@ -139,5 +147,11 @@ class SuccessstoriesController extends AdminController
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }
+    }
+
+    public function actionBrowse()
+    {
+        $this->layout='//layouts/empty_backend';
+        $this->render('browser');
     }
 }

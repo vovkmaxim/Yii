@@ -2,8 +2,9 @@
     $form = $this->beginWidget(
         'bootstrap.widgets.TbActiveForm',
         array(
-            'id' => 'horizontalForm',
-            'type' => 'horizontal',
+            'id'=>'successstories-form',
+            'enableAjaxValidation'=>true,
+            'htmlOptions' => array('enctype' => 'multipart/form-data'),
         )
     );
 ?>
@@ -43,18 +44,33 @@
      }
 ?>
 
-<?php echo $form->ckEditorRow(
-    $model,
-    'text',
+<?php //echo $form->ckEditorRow(
+//    $model,
+//    'text',
+//    array(
+//        'editorOptions' => array(
+//           'fullpage' => 'js:true',
+//            'width' => '840',
+//            'resize_maxWidth' => '640',
+//            'resize_minWidth' => '320'
+//        )
+//    )
+//); ?>
+
+<?php echo $form->label($model,'text*'); ?>
+<?php
+$this->widget(
+    'application.extensions.ckeditor.CKEditor',
     array(
-        'editorOptions' => array(
-           'fullpage' => 'js:true',
-            'width' => '840',
-            'resize_maxWidth' => '640',
-            'resize_minWidth' => '320'
-        )
+        'model' => $model,
+        'attribute' => 'text',
+        'language' => 'en',
+        'editorTemplate' => 'full',
+        'options'=>array('filebrowserBrowseUrl'=>CHtml::normalizeUrl(array('staticpages/browse')),'width'=>'840')
+
     )
-); ?>
+);
+?>
 
 
     <div class="form-actions">

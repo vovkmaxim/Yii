@@ -9,74 +9,136 @@
     );
 ?>
 
-<?php echo $form->ckEditorRow(
-    $model,
-    'client',
-    array(
-        'editorOptions' => array(
-            'fullpage' => 'js:true',
-            'width' => '840',
-            'resize_maxWidth' => '640',
-            'resize_minWidth' => '320'
-        )
-    )
-); ?>
-<?php echo $form->ckEditorRow(
-    $model,
-    'task',
-    array(
-        'editorOptions' => array(
-            'fullpage' => 'js:true',
-            'width' => '840',
-            'resize_maxWidth' => '640',
-            'resize_minWidth' => '320'
-        )
-    )
-); ?>
+<?php echo $form->label($model,'client*'); ?>
+<?php
+    $this->widget(
+        'application.extensions.ckeditor.CKEditor',
+        array(
+            'model' => $model,
+            'attribute' => 'client',
+            'language' => 'en',
+            'editorTemplate' => 'full',
+            'options'=>array('filebrowserBrowseUrl'=>CHtml::normalizeUrl(array('successstories/browse')),'width'=>'840')
 
-<?php echo $form->ckEditorRow(
-    $model,
-    'solution',
-    array(
-        'editorOptions' => array(
-            'fullpage' => 'js:true',
-            'width' => '840',
-            'resize_maxWidth' => '640',
-            'resize_minWidth' => '320'
         )
-    )
-); ?>
+    );
+?>
 
-<?php echo $form->ckEditorRow(
-    $model,
-    'result',
+<?php echo $form->label($model,'task*'); ?>
+<?php
+$this->widget(
+    'application.extensions.ckeditor.CKEditor',
     array(
-        'editorOptions' => array(
-            'fullpage' => 'js:true',
-            'width' => '840',
-            'resize_maxWidth' => '640',
-            'resize_minWidth' => '320'
-        )
+        'model' => $model,
+        'attribute' => 'task',
+        'language' => 'en',
+        'editorTemplate' => 'full',
+        'options'=>array('filebrowserBrowseUrl'=>CHtml::normalizeUrl(array('successstories/browse')),'width'=>'840')
+
     )
-); ?>
+);
+?>
+
+<?php echo $form->label($model,'solution*'); ?>
+<?php
+$this->widget(
+    'application.extensions.ckeditor.CKEditor',
+    array(
+        'model' => $model,
+        'attribute' => 'solution',
+        'language' => 'en',
+        'editorTemplate' => 'full',
+        'options'=>array('filebrowserBrowseUrl'=>CHtml::normalizeUrl(array('successstories/browse')),'width'=>'840')
+
+    )
+);
+?>
+
+<?php echo $form->label($model,'result*'); ?>
+<?php
+$this->widget(
+    'application.extensions.ckeditor.CKEditor',
+    array(
+        'model' => $model,
+        'attribute' => 'result',
+        'language' => 'en',
+        'editorTemplate' => 'full',
+        'options'=>array('filebrowserBrowseUrl'=>CHtml::normalizeUrl(array('successstories/browse')),'width'=>'840')
+
+    )
+);
+?>
 
 
-<!--	--><?php //echo $form->textFieldRow($model,'client',array('rows'=>6, 'cols'=>50, 'class'=>'span8')); ?>
+<?php //echo $form->ckEditorRow(
+//    $model,
+//    'client',
+//    array(
+//        'editorOptions' => array(
+//            'fullpage' => 'js:true',
+//            'width' => '840',
+//            'resize_maxWidth' => '640',
+//            'resize_minWidth' => '320'
+//        )
+//    )
+//); ?>
+<?php //echo $form->ckEditorRow(
+//    $model,
+//    'task',
+//    array(
+//        'editorOptions' => array(
+//            'fullpage' => 'js:true',
+//            'width' => '840',
+//            'resize_maxWidth' => '640',
+//            'resize_minWidth' => '320',
+//        )
+//    )
+//); ?>
 <!---->
-<!--	--><?php //echo $form->textFieldRow($model,'task',array('rows'=>6, 'cols'=>50, 'class'=>'span8')); ?>
+<?php //echo $form->ckEditorRow(
+//    $model,
+//    'solution',
+//    array(
+//        'editorOptions' => array(
+//            'fullpage' => 'js:true',
+//            'width' => '840',
+//            'resize_maxWidth' => '640',
+//            'resize_minWidth' => '320'
+//        )
+//    )
+//); ?>
 <!---->
-<!--	--><?php //echo $form->textAreaRow($model,'solution',array('rows'=>6, 'cols'=>50, 'class'=>'span8')); ?>
-<!---->
-<!--	--><?php //echo $form->textAreaRow($model,'result',array('rows'=>6, 'cols'=>50, 'class'=>'span8')); ?>
+<?php //echo $form->ckEditorRow(
+//    $model,
+//    'result',
+//    array(
+//        'editorOptions' => array(
+//            'fullpage' => 'js:true',
+//            'width' => '840',
+//            'resize_maxWidth' => '640',
+//            'resize_minWidth' => '320'
+//        )
+//    )
+//); ?>
+
+<?php
+//$this->widget('ImperaviRedactorWidget', array(
+//        'model' => $model,
+//        'attribute' => 'client',
+//        'options' => array(
+//            'lang' => 'en',
+//            'css' => 'wym.css',
+//            'imageUpload'=>$this->createUrl('imgUpload'), // адрес действия на сервере
+//            'imageUploadErrorCallback'=>'js:function(obj, json){ alert(json.error); }',
+//        ),
+//
+//    )
+//);
+//?>
+
+
 
 <div class="control-group">
-<!--    --><?php //if($model->pic): ?>
-<!--        Image:<br>-->
-<!--        --><?php //echo CHtml::image(DIRECTORY_SEPARATOR.$model->pic,
-//            "this is alt tag of image",
-//            array("width"=>"120px" ,"height"=>"120px"));
-//        ?>
-<!--    --><?php //endif; ?>
 
     <?php if(!empty($model->pic)): ?>
     Image:<br>
