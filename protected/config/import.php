@@ -6,5 +6,5 @@ return array(
     'ext.YiiMailer.YiiMailer',
     'application.models.behavior.*',
     'application.helpers.*',
-
+    'ext.imperavi-redactor-widget.ImperaviRedactorWidget',
 );

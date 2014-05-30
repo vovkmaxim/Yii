@@ -72,4 +72,19 @@ class PartnersController extends AdminController
         }
         rmdir($dir);
     }
+
+    public function actions() {
+        return array(
+            'fmanager'=>array(
+                'class'=>'ext.fm.ElFinderAction',
+            ),
+        );
+    }
+
+    public function actionBrowse()
+    {
+        $this->layout='//layouts/empty_backend';
+        $this->render('browser');
+    }
+
 }

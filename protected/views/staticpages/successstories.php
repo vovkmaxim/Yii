@@ -15,11 +15,21 @@
 
                     <?php echo $modelStatic->text; ?>
                     <div class="block_stories_holder">
-                        <?php foreach ($modelDynamic as $item) {
+                        <?php
+                            foreach ($modelDynamic as $item)
+                            {
+                                if(is_file($item->pic))
+                                {
+                                    $str="<img src='".DIRECTORY_SEPARATOR.$item->pic."' alt='img'>";
+                                } else
+                                {
+                                    $str="<img src='/images/management/0/nophoto.png' alt='img'>";
+                                }
+
                             echo "
                             <div class='block_stories group'>
-                                <div class='image_holder'>
-                                    <img src='../".$item->pic."' alt='' >
+                                <div class='image_holder'>".
+                                    $str."
                                 </div>
                                 <div class='block_information'>
                                     <strong>The client</strong>
@@ -39,8 +49,7 @@
                                 </div>
                             </div>";
 
-                        }
-
+                            }
                         ?>
                     </div>
                 </div>

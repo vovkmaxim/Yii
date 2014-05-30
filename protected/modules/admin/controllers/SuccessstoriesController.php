@@ -7,20 +7,28 @@ class SuccessstoriesController extends AdminController
         $this->active = 'successstories';
     }
 
+    public function actions() {
+        return array(
+            'fmanager'=>array(
+                'class'=>'ext.fm.ElFinderAction',
+            ),
+        );
+    }
+
     public function filters()
     {
         return array('accessControl', array('ext.yiibooster..filters.BootstrapFilter - delete'),);
     }
 
-    public function accessRules()
-    {
-        return array(
-            array('allow','actions'=>array('index','view'),'users'=>array('*'),),
-            array('allow','actions'=>array('create','update','delete'),'users'=>array('@')),
-            array('allow','actions'=>array('create','update','delete'),'users'=>array('admin'),),
-            array('deny','users'=>array('*')),
-        );
-    }
+//    public function accessRules()
+//    {
+//        return array(
+//            array('allow','actions'=>array('index','view'),'users'=>array('*'),),
+//            array('allow','actions'=>array('create','update','delete'),'users'=>array('@')),
+//            array('allow','actions'=>array('create','update','delete','deletefile'),'users'=>array('admin'),),
+//            array('deny','users'=>array('*')),
+//        );
+//    }
 
     public function actionView($id)
     {
@@ -93,6 +101,18 @@ class SuccessstoriesController extends AdminController
             throw new CHttpException(400,'Неправильный запрос');
         }
     }
+    public function actionDeletefile($id)
+    {
+        $model = Successstories::model()->findByPk($id);
+        if(is_file($model->pic))
+        {
+            unlink($model->pic);
+            $model->pic = '';
+            $model->save();
+        }
+        $this->redirect('/admin/successstories/update/id/'.$model->id);
+    }
+
 
     public function actionIndex()
     {
@@ -127,5 +147,11 @@ class SuccessstoriesController extends AdminController
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }
+    }
+
+    public function actionBrowse()
+    {
+        $this->layout='//layouts/empty_backend';
+        $this->render('browser');
     }
 }

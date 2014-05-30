@@ -40,8 +40,8 @@ class Management extends CActiveRecord
             array('email', 'email','message' => 'Wrong Email',),
 			array('position', 'numerical', 'integerOnly'=>true),
 			array('title, img, email', 'length', 'max'=>255),
-            array('img', 'file', 'allowEmpty' => true, 'types' => 'jpg, jpeg, png, gif, bmp', 'on' => 'insert'),
-            array('img', 'file', 'allowEmpty' => true, 'types' => 'jpg, jpeg, png, gif, bmp', 'on' => 'update'),
+            array('img', 'file', 'allowEmpty' => true, 'types' => 'jpg, jpeg, png, gif, bmp'),
+//            array('img', 'file', 'allowEmpty' => true, 'types' => 'jpg, jpeg, png, gif, bmp', 'on' => 'update'),
 			array('id, title, description, img, email, position', 'safe'),
 		);
 	}
@@ -112,4 +112,15 @@ class Management extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+//    protected function beforeDelete()
+//    {
+////        if (parent::beforeDelete())
+////            {
+////                if (is_file('/images/management/'. $this->id))
+////                    rmdir('/images/management/'. $this->id);
+////                return true;
+////            } else return false;
+//    }
+
 }

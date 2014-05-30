@@ -42,7 +42,7 @@
                                 foreach($tagsList as $tag){
                                     if($tag['project_id'] == $item['id']){
 //                                        echo '<a href="/expertise/projects/tag/'. $tag['title'] .'" class="name_tehnology">'. $tag['title'] .'</a> ';
-                                        echo '<a href=#" class="name_tehnology">'. $tag['title'] .'</a> ';
+                                        echo $tag['title'] ;
                                     }
                                 }
                             ?>
