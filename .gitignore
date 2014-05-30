@@ -2,7 +2,7 @@
 /pics
 /protected/runtime/
 .idea/
-
+protected/extensions/yiibooster/assets
 
 documents/download/*
 /protected/config/database.php
