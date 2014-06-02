@@ -4,6 +4,6 @@
 .idea/
 assets/
 
-
+documents/
 /protected/config/database.php
 /images
