@@ -34,95 +34,161 @@
                             <i class="caret"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <?php if (in_array($role, AuthUser::$denies['UsersController'])) : ?>
-                            <li>
-                                <a tabindex="-1" href="/admin/users">Users</a>
-                            </li>
-                            <?php endif; ?>
                             <li>
                                 <a tabindex="-1" href="/admin/default/logout">Logout</a>
                             </li>
                         </ul>
                     </li>
                 </ul>
-                <ul class="nav">
-                    <?php if (in_array($role, AuthUser::$denies['MenuController'])) : ?>
-                        <li <?php echo ($this->active == 'menu') ? 'class="active"' : ''; ?>>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu</a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/menu">Menu</a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/menuCategories">Categories</a>
-                                </li>
-                            </ul>
-                        </li>
-                    <?php endif; ?>
-                    <?php if (in_array($role, AuthUser::$denies['TechController'])) : ?>
-                    <li <?php echo ($this->active == 'tech') ? 'class="active"' : ''; ?>>
-                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/tech">Technologies</a>
-                    </li>
-                    <?php endif; ?>
-                    <?php if (in_array($role, AuthUser::$denies['TagsController'])) : ?>
-                        <li <?php echo ($this->active == 'tags') ? 'class="active"' : ''; ?>>
-                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/tags">Tags</a>
-                        </li>
-                    <?php endif; ?>
-                    <?php if (in_array($role, AuthUser::$denies['ProjectsController'])) : ?>
-                    <li <?php echo ($this->active == 'projects') ? 'class="active"' : ''; ?>>
-                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/projects">Projects</a>
-                    </li>
-                    <?php endif; ?>
-                    <?php if (in_array($role, AuthUser::$denies['ConditionsController'])) : ?>
-                        <li <?php echo ($this->active == 'conditions') ? 'class="active"' : ''; ?>>
-                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/conditions">Conditions</a>
-                        </li>
-                    <?php endif; ?>
-                    <?php if (in_array($role, AuthUser::$denies['VacanciesController'])) : ?>
-                    <li <?php echo ($this->active == 'vacancies') ? 'class="active"' : ''; ?>>
-                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/vacancies">Vacancies</a>
-                    </li>
-                    <?php endif; ?>
-<!--                    --><?php //if (!in_array($role, AuthUser::$denies['PartnersController'])) : ?>
-<!--                        <li --><?php //echo ($this->active == 'partners') ? 'class="active"' : ''; ?><!-->
-<!--                            <a href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/admin/partners">Partners</a>-->
+                <div id="menu-top">
+                <?php
+
+                $this->widget('zii.widgets.CMenu',array(
+                    'activeCssClass'=>'active',
+                    'activateParents'=>true,
+                    'items'=>array(
+                        array
+                        (
+                            'label'=>'Menu',
+//                            'url'=>array('#'),
+                            'linkOptions'=>array('id'=>'menuCompany'),
+                            'itemOptions'=>array('id'=>'itemCompany'),
+                            'items'=>array(
+                                array('label'=>'Menu', 'url'=>array('/admin/menu')),
+                                array('label'=>'Categories', 'url'=>array('/admin/menuCategories')),
+                            )
+                        ),
+                        array
+                        (
+                            'label'=>'Home',
+//                            'url'=>array('#'),
+                            'linkOptions'=>array('id'=>'menuCompany'),
+                            'itemOptions'=>array('id'=>'itemCompany'),
+                            'items'=>array(
+                                array('label'=>'Conditions', 'url'=>array('/admin/conditions')),
+                                )
+                        ),
+                        array('label'=>'Static content', 'url'=>array('/admin/staticpages')),
+                        array
+                        (
+                            'label'=>'Expertise',
+//                            'url'=>array('#'),
+                            'linkOptions'=>array('id'=>'menuCompany'),
+                            'itemOptions'=>array('id'=>'itemCompany'),
+                            'items'=>array(
+                                array('label'=>'Projects', 'url'=>array('/admin/projects')),
+                                array('label'=>'Technologies', 'url'=>array('/admin/tech')),
+                                array('label'=>'Tags', 'url'=>array('/admin/tags')),
+                            )
+                        ),
+                        array('label'=>'Success stories', 'url'=>array('/admin/successstories')),
+                        array('label'=>'Marketing Documents', 'url'=>array('/admin/documents')),
+                        array('label'=>'Management', 'url'=>array('/admin/management')),
+                        array('label'=>'Vacancies', 'url'=>array('/admin/vacancies')),
+                        array
+                        (
+                            'label'=>'Contact Us',
+//                            'url'=>array('#'),
+                            'linkOptions'=>array('id'=>'menuCompany'),
+                            'itemOptions'=>array('id'=>'itemCompany'),
+                            'items'=>array(
+                                array('label'=>'Contact data', 'url'=>array('/admin/contactdata')),
+                                array('label'=>'Questions', 'url'=>array('/admin/contactus')),
+                            )
+                        ),
+                        array('label'=>'Users', 'url'=>array('/admin/users')),
+
+                    ),
+                    'encodeLabel' => false,
+                    'htmlOptions' => array(
+                        'class'=>'nav',
+                    ),
+                    'submenuHtmlOptions' => array(
+                        'class' => 'dropdown-menu',
+                    )
+                ));
+                ?>
+                </div>
+            </div>
+        </div>
+<!--                <ul class="nav">-->
+<!--                    --><?php //if (in_array($role, AuthUser::$denies['MenuController'])) : ?>
+<!--                        <li --><?php //echo ($this->active == 'menu') ? 'class="active"' : ''; ?><!-->
+<!--                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu</a>-->
+<!--                            <ul class="dropdown-menu">-->
+<!--                                <li>-->
+<!--                                    <a href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/admin/menu">Menu</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/admin/menuCategories">Categories</a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
 <!--                        </li>-->
 <!--                    --><?php //endif; ?>
-                    <?php if (in_array($role, AuthUser::$denies['DocumentsController'])) : ?>
-                        <li <?php echo ($this->active == 'documents') ? 'class="active"' : ''; ?>>
-                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/documents">Documents</a>
-                        </li>
-                    <?php endif; ?>
-
-                    <?php if (in_array($role, AuthUser::$denies['ManagementController'])) : ?>
-                        <li <?php echo ($this->active == 'management') ? 'class="active"' : ''; ?>>
-                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/management">Management</a>
-                        </li>
-                    <?php endif; ?>
-                     <?php if (in_array($role, AuthUser::$denies['StaticpagesController'])) : ?>
-                        <li <?php echo ($this->active == 'staticpages') ? 'class="active"' : ''; ?>>
-                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/staticpages">Static content</a>
-                        </li>
-                    <?php endif; ?>
-                    <?php if (in_array($role, AuthUser::$denies['ContactdataController'])) : ?>
-                        <li <?php echo ($this->active == 'contactdata') ? 'class="active"' : ''; ?>>
-                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/contactdata">Contact data</a>
-                        </li>
-                    <?php endif; ?>
-                    <?php if (in_array($role, AuthUser::$denies['ContactusController'])) : ?>
-                        <li <?php echo ($this->active == 'contactus') ? 'class="active"' : ''; ?>>
-                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/contactus">Questions</a>
-                        </li>
-                    <?php endif; ?>
-                    <?php if (in_array($role, AuthUser::$denies['SuccessstoriesController'])) : ?>
-                        <li <?php echo ($this->active == 'successstories') ? 'class="active"' : ''; ?>>
-                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/successstories">Success stories</a>
-                        </li>
-                    <?php endif; ?>
-                </ul>
+<!--                    --><?php //if (in_array($role, AuthUser::$denies['TechController'])) : ?>
+<!--                    <li --><?php //echo ($this->active == 'tech') ? 'class="active"' : ''; ?><!-->
+<!--                        <a href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/admin/tech">Technologies</a>-->
+<!--                    </li>-->
+<!--                    --><?php //endif; ?>
+<!--                    --><?php //if (in_array($role, AuthUser::$denies['TagsController'])) : ?>
+<!--                        <li --><?php //echo ($this->active == 'tags') ? 'class="active"' : ''; ?><!-->
+<!--                            <a href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/admin/tags">Tags</a>-->
+<!--                        </li>-->
+<!--                    --><?php //endif; ?>
+<!--                    --><?php //if (in_array($role, AuthUser::$denies['ProjectsController'])) : ?>
+<!--                    <li --><?php //echo ($this->active == 'projects') ? 'class="active"' : ''; ?><!-->
+<!--                        <a href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/admin/projects">Projects</a>-->
+<!--                    </li>-->
+<!--                    --><?php //endif; ?>
+<!--                    --><?php //if (in_array($role, AuthUser::$denies['ConditionsController'])) : ?>
+<!--                        <li --><?php //echo ($this->active == 'conditions') ? 'class="active"' : ''; ?><!-->
+<!--                            <a href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/admin/conditions">Conditions</a>-->
+<!--                        </li>-->
+<!--                    --><?php //endif; ?>
+<!--                    --><?php //if (in_array($role, AuthUser::$denies['VacanciesController'])) : ?>
+<!--                    <li --><?php //echo ($this->active == 'vacancies') ? 'class="active"' : ''; ?><!-->
+<!--                        <a href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/admin/vacancies">Vacancies</a>-->
+<!--                    </li>-->
+<!--                    --><?php //endif; ?>
+<!--<!--                    --><?php ////if (!in_array($role, AuthUser::$denies['PartnersController'])) : ?>
+<!--<!--                        <li --><?php ////echo ($this->active == 'partners') ? 'class="active"' : ''; ?><!--<!-->
+<!--<!--                            <a href="--><?php ////echo Yii::app()->request->baseUrl; ?><!--<!--/admin/partners">Partners</a>-->
+<!--<!--                        </li>-->
+<!--<!--                    --><?php ////endif; ?>
+<!--                    --><?php //if (in_array($role, AuthUser::$denies['DocumentsController'])) : ?>
+<!--                        <li --><?php //echo ($this->active == 'documents') ? 'class="active"' : ''; ?><!-->
+<!--                            <a href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/admin/documents">Documents</a>-->
+<!--                        </li>-->
+<!--                    --><?php //endif; ?>
+<!---->
+<!--                    --><?php //if (in_array($role, AuthUser::$denies['ManagementController'])) : ?>
+<!--                        <li --><?php //echo ($this->active == 'management') ? 'class="active"' : ''; ?><!-->
+<!--                            <a href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/admin/management">Management</a>-->
+<!--                        </li>-->
+<!--                    --><?php //endif; ?>
+<!--                     --><?php //if (in_array($role, AuthUser::$denies['StaticpagesController'])) : ?>
+<!--                        <li --><?php //echo ($this->active == 'staticpages') ? 'class="active"' : ''; ?><!-->
+<!--                            <a href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/admin/staticpages">Static content</a>-->
+<!--                        </li>-->
+<!--                    --><?php //endif; ?>
+<!--                    --><?php //if (in_array($role, AuthUser::$denies['ContactdataController'])) : ?>
+<!--                        <li --><?php //echo ($this->active == 'contactdata') ? 'class="active"' : ''; ?><!-->
+<!--                            <a href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/admin/contactdata">Contact data</a>-->
+<!--                        </li>-->
+<!--                    --><?php //endif; ?>
+<!--                    --><?php //if (in_array($role, AuthUser::$denies['ContactusController'])) : ?>
+<!--                        <li --><?php //echo ($this->active == 'contactus') ? 'class="active"' : ''; ?><!-->
+<!--                            <a href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/admin/contactus">Questions</a>-->
+<!--                        </li>-->
+<!--                    --><?php //endif; ?>
+<!--                    --><?php //if (in_array($role, AuthUser::$denies['SuccessstoriesController'])) : ?>
+<!--                        <li --><?php //echo ($this->active == 'successstories') ? 'class="active"' : ''; ?><!-->
+<!--                            <a href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/admin/successstories">Success stories</a>-->
+<!--                        </li>-->
+<!--                    --><?php //endif; ?>
+<!--                </ul>-->
             </div>
-            <!--/.nav-collapse -->
+<!--            <!--/.nav-collapse -->
         </div>
     </div>
 </div><br><br><br>

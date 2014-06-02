@@ -10,7 +10,7 @@
 //            'filter'=>$model,
             'columns'=>array(
                 'title',
-                'description',
+//                'description',
 //                array(
 //                    'name'  => 'Tech',
 //                    'type'  => 'raw',

@@ -25,7 +25,7 @@
     </div>
 
     <div class="control-group">
-        Tags - <a href="#" onclick="openTagsList();" id="clickTag">открыть</a>
+        Tags - <a href="#" onclick="openTagsList();" id="clickTag">Open</a>
         <div class="controls">
             <input type="text" value="" name="Projects[tags]" class="input-xxlarge" id="Projects_tags" />
         </div>
