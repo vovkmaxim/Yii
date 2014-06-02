@@ -38,7 +38,7 @@
                         </div>
                         <div class="circle-box">
                             <div class="col">
-                                <img class="circle-image" src="<?php echo Yii::app()->request->baseUrl; ?>/images/circle1.png" alt="" width="182" height="182">
+                                <img class="circle-image" src="<?php echo Yii::app()->request->baseUrl; ?>/images/circle12.png" alt="" width="182" height="182">
                                 <strong class="title">Headquarters</strong>
                                 <span>Moscow, Russia</span>
                             </div>
