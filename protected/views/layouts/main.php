@@ -33,7 +33,13 @@
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
+                                array('label'=>'News', 'url'=>array('/news/index')),
+                                array('label'=>'Reviews', 'url'=>array('/reviews/index')),
+                                array('label'=>'Rubric', 'url'=>array('/rubric/index')),
+                                array('label'=>'Registration', 'url'=>array('/user/registration')),
+                                array('label'=>'LogIn', 'url'=>array('/user/login')),
+                                array('label'=>'Logout', 'url'=>array('/user/logout')),
 			),
 		)); ?>
 	</div><!-- mainmenu -->
