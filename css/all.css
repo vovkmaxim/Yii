@@ -159,10 +159,10 @@ q:after {content:''}
 /* =============================================================================
 	LISTS
 	========================================================================== */
-ul, ol {list-style:none; margin:0 0 10px; padding:0;}
+ul, ol { margin:0 0 10px; padding:0;}
 dl {margin:0 0 10px;}
-nav ul, nav ol {margin:0;}
-ul li {list-style:none; list-style:none outside;}
+nav ul, nav ol {margin:0; list-style:none; list-style:none outside;}
+/*ul li {list-style:none; list-style:none outside;}*/
 /* =============================================================================
 	SEMANTIC TAG
 	========================================================================== */
@@ -1137,3 +1137,5 @@ h2.technology-header{
 .marText {overflow: hidden;}
 
 .market {width:95%}
+
+.tags {max-width: 20%}

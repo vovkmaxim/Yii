@@ -32,10 +32,12 @@ class SiteController extends Controller
         $techList = Tech::model()->findAll(array('order' => 'position', 'limit' => 5));
         $clientsList = Successstories::model()->findAll();
 
+
         $this->render('index', array(
                 'techList' => $techList,
                 'conditionsList' => $conditionsList,
                 'clientsList' => $clientsList,
+
             )
         );
     }

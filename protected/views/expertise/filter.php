@@ -44,8 +44,8 @@
                                         // Это правильный вариант
 //                                        echo '<a href="/expertise/projects/tag/'. $tag['title'] .'" class="name_tehnology">'. $tag['title'] .'</a> ';
 
-                                        // А это черти-что. лишь бы было видно.
-                                        echo $tag['title'] ;
+                                        // Но висеть будет это, т.к. тэги еще не реализованы.
+                                        echo "<div class='name_tehnology'>".$tag['title']."</div>" ;
                                     }
                                 }
                             ?>

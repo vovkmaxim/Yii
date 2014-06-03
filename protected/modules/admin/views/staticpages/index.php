@@ -30,5 +30,5 @@
         )
     );
 ?>
-<a class="btn" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/staticpages/add">Добавить</a>
+<a class="btn" href="<?php echo Yii::app()->getBaseUrl(true)?>/admin/staticpages/add">Add</a>
 

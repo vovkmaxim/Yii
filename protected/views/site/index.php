@@ -38,7 +38,7 @@
                             <?php foreach($techList as $item) : ?>
                                 <div class="col">
                                     <a href="expertise/projects/tech/<?php echo $item->title; ?>">
-                                        <img src="images/tmp/partner1.jpg" alt="#"/>
+
                                         <h3><?php echo $item->title; ?></h3>
                                         <?php echo $item->description; ?>
                                     </a>
