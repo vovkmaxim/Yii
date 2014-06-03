@@ -4,16 +4,16 @@
             <div class="m1">
                 <div class="m2">
                     <ul class="breadcrumps group">
-                        <li><a href="/">Home </a>&nbsp;&gt;&nbsp;</li>
+                        <li><a href="/">Home </a>&nbsp;&gt;&nbsp;&nbsp</li>
                         <li>Vacancies</li>
                     </ul>
-                    <div class="vacancy-image">
-                        <div class="holder">
-                            <div class="frame">
-                                <img class="main-image" src="images/img-vacancy.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
+<!--                    <div class="vacancy-image">-->
+<!--                        <div class="holder">-->
+<!--                            <div class="frame">-->
+<!--                                <img class="main-image" src="/images/img-vacancy.jpg" alt="img">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
                     <?php echo $modelStatic->text; ?>
                     <div class="vacancy-holder">
                         <?php foreach($modelDynamic as $item): ?>

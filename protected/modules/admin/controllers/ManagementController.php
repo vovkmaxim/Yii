@@ -39,7 +39,7 @@ class ManagementController extends AdminController
                     }
                     $model->img->saveAs('images/management/'. $model->id . '/' . $model->img->getName());
                 }
-                $this->redirect('/admin/management');
+//                $this->redirect('/admin/management');
             }
         }
     }

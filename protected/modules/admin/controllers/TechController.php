@@ -59,7 +59,7 @@ class TechController extends AdminController
                     }
                 }
 
-                $this->redirect('/admin/tech/index');
+//                $this->redirect('/admin/tech/index');
             }
         }
 

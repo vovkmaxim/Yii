@@ -21,8 +21,8 @@ class MenuController extends AdminController
         if (isset($_POST['Navigation'])) {
             // Save process
             $model->attributes = $_POST['Navigation'];
-            if ($model->save()) {
-                $this->redirect('/admin/menu');
+            if ($model->save()) {return true;
+//                $this->redirect('/admin/menu');
             }
         }
     }

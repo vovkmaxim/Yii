@@ -17,8 +17,8 @@ class VacanciesController extends AdminController
         if (isset($_POST['Vacancies'])) {
             // Save process
             $model->attributes = $_POST['Vacancies'];
-            if ($model->save()) {
-                $this->redirect('/admin/vacancies');
+            if ($model->save()) {return true;
+//                $this->redirect('/admin/vacancies');
             }
         }
     }

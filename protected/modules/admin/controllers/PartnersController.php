@@ -31,7 +31,7 @@ class PartnersController extends AdminController
                         unlink('images/partners/'. $model->id . '/' . $oldImg);
                     }
                 }
-                $this->redirect('/admin/partners');
+//                $this->redirect('/admin/partners');
             }
         }
     }

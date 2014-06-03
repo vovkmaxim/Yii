@@ -75,7 +75,7 @@ class ProjectsController extends AdminController
 
                 }
 
-                $this->redirect('/admin/projects/index');
+//                $this->redirect('/admin/projects/index');
             }
         }
     }

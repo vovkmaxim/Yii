@@ -5,21 +5,21 @@
         </div>
         <div class="row-holder">
             <div class="form-row">
-                <label>your name<span>*</span></label>
+                <label>Name<span>*</span></label>
                 <input type="text" name="title">
             </div>
             <div class="form-row">
-                <label>e-mail <span>*</span></label>
+                <label>Email <span>*</span></label>
                 <input type="email" name="email">
             </div>
             <div class="form-row msg">
-                <label>comments</label>
+                <label>Comments</label>
                 <textarea name="message"></textarea>
             </div>
             <div class="form-row">
                 <div class="add-resume">
                     <div class="button">
-                        <span>add resume</span>
+                        <span>Add resume</span>
                         <input type="file" class="custom-file" name="cv">
                     </div>
                     <span class="name"></span>

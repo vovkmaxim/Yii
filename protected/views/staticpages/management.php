@@ -4,9 +4,10 @@
             <div class="m1">
                 <div class="m2">
                     <ul class="breadcrumps group">
-                        <li><a href="/">Home </a>&nbsp;&gt;&nbsp;</li>
+                        <li><a href="/">Home </a>&nbsp;&gt;&nbsp;&nbsp</li>
                         <li>Management</li>
                     </ul>
+                    <h2><strong>Management</strong></h2>
                     <?php echo $modelStatic->text; ?>
                     <?php foreach($modelDynamic as $item) : ?>
                     <div class="block_download group">
@@ -18,9 +19,9 @@
                             <? endif; ?>
                         </div>
                         <div class="managText">
-                                <p><strong><?php echo $item->title; ?></strong></p>
-                                <a href="mailto:<?php echo $item->email ?>">Send an Email</a>
-                                <?php echo $item->description; ?>
+                                <p class="managTitle"><strong><?php echo $item->title; ?></strong></p>
+                                <b><a href="mailto:<?php echo $item->email ?>">Send an Email</a></b>
+                                <p class="managDesc"><?php echo $item->description; ?></p>
                         </div>
                     </div>
                     <?php endforeach; ?>

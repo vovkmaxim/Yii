@@ -28,7 +28,10 @@ class Contactus extends CActiveRecord
 	{
 
 		return array(
-			array('name, email, subject, body', 'required','message'=>'This field is required'),
+			array('name', 'required','message'=>'Please enter your name'),
+			array('email', 'required','message'=>'Please enter your Email'),
+			array('subject', 'required','message'=>'Please enter the subject'),
+			array('body', 'required','message'=>'Please enter your message'),
 			array('name, email, subject', 'length', 'max'=>255),
 			array('id, name, email, subject, body, date', 'safe', 'on'=>'search'),
             array('email', 'email','message'=>'Wrong Email'),

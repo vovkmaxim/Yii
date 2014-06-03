@@ -4,9 +4,11 @@
             <div class="m1">
                 <div class="m2">
                     <ul class="breadcrumps group">
-                        <li><a href="/">Home </a>&nbsp;&gt;&nbsp;</li>
+                        <li><a href="/">Home </a>&nbsp;&gt;&nbsp;&nbsp</li>
                         <li>Marketing Documents</li>
                     </ul>
+                    <p><h2><strong>Marketing Documents</strong>
+                        <a href="/popup/DocumentsAll?id=0" style="line-height: 1.2em; font-size: 13px;" class="inline cboxElement"><img alt="" src="../../images/pdf-icon0.png" /></a></h2></p>
                     <div class="market"><?php echo $modelStatic->text; ?></div>
                     <?php foreach($modelDynamic as $item) : ?>
                         <div class="block_download group">

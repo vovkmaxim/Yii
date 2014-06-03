@@ -21,8 +21,8 @@ class StaticpagesController extends AdminController
     protected function initSave(Staticpages $model) {
         if (isset($_POST['Staticpages'])) {
             $model->attributes = $_POST['Staticpages'];
-            if ($model->save()) {
-                $this->redirect( Yii::app()->request->baseUrl.'/admin/staticpages/index');
+            if ($model->save()) {return true;
+//                $this->redirect( Yii::app()->request->baseUrl.'/admin/staticpages/index');
             }
         }
     }

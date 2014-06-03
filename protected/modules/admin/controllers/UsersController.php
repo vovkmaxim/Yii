@@ -18,8 +18,8 @@ class UsersController extends AdminController
             }else{
                 $model->password = md5($_POST['Users']['password']);
             }
-            if ($model->save()) {
-                $this->redirect('/admin/users');
+            if ($model->save()) {return true;
+//                $this->redirect('/admin/users');
             }
         }
     }

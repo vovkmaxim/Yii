@@ -18,8 +18,8 @@ class TagsController extends AdminController
         if (isset($_POST['Tags'])) {
             // Save process
             $model->attributes = $_POST['Tags'];
-            if ($model->save()) {
-                $this->redirect('/admin/tags');
+            if ($model->save()) {return true;
+//                $this->redirect('/admin/tags');
             }
         }
     }

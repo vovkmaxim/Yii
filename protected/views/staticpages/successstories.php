@@ -10,8 +10,8 @@
 <!---->
 <!--                        <li>--><?php //echo $modelStatic->title; ?><!--</li>-->
 <!--                    </ul>-->
-                    <h2 style="font-style:italic"><strong>Success Stories</strong>
-                    <a href="/popup/DocumentsAll?id=2" style="line-height: 1.2em; font-size: 13px;" class="inline cboxElement"><img alt="" src="../../images/pdf-icon0.png" /></a></h2>
+                    <h2><strong>Success Stories</strong>
+                    <a href="/popup/DocumentsAll?id=0" style="line-height: 1.2em; font-size: 13px;" class="inline cboxElement"><img alt="" src="../../images/pdf-icon0.png" /></a></h2>
 
                     <?php echo $modelStatic->text; ?>
                     <div class="block_stories_holder">

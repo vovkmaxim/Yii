@@ -8,7 +8,7 @@
 <?php echo $form->label($model,'Title*'); ?>
 <?php echo $form->textField($model,'title', array('class' => 'input-xxlarge')); ?>
 
-<?php echo $form->label($model,'description*'); ?>
+<?php echo $form->label($model,'description*'); ?><label>Recommended picture size: 120x120</label>
 <?php
 $this->widget(
     'application.extensions.ckeditor.CKEditor',

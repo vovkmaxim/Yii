@@ -10,8 +10,8 @@ class ContactdataController extends AdminController
     {
         if (isset($_POST['Contactdata'])) {
             $model->attributes = $_POST['Contactdata'];
-            if ($model->save()) {
-                $this->redirect( Yii::app()->request->baseUrl.'/admin/contactdata/index');
+            if ($model->save()) {return true;
+//                $this->redirect( Yii::app()->request->baseUrl.'/admin/contactdata/index');
             }
         }
     }

@@ -30,7 +30,7 @@ class SlidesController extends AdminController
                         unlink('slides/'. $model->id . '/' . $oldImg);
                     }
                 }
-                $this->redirect('/admin/slides');
+//                $this->redirect('/admin/slides');
             }
         }
     }

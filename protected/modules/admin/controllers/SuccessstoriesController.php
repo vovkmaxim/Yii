@@ -81,7 +81,7 @@ class SuccessstoriesController extends AdminController
             if ($model->save()) {
                 // отображаем успешное сообщение, обновляем страницу
                 // или перенаправляем куда-либо ещё
-                $this->redirect(Yii::app()->request->baseUrl.'/admin/successstories/index');
+//                $this->redirect(Yii::app()->request->baseUrl.'/admin/successstories/index');
             }
         }
 

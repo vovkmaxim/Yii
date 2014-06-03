@@ -3,7 +3,7 @@
 /protected/runtime/
 .idea/
 assets/
-
+upload/
 documents/
 /protected/config/database.php
 /images

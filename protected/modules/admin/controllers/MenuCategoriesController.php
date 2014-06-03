@@ -16,8 +16,8 @@ class MenuCategoriesController extends AdminController
         if (isset($_POST['NavigationCategories'])) {
             // Save process
             $model->attributes = $_POST['NavigationCategories'];
-            if ($model->save()) {
-                $this->redirect('/admin/menuCategories');
+            if ($model->save()) {return true;
+//                $this->redirect('/admin/menuCategories');
             }
         }
     }

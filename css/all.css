@@ -959,17 +959,17 @@ h2.technology-header{
     overflow: hidden;
     padding: 7px 0 0;
 }
-.five-columns .col:first-child {
-    margin: 0;
-}
+/*.five-columns .col:first-child {*/
+    /*margin: 0;*/
+/*}*/
 .five-columns .col {
     float: left;
-    margin: 0 0 0 4%;
+    margin: 0 4% 0 0;
     width: 16%;
 }
 .five-columns .col a{
     display: block;
-    color: #797979;
+    color: #000;
     font: 14px/22px 'CalibriRegular',Arial,Helvetica,sans-serif;
     text-decoration: none;
 }
@@ -1078,7 +1078,7 @@ h2.technology-header{
     margin: 25px;
 }
 .block_download p{
-    width: 80%;
+    width: 100%;
     margin: 0 2%;
 }
 .block_download .links_pdf{
@@ -1130,7 +1130,7 @@ h2.technology-header{
 
 .managImg {  float: left; text-align: center;}
 .managImg img {max-height: 120px; max-width: 120px; min-height: 120px; min-width: 120px;}
-
+.managTitle {max-width: 85%}
 .managText {float: left; width: 85%;}
 
 #marPdf {  float: left; margin: 20px;}

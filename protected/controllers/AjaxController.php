@@ -46,7 +46,7 @@ class AjaxController extends Controller
 		$post_email = Yii::app()->request->getPost('email');
 
 		if(empty($post_email)) {
-			echo CJSON::encode(array('error'=> 'Please enter your e-mail'));
+			echo CJSON::encode(array('error'=> 'Please enter your Email'));
 		}elseif(filter_var($post_email, FILTER_VALIDATE_EMAIL)) {
 					
 			$mailer = new YiiMailer();
@@ -98,10 +98,10 @@ class AjaxController extends Controller
 
 
 			$mailer->send();
-			echo CJSON::encode(array('true'=> 'Thank you, checked documents has been sent to your e-mail ('. $post_email .').'));
+			echo CJSON::encode(array('true'=> 'Thank you, checked documents has been sent to your Email ('. $post_email .').'));
 				
 		}else{
-			echo CJSON::encode(array('error'=> 'Your e-mail seems to be wrong. Please check it.'));
+			echo CJSON::encode(array('error'=> 'Your Email seems to be wrong. Please check it.'));
 		}	
 	}
 
@@ -110,7 +110,7 @@ class AjaxController extends Controller
         $post_email = Yii::app()->request->getPost('email');
 
         if(empty($post_email)) {
-            echo CJSON::encode(array('error'=> 'Please enter your e-mail'));
+            echo CJSON::encode(array('error'=> 'Please enter your Email'));
         }elseif(filter_var($post_email, FILTER_VALIDATE_EMAIL)) {
             $mailer = new YiiMailer();
             $mailer->setFrom('chisw_info@chisw.us', 'Summary');
@@ -126,7 +126,7 @@ class AjaxController extends Controller
             $mailer->Password = 'eL533Nbd';
 
             $mailer->send();
-            echo CJSON::encode(array('true'=> 'Thank you, the document has been sent to your e-mail ().'));
+            echo CJSON::encode(array('true'=> 'Thank you, the document has been sent to your Email ().'));
 
         }
     }

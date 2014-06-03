@@ -103,9 +103,9 @@
                     'htmlOptions' => array(
                         'class'=>'nav',
                     ),
-                    'submenuHtmlOptions' => array(
-                        'class' => 'dropdown-menu',
-                    )
+//                    'submenuHtmlOptions' => array(
+//                        'class' => 'dropdown-menu',
+//                    )
                 ));
                 ?>
                 </div>

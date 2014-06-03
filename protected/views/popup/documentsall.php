@@ -57,7 +57,7 @@
             ?>
         </div>
         <div class="form-row">
-            <label>e-mail<span>*</span></label>
+            <label>Email<span>*</span></label>
             <input type="email" id="email" name="email">
         </div>
         <div class="submit-holder">

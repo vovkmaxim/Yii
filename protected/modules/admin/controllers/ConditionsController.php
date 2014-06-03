@@ -17,8 +17,8 @@ class ConditionsController extends AdminController
         if (isset($_POST['Conditions'])) {
             // Save process
             $model->attributes = $_POST['Conditions'];
-            if ($model->save()) {
-                $this->redirect('/admin/conditions');
+            if ($model->save()) { return true;
+//                $this->redirect('/admin/conditions');
             }
         }
     }

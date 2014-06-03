@@ -79,12 +79,12 @@ $this->widget(
             array(
                 'buttonType' => 'submit',
                 'type' => 'primary',
-                'label' => 'Принять'
+                'label' => 'Save'
             )
         ); ?>
         <?php $this->widget(
             'bootstrap.widgets.TbButton',
-            array('buttonType' => 'reset', 'label' => 'Сбросить')
+            array('buttonType' => 'reset', 'label' => 'Reset')
         ); ?>
     </div>
 <?php

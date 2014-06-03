@@ -280,8 +280,9 @@ table.detail-view td
 
 #menu-top ul li ul { display: none;  top:100%;
     background: #fff; color: #777777; height: auto;
-    left:-70px;
-    /*position: absolute;*/
+    /*left:-70px;*/
+    position: absolute;
+    width: 10%;
 }
 
 

@@ -28,7 +28,7 @@ class DocumentsController extends AdminController
                         unlink('documents/' . $oldFile);
                     }
                 }
-                $this->redirect('/admin/documents/index');
+//                $this->redirect('/admin/documents/index');
             }
         }
     }
