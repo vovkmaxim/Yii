@@ -52,7 +52,7 @@ class Staticpages extends CActiveRecord
             'id' => 'ID',
             'title' => 'Title',
             'activelink' => 'URL',
-            'text' => 'Text',
+            'text' => 'Description',
             'dateCreate'=>'Created',
             'dateUpdate'=>'Updated',
         );
