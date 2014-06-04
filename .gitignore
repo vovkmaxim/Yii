@@ -1,9 +1,14 @@
 /preview
 /pics
-/protected/runtime/
 .idea/
 assets/
 upload/
 documents/
 /protected/config/database.php
 /images
+/nbproject/private/
+!/pics/
+!/images/
+!/documents/
+!/assets/
+!/upload/

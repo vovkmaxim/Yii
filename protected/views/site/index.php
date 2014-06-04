@@ -56,37 +56,24 @@
                         </ul>
                     <?php endif; ?>
 
-
-                    <?php if(!empty($conditionsList)): ?>
-                        <h2>Testimonials<a href="/popup/DocumentsAll?id=0" class="inline cboxElement"><img src="images/pdf-icon0.png" alt=""></a></h2>
-                        <div class="three-columns">
-                            <?php foreach($testmonialsList as $item) : ?>
-                                <div class="col">
-<!--                                    <h3 class="col-heading">--><?php //echo $item->title; ?><!--</h3>-->
-                                    <?php echo $item->description; ?>
-                                </div>
-                            <?php endforeach; ?>
+                    <h2>Testimonials</h2>
+                    <div class="three-columns">
+                        <div class="col">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at magna vitae felis tempus faucibus eu id nisl. Integer rhoncus tellus eget tempor dictum. Nullam id pretium nulla. Aenean porttitor sagittis ipsum nec tempus. Vivamus auctor magna posuere leo molestie aliquet. Nam... <a href="#">Read more</a>
+                            </p>
+                            <p>John Doe, CEO at Company</p>
                         </div>
-                    <?php endif; ?>
-
-<!--                    <h2>Testimonials</h2>-->
-<!--                    <div class="three-columns">-->
-<!--                        <div class="col">-->
-<!--                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at magna vitae felis tempus faucibus eu id nisl. Integer rhoncus tellus eget tempor dictum. Nullam id pretium nulla. Aenean porttitor sagittis ipsum nec tempus. Vivamus auctor magna posuere leo molestie aliquet. Nam... <a href="#">Read more</a>-->
-<!--                            </p>-->
-<!--                            <p>John Doe, CEO at Company</p>-->
-<!--                        </div>-->
-<!--                        <div class="col">-->
-<!--                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at magna vitae felis tempus faucibus eu id nisl. Integer rhoncus tellus eget tempor dictum. Nullam id pretium nulla. Aenean porttitor sagittis ipsum nec tempus. Vivamus auctor magna posuere leo molestie aliquet. Nam... <a href="#">Read more</a>-->
-<!--                            </p>-->
-<!--                            <p>John Doe, CEO at Company</p>-->
-<!--                        </div>-->
-<!--                        <div class="col">-->
-<!--                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at magna vitae felis tempus faucibus eu id nisl. Integer rhoncus tellus eget tempor dictum. Nullam id pretium nulla. Aenean porttitor sagittis ipsum nec tempus. Vivamus auctor magna posuere leo molestie aliquet. Nam... <a href="#">Read more</a>-->
-<!--                            </p>-->
-<!--                            <p>John Doe, CEO at Company</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
+                        <div class="col">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at magna vitae felis tempus faucibus eu id nisl. Integer rhoncus tellus eget tempor dictum. Nullam id pretium nulla. Aenean porttitor sagittis ipsum nec tempus. Vivamus auctor magna posuere leo molestie aliquet. Nam... <a href="#">Read more</a>
+                            </p>
+                            <p>John Doe, CEO at Company</p>
+                        </div>
+                        <div class="col">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at magna vitae felis tempus faucibus eu id nisl. Integer rhoncus tellus eget tempor dictum. Nullam id pretium nulla. Aenean porttitor sagittis ipsum nec tempus. Vivamus auctor magna posuere leo molestie aliquet. Nam... <a href="#">Read more</a>
+                            </p>
+                            <p>John Doe, CEO at Company</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

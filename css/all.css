@@ -1064,7 +1064,6 @@ h2.technology-header{
 }
 .breadcrumps li {
     float: left;
-    list-style: none outside none;
 }
 .breadcrumps li a{
     color: #797979

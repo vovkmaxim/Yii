@@ -1,0 +1,166 @@
+2014/06/04 11:53:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Outsourcing".' in /home/php/public_html/CHI/protected/framework/web/CController.php:483
+Stack trace:
+#0 /home/php/public_html/CHI/protected/framework/web/CController.php(270): CController->missingAction('Outsourcing')
+#1 /home/php/public_html/CHI/protected/framework/web/CWebApplication.php(282): CController->run('Outsourcing')
+#2 /home/php/public_html/CHI/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('staticpages/Out...')
+#3 /home/php/public_html/CHI/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/php/public_html/CHI/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/staticpages/Outsourcing
+---
+2014/06/04 11:53:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /home/php/public_html/CHI/protected/framework/web/CController.php:483
+Stack trace:
+#0 /home/php/public_html/CHI/protected/framework/web/CController.php(270): CController->missingAction('images')
+#1 /home/php/public_html/CHI/protected/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /home/php/public_html/CHI/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('staticpages/ima...')
+#3 /home/php/public_html/CHI/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/php/public_html/CHI/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/staticpages/images/backgrounds/bg-body1.jpg
+HTTP_REFERER=http://chi.com/index.php/staticpages/Outsourcing
+---
+2014/06/04 11:53:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /home/php/public_html/CHI/protected/framework/web/CController.php:483
+Stack trace:
+#0 /home/php/public_html/CHI/protected/framework/web/CController.php(270): CController->missingAction('images')
+#1 /home/php/public_html/CHI/protected/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /home/php/public_html/CHI/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('staticpages/ima...')
+#3 /home/php/public_html/CHI/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/php/public_html/CHI/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/staticpages/images/backgrounds/bg-body3.jpg
+HTTP_REFERER=http://chi.com/index.php/staticpages/Outsourcing
+---
+2014/06/04 11:53:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /home/php/public_html/CHI/protected/framework/web/CController.php:483
+Stack trace:
+#0 /home/php/public_html/CHI/protected/framework/web/CController.php(270): CController->missingAction('images')
+#1 /home/php/public_html/CHI/protected/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /home/php/public_html/CHI/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('staticpages/ima...')
+#3 /home/php/public_html/CHI/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/php/public_html/CHI/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/staticpages/images/backgrounds/bg-body3.jpg
+HTTP_REFERER=http://chi.com/index.php/staticpages/Outsourcing
+---
+2014/06/04 11:53:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/backgrounds/bg-body1.jpg".' in /home/php/public_html/CHI/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php/public_html/CHI/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('images/backgrou...')
+#1 /home/php/public_html/CHI/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php/public_html/CHI/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/images/backgrounds/bg-body1.jpg
+HTTP_REFERER=http://chi.com/index.php/expertise
+---
+2014/06/04 12:49:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/stories/3/images/stories/1401100388.8059wolf_5.jpg".' in /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('images/stories/...')
+#1 /home/php/public_html/!!__CHI__!!/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php/public_html/!!__CHI__!!/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/stories/3/images/stories/1401100388.8059wolf_5.jpg
+HTTP_REFERER=http://chi.com/
+---
+2014/06/04 12:49:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/stories/2/images/stories/1401100369.80361317028314_dale.jpg".' in /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('images/stories/...')
+#1 /home/php/public_html/!!__CHI__!!/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php/public_html/!!__CHI__!!/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/stories/2/images/stories/1401100369.80361317028314_dale.jpg
+HTTP_REFERER=http://chi.com/
+---
+2014/06/04 12:49:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/stories/14/images/stories/1401454960.6517516.jpg".' in /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('images/stories/...')
+#1 /home/php/public_html/!!__CHI__!!/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php/public_html/!!__CHI__!!/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/stories/14/images/stories/1401454960.6517516.jpg
+HTTP_REFERER=http://chi.com/
+---
+2014/06/04 12:49:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/management/0/nophoto.png".' in /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('images/manageme...')
+#1 /home/php/public_html/!!__CHI__!!/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php/public_html/!!__CHI__!!/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/management/0/nophoto.png
+HTTP_REFERER=http://chi.com/staticpages/Success_Stories
+---
+2014/06/04 12:49:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CController.php:483
+Stack trace:
+#0 /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CController.php(270): CController->missingAction('images')
+#1 /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('staticpages/ima...')
+#3 /home/php/public_html/!!__CHI__!!/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/php/public_html/!!__CHI__!!/chi/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/staticpages/images/backgrounds/bg-body1.jpg
+HTTP_REFERER=http://chi.com/staticpages/Success_Stories
+---
+2014/06/04 12:49:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/pdf-icon_big.png".' in /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('images/pdf-icon...')
+#1 /home/php/public_html/!!__CHI__!!/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php/public_html/!!__CHI__!!/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/pdf-icon_big.png
+HTTP_REFERER=http://chi.com/staticpages/Marketing
+---
+2014/06/04 12:49:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CController.php:483
+Stack trace:
+#0 /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CController.php(270): CController->missingAction('images')
+#1 /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('staticpages/ima...')
+#3 /home/php/public_html/!!__CHI__!!/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/php/public_html/!!__CHI__!!/chi/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/staticpages/images/backgrounds/bg-body1.jpg
+HTTP_REFERER=http://chi.com/staticpages/Marketing
+---
+2014/06/04 12:49:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CController.php:483
+Stack trace:
+#0 /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CController.php(270): CController->missingAction('images')
+#1 /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('staticpages/ima...')
+#3 /home/php/public_html/!!__CHI__!!/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/php/public_html/!!__CHI__!!/chi/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/staticpages/images/backgrounds/bg-body1.jpg
+HTTP_REFERER=http://chi.com/staticpages/Success_Stories
+---
+2014/06/04 12:49:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/management/0/nophoto.png".' in /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('images/manageme...')
+#1 /home/php/public_html/!!__CHI__!!/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php/public_html/!!__CHI__!!/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/management/0/nophoto.png
+HTTP_REFERER=http://chi.com/staticpages/Success_Stories
+---
+2014/06/04 12:49:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/stories/14/images/stories/1401454960.6517516.jpg".' in /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('images/stories/...')
+#1 /home/php/public_html/!!__CHI__!!/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php/public_html/!!__CHI__!!/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/stories/14/images/stories/1401454960.6517516.jpg
+HTTP_REFERER=http://chi.com/
+---
+2014/06/04 12:49:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/stories/3/images/stories/1401100388.8059wolf_5.jpg".' in /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('images/stories/...')
+#1 /home/php/public_html/!!__CHI__!!/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php/public_html/!!__CHI__!!/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/stories/3/images/stories/1401100388.8059wolf_5.jpg
+HTTP_REFERER=http://chi.com/
+---
+2014/06/04 12:49:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/stories/2/images/stories/1401100369.80361317028314_dale.jpg".' in /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/php/public_html/!!__CHI__!!/chi/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('images/stories/...')
+#1 /home/php/public_html/!!__CHI__!!/chi/protected/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/php/public_html/!!__CHI__!!/chi/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/stories/2/images/stories/1401100369.80361317028314_dale.jpg
+HTTP_REFERER=http://chi.com/
+---

@@ -76,7 +76,15 @@ return array(
             ),
         ),
 
-        'db'=> $database,
+        //'db'=> $database,
+        'db'=>array(
+			'connectionString' => 'mysql:host=localhost;dbname=chi',
+			'emulatePrepare' => true,
+			'username' => 'root',
+			'password' => '12345',
+			'charset' => 'utf8',
+	),
+		
         'errorHandler'=>array(
             // use 'site/error' action to display errors
             'errorAction'=>'site/error',

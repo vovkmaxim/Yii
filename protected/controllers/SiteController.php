@@ -29,7 +29,6 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $conditionsList = Conditions::model()->findAll(array('order' => 'position'));
-        $testmonialsList = Testmonials::model()->findAll();
         $techList = Tech::model()->findAll(array('order' => 'position', 'limit' => 5));
         $clientsList = Successstories::model()->findAll();
 
@@ -38,7 +37,6 @@ class SiteController extends Controller
                 'techList' => $techList,
                 'conditionsList' => $conditionsList,
                 'clientsList' => $clientsList,
-                'testmonialsList' => $testmonialsList,
 
             )
         );

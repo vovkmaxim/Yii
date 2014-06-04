@@ -66,7 +66,6 @@
                             'itemOptions'=>array('id'=>'itemCompany'),
                             'items'=>array(
                                 array('label'=>'Conditions', 'url'=>array('/admin/conditions')),
-                                array('label'=>'Testmonials', 'url'=>array('/admin/testmonials')),
                                 )
                         ),
                         array('label'=>'Static content', 'url'=>array('/admin/staticpages')),
