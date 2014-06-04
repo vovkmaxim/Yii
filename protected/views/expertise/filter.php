@@ -23,8 +23,8 @@
             <div class="m1">
                 <div class="m2">
                     <ul class="breadcrumps group">
-                        <li><a href="/">Home </a>&nbsp;&gt;&nbsp;</li>
-                        <li><a href="/expertise">Expertise </a>&nbsp;&gt;&nbsp;</li>
+                        <li><a href="/">Home </a>&nbsp;&gt;&nbsp;&nbsp;</li>
+                        <li><a href="/expertise">Expertise </a>&nbsp;&gt;&nbsp;&nbsp;</li>
                         <li><?php echo $tech; ?></li>
                     </ul>
                     <?php if (isset($modelTech->info)) echo  $modelTech->info; ?>

@@ -59,7 +59,7 @@ class ConditionsController extends AdminController
             echo CJavaScript::jsonEncode(array('order' => $order));
             Yii::app()->end();
         } else {
-            throw new CHttpException(404, 'Неправильный запрос');
+            throw new CHttpException(404, 'Invalid request');
         }
     }
 }
