@@ -107,9 +107,11 @@ class Staticpages extends CActiveRecord
     protected function beforeSave()
     {
         if ($this->isNewRecord){
-            $this->dateCreate = new CDbExpression('NOW()');
+//            $this->dateCreate = new CDbExpression('NOW()');
+            $this->dateCreate = date( "Y-m-d H:i:s" );
         }
-        $this->dateUpdate = new CDbExpression('NOW()');
+//        $this->dateUpdate = new CDbExpression('NOW()');
+        $this->dateUpdate = date( "Y-m-d H:i:s" );
         $this->title = str_replace (' ','_',$this->title);
         $this->activelink = '/' . $this->title;
         return parent::beforeSave();
