@@ -29,7 +29,7 @@
                     </ul>
                     <?php if (isset($modelTech->info)) echo  $modelTech->info; ?>
                     <h2>Our Projects</h2>
-                    <p><?php if (isset($modelTech->description)) echo $modelTech->description?></p>
+<!--                    <p><?php // if (isset($modelTech->description)) echo $modelTech->description ?></p>-->
                     <?php foreach($projects as $item): ?>
                     <div class="block_expertise group">
                         <div class="image_holder">

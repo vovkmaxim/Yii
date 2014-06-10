@@ -1,6 +1,5 @@
 <?php
-<!--
-<?php if (isset($result)) : ?>
+if (isset($result)) : ?>
     <div class="alert alert-success">
         <?php echo $result; ?>
     </div>

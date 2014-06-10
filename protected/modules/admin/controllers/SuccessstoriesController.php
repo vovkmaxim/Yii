@@ -77,7 +77,10 @@ class SuccessstoriesController extends AdminController
         }
         if (isset($_POST['Successstories'])) {
             $model->attributes = $_POST['Successstories'];
-
+//                print_r("<pre>");
+//                print_r($model);
+//                print_r("<pre>");
+//                die();
             if ($model->save()) {
                 // отображаем успешное сообщение, обновляем страницу
                 // или перенаправляем куда-либо ещё

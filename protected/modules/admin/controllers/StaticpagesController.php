@@ -37,10 +37,12 @@ class StaticpagesController extends AdminController
 
     public function actionUpdate($id) {
         $model = Staticpages::model()->findByPk($id);
-
-        $this->initSave($model);
-
-        $this->render('edit', array('model' => $model));
+        $render = array('model' => $model);
+        if($this->initSave($model)){
+            $render['flag'] = true;
+        }
+        
+        $this->render('edit', $render);
     }
 
     public function actionDelete($id) {

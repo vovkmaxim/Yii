@@ -13,8 +13,8 @@ class ProjectsController extends AdminController
 //            'tech' => array(
 //            'select' => array('title')
 //        )
-//        ))->findAll(array('order' => 't.position'));
-        $model = new Projects('search');
+//        ))->findAll(array('order' => 't.position'));        
+        $model = new Projects('search');        
         $this->render('index', array('model' => $model));
     }
 
