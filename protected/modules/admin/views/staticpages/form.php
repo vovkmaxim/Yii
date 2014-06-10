@@ -87,6 +87,23 @@ $this->widget(
             array('buttonType' => 'reset', 'label' => 'Reset')
         ); ?>
     </div>
+<?php 
+    if(isset($flag)){
+        if($flag){
+            ?>
+                <script>
+                    function changes_applied() {
+                        alert( "Your changes have been applied" );
+                    }
+                    $( document ).ready(function() {
+                        setTimeout(changes_applied, 1000);
+                    });
+                 </script>
+            <?php
+        }
+    }
+?>
+
 <?php
 $this->endWidget();
 unset($form);
