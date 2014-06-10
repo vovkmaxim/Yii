@@ -15,10 +15,14 @@ class Successstories extends CActiveRecord
 		return array(
 			array('client, task, solution, result', 'required', 'message'=>'This field is required'),
 			array('id, client, task, solution, result, pic', 'safe', 'on'=>'search'),
-            array('pic', 'file', 'types'=>'jpg, jpeg, gif, png', 'allowEmpty' => true),
-            array('pic', 'file', 'types'=>'jpg, jpeg, gif, png', 'allowEmpty' => true),
-            array('pic', 'unsafe'),
-    	);
+                        array('pic', 'ImageDimensions',
+                                     'maxWidth'  => 120,
+                                     'maxHeight' => 120,
+                                     'minHeight' => 10,
+                                     'minWidth'  => 10,
+                                     'errorIfNotImage' => true),
+                        array('pic', 'unsafe'),
+                    );
 	}
 
     public function behaviors()
